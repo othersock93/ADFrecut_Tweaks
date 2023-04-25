@@ -71,7 +71,7 @@ class cfgMagazines
 		descriptionShort = "$STR_A3_CfgMagazines_150Rnd_762x51_Box_Tracer1";
 		count = 1000;
 		type = "2*		256";
-		tracersEvery = 3;
+		tracersEvery = 4;
 	};
 	class ADFU_land_aslav_200rnd_762x51_Tracer: 150Rnd_762x51_Box{
 		scope = 1;
@@ -80,14 +80,14 @@ class cfgMagazines
 		descriptionShort = "$STR_A3_CfgMagazines_150Rnd_762x51_Box_Tracer1";
 		count = 200;
 		type = "2*		256";
-		tracersEvery = 3;
+		tracersEvery = 4;
 	};
 	class 250Rnd_30mm_HE_shells_Tracer_Red;
 	class ADFU_land_aslav_360RND_25MM_HE: 250Rnd_30mm_HE_shells_Tracer_Red
 	{
 		scope = 2;
-		displayName = "25MM HIGH EXPLOSIVE";
-		displaynameshort = "25MM HE-MP";
+		displayName = "25MM HET";
+		displaynameshort = "25MM HET";
 		ammo = "ADFU_land_aslav_25mm_HE";
 		tracersEvery = 1;
 		count = 360;
@@ -115,7 +115,11 @@ class cfgWeapons
 	class ADFU_land_aslav_coax: LMG_RCWS {
 		displayName = "COAXIAL 7.62MM MAG-58";
 		scope = 1;
-		magazines[] = {"ADFU_land_aslav_1000Rnd_762x51_Tracer"};
+		magazines[]=
+		{
+			"ADFU_land_aslav_1000Rnd_762x51_Tracer",
+			"ADFU_land_aslav_1000Rnd_762x51_Tracer"
+		};
 		ballisticsComputer = 2;
 
 		class GunParticles {
@@ -249,6 +253,12 @@ class cfgWeapons
 		magazineWell[] = {};
 		canlock = 0;
 		magazineReloadTime = 0.3;
+		sounds[] = {"StandardSound"};
+		class StandardSound
+        {
+            begin1[]= {"\adfu_land_aslav\sound\25mm_cannon.ogg",1,1,1500};
+            soundBegin[]= {"begin1",1};
+        };
 		modes[] = {"single","100rpm","player","close","short","medium","far"};
 		class player: player
 		{
@@ -267,6 +277,39 @@ class cfgWeapons
 		};
 		FCSMaxLeadSpeed = 0;
 		minZeroing = 200;
+		class SoundTails
+        {
+			class TailTrees
+                {
+                    sound[] = {"\adfu_land_aslav\sound\25mm_cannon_2.ogg",1.0,1,1200};
+                    frequency = 1;
+                    volume = "(1-interior/1.4)*trees";
+                };
+            class TailForest
+                {
+                    sound[] = {"\adfu_land_aslav\sound\25mm_cannon_2.ogg",1.0,1,1200};
+                    frequency = 1;
+                    volume = "(1-interior/1.4)*forest";
+                };
+            class TailInterior
+                {
+                    sound[] = {"\adfu_land_aslav\sound\25mm_cannon_2.ogg",1.9952624,1,1200};
+                    frequency = 1;
+                    volume = "interior";
+                };
+            class TailMeadows
+                {
+                    sound[] = {"\adfu_land_aslav\sound\25mm_cannon_2.ogg",1.0,1,1200};
+                    frequency = 1;
+                    volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+                };
+            class TailHouses
+                {
+                    sound[] = {"\adfu_land_aslav\sound\25mm_cannon_2.ogg",1.0,1,1200};
+                    frequency = 1;
+                    volume = "(1-interior/1.4)*houses";
+                };
+        };
 	};
 	class AP: autocannon_Base_F {
 		displayName = "25mm M242 - AP-T";

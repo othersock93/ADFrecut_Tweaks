@@ -496,13 +496,14 @@ class CfgVehicles
 				{
 					"ADFU_land_aslav_360RND_25MM_HE",
 					"ADFU_land_aslav_360RND_25MM_AP",
+					"ADFU_land_aslav_1000Rnd_762x51_Tracer",
 					"ADFU_land_aslav_1000Rnd_762x51_Tracer"
 				};
 				selectionFireAnim="zasleh_1";
 				soundServo[]=
 				{
 					"adfu_land_aslav\sound\turret",
-					"db25",
+					"db23",
 					1,
 					50
 				};
