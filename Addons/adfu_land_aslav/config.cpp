@@ -798,7 +798,7 @@ class CfgVehicles
 	class ADFU_land_aslav_mag58: ADFU_land_aslav
 	{
 		scope=2;
-		displayName="ASLAV + MAG-58";
+		displayName="ASLAV (MAG-58)";
 		model="adfu_land_aslav\ASLAV_MAG58.p3d";
 		author="$STR_ADFU_AUTHOR";
 		class Turrets: Turrets
