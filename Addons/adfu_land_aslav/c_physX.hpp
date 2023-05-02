@@ -19,7 +19,7 @@ class complexGearbox
 		clutchStrength = 35.0;
 		enginePower = 400;
 		maxOmega = 475;
-		peakTorque = 1200.0;
+		peakTorque = 880.0;
 		dampingRateFullThrottle = 0.08;
 		dampingRateZeroThrottleClutchEngaged = 0.35;
 		dampingRateZeroThrottleClutchDisengaged = 0.35;
