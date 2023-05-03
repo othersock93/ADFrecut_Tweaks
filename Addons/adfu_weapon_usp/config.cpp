@@ -21,6 +21,7 @@ class CfgPatches
 		};
 	};
 };
+class Mode_SemiAuto;
 class MuzzleSlot;
 class CowsSlot;
 class PointerSlot;
@@ -68,10 +69,58 @@ class CfgWeapons
 			};
 		};
 	};
-	class Pistol_Base_F;
-	class ADFU_pistol_base: Pistol_Base_F
+	class hgun_P07_F;
+	class ADFU_pistol_base: hgun_P07_F
 	{
-		class Single;
+		class Single: Mode_SemiAuto
+		{
+			aiDispersionCoefX = 1.4;
+			aiDispersionCoefY = 1.7;
+			aiRateOfFire = 2;
+			aiRateOfFireDispersion = 1;
+			aiRateOfFireDistance = 25;
+			artilleryCharge = 1;
+			artilleryDispersion = 1;
+			autoFire = 0;
+			class BaseSoundModeType {};
+			burst = 1;
+			burstRangeMax = -1;
+			canShootInWater = 0;
+			dispersion = 0.0029;
+			displayName = "$STR_DN_MODE_SEMIAUTO";
+			ffCount = 1;
+			ffFrequency = 11;
+			ffMagnitude = 0.5;
+			flash = "gunfire";
+			flashSize = 0.1;
+			maxRange = 50;
+			maxRangeProbab = 0.1;
+			midRange = 25;
+			midRangeProbab = 0.6;
+			minRange = 5;
+			minRangeProbab = 0.3;
+			multiplier = 1;
+			recoil = "recoil_pistol_light";
+			recoilProne = "recoil_prone_pistol_light";
+			reloadTime = 0.12;
+			requiredOpticType = -1;
+			showToPlayer = 1;
+			class SilencedSound: BaseSoundModeType {};
+			sound = ["",10,1];
+			soundBegin = ["sound",1];
+			soundBeginWater = ["sound",1];
+			soundBurst = 0;
+			soundClosure = ["sound",1];
+			soundContinuous = 0;
+			soundEnd = [];
+			soundLoop = [];
+			sounds = ["StandardSound","SilencedSound"];
+			class StandardSound: BaseSoundModeType {};
+			textureType = "semi";
+			useAction = 0;
+			useActionTitle = "";
+			weaponSoundEffect = "";
+		};
 	};
 	class ADFU_weapon_usp: ADFU_pistol_base
 	{
@@ -122,6 +171,7 @@ class CfgWeapons
 		};
 		class Single: Single
 		{
+			displayName= "Semi-Auto";
 			sounds[]=
 			{
 				"StandardSound",
