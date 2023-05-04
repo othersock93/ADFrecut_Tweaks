@@ -86,8 +86,8 @@ class cfgMagazines
 	class ADFU_land_aslav_360RND_25MM_HE: 250Rnd_30mm_HE_shells_Tracer_Red
 	{
 		scope = 2;
-		displayName = "25MM HET";
-		displaynameshort = "25MM HET";
+		displayName = "25MM HE-T";
+		displaynameshort = "25MM HE-T";
 		ammo = "ADFU_land_aslav_25mm_HE";
 		tracersEvery = 1;
 		count = 360;
@@ -97,7 +97,7 @@ class cfgMagazines
 	{
 		scope = 2;
 		displayName = "25MM Armor Piercing";
-		displayNameShort = "25MM AP";
+		displayNameShort = "25MM APDS-T";
 		ammo = "ADFU_land_aslav_25mm_AP";
 		tracersEvery = 1;
 		count = 360;
@@ -248,7 +248,7 @@ class cfgWeapons
 	displayName = "25mm M242";
 	muzzles[] = {"AP","HE"};
 	class HE: autocannon_Base_F {
-		displayName = "25mm M242 - MP-T";
+		displayName = "M242 Bushmaster";
 		magazines[] = {"ADFU_land_aslav_360RND_25MM_HE","ADFU_land_aslav_360RND_25MM_AP"};
 		magazineWell[] = {};
 		canlock = 0;

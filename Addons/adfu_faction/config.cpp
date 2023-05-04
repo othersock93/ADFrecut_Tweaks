@@ -14,11 +14,12 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"A3_Characters_F_BLUFOR"
+			"A3_Characters_F_BLUFOR",
+			"A3_Data_F_Enoch_Loadorder"
 		};
 		author[]=
 		{
-			"Australian Defence Force: Uncut"
+			"ADF Re-Cut Team"
 		};
 		version="0.5.0";
 		versionStr="0.5.0";
@@ -265,17 +266,23 @@ class CfgVehicleClasses
 	};
 };
 class CfgVehicles
-{
-	class B_Soldier_base_F;
-	class ADFU_Soldier_base_F: B_Soldier_base_F
-	{
-		scope=2;
+{	
+	class SoldierWB;
+    class adfu_Soldier_base_F: SoldierWB
+    {
+        class EventHandlers;
+        class HitPoints
+        {
+        };
+		scope=1;
+		scopeCurator=0;
 		author="$STR_ADFU_AUTHOR";
 		_generalMacro="ADFU_Soldier_base_F";
 		side=1;
-		faction="ADFU";
+		faction="BLU_F";
 		vehicleClass="";
-	};
+    };
+	class B_Soldier_base_F;
 	class ADFU_OPFOR_Soldier_base_F: B_Soldier_base_F
 	{
 		scope=2;

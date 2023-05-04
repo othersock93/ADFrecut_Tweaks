@@ -3,12 +3,12 @@
 	<Package name="ADFU_faction">
 		<Container name="General">
 			<Key ID="STR_ADFU_AUTHOR">
-					<Original>ADF Uncut</Original>
-					<English>ADF Uncut</English>
+					<Original>ADF Re-Cut</Original>
+					<English>ADF Re-Cut</English>
 			</Key>
 			<Key ID="STR_ADFU_TITLE">
-					<Original>Australian Defence Force: Uncut</Original>
-					<English>Australian Defence Force: Uncut</English>
+					<Original>Australian Defence Force: Re-Cut</Original>
+					<English>Australian Defence Force: Re-Cut</English>
 			</Key>
 			<Key ID="STR_ADFU_faction_NAME">
 					<Original>ADF</Original>
