@@ -1846,54 +1846,6 @@ class CfgVehicles
 			"Transport"
 		};
 	};
-	class MRH90Navy: MRH90
-	{
-		author="Aplion | Adapted by ADFRC";
-		_generalMacro="HAFM_MRH90_Marine";
-		displayName="MRH-90 Taipan RAN";
-		model="\HAFM_NH90\NH90marine.p3d";
-		scope=2;
-		side=1;
-		faction="BLU_F";
-		vehicleClass="Air";
-		crew="ADFU_pilot_dpcu";
-		typicalCargo[]=
-		{
-			"ADFU_pilot_dpcu",
-			"ADFU_pilot_dpcu"
-		};
-		availableForSupportTypes[]=
-		{
-			"Drop",
-			"Transport"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"HAFM_NH90\marine\marineouterHaul_co.paa",
-			"HAFM_NH90\marine\marineupperTail_co.paa",
-			"HAFM_NH90\marine\marinemisc_co.paa",
-			"HAFM_NH90\marine\marinedoors_co.paa"
-		};
-		class Damage
-		{
-			tex[]={};
-			mat[]=
-			{
-				"HAFM_NH90\marine\marineouterhaul.rvmat",
-				"HAFM_NH90\destruct\outerHaul_damage.rvmat",
-				"HAFM_NH90\destruct\outerHaul_destruct.rvmat",
-				"HAFM_NH90\Data\upperTail.rvmat",
-				"HAFM_NH90\destruct\upperTail_damage.rvmat",
-				"HAFM_NH90\destruct\upperTail_destruct.rvmat",
-				"HAFM_NH90\Data\Heli_Transport_01_glass.rvmat",
-				"A3\Air_F_Beta\Heli_Transport_01\Data\Heli_Transport_01_glass_damage.rvmat",
-				"A3\Air_F_Beta\Heli_Transport_01\Data\Heli_Transport_01_glass_damage.rvmat",
-				"HAFM_NH90\Data\innerHaul.rvmat",
-				"HAFM_NH90\destruct\innerHaul_damage.rvmat",
-				"HAFM_NH90\destruct\innerHaul_destruct.rvmat"
-			};
-		};
-	};
 	class MRH90Armed: MRH90
 	{
 		author="Aplion | Adapted by ADFRC";
