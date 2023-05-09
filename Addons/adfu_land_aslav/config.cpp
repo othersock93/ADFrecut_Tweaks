@@ -723,6 +723,174 @@ class CfgVehicles
 				weapon="ADFU_land_aslav_M242";
 			};
 		};
+		class Attributes
+		{
+			class PlatoonMarkings
+			{
+				//--- Mandatory properties
+				displayName = "Vehicle Callsigns";
+				tooltip = "The vehicle callsign shown on the sides and back of the vehicle";
+				property = "ADFU_PlatoonMarkings"; //Unique config property name saved in SQM
+				control = "Combo"; //UI control base class displayed in Edit Attributes window, points to Cfg3DEN >> Attributes
+
+				//Expression called when applying the attribute in Eden and at the scenario start
+				//The expression is called twice - first for data validation, and second for actual saving
+				//Entity is passed as _this, value is passed as _value
+				//%s is replaced by attribute config name. It can be used only once in the expression
+				//In MP scenario, the expression is called only on server.
+				expression = "_this setVariable ['%s', _value, true]; if (_value isEqualTo 0) exitWith {Nil}; if (_value < 10) then {_this setobjecttextureGlobal [2, format ['\adfu_land_aslav\data\labels\labels_0%1.paa', _value]]} else {_this setobjecttextureGlobal [2, format ['\adfu_land_aslav\data\labels\labels_%1.paa', _value]]};";
+
+				//Expression called when custom property is undefined yet (i.e., when setting the attribute for the first time)
+				//Entity (unit, group, marker, comment etc.) is passed as _this
+				//Returned value is the default value
+				//Used when no value is returned, or when it is of other type than NUMBER, STRING or ARRAY
+				//Custom attributes of logic entities (e.g., modules) are saved always, even when they have default value
+				defaultValue = 1;
+				
+				class Values 
+				{
+					class One {
+						name = "Send me to Takistan | 3-3";
+						tooltip = "Select this callsign";
+						value = 1;
+						picture = "\adfu_land_aslav\data\labels\labels_01.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_01.paa";
+					};
+					class Two: One {
+						name = "Adrenaline Rush | 11-A";
+						value = 2;
+						picture = "\adfu_land_aslav\data\labels\labels_02.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_02.paa";
+					};
+					class Three: One {
+						name = "Bullryder | 7-B";
+						value = 3;
+						picture = "\adfu_land_aslav\data\labels\labels_03.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_03.paa";
+					};
+					class Four: One {
+						name = "Achilles | 15-A";
+						value = 4;
+						picture = "\adfu_land_aslav\data\labels\labels_04.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_04.paa";
+					};
+					class Five: One {
+						name = "Agamemnon | 1-A";
+						value = 5;
+						picture = "\adfu_land_aslav\data\labels\labels_05.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_05.paa";
+					};
+					class Six: One {
+						name = "Angry Birds | 5-A";
+						value = 6;
+						picture = "\adfu_land_aslav\data\labels\labels_06.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_06.paa";
+					};
+					class Seven: One {
+						name = "Shebrolet | 4-S";
+						value = 7;
+						picture = "\adfu_land_aslav\data\labels\labels_07.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_07.paa";
+					};
+					class Eight: One {
+						name = "ANZAC Spirit | 8-A";
+						value = 8;
+						picture = "\adfu_land_aslav\data\labels\labels_08.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_08.paa";
+					};
+					class Nine: One {
+						name = "DILLIGAF | 2-D";
+						value = 9;
+						picture = "\adfu_land_aslav\data\labels\labels_09.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_09.paa";
+					};
+					class Ten: One {
+						name = "Cant help ya | 5-C";
+						value = 10;
+						picture = "\adfu_land_aslav\data\labels\labels_10.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_10.paa";
+					};
+					class Eleven: One {
+						name = "Courage | 15";
+						value = 11;
+						picture = "\adfu_land_aslav\data\labels\labels_11.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_11.paa";
+					};
+					class Twelve: One {
+						name = "Vandal | 11";
+						value = 12;
+						picture = "\adfu_land_aslav\data\labels\labels_12.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_12.paa";
+					};
+					class Thirteen: One {
+						name = "Tiny Teddy | 7";
+						value = 13;
+						picture = "\adfu_land_aslav\data\labels\labels_13.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_13.paa";
+					};
+					class Fourteen: One {
+						name = "The Sandgroper | 14";
+						value = 14;
+						picture = "\adfu_land_aslav\data\labels\labels_14.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_14.paa";
+					};
+					class Fifteen: One {
+						name = "Comalgo | 3";
+						value = 15;
+						picture = "\adfu_land_aslav\data\labels\labels_15.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_15.paa";
+					};
+					class Sixteen: One {
+						name = "Recon Redneck | 2";
+						value = 16;
+						picture = "\adfu_land_aslav\data\labels\labels_16.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_16.paa";
+					};
+					class Seventeen: One {
+						name = "Cerebral | 1";
+						value = 17;
+						picture = "\adfu_land_aslav\data\labels\labels_17.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_17.paa";
+					};
+					class Eighteen: One {
+						name = "Circle Work | 8";
+						value = 18;
+						picture = "\adfu_land_aslav\data\labels\labels_18.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_18.paa";
+					};
+					class Nineteen: One {
+						name = "Bollocks | 5";
+						value = 19;
+						picture = "\adfu_land_aslav\data\labels\labels_19.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_19.paa";
+					};
+					class Twenty: One {
+						name = "Hammer time | 31";
+						value = 20;
+						picture = "\adfu_land_aslav\data\labels\labels_20.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_20.paa";
+					};
+					class TwentyOne: One {
+						name = "NONE";
+						tooltip = "No callsign marking will be displayed.";
+						value = 21;
+						picture = "\adfu_land_aslav\data\labels\labels_21.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_21.paa";
+					};
+					class Zero: One {
+						name = "Random";
+						tooltip = "Choose the markings randomly.";
+						value = 0;
+					};
+				};
+
+				//--- Optional properties
+				unique = 0; // When 1, only one entity of the type can have the value in the mission (used for example for variable names or player control)
+				validate = "number"; // Validate the value before saving. If the value is not of given type e.g. "number", the default value will be set. Can be "none", "expression", "condition", "number" or "variable"
+				condition = "object"; // Condition for attribute to appear (see the table below)
+				typeName = "NUMBER"; // Defines data type of saved value, can be STRING, NUMBER or BOOL. Used only when control is "Combo", "Edit" or their variants
+			};
+		};
 	};
 	class ADFU_land_aslav: ADFU_land_aslav_base_F
 	{
