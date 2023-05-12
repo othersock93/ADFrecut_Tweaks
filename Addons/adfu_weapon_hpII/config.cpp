@@ -19,19 +19,6 @@ class CfgPatches
 		};
 	};
 };
-class CfgMagazines
-{
-	class 16Rnd_9x21_Mag;
-	class 10Rnd_9x19_Mag: 16Rnd_9x21_Mag
-	{
-		scope= 2;
-		scopeArsenal= 2;
-		displayName= "10 Round 9x19 Browning";
-		displayNameShort= "10 Rnd 9mm";
-		count= 10;
-		type= 1;
-	};
-};
 class MuzzleSlot;
 class CowsSlot;
 class PointerSlot;
@@ -60,9 +47,10 @@ class CfgWeapons
 		cursorSize = 1;
 		magazines[]=
 		{
-			"10Rnd_9x19_Mag"
+			"ADFRC_10Rnd_9x19_Mag"
 		};
 		reloadAction="GestureReloadPistol";
+		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1.0,1,10};
 		class WeaponSlotsInfo
 		{
 			mass=5;
