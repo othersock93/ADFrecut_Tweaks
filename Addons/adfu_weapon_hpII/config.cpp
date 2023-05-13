@@ -41,12 +41,16 @@ class CfgWeapons
 		model="\ADFU_weapon_hpII\ADFU_PISTOL_HPII.p3d";
 		picture="\ADFU_weapon_hpII\UI\gear_ADFU_HPII_x_ca.paa";
 		UiPicture="\A3\weapons_f\data\UI\icon_regular_CA.paa";
-		cursor="";
+		cursor = "hgun";
+		cursoraim = "cursorAim";
+		cursorAimOn = "";
+		cursorSize = 1;
 		magazines[]=
 		{
-			"16Rnd_9x21_Mag"
+			"ADFRC_10Rnd_9x19_Mag"
 		};
 		reloadAction="GestureReloadPistol";
+		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1.0,1,10};
 		class WeaponSlotsInfo
 		{
 			mass=5;
