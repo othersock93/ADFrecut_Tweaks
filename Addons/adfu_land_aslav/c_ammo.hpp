@@ -59,6 +59,13 @@ class cfgAmmo
 		cost = 50;
 		model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
+	class B_762x54_Tracer_Green;
+	class ADFU_land_ASLAV_762x51_Tracer: B_762x54_Tracer_Green
+	{
+		model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
+		tracerColor[] = {0.7,0.7,0.5,0.04};
+		tracerColorR[] = {0.7,0.7,0.5,0.04};
+	};
 };
 
 class cfgMagazines
@@ -66,6 +73,7 @@ class cfgMagazines
 	class 150Rnd_762x51_Box;
 	class ADFU_land_aslav_1000Rnd_762x51_Tracer: 150Rnd_762x51_Box {
 		scope = 1;
+		ammo = "ADFU_land_ASLAV_762x51_Tracer";
 		displayName = "1000 Round 7.62mm Tracer";
 		displayNameShort = "Tracer";
 		descriptionShort = "$STR_A3_CfgMagazines_150Rnd_762x51_Box_Tracer1";
@@ -75,6 +83,7 @@ class cfgMagazines
 	};
 	class ADFU_land_aslav_200rnd_762x51_Tracer: 150Rnd_762x51_Box{
 		scope = 1;
+		ammo = "ADFU_land_ASLAV_762x51_Tracer";
 		displayName = "200 Round 7.62mm Tracer";
 		displayNameShort = "Tracer";
 		descriptionShort = "$STR_A3_CfgMagazines_150Rnd_762x51_Box_Tracer1";
