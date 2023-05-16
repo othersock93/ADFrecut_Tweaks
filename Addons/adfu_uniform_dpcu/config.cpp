@@ -72,7 +72,7 @@ class cfgVehicles
 		scope=1;
 		author="$STR_ADFU_AUTHOR";
 		faction="ADFU";
-		editorSubcategory= "ADFU_MEN_DPCU";
+		editorSubcategory= "$STR_ADFU_MEN_DPCU";
 		genericNames="NATOMen";
 		nakedUniform="U_BasicBody";
 		uniformClass="ADFU_uniform_dpcu";
@@ -163,7 +163,7 @@ class cfgVehicles
 		author="$STR_ADFU_AUTHOR";
 		_generalMacro="ADFU_rifleman_dpcu";
 		displayName="Rifleman";
-		vehicleClass="ADFU_MEN_DPCU";
+		vehicleClass="$STR_ADFU_MEN_DPCU";
 		uniformAccessories[]={};
 		uniformClass="ADFU_uniform_dpcu";
 		hiddenSelections[]=
@@ -1331,7 +1331,7 @@ class cfgVehicles
 	{
 		scope=1;
 		author="$STR_ADFU_AUTHOR";
-		displayName="ADF Carryall LSW (DPCU)";
+		displayName="ADF Carryall MG (DPCU)";
 		hiddenSelectionsTextures[]=
 		{
 			"\ADFU_uniform_dpcu\data\carryall_DPCU_co.paa"
