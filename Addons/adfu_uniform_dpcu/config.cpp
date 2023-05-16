@@ -17,8 +17,8 @@ class CfgPatches
 			"ADFU_pilot_dpcu",
 			"ADFU_lightGunner_dpcu",
 			"ADFU_heavyGunner_dpcu",
+			"ADFU_heavyGunner_ass_dpcu",
 			"ADFU_ammobearer_dpcu",
-			"ADFU_ka60_dpcu",
 			"ADFU_ah9_dpcu",
 			"ADFU_mh9_dpcu",
 			"ADFU_hunter_dpcu",
@@ -26,10 +26,13 @@ class CfgPatches
 			"ADFU_hunterGMG_dpcu",
 			"ADFU_AssaultPack_dpcu",
 			"ADFU_Carryall_dpcu",
+			"ADFU_Carryall_LSW_dpcu",
+			"ADFU_Carryall_MG_dpcu",
 			"ADFU_Carryall_dpcu_diver",
 			"ADFU_Carryall_dpcu_medic",
 			"ADFU_Carryall_dpcu_engineer",
-			"ADFU_Carryall_dpcu_at"
+			"ADFU_Carryall_dpcu_at",
+			"ADFU_Carryall_gl_dpcu"
 		};
 		weapons[]=
 		{
@@ -1719,11 +1722,9 @@ class cfgWeapons
 };
 class CfgGroups
 {
-	class West
+	class WEST
 	{
-		name="BLUFOR";
-		side=1;
-		class ADF
+		class ADFU
 		{
 			name="ADF";
 			class Infantry
