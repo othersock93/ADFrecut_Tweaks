@@ -1275,7 +1275,7 @@ class cfgVehicles
 		faction="ADFU";
 		vehicleClass="CAR";
 		displayName="M-ATV (DPCU)";
-		crew="ADFU_crewman_dpcu";
+		crew="ADFU_rifleman_dpcu";
 		typicalCargo[]=
 		{
 			"ADFU_teamLeader_dpcu",
@@ -1298,7 +1298,7 @@ class cfgVehicles
 		faction="ADFU";
 		vehicleClass="CAR";
 		displayName="M-ATV HMG (DPCU)";
-		crew="ADFU_crewman_dpcu";
+		crew="ADFU_rifleman_dpcu";
 		typicalCargo[]=
 		{
 			"ADFU_teamLeader_dpcu",
@@ -1322,7 +1322,7 @@ class cfgVehicles
 		faction="ADFU";
 		vehicleClass="CAR";
 		displayName="M-ATV GMG (DPCU)";
-		crew="ADFU_crewman_dpcu";
+		crew="ADFU_rifleman_dpcu";
 		typicalCargo[]=
 		{
 			"ADFU_teamLeader_dpcu",
