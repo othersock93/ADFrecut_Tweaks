@@ -5,7 +5,13 @@ class CfgPatches
 		requiredAddons[] = {"A3_Weapons_F_Exp"};
 		requiredVersion = 0.1;
 		units[] = {};
-		weapons[] = {"arifle_SPAR_03_snd_F"};
+		weapons[] = 
+		{
+			"arifle_SPAR_03_snd_F",
+			"ADFU_weapon_hk417_base",
+			"ADFU_weapon_hk417_sand",
+			"ADFU_hk417_sand_army"
+		};
 	};
 };
 
@@ -20,6 +26,7 @@ class CfgWeapons
 {
 	class ADFU_weapon_hk417_base: arifle_SPAR_03_snd_F
 	{
+		scope=1;
 		class WeaponSlotsInfo;
 	};
 	class ADFU_weapon_hk417_sand: ADFU_weapon_hk417_base
