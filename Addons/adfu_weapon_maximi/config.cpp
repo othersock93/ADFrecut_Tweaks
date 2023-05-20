@@ -161,4 +161,22 @@ class CfgWeapons
 			};
 		};
 	};
+	class ADFU_maximi_eotech: ADFU_maximi
+	{
+		scope=2;
+		author="$STR_ADFU_AUTHOR";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				item="ADFU_eotech552";
+				slot="CowsSlot";
+			};
+			class LinkItemsPointer
+			{
+				item="acc_pointer_IR";
+				slot="PointerSlot"
+			};
+		};
+	};
 };

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Project name="Australian Defence Force: Uncut">
+<Project name="Australian Defence Force Re-Cut">
 	<Package name="ADFU_faction">
 		<Container name="General">
 			<Key ID="STR_ADFU_AUTHOR">
@@ -7,8 +7,8 @@
 					<English>ADF Re-Cut</English>
 			</Key>
 			<Key ID="STR_ADFU_TITLE">
-					<Original>Australian Defence Force: Re-Cut</Original>
-					<English>Australian Defence Force: Re-Cut</English>
+					<Original>Australian Defence Force Re-Cut</Original>
+					<English>Australian Defence Force Re-Cut</English>
 			</Key>
 			<Key ID="STR_ADFU_faction_NAME">
 					<Original>ADF</Original>
@@ -21,20 +21,20 @@
 		</Container>
 		<Container name="Vehicle_Classes">
 			<Key ID="STR_ADFU_MEN_DPCU">
-					<Original>Men (DPCU)</Original>
-					<English>Men (DPCU)</English>
+					<Original>Men (Australian Army)</Original>
+					<English>Men (Australian Army)</English>
 			</Key>
 			<Key ID="STR_ADFU_MEN_DPDU">
-					<Original>Men (DPDU)</Original>
-					<English>Men (DPDU)</English>
+					<Original>Men (2nd Commandos)</Original>
+					<English>Men (2nd Commandos)</English>
 			</Key>
 			<Key ID="STR_ADFU_MEN_MCAM">
 					<Original>Men (MultiCam)</Original>
 					<English>Men (MultiCam)</English>
 			</Key>
 			<Key ID="STR_ADFU_MEN_AMP">
-					<Original>Men (AMP)</Original>
-					<English>Men (AMP)</English>
+					<Original>Men (SASR)</Original>
+					<English>Men (SASR)</English>
 			</Key>
 			<Key ID="STR_ADFU_MEN_AMCU">
 					<Original>Men (AMCU)</Original>
