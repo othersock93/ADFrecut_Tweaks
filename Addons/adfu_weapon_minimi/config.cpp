@@ -334,4 +334,17 @@ class CfgWeapons
 			};
 		};
 	};
+	class ADFU_minimi_eotech: ADFU_minimi
+	{
+		scope=2;
+		author="$STR_ADFU_AUTHOR";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="ADFU_eotech552";
+			};
+		};
+	};
 };
