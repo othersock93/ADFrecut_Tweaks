@@ -686,7 +686,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class ADFU_F88SA1_eotech_laser: ADFU_F88SA1_gl
+	class ADFU_F88SA1_eotech_laser: ADFU_F88SA1
 	{
 		scope=1;
 		author="$STR_ADFU_AUTHOR";
