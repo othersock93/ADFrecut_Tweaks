@@ -1377,7 +1377,7 @@ class cfgWeapons
 	};
 	class V_PlateCarrierGL_rgr;
 	class V_PlateCarrier1_blk;
-	class ADFU_carrierlite_Sand: V_PlateCarrier1_blk
+	class ADFU_carrierlite_dpdu: V_PlateCarrier1_blk
 	{
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
