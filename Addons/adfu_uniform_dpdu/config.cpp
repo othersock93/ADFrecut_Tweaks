@@ -30,7 +30,7 @@ class CfgPatches
 			"ADFU_uniform_dpdu_medic",
 			"ADFU_uniform_dpdu_recon",
 			"ADFU_uniform_dpdu_pilot",
-			"ADFU_carrierlite_dpdu",
+			"ADFU_carrierlite_Sand",
 			"ADFU_tacticalvest_dpdu"
 		};
 		requiredVersion=0.1;
@@ -122,7 +122,7 @@ class cfgVehicles
 		linkedItems[]=
 		{
 			"ADFU_Helmet_Desert",
-			"ADFU_carrierlite_dpdu",
+			"ADFU_carrierlite_Sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -132,7 +132,7 @@ class cfgVehicles
 		respawnLinkedItems[]=
 		{
 			"ADFU_Helmet_Desert",
-			"ADFU_carrierlite_dpdu",
+			"ADFU_carrierlite_Sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -227,7 +227,7 @@ class cfgVehicles
 		linkedItems[]=
 		{
 			"ADFU_Helmet_Desert",
-			"ADFU_carrierlite_dpdu",
+			"ADFU_carrierlite_Sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -237,7 +237,7 @@ class cfgVehicles
 		respawnLinkedItems[]=
 		{
 			"ADFU_Helmet_Desert",
-			"ADFU_carrierlite_dpdu",
+			"ADFU_carrierlite_Sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -311,7 +311,7 @@ class cfgVehicles
 		linkedItems[]=
 		{
 			"ADFU_Helmet_Desert",
-			"ADFU_carrierlite_dpdu",
+			"ADFU_carrierlite_Sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -321,7 +321,7 @@ class cfgVehicles
 		respawnLinkedItems[]=
 		{
 			"ADFU_Helmet_Desert",
-			"ADFU_carrierlite_dpdu",
+			"ADFU_carrierlite_Sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -349,7 +349,7 @@ class cfgVehicles
 		linkedItems[]=
 		{
 			"ADFU_helmetB_dpdu",
-			"ADFU_platecarrier_dpdu",
+			"ADFU_platecarrier_Sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -359,7 +359,7 @@ class cfgVehicles
 		respawnLinkedItems[]=
 		{
 			"ADFU_helmetB_dpdu",
-			"ADFU_platecarrier_dpdu",
+			"ADFU_platecarrier_Sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -433,7 +433,7 @@ class cfgVehicles
 		linkedItems[]=
 		{
 			"ADFU_Helmet_Desert",
-			"ADFU_platecarrier_dpdu",
+			"ADFU_platecarrier_Sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -443,7 +443,7 @@ class cfgVehicles
 		respawnLinkedItems[]=
 		{
 			"ADFU_Helmet_Desert",
-			"ADFU_platecarrier_dpdu",
+			"ADFU_platecarrier_Sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -464,7 +464,7 @@ class cfgVehicles
 		linkedItems[]=
 		{
 			"ADFU_Helmet_Desert",
-			"ADFU_platecarrier_dpdu",
+			"ADFU_platecarrier_Sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -474,7 +474,7 @@ class cfgVehicles
 		respawnLinkedItems[]=
 		{
 			"ADFU_Helmet_Desert",
-			"ADFU_platecarrier_dpdu",
+			"ADFU_platecarrier_Sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -531,7 +531,7 @@ class cfgVehicles
 		linkedItems[]=
 		{
 			"ADFU_Helmet_Desert",
-			"ADFU_carrierlite_dpdu",
+			"ADFU_carrierlite_Sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -541,7 +541,7 @@ class cfgVehicles
 		respawnLinkedItems[]=
 		{
 			"ADFU_Helmet_Desert",
-			"ADFU_carrierlite_dpdu",
+			"ADFU_carrierlite_Sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -693,7 +693,7 @@ class cfgVehicles
 		linkedItems[]=
 		{
 			"ADFU_Helmet_Snake",
-			"ADFU_carrierlite_dpdu",
+			"ADFU_carrierlite_Sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -703,7 +703,7 @@ class cfgVehicles
 		respawnLinkedItems[]=
 		{
 			"ADFU_Helmet_Snake",
-			"ADFU_carrierlite_dpdu",
+			"ADFU_carrierlite_Sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -774,7 +774,7 @@ class cfgVehicles
 		linkedItems[]=
 		{
 			"ADFU_helmet_Snake",
-			"ADFU_carrierlite_dpdu",
+			"ADFU_carrierlite_Sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -784,7 +784,7 @@ class cfgVehicles
 		respawnLinkedItems[]=
 		{
 			"ADFU_helmet_Snake",
-			"ADFU_carrierlite_dpdu",
+			"ADFU_carrierlite_Sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -850,7 +850,7 @@ class cfgVehicles
 		linkedItems[]=
 		{
 			"ADFU_Helmet_Desert",
-			"ADFU_carrierlite_dpdu",
+			"ADFU_carrierlite_Sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -860,7 +860,7 @@ class cfgVehicles
 		respawnLinkedItems[]=
 		{
 			"ADFU_Helmet_Desert",
-			"ADFU_carrierlite_dpdu",
+			"ADFU_carrierlite_Sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -923,7 +923,7 @@ class cfgVehicles
 		linkedItems[]=
 		{
 			"ADFU_Helmet_Desert",
-			"ADFU_carrierlite_dpdu",
+			"ADFU_carrierlite_Sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -933,7 +933,7 @@ class cfgVehicles
 		respawnLinkedItems[]=
 		{
 			"ADFU_Helmet_Desert",
-			"ADFU_carrierlite_dpdu",
+			"ADFU_carrierlite_Sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -1377,7 +1377,7 @@ class cfgWeapons
 	};
 	class V_PlateCarrierGL_rgr;
 	class V_PlateCarrier1_blk;
-	class ADFU_carrierlite_dpdu: V_PlateCarrier1_blk
+	class ADFU_carrierlite_Sand: V_PlateCarrier1_blk
 	{
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
@@ -1415,7 +1415,7 @@ class CfgGroups
 		side=1;
 		class ADF
 		{
-			name="ADF";
+			name="ADF Commandos";
 			class Infantry
 			{
 				name="Infantry";
