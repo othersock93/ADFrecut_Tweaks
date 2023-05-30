@@ -7,5 +7,6 @@
 
 /* Configuration */
 class EventHandlers;
+#include "cfgWeapons.hpp"
 #include "cfgVehicles.hpp"
 #include "cfgNonAIVehicles.hpp"
