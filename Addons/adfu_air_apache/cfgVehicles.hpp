@@ -6,7 +6,7 @@ class CfgVehicles
     /* Bases */
 	class Heli_Attack_03_base_F: Helicopter_Base_F
     {
-        author = $STR_A3_A_AveryTheKitty;
+        author = "AveryTheKitty";
 		mapSize = 15.5;
 		class SpeechVariants
 		{
@@ -41,7 +41,7 @@ class CfgVehicles
         };
         
         /* RTD */
-        //#include "rtd.hpp"
+        #include "rtd.hpp"
 
         /* Handling */
 		fuelCapacity = 1400;
@@ -642,7 +642,6 @@ class CfgVehicles
         #include "mfd_driver.hpp"
 
         /* Weapons & Ammunition */
-		#include "CfgWeapons.hpp"
 		weapons[] = {CMFlareLauncher};
 		magazines[] = {192Rnd_CMFlare_Chaff_Magazine};
 
@@ -911,7 +910,7 @@ class CfgVehicles
 			class Muzzle_flash
 			{
 				source = ammorandom;
-				weapon = Gatling_30mm_Heli_Attack_03_F;
+				weapon = gatling_30mm;
 			};
         };
 
@@ -968,3 +967,4 @@ class CfgVehicles
     /* Factions */
     #include "cfgBLUFOR.hpp"    // BAF
 };
+#include "cfgWeapons.hpp"
