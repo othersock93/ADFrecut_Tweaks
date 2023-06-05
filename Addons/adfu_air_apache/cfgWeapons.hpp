@@ -5,14 +5,14 @@ class 1200Rnd_Gatling_30mm_Heli_Attack_03_F;
 class Gatling_30mm_HE_Plane_CAS_01_Yellow_F;
 class CfgWeapons
 {
-	class Gatling_30mm_Heli_Attack_03_F: CannonCore
+	class ADFU_Chaingun_30mm: CannonCore
 	{
-		scope = 1;
+		scope = 2;
 		displayName = "M230 Chaingun";
 		magazines[] =
 		{
-			1200Rnd_Gatling_30mm_Heli_Attack_03_F,
-			1200Rnd_Gatling_30mm_Heli_Attack_03_Yellow_F,
+			"ADFU_1200Rnd_Chaingun_30mm",
+			"ADFU_1200Rnd_Chaingun_30mm_Yellow",
 		};
 		canLock = false;
 		ballisticsComputer = BallisticsAutoZero + BallisticsManualZero + BallisticsFCS;
@@ -54,8 +54,17 @@ class CfgWeapons
 		};
 		class LowROF: Mode_FullAuto
 		{
-			displayName = $STR_A3_A_CfgWeapons_autocannon_30mm_Heli_Attack_030;
+			displayName = "Low ROF";
 			sounds[] = {StandardSound};
+			class BaseSoundModeType;
+            class StandardSound: BaseSoundModeType
+            {
+                soundSetShot[] =
+                {
+                    Autocannon30mmTurret_Shot_SoundSet,
+                    Autocannon30mmTurret_Tail_SoundSet
+                };
+            };
 			soundContinuous = false;
 			autoFire = true;
 			flash = gunfire;
@@ -147,10 +156,10 @@ class CfgWeapons
 class VehicleMagazine;
 class CfgMagazines
 {
-	class 1200Rnd_Gatling_30mm_Heli_Attack_03_F: 1000Rnd_Gatling_30mm_Plane_CAS_01_F
+	class ADFU_1200Rnd_Chaingun_30mm: 1000Rnd_Gatling_30mm_Plane_CAS_01_F
 	{
 		author = "ADF Re-Cut";
-		scope = public;
+		scope = 2;
 		displayName = "30 mm HE Shells";
 		count = 1200;
 		muzzleImpulseFactor[] =
@@ -159,11 +168,11 @@ class CfgMagazines
 			0.25     // Y
 		};
 	};
-	class 1200Rnd_Gatling_30mm_Heli_Attack_03_Yellow_F: 1200Rnd_Gatling_30mm_Heli_Attack_03_F
+	class ADFU_1200Rnd_Chaingun_30mm_Tracer: ADFU_1200Rnd_Chaingun_30mm
 	{
 		author = "ADF Re-Cut";
-		scope = public;
+		scope = 2;
 		displayName = "30 mm HE Tracer (Yellow) Shells";
-		ammo = Gatling_30mm_HE_Plane_CAS_01_Yellow_F;
+		ammo = "Gatling_30mm_HE_Plane_CAS_01_Yellow_F";
 	};
 };
