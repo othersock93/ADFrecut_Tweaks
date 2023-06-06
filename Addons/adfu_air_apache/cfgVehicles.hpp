@@ -20,7 +20,7 @@ class CfgVehicles
 		textPlural = $STR_A3_nameSound_veh_air_gunship_p;
 		nameSound = veh_air_gunship_s;
 		scope = private;
-		displayName = $STR_A3_A_CfgVehicles_Heli_Attack_03_base_F0;
+		displayName = "AH-64D Apache Longbow";
 		model = "\adfu_air_apache\Heli_Attack_03_F.p3d";
 		icon = "\adfu_air_apache\data\ui\Map_Heli_Attack_03_CA.paa";
 		picture = "\adfu_air_apache\data\ui\Heli_Attack_03_CA.paa";
@@ -678,18 +678,6 @@ class CfgVehicles
 				factions[] = {};
 			};
             */
-			class Indep
-			{
-				displayName = $STR_A3_TextureSources_Indep0;
-				author = $STR_A3_A_AveryTheKitty;
-				textures[] =
-				{
-                    "\adfu_air_apache\DataHeli_Attack_03_body_INDP_CO.paa",
-                    "\adfu_air_apache\DataHeli_Attack_03_details_INDP_CO.paa",
-                    "\adfu_air_apache\DataHeli_Attack_03_adds_INDP_CO.paa"
-				};
-				factions[] = {};
-			};
         };
 
         /* Textures */
