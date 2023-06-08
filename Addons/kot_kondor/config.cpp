@@ -29,6 +29,11 @@ class CfgGlasses
 		hiddenSelections[] = {"kondor"};
 		hiddenSelectionsTextures[] = {"\kot_kondor\data\kondor_blk_clr_CA.paa"};
 		author = "IT_Kotyara & Numbers Of Tarkov";
+		identityTypes[] =
+		{
+			"NoGlasses",0,"G_NATO_default",300,"G_NATO_casual",0,"G_NATO_pilot",0,"G_NATO_recon",50,"G_NATO_SF",300,"G_NATO_sniper",0,
+			"G_NATO_diver",0,"G_IRAN_default",0,"G_IRAN_diver",0,"G_GUERIL_default",00,"G_HAF_default",50,"G_CIVIL_female",0,"G_CIVIL_male",0
+		};
 		scopeCurator = 2;
 		mass = 1;
 	};
