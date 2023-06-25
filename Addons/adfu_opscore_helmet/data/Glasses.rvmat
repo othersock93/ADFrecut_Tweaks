@@ -7,7 +7,7 @@ specularPower = 2;
 PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1 {
-	texture = "adfu_opscore_helmet\data\glasses_NOHQ.paa";
+	texture = "adfu_helmets\data\glasses_NOHQ.paa";
 	uvSource = "tex";
 	class uvTransform {
 		aside[] = { 1, 0, 0 };
@@ -37,7 +37,7 @@ class Stage3 {
 	};
 };
 class Stage4 {
-	texture = "adfu_opscore_helmet\data\glasses_AS.paa";
+	texture = "adfu_helmets\data\glasses_AS.paa";
 	uvSource = "tex";
 	class uvTransform {
 		aside[] = { 1, 0, 0 };
@@ -47,7 +47,7 @@ class Stage4 {
 	};
 };
 class Stage5 {
-	texture = "adfu_opscore_helmet\data\helmet\glasses_SMDI.paa";
+	texture = "adfu_helmets\data\helmet\glasses_SMDI.paa";
 	uvSource = "tex";
 	class uvTransform {
 		aside[] = { 1, 0, 0 };
