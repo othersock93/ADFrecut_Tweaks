@@ -10,6 +10,16 @@ class asdg_OpticRail1913: asdg_OpticRail
 {
     class compatibleItems
     {
+		ADFU_elcan_c79 = 1;
+		ADFU_acog_ta648 = 1;
+		ADFU_acog_ta648_rds = 1;
+		ADFU_acog_ta648_t = 1;
+		ADFU_acog_ta648_rds_t = 1;
+		ADFU_acog_ta31 = 1;
+		ADFU_acog_ta31_t = 1;
+		ADFU_eotech552 = 1;
+		ADFU_eotech552_3XDOWN = 1;
+		ADFU_eotech552_3XUP = 1;
     };
 };
 class asdg_OpticRail1913_short;
