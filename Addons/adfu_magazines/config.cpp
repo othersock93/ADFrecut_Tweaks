@@ -39,10 +39,6 @@ class CfgPatches
 		{
 			"A3_Weapons_F"
 		};
-		author[]=
-		{
-			"ADF Re-Cut | ADF-UNCUT"
-		};
 		weapons[]={};
 		ammo[]=
 		{

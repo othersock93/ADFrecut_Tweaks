@@ -21,8 +21,8 @@
 		</Container>
 		<Container name="Vehicle_Classes">
 			<Key ID="STR_ADFU_MEN_DPCU">
-					<Original>Men (Australian Army)</Original>
-					<English>Men (Australian Army)</English>
+					<Original>Men (Army DPCU)</Original>
+					<English>Men (Army DPCU)</English>
 			</Key>
 			<Key ID="STR_ADFU_MEN_DPDU">
 					<Original>Men (2nd Commandos)</Original>
@@ -61,6 +61,10 @@
 			<Key ID="STR_ADFU_MARKER_ADFOPFOR">
 					<Original>Flag (ADF-OPFOR)</Original>
 					<English>Flag (ADF-OPFOR)</English>
+			</Key>
+			<Key ID="STR_A3_A_CfgVehicles_Plane_Transport_01_base_F0">
+					<Original>C-130 Hercules</Original>
+					<English>C-130 Hercules</English>
 			</Key>
 		</Container>
 	</Package>

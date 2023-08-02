@@ -888,7 +888,6 @@ class CfgVehicles
 		{
 			"ADFU_sasr_m4a5gl_acog",
 			"ADFU_weapon_usp_snds",
-			"ADFU_weapon_m72a6",
 			"Throw",
 			"Put"
 		};
@@ -896,7 +895,6 @@ class CfgVehicles
 		{
 			"ADFU_sasr_m4a5gl_acog",
 			"ADFU_weapon_usp_snds",
-			"ADFU_weapon_m72a6",
 			"Throw",
 			"Put"
 		};
@@ -1334,8 +1332,8 @@ class CfgVehicles
 	};
 	class ADFU_jetPilot_amp: ADFU_coveralls_tan_base
 	{
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		author="$STR_ADFU_AUTHOR";
 		editorSubcategory= "ADFU_MEN_AMP";
 		displayName="Pilot";
