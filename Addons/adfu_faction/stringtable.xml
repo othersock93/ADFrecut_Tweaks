@@ -62,6 +62,10 @@
 					<Original>Flag (ADF-OPFOR)</Original>
 					<English>Flag (ADF-OPFOR)</English>
 			</Key>
+			<Key ID="STR_A3_A_CfgVehicles_Plane_Transport_01_base_F0">
+					<Original>C-130 Hercules</Original>
+					<English>C-130 Hercules</English>
+			</Key>
 		</Container>
 	</Package>
 </Project>
