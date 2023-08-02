@@ -13,10 +13,7 @@ class CfgPatches
 		{
 			"A3_Soft_F"
 		};
-		author[]=
-		{
-			"ADF Re-Cut"
-		};
+		author= $STR_ADFU_AUTHOR;
 		version="0.4.5";
 		versionStr="0.4.5";
 		versionAr[]={0,4,5};
@@ -53,7 +50,7 @@ class CfgVehicles
 		Picture="ADFU_land_landrover\data\Picture_lr_CA.paa";
 		Icon="ADFU_land_landrover\data\Icon_lr_transport_CA.paa";
 		MapSize=6;
-		author="$STR_ADFU_AUTHOR";
+		author= $STR_ADFU_AUTHOR;
 		displayname="LandRover 4x4 Base";
 		hiddenSelections[]=
 		{
