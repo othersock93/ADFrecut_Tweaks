@@ -61,8 +61,9 @@ class CfgWeapons
 		};
 		handAnim[] =
 		{
-			OFP2_ManSkeleton,
-			"\A3\Weapons_F_beta\rifles\mk20\data\Anim\mk20.rtm"
+			"OFP2_ManSkeleton",
+			"\adfu_weapon_ef88\Data\Anim\AUG.rtm"
+			//"\A3\Weapons_F_beta\rifles\mk20\data\Anim\mk20.rtm"
 		};
 		descriptionShort = $STR_A3_A_CfgWeapons_arifle_AUG_base_F1;
 		reloadAction = "GestureReloadAUG";
@@ -264,8 +265,8 @@ class CfgWeapons
 		};
 		handAnim[] =
 		{
-			OFP2_ManSkeleton,
-			"\A3\Weapons_F_beta\Rifles\MK20\Data\Anim\mk20G.rtm"
+			"OFP2_ManSkeleton",
+			"\adfu_weapon_ef88\Data\Anim\AUG_GL.rtm"
 		};
 		inertia = 0.5;
 		dexterity = 1.6;
