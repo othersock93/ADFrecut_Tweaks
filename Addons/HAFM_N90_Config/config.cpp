@@ -236,6 +236,7 @@ class CfgVehicles
 		scope=2;
 		side=1;
 		faction="ADFU";
+		tf_RadioType = "TFAR_anarc210";
 		vehicleClass="Air";
 		AGM_FastRoping=1;
 		AGM_FastRoping_Positions[]=

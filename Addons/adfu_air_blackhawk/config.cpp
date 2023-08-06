@@ -110,6 +110,7 @@ class CfgVehicles
 		_generalMacro="ADFU_air_blackhawk_BASE";
 		side=1;
 		faction="ADFU";
+		tf_RadioType = "TFAR_anarc210";
 		vehicleClass="AIR";
 		mapSize=16.82;
 		driveOnComponent[]=

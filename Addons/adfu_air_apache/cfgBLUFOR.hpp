@@ -1,7 +1,7 @@
 /* ADF */
 class adfu_air_apache: Heli_Attack_03_base_F
 {
-    author = "ADF Re-Cut";
+    author = ADF Re-Cut;
 	displayName = "AH-64E Apache Guardian";
 	editorPreview = "adfu_air_apache\preview\adfu_air_apache.jpg";
 	scope = 2;
@@ -9,6 +9,7 @@ class adfu_air_apache: Heli_Attack_03_base_F
 	side = TWest;
 	faction = ADFU;
 	crew = ADFU_pilot_dpcu;
+	tf_RadioType = "TFAR_anarc210";
 	typicalCargo[] = {ADFU_pilot_dpcu};
     textureList[] = {ADF,1};
 	hiddenSelectionsTextures[] =

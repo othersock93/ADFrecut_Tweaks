@@ -77,6 +77,7 @@ class CfgVehicles
 		faction="ADFU";
 		side=1;
 		size=10;
+		tf_RadioType = "TFAR_rt1523g_big";
 		accuracy=0.25;
 		memoryPointTrackFLL="TrackFLL";
 		memoryPointTrackFLR="TrackFLR";

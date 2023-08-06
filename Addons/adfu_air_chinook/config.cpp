@@ -383,6 +383,7 @@ class CfgVehicles
 		mainRotorSpeed=1;
 		backRotorSpeed=1;
 		armor=30;
+		tf_RadioType = "TFAR_anarc210";
 		damageResistance=0.001;
 		disableSoundAttenuation=1;
 		destrType="DestructWreck";
