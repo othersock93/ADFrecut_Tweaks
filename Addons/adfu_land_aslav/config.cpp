@@ -182,6 +182,7 @@ class CfgVehicles
 		driverCanSee="4+8+2+32+16";
 		gunnerCanSee="4+2+8+32+16";
 		enableManualFire=0;
+		tf_RadioType = "TFAR_rt1523g";
 		alphaTracks=0.5;
 		memoryPointTrackFLL="stopa PLP";
 		memoryPointTrackFLR="stopa PLL";
@@ -414,6 +415,7 @@ class CfgVehicles
 						gunnerOpticsEffect[]={};
 						class ViewGunner: ViewGunner
 						{
+							attenuationEffectType = "OpenViewOut";
 						};
 						class ViewOptics: ViewOptics
 						{
@@ -523,13 +525,14 @@ class CfgVehicles
 				stabilizedInAxes=3;
 				gunnerForceOptics=1;
 				inGunnerMayFire=1;
-				outGunnerMayFire=1;
+				outGunnerMayFire=0;
 				gunnerOpticsModel="\A3\weapons_f\reticle\Optics_Gunner_02_F";
 				discreteDistance[]={100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
 				discreteDistanceInitIndex=2;
 				memoryPointGunnerOptics="gunnerview";
 				class ViewOptics: RCWSOptics
 				{
+					attenuationEffectType = "OpenViewOut";
 					visionMode[]=
 					{
 						"Normal",
@@ -1026,6 +1029,7 @@ class CfgVehicles
 						};
 						class ViewGunner
 						{
+							attenuationEffectType = "OpenViewOut";
 							initAngleX=5;
 							minAngleX=-65;
 							maxAngleX="+85";

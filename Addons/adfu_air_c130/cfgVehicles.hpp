@@ -8,7 +8,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		vehicleClass = Air;
-		displayName = $STR_A3_A_CfgVehicles_Plane_Transport_01_base_F0;
+		displayName = "C-130 Hercules";
 		author = "ADF Re-Cut";
 		simulation = airplaneX;
 		crewVulnerable = true;
@@ -30,6 +30,7 @@ class CfgVehicles
 		getInRadius = 2.5;
 		supplyRadius = 9;
 		transportSoldier = 54;
+		tf_RadioType = "TFAR_anarc210";
 		picture = "\adfu_air_c130\data\UI\Plane_Transport_01_CA.paa";
 		icon = "\adfu_air_c130\data\UI\Map_Plane_Transport_01_CA.paa";
 		mapSize = 25;

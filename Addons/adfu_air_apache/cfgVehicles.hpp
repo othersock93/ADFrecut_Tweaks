@@ -655,7 +655,7 @@ class CfgVehicles
 			class BAF
 			{
 				displayName = $STR_A3_A_TextureSources_BAF0;
-				author = $STR_A3_A_AveryTheKitty;
+				author = "AveryTheKitty";
 				textures[] =
 				{
                     "\adfu_air_apache\DataHeli_Attack_03_body_CO.paa",
@@ -668,7 +668,7 @@ class CfgVehicles
 			class Grey
 			{
 				displayName = $STR_A3_TextureSources_Grey0;
-				author = $STR_A3_A_AveryTheKitty;
+				author = "AveryTheKitty";
 				textures[] =
 				{
                     "\adfu_air_apache\DataHeli_Attack_03_body_grey_CO.paa",
@@ -678,6 +678,18 @@ class CfgVehicles
 				factions[] = {};
 			};
             */
+			class Indep
+			{
+				displayName = $STR_A3_TextureSources_Indep0;
+				author = "AveryTheKitty";
+				textures[] =
+				{
+                    "\adfu_air_apache\DataHeli_Attack_03_body_INDP_CO.paa",
+                    "\adfu_air_apache\DataHeli_Attack_03_details_INDP_CO.paa",
+                    "\adfu_air_apache\DataHeli_Attack_03_adds_INDP_CO.paa"
+				};
+				factions[] = {};
+			};
         };
 
         /* Textures */

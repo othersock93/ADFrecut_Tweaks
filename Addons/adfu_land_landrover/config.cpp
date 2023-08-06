@@ -52,6 +52,7 @@ class CfgVehicles
 		MapSize=6;
 		author= $STR_ADFU_AUTHOR;
 		displayname="LandRover 4x4 Base";
+		tf_RadioType = "TFAR_rt1523g";
 		hiddenSelections[]=
 		{
 			"camo1"
