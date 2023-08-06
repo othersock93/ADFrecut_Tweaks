@@ -41,7 +41,7 @@ class CfgVehicles
         };
         
         /* RTD */
-        //#include "rtd.hpp"
+        #include "rtd.hpp"
 
         /* Handling */
 		fuelCapacity = 1400;
