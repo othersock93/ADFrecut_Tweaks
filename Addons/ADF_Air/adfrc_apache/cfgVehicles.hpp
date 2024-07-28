@@ -44,10 +44,10 @@ class CfgVehicles
         //#include "rtd.hpp"
 
         /* Handling */
-		fuelCapacity = 1400;
+		fuelCapacity = 1420;
 		fuelConsumptionRate = 0.0366;
         #include "flightModel.hpp"
-        maxFordingDepth = 0.5;
+        maxFordingDepth = 0.6;
 		numberPhysicalWheels = 3;
 
         /* Crew */
