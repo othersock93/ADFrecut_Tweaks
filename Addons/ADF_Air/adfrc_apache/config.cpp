@@ -520,7 +520,7 @@ class CfgVehicles
                             DAGR,
                             B_SHIEKER,
                             UNI_SCALPEL,
-                            20MM_TWIN_CANNON,
+                            gatling_30mm_base,
                             B_ASRRAM_EJECTOR
                         };
 						UIposition[] =
@@ -539,7 +539,7 @@ class CfgVehicles
                             DAGR,
                             B_SHIEKER,
                             UNI_SCALPEL,
-                            20MM_TWIN_CANNON,
+                            gatling_30mm_base,
                             B_ASRRAM_EJECTOR
                         };
 						UIposition[] =
@@ -922,7 +922,7 @@ class CfgVehicles
 				};
 				magazines[] =
 				{
-					1200Rnd_Chaingun_30mm,
+					ADFRC_1200Rnd_Chaingun_30mm,
 					Laserbatteries
 				};
 		
