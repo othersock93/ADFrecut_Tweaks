@@ -48,7 +48,7 @@ class ADFRC_MicroT2_Down : ADFRC_MicroT2
 		author=Brucey;
 		picture="ADF_Weapons\adfrc_optics\T2\UI\T2_Mag_ca.paa";
 		uipicture="ADF_Weapons\adfrc_optics\T2\UI\T2_Mag_ca.paa";
-		model = "ADF_Weapons\adfrc_optics\T2\ADFRC_T2_Down.p3d";
+		model = "ADF_Weapons\adfrc_optics\T2\ADFRC_T2_Mag_Down.p3d";
 		scope =2;
 		descriptionShort = "Aimpoint T2";
 		
@@ -92,7 +92,7 @@ class ADFRC_MicroT2_Up : ADFRC_MicroT2
 		author=Brucey;
 		picture="ADF_Weapons\adfrc_optics\T2\UI\T2_Mag_ca.paa";
 		uipicture="ADF_Weapons\adfrc_optics\T2\UI\T2_Mag_ca.paa";
-		model = "ADF_Weapons\adfrc_optics\T2\ADFRC_T2_Up.p3d";
+		model = "ADF_Weapons\adfrc_optics\T2\ADFRC_T2_Mag_Up.p3d";
 		scope =2;
 		descriptionShort = "Aimpoint T2";
 		
@@ -107,9 +107,9 @@ class ADFRC_MicroT2_Up : ADFRC_MicroT2
 				{
 					opticsID = 1;
 					useModelOptics = 0;
-					opticsZoomMin = 3;
-					opticsZoomMax = 3.25;
-					opticsZoomInit = 0.75;
+					opticsZoomMin = 0.05;
+					opticsZoomMax = 1.25;
+					opticsZoomInit = 0.05;
 					memoryPointCamera = "eye";
 					opticsFlare = 0;
 					opticsDisablePeripherialVision = 0;
