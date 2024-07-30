@@ -88,8 +88,44 @@ class CfgGlasses
 		picture = "";
 		identityTypes[] = {};
 		mass = 1;
-		hiddenSelections[] = {""};
-		hiddenSelectionsTextures[] = {""};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"adf_gear\adfrc_facewear\data\balaclava_1_co.paa"};
+	};
+	class adfrc_facewear_Balaclava_amc_1: None
+	{
+		scope = 2;
+		author = "Exer | ADF Re-Cut";
+		displayname = "Balaclava (AMC)";
+		model = "ADF_Gear\adfrc_facewear\balaclava_1.p3d";
+		picture = "";
+		identityTypes[] = {};
+		mass = 1;
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"adf_gear\adfrc_facewear\data\balaclava_1_amcu_co.paa"};
+	};
+	class adfrc_facewear_Balaclava_tan_1: None
+	{
+		scope = 2;
+		author = "Exer | ADF Re-Cut";
+		displayname = "Balaclava (Tan)";
+		model = "ADF_Gear\adfrc_facewear\balaclava_1.p3d";
+		picture = "";
+		identityTypes[] = {};
+		mass = 1;
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"adf_gear\adfrc_facewear\data\balaclava_1_tan_co.paa"};
+	};
+	class adfrc_facewear_Balaclava_olv_1: None
+	{
+		scope = 2;
+		author = "Exer | ADF Re-Cut";
+		displayname = "Balaclava (Olive)";
+		model = "ADF_Gear\adfrc_facewear\balaclava_1.p3d";
+		picture = "";
+		identityTypes[] = {};
+		mass = 1;
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"adf_gear\adfrc_facewear\data\balaclava_1_olive_co.paa"};
 	};
 	
 	//Shemaghs
