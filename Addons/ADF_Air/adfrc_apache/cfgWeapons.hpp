@@ -1,19 +1,26 @@
+class gatling_30mm_base;
+class Mode_FullAuto;
+class Gatling_30mm_HE_Plane_CAS_01_Yellow_F;
+
 class CfgWeapons
 {
-    class gatling_30mm_base;
-    class Mode_FullAuto;
-
     class ADFRC_gatling_30mm_base: gatling_30mm_base
     {
         displayName = "Chain Gun M230 30mm";
-        magazines[] = {"ADFRC_1200Rnd_Chaingun_30mm"};
+        magazines[] =
+        {
+            "ADFRC_1200Rnd_Chaingun_30mm"
+        };
         modes[] = {"FullAuto"};
         cursorAim = "EmptyCursor";
-        canLock = 2; // Enable locking
+        canLock = 2;
         ballisticsComputer = "16";
         FCSMaxLeadSpeed = 27.778;
         FCSZeroingDelay = 1;
-        reloadMagazineSound[] = {"",1,1};
+        reloadMagazineSound[] = {"", 1, 1};
+        
+        weaponLockSystem = 2; // weapon locking using the T keybind
+        lockAcquire = 1; // the ability to lock onto targets
 
         class GunParticles
         {
@@ -40,43 +47,26 @@ class CfgWeapons
         class FullAuto: Mode_FullAuto
         {
             displayName = "Full Auto";
-            textureType = "fullAuto";
             reloadTime = 0.096;
             sounds[] = {"StandardSound"};
-            class BaseSoundModeType{};
+            class BaseSoundModeType {};
             class StandardSound: BaseSoundModeType
             {
                 soundSetShot[] =
                 {
-                    "Autocannon30mmTurret_Shot_SoundSet",
-                    "Autocannon30mmTurret_Tail_SoundSet"
+                    Autocannon30mmTurret_Shot_SoundSet,
+                    Autocannon30mmTurret_Tail_SoundSet
                 };
             };
             autoFire = 1;
             burst = 1;
-            minRange = 100;
-            minRangeProbab = 0.4;
+            minRange = 1000;
+            minRangeProbab = 0.03;
             midRange = 2000;
-            midRangeProbab = 0.3;
+            midRangeProbab = 0.02;
             maxRange = 3000;
-            maxRangeProbab = 0.2;
+            maxRangeProbab = 0.01;
             showToPlayer = 1;
-
-            // Distance lock logic
-            class TargetAcquisition
-            {
-                enabled = 1; // Enable target acquisition
-                maxLockDistance = 3000; // Max distance for target lock
-                lockOnTarget[] = {"Target_Distance"}; // Distance for locking
-                lockTime = 3; // Time to acquire lock
-                lockAngle = 5; // Maximum angle for lock
-                trackTarget = 1; // Track target once locked
-            };
-        };
-
-        class close: FullAuto
-        {
-            displayName = "Close";
         };
     };
 
@@ -86,7 +76,6 @@ class CfgWeapons
         scope = 2;
         displayName = "Chain Gun M230 30mm";
         muzzles[] = {"HEDP"};
-
         class HEDP: ADFRC_gatling_30mm_base
         {
             magazines[] = {"ADFRC_1200Rnd_Chaingun_30mm"};
@@ -94,10 +83,9 @@ class CfgWeapons
     };
 };
 
+class B_30mm_HE_Tracer_Red;
 class CfgAmmo
 {
-    class B_30mm_HE_Tracer_Red;
-
     class ADFRC_30mm_HEDP_T: B_30mm_HE_Tracer_Red
     {
         hit = 105;
@@ -110,11 +98,10 @@ class CfgAmmo
         tracerEndTime = 30;
         timeToLive = 30;
         typicalSpeed = 805;
-        laserlock = 0;
-        airlock = 0;
-        irlock = 0;
+        laserLock = 1; // laser locking capability
+        airLock = 1;   // air target locking capability
+        irLock = 1;    // IR target locking capability
         muzzleEffect = "";
-
         class CamShakeExplode
         {
             power = "(25*0.2)";
@@ -122,7 +109,6 @@ class CfgAmmo
             frequency = 20;
             distance = "((2 + 25^0.5)*8)";
         };
-
         class CamShakeHit
         {
             power = 50;
@@ -133,10 +119,9 @@ class CfgAmmo
     };
 };
 
+class VehicleMagazine;
 class CfgMagazines
 {
-    class VehicleMagazine;
-
     class ADFRC_1200Rnd_Chaingun_30mm: VehicleMagazine
     {
         author = "ADF Re-Cut";
@@ -150,7 +135,6 @@ class CfgMagazines
         tracersEvery = 1;
         nameSound = "cannon";
     };
-
     class ADFRC_1200Rnd_Chaingun_30mm_Tracer: ADFRC_1200Rnd_Chaingun_30mm
     {
         author = "ADF Re-Cut";
