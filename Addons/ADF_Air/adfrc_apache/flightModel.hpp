@@ -1,8 +1,7 @@
 /* General settings */ 
-    altFullForce = 3000;
+    altFullForce = 4000;
     altNoForce = 6000;
-    maxSpeed = 300;
-    maxVerticalSpeed = 10;
+    maxSpeed = 293;
     
 /* Main rotor settings */
     mainBladeCenter = rotor_center;
@@ -13,8 +12,7 @@
     tailBladeRadius = 1.395;
     
 /* Force coefficients */
-    liftForceCoef = 1.0;
-    aerodynamicForceCoef = 0.2;
+    liftForceCoef = 1.2;
     bodyFrictionCoef = 1.1;
     cyclicAsideForceCoef = 1.2;
     cyclicForwardForceCoef = 1.0;
