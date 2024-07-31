@@ -91,14 +91,14 @@ class CfgVehicles
         /* Handling */
 		fuelCapacity = 1420;
 		fuelConsumptionRate = 0.0366;
-        altFullForce = 4000;
-		altNoForce = 6400;
+        altFullForce = 3000;
+		altNoForce = 6000;
 		maxSpeed = 293;
 		mainBladeCenter = rotor_center;
 		mainBladeRadius = 7.315;
 		tailBladeCenter = rotor_02_center;
 		tailBladeRadius = 1.395;
-		liftForceCoef = 1.2;
+		liftForceCoef = 1.0;
 		bodyFrictionCoef = 1.1;
 		cyclicAsideForceCoef = 1.2;
 		cyclicForwardForceCoef = 1.0;

@@ -1,5 +1,5 @@
 /* General settings */ 
-    altFullForce = 4000;
+    altFullForce = 3000;
     altNoForce = 6000;
     maxSpeed = 293;
     
@@ -12,7 +12,7 @@
     tailBladeRadius = 1.395;
     
 /* Force coefficients */
-    liftForceCoef = 1.2;
+    liftForceCoef = 1.0;
     bodyFrictionCoef = 1.1;
     cyclicAsideForceCoef = 1.2;
     cyclicForwardForceCoef = 1.0;
