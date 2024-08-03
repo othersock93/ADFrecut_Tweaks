@@ -137,7 +137,7 @@ class cfgMagazines
 		displaynameshort = "25MM HE-T";
 		ammo = "ADFRC_aslav_25mm_HE";
 		tracersEvery = 1;
-		count = 360;
+		count = 300;
 	};
 	class 250Rnd_30mm_APDS_shells_Tracer_Red;
 	class ADFRC_aslav_360RND_25MM_AP: 250Rnd_30mm_APDS_shells_Tracer_Red
@@ -147,7 +147,7 @@ class cfgMagazines
 		displayNameShort = "25MM APDS-T";
 		ammo = "ADFRC_aslav_25mm_AP";
 		tracersEvery = 1;
-		count = 360;
+		count = 120;
 	};
 };
 
@@ -160,7 +160,7 @@ class cfgWeapons
 	class LMG_RCWS;
 	class MGun;
 	class ADFRC_aslav_coax: LMG_RCWS {
-		displayName = "COAXIAL MAG-58";
+		displayName = "MG 7.62mm Mag 58 Coax";
 		scope = 1;
 		magazines[]=
 		{
@@ -190,7 +190,7 @@ class cfgWeapons
 
 		class manual: MGun {
 			displayName = "7.62 mm";
-			reloadTime = 0.100000;
+			reloadTime = 0.0857;
 			dispersion = 0.001010;
 			sounds[] = {"StandardSound"};
 			class StandardSound
@@ -302,7 +302,7 @@ class cfgWeapons
 	};
 	class ADFRC_aslav_mag58: ADFRC_aslav_coax
 	{
-		displayName = "7.62MM FN MAG-58";
+		displayName = "MG 7.62mm Mag 58 Flex";
 		magazines[] = {"ADFRC_aslav_200Rnd_762x51_Tracer"};
 		ballisticsComputer = 0;
 
@@ -349,10 +349,10 @@ class cfgWeapons
 		};
 	};
 
-	displayName = "25mm M242";
+	displayName = "M242 25mm Bushmaster Chain Gun";
 	muzzles[] = {"AP","HE"};
 	class HE: autocannon_Base_F {
-		displayName = "M242 Bushmaster";
+		displayName = "M242 25mm Bushmaster Chain Gun";
 		magazines[] = {"ADFRC_aslav_360RND_25MM_HE","ADFRC_aslav_360RND_25MM_AP"};
 		magazineWell[] = {};
 		canlock = 0;
