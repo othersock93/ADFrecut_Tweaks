@@ -89,13 +89,13 @@ class CfgVehicles
 		};
 
         /* Handling */
-		fuelCapacity = 1420;
+		fuelCapacity = 1400;
 		fuelConsumptionRate = 0.0366;
         altFullForce = 3000;
 		altNoForce = 6000;
 		maxSpeed = 293;
 		mainBladeCenter = rotor_center;
-		mainBladeRadius = 7.315;
+		mainBladeRadius = 7.3;
 		tailBladeCenter = rotor_02_center;
 		tailBladeRadius = 1.395;
 		liftForceCoef = 1.0;
@@ -103,9 +103,9 @@ class CfgVehicles
 		cyclicAsideForceCoef = 1.2;
 		cyclicForwardForceCoef = 1.0;
 		backRotorForceCoef = 1.0;
-		mainRotorSpeed = 1;
+		mainRotorSpeed = -1;
 		backRotorSpeed = 3;
-        maxFordingDepth = 0.6;
+        maxFordingDepth = 0.5;
 		numberPhysicalWheels = 3;
 
         /* Crew */
@@ -521,7 +521,7 @@ class CfgVehicles
                             B_SHIEKER,
                             UNI_SCALPEL,
                             gatling_30mm_base,
-							B_ASRRAM_EJECTOR
+														B_ASRRAM_EJECTOR
                         };
 						UIposition[] =
                         {
@@ -540,7 +540,7 @@ class CfgVehicles
                             B_SHIEKER,
                             UNI_SCALPEL,
                             gatling_30mm_base,
-							B_ASRRAM_EJECTOR
+							              B_ASRRAM_EJECTOR
                         };
 						UIposition[] =
                         {
@@ -925,7 +925,7 @@ class CfgVehicles
 				};
 				magazines[] =
 				{
-					ADFRC_1200Rnd_Chaingun_30mm,
+					1200Rnd_Chaingun_30mm,
 					Laserbatteries
 				};
 		

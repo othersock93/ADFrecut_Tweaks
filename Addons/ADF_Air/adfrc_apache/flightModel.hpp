@@ -31,3 +31,18 @@
     maxVerticalStabilizerStress = 100000;
     stressDamagePerSec = 0.0033333332;
     retreatBladeStallWarningSpeed = 79.536;
+=======
+altFullForce = 4000;
+altNoForce = 6000;
+maxSpeed = 293;
+mainBladeCenter = rotor_center;
+mainBladeRadius = 7.3;
+tailBladeCenter = rotor_02_center;
+tailBladeRadius = 1;
+liftForceCoef = 1.2;
+bodyFrictionCoef = 1.1;
+cyclicAsideForceCoef = 1.2;
+cyclicForwardForceCoef = 1.0;
+backRotorForceCoef = 1.0;
+mainRotorSpeed = -1;
+backRotorSpeed = 3;

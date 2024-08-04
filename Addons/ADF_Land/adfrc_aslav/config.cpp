@@ -18,21 +18,21 @@ class CfgPatches
 		};
 		weapons[]=
 		{
-			"ADFRC_land_aslav_coax",
-			"ADFRC_land_aslav_mag58",
-			"ADFRC_land_aslav_M242"
+			"ADFRC_aslav_coax",
+			"ADFRC_aslav_mag58",
+			"ADFRC_aslav_M242"
 		};
 		magazines[]=
 		{
-			"ADFRC_land_aslav_1000Rnd_762x51_Tracer",
-			"ADFRC_land_aslav_200rnd_762x51_Tracer",
-			"ADFRC_land_aslav_360RND_25MM_HE",
-			"ADFRC_land_aslav_360RND_25MM_AP"
+			"ADFRC_aslav_1000Rnd_762x51_Tracer",
+			"ADFRC_aslav_200rnd_762x51_Tracer",
+			"ADFRC_aslav_360RND_25MM_HE",
+			"ADFRC_aslav_360RND_25MM_AP"
 		};
 		ammo[]=
 		{
-			"ADFRC_land_aslav_25mm_HE",
-			"ADFRC_land_aslav_25mm_AP"
+			"ADFRC_aslav_25mm_HE",
+			"ADFRC_aslav_25mm_AP"
 		};
 	};
 };
@@ -102,7 +102,6 @@ class CfgVehicles
 				};
 			};
 		};
-		class AnimationSources;
 	};
 	class APC_Wheeled_01_base_F: Wheeled_APC_F
 	{
@@ -110,8 +109,6 @@ class CfgVehicles
 		class MFD;
 		class ViewOptics;
 		class ViewPilot;
-		
-		class AnimationSources;
 		class Damage;
 		class Exhausts;
 		class NVGMarkers;
@@ -119,11 +116,7 @@ class CfgVehicles
 		class Markerlights;
 		class RenderTargets;
 		class compartmentsLights;
-		class TransportMagazines;
-		class TransportItems;
-		class TransportWeapons;
 		class VehicleTransport;
-		class TextureSources;
 		class EventHandlers;
 
 		class HitPoints
@@ -264,12 +257,26 @@ class CfgVehicles
 		fuelCapacity = 300;
 		hiddenSelections[]=
 		{
+			camo1,
+			camo2,
+			camo3,
+			camo4,
+			labels
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\ADF_Land\adfrc_aslav\data\A2data\body1\lavbody_co.paa",
-			"\ADF_Land\adfrc_aslav\data\A2data\body2\lavbody2_co.paa",
+			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture1_co.paa",
+			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture2_co.paa",
+			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture3_co.paa",
+			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture4_co.paa",
 			"\ADF_Land\adfrc_aslav\data\labels\labels_01.paa"
+		};
+		textureList[] =
+		{
+			Worn,1,
+			Arid,0,
+			Jungle,0,
+			Desert,0
 		};
 		class Damage
 		{
@@ -395,7 +402,7 @@ class CfgVehicles
 			soundSetsInt[] = {"DD6V53T_Turbo_EXT_SoundSet","DD6V53T_EngineBrake_EXT_SoundSet","DD6V53T_Engine_RPM0_INT_SoundSet","DD6V53T_Engine_RPM1_INT_SoundSet","DD6V53T_Engine_RPM2_INT_SoundSet","DD6V53T_Engine_RPM3_INT_SoundSet","DD6V53T_Engine_RPM4_INT_SoundSet","APC_Wheeled_01_Interior_Tone_Engine_Off_SoundSet", "APC_Wheeled_01_Interior_Tone_Engine_On_SoundSet", "APC_Wheeled_01_Rattling_INT_SoundSet", "APC_Wheeled_01_Stress_INT_SoundSet", "APC_Wheeled_01_Rain_INT_SoundSet", "APC_Wheeled_01_Tires_Rock_Fast_INT_SoundSet", "APC_Wheeled_01_Tires_Grass_Fast_INT_SoundSet", "APC_Wheeled_01_Tires_Sand_Fast_INT_SoundSet", "APC_Wheeled_01_Tires_Gravel_Fast_INT_SoundSet", "APC_Wheeled_01_Tires_Mud_Fast_INT_SoundSet", "APC_Wheeled_01_Tires_Asphalt_Fast_INT_SoundSet", "APC_Wheeled_01_Tires_Water_Fast_INT_SoundSet", "APC_Wheeled_01_Tires_Rock_Slow_INT_SoundSet", "APC_Wheeled_01_Tires_Grass_Slow_INT_SoundSet", "APC_Wheeled_01_Tires_Sand_Slow_INT_SoundSet", "APC_Wheeled_01_Tires_Gravel_Slow_INT_SoundSet", "APC_Wheeled_01_Tires_Mud_Slow_INT_SoundSet", "APC_Wheeled_01_Tires_Asphalt_Slow_INT_SoundSet", "APC_Wheeled_01_Tires_Water_Slow_INT_SoundSet", "APC_Wheeled_01_Tires_Turn_Hard_INT_SoundSet", "APC_Wheeled_01_Tires_Turn_Soft_INT_SoundSet", "APC_Wheeled_01_Tires_Brake_Hard_INT_SoundSet", "APC_Wheeled_01_Tires_Brake_Soft_INT_SoundSet"};
 			soundSetsExt[] = {"DD6V53T_Turbo_EXT_SoundSet","DD6V53T_EngineBrake_EXT_SoundSet","DD6V53T_Engine_RPM0_EXT_SoundSet","DD6V53T_Engine_RPM1_EXT_SoundSet","DD6V53T_Engine_RPM2_EXT_SoundSet","DD6V53T_Engine_RPM3_EXT_SoundSet","DD6V53T_Engine_RPM4_EXT_SoundSet","APC_Wheeled_01_Rattling_EXT_SoundSet", "APC_Wheeled_01_Stress_EXT_SoundSet", "APC_Wheeled_01_Rain_EXT_SoundSet", "APC_Wheeled_01_Tires_Rock_Fast_EXT_SoundSet", "APC_Wheeled_01_Tires_Grass_Fast_EXT_SoundSet", "APC_Wheeled_01_Tires_Sand_Fast_EXT_SoundSet", "APC_Wheeled_01_Tires_Gravel_Fast_EXT_SoundSet", "APC_Wheeled_01_Tires_Mud_Fast_EXT_SoundSet", "APC_Wheeled_01_Tires_Asphalt_Fast_EXT_SoundSet", "APC_Wheeled_01_Tires_Water_Fast_EXT_SoundSet", "APC_Wheeled_01_Tires_Rock_Slow_EXT_SoundSet", "APC_Wheeled_01_Tires_Grass_Slow_EXT_SoundSet", "APC_Wheeled_01_Tires_Sand_Slow_EXT_SoundSet", "APC_Wheeled_01_Tires_Gravel_Slow_EXT_SoundSet", "APC_Wheeled_01_Tires_Mud_Slow_EXT_SoundSet", "APC_Wheeled_01_Tires_Asphalt_Slow_EXT_SoundSet", "APC_Wheeled_01_Tires_Water_Slow_EXT_SoundSet", "APC_Wheeled_01_Tires_Turn_Hard_EXT_SoundSet", "APC_Wheeled_01_Tires_Turn_Soft_EXT_SoundSet", "APC_Wheeled_01_Tires_Brake_Hard_EXT_SoundSet", "APC_Wheeled_01_Tires_Brake_Soft_EXT_SoundSet"};
 		};
-		class AnimationSources: AnimationSources
+		class AnimationSources
 		{
 			class proxy
 			{
@@ -418,28 +425,28 @@ class CfgVehicles
 			class 20mm_muzzle_rot
 			{
 				source="ammorandom";
-				weapon="ADFRC_land_aslav_M242";//ADFRC_ASLAV_coax
+				weapon="ADFRC_aslav_M242";
 			};
 			class 20mm_muzzle_hide
 			{
 				source="reload";
-				weapon="ADFRC_land_aslav_M242";//ADFRC_ASLAV_coax
+				weapon="ADFRC_aslav_M242";
 			};
 			class 20mm_recoil
 			{
 				source="reload";
-				weapon="ADFRC_land_aslav_M242";//ADFRC_ASLAV_coax
+				weapon="ADFRC_aslav_M242";
 			};
 			class coax_muzzle_rot
 			{
 				source="ammorandom";
-				weapon="ADFRC_land_coax";//ADFRC_mag58_vehicle
+				weapon="ADFRC_land_coax";
 			};
 			class coax_muzzle_hide
 			{
 				source="reload";
-				weapon="ADFRC_land_coax";//ADFRC_mag58_vehicle
-			};
+				weapon="ADFRC_land_coax";
+			};/*
 			class MAG58_reloadMagazine
 			{
 				source="reloadMagazine";
@@ -469,7 +476,7 @@ class CfgVehicles
 			{
 				source="reload";
 				weapon="ADFRC_land_coax_mounted";//ADFRC_mag58_vehicle
-			};
+			};*/
 			class slat_armor
 			{
 				DisplayName="Slat Armour";
@@ -486,15 +493,143 @@ class CfgVehicles
 				initPhase=0;
 				author="ADFRC";
 			};
+			class net_hull
+			{
+				DisplayName="Hull Camouflage (Shaggy Dog)";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class net_turret
+			{
+				DisplayName="Turret Camouflage (Shaggy Dog)";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class net_roll_hull
+			{
+				DisplayName="Stowed Hull Camo Net";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class tools
+			{
+				DisplayName="Tools";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class tow_bar
+			{
+				DisplayName="Tow Bar";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class duke
+			{
+				DisplayName="AN/VLQ-12 Duke";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class hull_jerry
+			{
+				DisplayName="Hull Jerry";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class water_jerry
+			{
+				DisplayName="Water Jerry";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class stretcher
+			{
+				DisplayName="Stretcher";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class tow_cable
+			{
+				DisplayName="Front Tow Cable";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class tow_shackles
+			{
+				DisplayName="Recovery Shackles";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class net_roll_turret
+			{
+				DisplayName="Stowed Turret Camo Net";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class rack_gear_right
+			{
+				DisplayName="Turret Field Gear Right";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class rack_gear_rear
+			{
+				DisplayName="Turret Field Gear Rear (1)";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class rack_gear_left
+			{
+				DisplayName="Turret Field Gear Left";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class turret_jerrys
+			{
+				DisplayName="Turret Jerry Cans";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
 		};
 		class Attributes
 		{
-			/*class PlatoonMarkings
+			class PlatoonMarkings
 			{
 				//--- Mandatory properties
 				displayName = "Vehicle Callsigns";
 				tooltip = "The vehicle callsign shown on the sides and back of the vehicle";
-				property = "ADFU_PlatoonMarkings"; //Unique config property name saved in SQM
+				property = "ADFRC_PlatoonMarkings"; //Unique config property name saved in SQM
 				control = "Combo"; //UI control base class displayed in Edit Attributes window, points to Cfg3DEN >> Attributes
 
 				//Expression called when applying the attribute in Eden and at the scenario start
@@ -502,144 +637,144 @@ class CfgVehicles
 				//Entity is passed as _this, value is passed as _value
 				//%s is replaced by attribute config name. It can be used only once in the expression
 				//In MP scenario, the expression is called only on server.
-				expression = "_this setVariable ['%s', _value, true]; if (_value isEqualTo 0) exitWith {Nil}; if (_value < 10) then {_this setobjecttextureGlobal [2, format ['\adfu_land_aslav\data\labels\labels_0%1.paa', _value]]} else {_this setobjecttextureGlobal [2, format ['\adfu_land_aslav\data\labels\labels_%1.paa', _value]]};";
+				expression = "_this setVariable ['%s', _value, true]; if (_value isEqualTo 0) exitWith {Nil}; if (_value < 10) then {_this setobjecttextureGlobal [4, format ['\adf_land\adfrc_aslav\data\labels\labels_0%1.paa', _value]]} else {_this setobjecttextureGlobal [4, format ['\adf_land\adfrc_aslav\data\labels\labels_%1.paa', _value]]};";
 
 				//Expression called when custom property is undefined yet (i.e., when setting the attribute for the first time)
 				//Entity (unit, group, marker, comment etc.) is passed as _this
 				//Returned value is the default value
 				//Used when no value is returned, or when it is of other type than NUMBER, STRING or ARRAY
 				//Custom attributes of logic entities (e.g., modules) are saved always, even when they have default value
-				defaultValue = 1;
+				defaultValue = 0;
 				
 				class Values 
 				{
 					class One {
-						name = "Send me to Takistan | 3-3";
+						name = "Bullryder | 7B";
 						tooltip = "Select this callsign";
 						value = 1;
-						picture = "\adfu_land_aslav\data\labels\labels_01.paa";
-						pictureRight = "\adfu_land_aslav\data\labels\labels_01.paa";
+						picture = "\adf_land\adfrc_aslav\data\labels\labels_01.paa";
+						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_01.paa";
 					};
 					class Two: One {
-						name = "Adrenaline Rush | 11-A";
+						name = "Cerebral | 3A";
 						value = 2;
-						picture = "\adfu_land_aslav\data\labels\labels_02.paa";
-						pictureRight = "\adfu_land_aslav\data\labels\labels_02.paa";
+						picture = "\adf_land\adfrc_aslav\data\labels\labels_02.paa";
+						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_02.paa";
 					};
 					class Three: One {
-						name = "Bullryder | 7-B";
+						name = "Circle Work | 5A";
 						value = 3;
-						picture = "\adfu_land_aslav\data\labels\labels_03.paa";
-						pictureRight = "\adfu_land_aslav\data\labels\labels_03.paa";
+						picture = "\adf_land\adfrc_aslav\data\labels\labels_03.paa";
+						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_03.paa";
 					};
 					class Four: One {
-						name = "Achilles | 15-A";
+						name = "Bollocks | 11-A";
 						value = 4;
-						picture = "\adfu_land_aslav\data\labels\labels_04.paa";
-						pictureRight = "\adfu_land_aslav\data\labels\labels_04.paa";
+						picture = "\adf_land\adfrc_aslav\data\labels\labels_04.paa";
+						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_04.paa";
 					};
 					class Five: One {
-						name = "Agamemnon | 1-A";
+						name = "Comalgo | 2C";
 						value = 5;
-						picture = "\adfu_land_aslav\data\labels\labels_05.paa";
-						pictureRight = "\adfu_land_aslav\data\labels\labels_05.paa";
+						picture = "\adf_land\adfrc_aslav\data\labels\labels_05.paa";
+						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_05.paa";
 					};
 					class Six: One {
-						name = "Angry Birds | 5-A";
+						name = "Sandgroper | 15C";
 						value = 6;
-						picture = "\adfu_land_aslav\data\labels\labels_06.paa";
-						pictureRight = "\adfu_land_aslav\data\labels\labels_06.paa";
+						picture = "\adf_land\adfrc_aslav\data\labels\labels_06.paa";
+						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_06.paa";
 					};
 					class Seven: One {
-						name = "Shebrolet | 4-S";
+						name = "Courage | 12C";
 						value = 7;
-						picture = "\adfu_land_aslav\data\labels\labels_07.paa";
-						pictureRight = "\adfu_land_aslav\data\labels\labels_07.paa";
+						picture = "\adf_land\adfrc_aslav\data\labels\labels_07.paa";
+						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_07.paa";
 					};
 					class Eight: One {
-						name = "ANZAC Spirit | 8-A";
+						name = "Atomic | 13A";
 						value = 8;
-						picture = "\adfu_land_aslav\data\labels\labels_08.paa";
-						pictureRight = "\adfu_land_aslav\data\labels\labels_08.paa";
+						picture = "\adf_land\adfrc_aslav\data\labels\labels_08.paa";
+						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_08.paa";
 					};
 					class Nine: One {
-						name = "DILLIGAF | 2-D";
+						name = "Cannibal | 33B";
 						value = 9;
-						picture = "\adfu_land_aslav\data\labels\labels_09.paa";
-						pictureRight = "\adfu_land_aslav\data\labels\labels_09.paa";
+						picture = "\adf_land\adfrc_aslav\data\labels\labels_09.paa";
+						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_09.paa";
 					};
 					class Ten: One {
-						name = "Cant help ya | 5-C";
+						name = "Bourbon | 23B";
 						value = 10;
-						picture = "\adfu_land_aslav\data\labels\labels_10.paa";
-						pictureRight = "\adfu_land_aslav\data\labels\labels_10.paa";
+						picture = "\adf_land\adfrc_aslav\data\labels\labels_10.paa";
+						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_10.paa";
 					};
 					class Eleven: One {
-						name = "Courage | 15";
+						name = "Cant Help Ya | 21A";
 						value = 11;
-						picture = "\adfu_land_aslav\data\labels\labels_11.paa";
-						pictureRight = "\adfu_land_aslav\data\labels\labels_11.paa";
+						picture = "\adf_land\adfrc_aslav\data\labels\labels_11.paa";
+						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_11.paa";
 					};
 					class Twelve: One {
-						name = "Vandal | 11";
+						name = "ANZAC | 11A";
 						value = 12;
-						picture = "\adfu_land_aslav\data\labels\labels_12.paa";
-						pictureRight = "\adfu_land_aslav\data\labels\labels_12.paa";
+						picture = "\adf_land\adfrc_aslav\data\labels\labels_12.paa";
+						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_12.paa";
 					};
 					class Thirteen: One {
-						name = "Tiny Teddy | 7";
+						name = "Angry Bird | 9A";
 						value = 13;
-						picture = "\adfu_land_aslav\data\labels\labels_13.paa";
-						pictureRight = "\adfu_land_aslav\data\labels\labels_13.paa";
+						picture = "\adf_land\adfrc_aslav\data\labels\labels_13.paa";
+						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_13.paa";
 					};
 					class Fourteen: One {
-						name = "The Sandgroper | 14";
+						name = "Atlas | 13B";
 						value = 14;
-						picture = "\adfu_land_aslav\data\labels\labels_14.paa";
-						pictureRight = "\adfu_land_aslav\data\labels\labels_14.paa";
+						picture = "\adf_land\adfrc_aslav\data\labels\labels_14.paa";
+						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_14.paa";
 					};
 					class Fifteen: One {
-						name = "Comalgo | 3";
+						name = "Achilles | 22C";
 						value = 15;
-						picture = "\adfu_land_aslav\data\labels\labels_15.paa";
-						pictureRight = "\adfu_land_aslav\data\labels\labels_15.paa";
+						picture = "\adf_land\adfrc_aslav\data\labels\labels_15.paa";
+						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_15.paa";
 					};
 					class Sixteen: One {
-						name = "Recon Redneck | 2";
+						name = "Boomer | 31A";
 						value = 16;
-						picture = "\adfu_land_aslav\data\labels\labels_16.paa";
-						pictureRight = "\adfu_land_aslav\data\labels\labels_16.paa";
+						picture = "\adf_land\adfrc_aslav\data\labels\labels_16.paa";
+						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_16.paa";
 					};
-					class Seventeen: One {
+					/* Seventeen: One {
 						name = "Cerebral | 1";
 						value = 17;
-						picture = "\adfu_land_aslav\data\labels\labels_17.paa";
-						pictureRight = "\adfu_land_aslav\data\labels\labels_17.paa";
+						picture = "\adf_land\adfrc_aslav\data\labels\labels_17.paa";
+						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_17.paa";
 					};
 					class Eighteen: One {
 						name = "Circle Work | 8";
 						value = 18;
-						picture = "\adfu_land_aslav\data\labels\labels_18.paa";
-						pictureRight = "\adfu_land_aslav\data\labels\labels_18.paa";
+						picture = "\adf_land\adfrc_aslav\data\labels\labels_18.paa";
+						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_18.paa";
 					};
 					class Nineteen: One {
 						name = "Bollocks | 5";
 						value = 19;
-						picture = "\adfu_land_aslav\data\labels\labels_19.paa";
-						pictureRight = "\adfu_land_aslav\data\labels\labels_19.paa";
+						picture = "\adf_land\adfrc_aslav\data\labels\labels_19.paa";
+						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_19.paa";
 					};
 					class Twenty: One {
 						name = "Hammer time | 31";
 						value = 20;
-						picture = "\adfu_land_aslav\data\labels\labels_20.paa";
-						pictureRight = "\adfu_land_aslav\data\labels\labels_20.paa";
-					};
+						picture = "\adf_land\adfrc_aslav\data\labels\labels_20.paa";
+						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_20.paa";
+					};*/
 					class TwentyOne: One {
 						name = "NONE";
 						tooltip = "No callsign marking will be displayed.";
 						value = 21;
-						picture = "\adfu_land_aslav\data\labels\labels_21.paa";
-						pictureRight = "\adfu_land_aslav\data\labels\labels_21.paa";
+						picture = "\adf_land\adfrc_aslav\data\labels\labels_21.paa";
+						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_21.paa";
 					};
 					class Zero: One {
 						name = "Random";
@@ -653,11 +788,11 @@ class CfgVehicles
 				validate = "number"; // Validate the value before saving. If the value is not of given type e.g. "number", the default value will be set. Can be "none", "expression", "condition", "number" or "variable"
 				condition = "object"; // Condition for attribute to appear (see the table below)
 				typeName = "NUMBER"; // Defines data type of saved value, can be STRING, NUMBER or BOOL. Used only when control is "Combo", "Edit" or their variants
-			};*/
+			};
 		};
 		class EventHandlers: EventHandlers
 		{
-			init="(_this select 0) execVM ""\ADF_Land\adfrc_aslav\script\init.sqf""";
+			init = "(_this select 0) execVM ""\ADF_Land\adfrc_aslav\script\init.sqf""; if (local (_this select 0)) then {[(_this select 0), """", [], false] call bis_fnc_initVehicle;};";
 		};
 		class Exhausts
 		{
@@ -784,9 +919,29 @@ class CfgVehicles
 				hitpoint = "Headlight_Right";
 				selection = "Light_r";
 			};
-			class Tailights: Headlight_Left
+			class Light_Rear
 			{
 				selection="Light_Rear";
+				color[]={1,0,0};
+				ambient[]={0,0,0};
+				position="";
+				direction="";
+				hitpoint="";
+				size=0;
+			};
+			/*class Light_brake -------- To be fixed later
+			{
+				selection="Light_brake";
+				color[]={1,0,0};
+				ambient[]={0,0,0};
+				position="";
+				direction="";
+				hitpoint="";
+				size=0;
+			};
+			class Light_Reverse
+			{
+				selection="Light_Reverse";
 				color[]={0,0,0};
 				ambient[]={0,0,0};
 				position="";
@@ -818,7 +973,7 @@ class CfgVehicles
 				hitpoint = "High_Beam_Right";
 				selection = "High_Beam_Right";
 				flareSize = 1.5;
-			};
+			};*/
 		};
 		aggregateReflectors[] = {{"Headlight_Left","Headlight_Right"},{"High_Beam_Left","High_Beam_Right"}};
 		driverCompartments = "Compartment1";
@@ -902,7 +1057,7 @@ class CfgVehicles
 			class extend_waterSkid
 			{
 				userActionID=50;
-				displayName="Extend Water Skid";
+				displayName="Extend Trim Vane";
 				radius=3;
 				showIn3D=17;
 				priority=3;
@@ -914,7 +1069,7 @@ class CfgVehicles
 			class collapse_waterSkid: extend_waterSkid
 			{
 				userActionID=51;
-				displayName="Retract Water Skid";
+				displayName="Retract Trim Vane";
 				condition="((this DoorPhase 'waterSkid') > 0) AND Alive (this) and driver this == player";
 				statement="this animateDoor [""waterSkid"", 0]; playSound3D [""ADF_Land\adfrc_aslav\sound\skid_extend.ogg"", this, false,(this modelToWorld (this selectionPosition ""waterBlade_axis"")), 5, 1, 25]; ";
 			};
@@ -1019,7 +1174,7 @@ class CfgVehicles
 		{
 			class MAG58_Turret: MainTurret
 			{ 
-				weapons[] = {"ADFRC_land_aslav_mag58"};
+				weapons[] = {"ADFRC_aslav_mag58"};
 				magazines[] = {"200Rnd_556x45_Box_Tracer_Red_F", "200Rnd_556x45_Box_Tracer_Red_F", "200Rnd_556x45_Box_Tracer_Red_F", "200Rnd_556x45_Box_Tracer_Red_F", "200Rnd_556x45_Box_Tracer_Red_F", "200Rnd_556x45_Box_Tracer_Red_F", "200Rnd_556x45_Box_Tracer_Red_F", "200Rnd_556x45_Box_Tracer_Red_F"};
 				gunnerLeftHandAnimName = "MAG58_handleL";//MAG58_handleL
 				gunnerRightHandAnimName = "MAG58_handleR";//MAG58_handleR
@@ -1472,6 +1627,45 @@ class CfgVehicles
 			__EVAL(4500/7000), __EVAL(1800/7000),    // D5
 			__EVAL(5000/7000), __EVAL(2000/7000)
 		};
+		destrType="DestructWreck";
+		class textureSources
+		{
+			class Worn
+			{
+				author = "ADFRC_Quiggs";
+				displayName = "Standard";
+				factions[] = {"ADF"};
+				textures[] = {"ADF_Land\adfrc_aslav\data\ASLAV-25\texture1_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\texture2_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\texture3_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\texture4_co.paa"};
+			};
+			class Arid 
+			{
+				author = "ADFRC_Quiggs";
+				displayName = "Arid";
+				factions[] = {"ADF"};
+				textures[] = {"ADF_Land\adfrc_aslav\data\ASLAV-25\arid\texture1_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\arid\texture2_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\arid\texture3_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\arid\texture4_co.paa"};
+			};
+			class Jungle 
+			{
+				author = "ADFRC_Quiggs";
+				displayName = "Jungle";
+				factions[] = {"ADF"};
+				textures[] = {"ADF_Land\adfrc_aslav\data\ASLAV-25\jungle\texture1_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\jungle\texture2_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\jungle\texture3_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\jungle\texture4_co.paa"};
+			};
+			class Desert 
+			{
+				author = "ADFRC_Quiggs";
+				displayName = "Desert";
+				factions[] = {"ADF"};
+				textures[] = {"ADF_Land\adfrc_aslav\data\ASLAV-25\desert\texture1_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\desert\texture2_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\desert\texture3_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\desert\texture4_co.paa"};
+			};
+			class UN 
+			{
+				author = "ADFRC_Quiggs";
+				displayName = "UN Peacekeeping";
+				factions[] = {"ADF"};
+				textures[] = {"ADF_Land\adfrc_aslav\data\ASLAV-25\UN\texture1_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\UN\texture2_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\UN\texture3_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\worn\texture4_co.paa"};
+			};
+		};
 	};	
 	class ADFRC_ASLAV: ADFRC_ASLAV_base_F
 	{
@@ -1487,6 +1681,73 @@ class CfgVehicles
 		picture = "\ADF_Land\adfrc_aslav\data\UI\Picture_aslav_CA.paa";
 		Icon = "\ADF_Land\adfrc_aslav\data\UI\Icon_aslav_CA.paa";
 		crew = "ADFRC_crewman_dpcu";
+		textureList[] = {Worn,1};
+		hiddenSelectionsTextures[]=
+		{
+			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture1_co.paa",
+			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture2_co.paa",
+			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture3_co.paa",
+			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture4_co.paa"
+		};
+		animationList[]=
+		{
+			"net_roll_hull", 0.5,
+			"tools", 1,
+			"tow_bar", 0.15,
+			"hull_jerry", 1,
+			"water_jerry", 0.1,
+			"stretcher", 0.1,
+			"tow_cable", 0.3,
+			"tow_shackles", 0.8,
+			"net_roll_turret", 0.5,
+			"rack_gear_right", 0.5,
+			"rack_gear_rear", 0.5,
+			"rack_gear_left", 0.5,
+			"turret_jerrys", 0.3
+		};	
+	};
+	class ADFRC_ASLAV_UN: ADFRC_ASLAV_base_F
+	{
+		scope= 2;
+		scopeCurator= 2;
+		side= 1;
+		displayName ="ASLAV-25 (UN Peacekeeping)";
+		vehicleClass="Armoured";
+		author="$STR_ADF_AUTHOR";
+		faction ="ADF";
+		//editorPreview = "\ADF_Land\adfrc_aslav\data\ADFRC_aslav.jpg"; FIX THIS LATER
+		model = "\ADF_Land\adfrc_aslav\ADFRC_ASLAV_25";
+		picture = "\ADF_Land\adfrc_aslav\data\UI\Picture_aslav_CA.paa";
+		Icon = "\ADF_Land\adfrc_aslav\data\UI\Icon_aslav_CA.paa";
+		crew = "ADFRC_crewman_dpcu";
+		textureList[] = {UN,1};
+		hiddenSelectionsTextures[]=
+		{
+			"\ADF_Land\adfrc_aslav\data\ASLAV-25\UN\texture1_co.paa",
+			"\ADF_Land\adfrc_aslav\data\ASLAV-25\UN\texture2_co.paa",
+			"\ADF_Land\adfrc_aslav\data\ASLAV-25\UN\texture3_co.paa",
+			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture4_co.paa"
+		};
+		animationList[]=
+		{
+			"net_roll_hull", 0,
+			"tools", 1,
+			"tow_bar", 0.5,
+			"hull_jerry", 1,
+			"water_jerry", 1,
+			"stretcher", 1,
+			"tow_cable", 0.3,
+			"tow_shackles", 1,
+			"net_roll_turret", 0,
+			"rack_gear_right", 0.5,
+			"rack_gear_rear", 0.5,
+			"rack_gear_left", 0.5,
+			"turret_jerrys", 0.8
+		};
+		class EventHandlers: EventHandlers
+		{
+			init = "if (local (_this select 0)) then {[(_this select 0), """", [], false] call bis_fnc_initVehicle;};";
+		};
 	};
 };
 class CfgSoundShaders
