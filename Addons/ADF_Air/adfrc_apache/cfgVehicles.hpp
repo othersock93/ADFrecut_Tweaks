@@ -46,7 +46,7 @@ class CfgVehicles
         /* Handling */
 		fuelCapacity = 1420;
 		fuelConsumptionRate = 0.0366;
-        #include "flightModel.hpp"
+        include "flightModel.hpp"
         maxFordingDepth = 0.6;
 		numberPhysicalWheels = 3;
 
