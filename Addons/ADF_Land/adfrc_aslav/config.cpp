@@ -313,7 +313,7 @@ class CfgVehicles
 		{
 			class HitBody
 			{
-				armor = 1.2;
+				armor = 0.8;
 				material = -1;
 				name = "zbytek";
 				visual = "zbytek";
@@ -340,50 +340,42 @@ class CfgVehicles
 			class HitLFWheel: HitLFWheel
 			{
 				armor = 0.5;
-				passThrough=0;
-				name = "wheel_1_1_steering";
+				minimalHit = 0.02;
 			};
 			class HitLBWheel: HitLBWheel
 			{
 				armor = 0.5;
-				passThrough=0;
-				name = "wheel_1_4_steering";
+				minimalHit = 0.02;
 			};
 			class HitLMWheel: HitLMWheel
 			{
 				armor = 0.5;
-				passThrough=0;
-				name = "wheel_1_3_steering";
+				minimalHit = 0.02;
 			};
 			class HitLF2Wheel: HitLF2Wheel
 			{
 				armor = 0.5;
-				passThrough=0;
-				name = "wheel_1_2_steering";
+				minimalHit = 0.02;
 			};
 			class HitRFWheel: HitRFWheel
 			{
 				armor = 0.5;
-				passThrough=0;
-				name = "wheel_2_1_steering";
+				minimalHit = 0.02;
 			};
 			class HitRBWheel: HitRBWheel
 			{
 				armor = 0.5;
-				passThrough=0;
-				name = "wheel_2_4_steering";
+				minimalHit = 0.02;
 			};
 			class HitRMWheel: HitRMWheel
 			{
 				armor = 0.5;
-				passThrough=0;
-				name = "wheel_2_3_steering";
+				minimalHit = 0.02;
 			};
 			class HitRF2Wheel: HitRF2Wheel
 			{
 				armor = 0.5;
-				passThrough=0;
-				name = "wheel_2_2_steering";
+				minimalHit = 0.02;
 			};
 		};
 		driverAction="driver_apcwheeled2_out";
@@ -628,40 +620,6 @@ class CfgVehicles
 				animPeriod=0;
 				initPhase=0;
 				author="ADFRC";
-			};
-			class HitLFWheel
-			{
-				source = "Hit";
-				hitpoint = "HitLFWheel";
-				raw = 1;
-			};
-			class HitLF2Wheel: HitLFWheel
-			{
-				hitpoint = "HitLF2Wheel";
-			};
-			class HitRFWheel: HitLFWheel
-			{
-				hitpoint = "HitRFWheel";
-			};
-			class HitRF2Wheel: HitLFWheel
-			{
-				hitpoint = "HitRF2Wheel";
-			};
-			class HitLBWheel: HitLFWheel
-			{
-				hitpoint = "HitLBWheel";
-			};
-			class HitLMWheel: HitLFWheel
-			{
-				hitpoint = "HitLMWheel";
-			};
-			class HitRBWheel: HitLFWheel
-			{
-				hitpoint = "HitRBWheel";
-			};
-			class HitRMWheel: HitLFWheel
-			{
-				hitpoint = "HitRMWheel";
 			};
 		};
 		class Attributes

@@ -47,7 +47,7 @@ class CfgVehicles
 		fuelCapacity = 1400;
 		fuelConsumptionRate = 0.0366;
         #include "flightModel.hpp"
-        maxFordingDepth = 0.6;
+        maxFordingDepth = 0.5;
 		numberPhysicalWheels = 3;
 
         /* Crew */
@@ -442,73 +442,100 @@ class CfgVehicles
 				{
 					class PylonLeft1
 					{
-						attachment = "PylonMissile_1Rnd_AAA_missiles"; // ASRAAM missile
+						attachment = PylonMissile_1Rnd_AAA_missiles;
 						priority = 5;
-						hardpoints[] = {"B_ASRAAM"};
+						hardpoints[] = {B_ASRAAM};
 						turret[] = {0};
-						UIposition[] = {0.06, 0.4};  // X, Y
+						UIposition[] =
+                        {
+                            0.06,   // X
+                            0.4     // Y
+                        };
 					};
 					class PylonLeft2: PylonLeft1
 					{
-						attachment = "PylonRack_12Rnd_missiles"; // Hydra 70 rockets
+						attachment = PylonRack_12Rnd_missiles;
 						priority = 4;
-						hardpoints[] = {"DAR", "DAGR", "UNI_SCALPEL", "B_ASRRAM_EJECTOR"};
-						UIposition[] = {0.08, 0.35};  // X, Y
+						hardpoints[] =
+                        {
+                            DAR,
+                            DAGR,
+                            B_SHIEKER,
+                            UNI_SCALPEL,
+                            20MM_TWIN_CANNON,
+                            B_ASRRAM_EJECTOR
+                        };
+						UIposition[] =
+                        {
+                            0.08,   // X
+                            0.35    // Y
+                        };
 					};
 					class PylonLeft3: PylonLeft1
 					{
-						attachment = "PylonRack_4Rnd_LG_scalpel"; // Hellfire missile
+						attachment = PylonRack_4Rnd_LG_scalpel;
 						priority = 3;
-						hardpoints[] = {"DAR", "DAGR", "UNI_SCALPEL", "B_ASRRAM_EJECTOR"};
-						UIposition[] = {0.1, 0.3};  // X, Y
+						hardpoints[] =
+                        {
+                            DAR,
+                            DAGR,
+                            B_SHIEKER,
+                            UNI_SCALPEL,
+                            20MM_TWIN_CANNON,
+                            B_ASRRAM_EJECTOR
+                        };
+						UIposition[] =
+                        {
+                            0.1,    // X
+                            0.3     // Y
+                        };
 					};
 					class PylonRight3: PylonLeft3
 					{
 						mirroredMissilePos = 3;
-						UIposition[] = {0.59, 0.3};  // X, Y
+						UIposition[] =
+                        {
+                            0.59,   // X
+                            0.3     // Y
+                        };
 					};
 					class PylonRight2: PylonLeft2
 					{
 						mirroredMissilePos = 2;
-						UIposition[] = {0.62, 0.35};  // X, Y
+						UIposition[] =
+                        {
+                            0.62,   // X
+                            0.35    // Y
+                        };
 					};
 					class PylonRight1: PylonLeft1
 					{
 						mirroredMissilePos = 1;
-						UIposition[] = {0.64, 0.4};  // X, Y
+						UIposition[] =
+                        {
+                            0.64,   // X
+                            0.4     // Y
+                        };
 					};
 				};
 				class Presets
 				{
 					class Empty
 					{
-						displayName = "$STR_empty";
+						displayName = $STR_empty;
 						attachment[] = {};
 					};
 					class Default
 					{
-						displayName = "$STR_vehicle_default";
-						attachment[] =
-						{
-							"PylonMissile_1Rnd_AAA_missiles", // AA missile
-							"PylonRack_12Rnd_missiles", // DAR rockets
-							"PylonRack_4Rnd_LG_scalpel", // Hellfire missile
-							"PylonRack_4Rnd_LG_scalpel", // Hellfire missile
-							"PylonRack_12Rnd_missiles", // DAR rockets
-							"PylonMissile_1Rnd_AAA_missiles" // AA missile
-						};
-					};
-					class CAS
-					{
-						displayName = $STR_A3_CAS_PRESET_DISPLAYNAME;
+						displayName = $STR_vehicle_default;
 						attachment[] =
                         {
-							"PylonMissile_1Rnd_AAA_missiles," // AA missle
-                            "PylonRack_12Rnd_missiles," // DAR rockets
-							"PylonRack_4Rnd_LG_scalpel," // Skalpel
-                            "PylonRack_4Rnd_LG_scalpel," // Skalpel
-                            "PylonRack_12Rnd_missiles," //DAR rockets
-							"PylonMissile_1Rnd_AAA_missiles" // AA missle
+                            PylonMissile_1Rnd_AAA_missiles,
+                            PylonRack_12Rnd_missiles,
+                            PylonRack_4Rnd_LG_scalpel,
+                            PylonRack_4Rnd_LG_scalpel,
+                            PylonRack_12Rnd_missiles,
+                            PylonMissile_1Rnd_AAA_missiles
                         };
 					};
 					class AT
@@ -516,18 +543,30 @@ class CfgVehicles
 						displayName = $STR_A3_cfgmagazines_titan_at_dns;
 						attachment[] =
                         {
-							"PylonMissile_1Rnd_LG_scalpel," // Skalpel
-                            "PylonRack_12Rnd_missiles," // DAR Rockets
-							"PylonRack_12Rnd_missiles," // DAR Rockets
-							"PylonRack_12Rnd_missiles," // DAR Rockets
-                            "PylonRack_12Rnd_missiles," // DAR Rockets
-							"PylonMissile_1Rnd_LG_scalpel" // Skalpel
+                            PylonMissile_1Rnd_AAA_missiles,
+                            PylonRack_4Rnd_LG_scalpel,
+                            PylonRack_4Rnd_LG_scalpel,
+                            PylonRack_4Rnd_LG_scalpel,
+                            PylonRack_4Rnd_LG_scalpel,
+                            PylonMissile_1Rnd_AAA_missiles
+                        };
+					};
+					class CAS
+					{
+						displayName = $STR_A3_CAS_PRESET_DISPLAYNAME;
+						attachment[] =
+                        {
+                            PylonMissile_1Rnd_AAA_missiles,
+                            PylonRack_12Rnd_missiles,
+                            PylonRack_12Rnd_PG_missiles,
+                            PylonRack_12Rnd_PG_missiles,
+                            PylonRack_12Rnd_missiles,
+                            PylonMissile_1Rnd_AAA_missiles
                         };
 					};
 				};
 			};
-
-
+		};
 
         /* Pilot Camera */
 		driverWeaponsInfoType = RscOptics_Heli_Attack_01_pilot;
