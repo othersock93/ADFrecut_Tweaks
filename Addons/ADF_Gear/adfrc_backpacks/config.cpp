@@ -57,6 +57,13 @@ class CfgVehicles
 		displayName="ADF Assault Pack [DPCU]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\AssaultPack_DPCU_co.paa"};
 	};
+	class adfrc_assaultpack_dpdu: adfrc_assaultpack_black
+	{
+		scope = public;
+		author="$STR_ADFU_AUTHOR";
+		displayName="ADF Assault Pack [DPDU]";
+		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\AssaultPack_DPDU_co.paa"};
+	};
 	class adfrc_assaultpack_amc: adfrc_assaultpack_black
 	{
 		scope = public;
@@ -99,6 +106,12 @@ class CfgVehicles
 		scope = public;
 		displayName = "ADF Assault Pack Medic [DPCU]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\AssaultPack_DPCU_M_co.paa"};
+	};
+	class adfrc_assaultpack_dpdu_medic: adfrc_assaultpack_black_medic
+	{
+		scope = public;
+		displayName = "ADF Assault Pack Medic [DPDU]";
+		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\AssaultPack_DPDU_M_co.paa"};
 	};
 	
 
@@ -1115,7 +1128,7 @@ class CfgVehicles
       	author = "ADFU Team";
       	scope = 2;
       	model = "\ADF_Gear\adfrc_backpacks\bullock.p3d";
-      	displayname = "ADF Patrol Pack Bullock AMCU";
+      	displayname = "Patrol Pack Bullock AMCU";
       	picture = "\ADF_Gear\adfrc_backpacks\ui\bullock_ui.paa";
       	hiddenSelections[] = {"Camo", "Camo1"}; 							//"camo" = Base-Bag. camo1 = Radio
       	hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_backpacks\data\bullock_amcu_co.paa"};
@@ -1127,7 +1140,7 @@ class CfgVehicles
       	author = "ADFU Team";
       	scope = 2;
       	model = "\ADF_Gear\adfrc_backpacks\bullock.p3d";
-      	displayname = "ADF Patrol Pack Bullock MC";
+      	displayname = "Patrol Pack Bullock MC";
       	picture = "\ADF_Gear\adfrc_backpacks\ui\bullock_ui.paa";
       	hiddenSelections[] = {"Camo", "Camo1"}; 							//"camo" = Base-Bag. camo1 = Radio
       	hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_backpacks\data\bullock_mc_co.paa"};
@@ -1139,7 +1152,7 @@ class CfgVehicles
       	author = "ADFU Team";
       	scope = 2;
       	model = "\ADF_Gear\adfrc_backpacks\bullock.p3d";
-      	displayname = "ADF Patrol Pack Bullock DPDU";
+      	displayname = "Patrol Pack Bullock DPDU";
       	picture = "\ADF_Gear\adfrc_backpacks\ui\bullock_ui.paa";
       	hiddenSelections[] = {"Camo", "Camo1"}; 							//"camo" = Base-Bag. camo1 = Radio
       	hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_backpacks\data\bullock_dpdu_co.paa"};
@@ -1151,7 +1164,7 @@ class CfgVehicles
       	author = "ADFU Team";
       	scope = 2;
       	model = "\ADF_Gear\adfrc_backpacks\bullock.p3d";
-      	displayname = "ADF Patrol Pack Bullock DPCU";
+      	displayname = "Patrol Pack Bullock DPCU";
       	picture = "\ADF_Gear\adfrc_backpacks\ui\bullock_ui.paa";
       	hiddenSelections[] = {"Camo", "Camo1"}; 							//"camo" = Base-Bag. camo1 = Radio
       	hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_backpacks\data\bullock_dpcu_co.paa"};
@@ -1163,7 +1176,7 @@ class CfgVehicles
       	author = "ADFU Team";
       	scope = 2;
       	model = "\ADF_Gear\adfrc_backpacks\bullock.p3d";
-      	displayname = "ADF Patrol Pack Bullock Coyote";
+      	displayname = "Patrol Pack Bullock Coyote";
       	picture = "\ADF_Gear\adfrc_backpacks\ui\bullock_ui.paa";
       	hiddenSelections[] = {"Camo", "Camo1"}; 							//"camo" = Base-Bag. camo1 = Radio
       	hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_backpacks\data\bullock_coyote_co.paa"};
@@ -1176,7 +1189,7 @@ class CfgVehicles
       	author = "ADFU Team";
       	scope = 2;
       	model = "\ADF_Gear\adfrc_backpacks\bullock_177.p3d";
-      	displayname = "ADF Patrol Pack Bullock AMCU 177";
+      	displayname = "Patrol Pack Bullock AMCU 177";
       	picture = "\ADF_Gear\adfrc_backpacks\ui\bullock_177_ui.paa";
       	hiddenSelections[] = {"Camo", "Camo1"}; 							//"camo" = Base-Bag. camo1 = Radio
       	hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_backpacks\data\bullock_amcu_co.paa", "ADF_Gear\adfrc_backpacks\data\rdo_co.paa"};
@@ -1193,7 +1206,7 @@ class CfgVehicles
       	author = "ADFU Team";
       	scope = 2;
       	model = "\ADF_Gear\adfrc_backpacks\bullock_177.p3d";
-      	displayname = "ADF Patrol Pack Bullock MC 177";
+      	displayname = "Patrol Pack Bullock MC 177";
       	picture = "\ADF_Gear\adfrc_backpacks\ui\bullock_177_ui.paa";
       	hiddenSelections[] = {"Camo", "Camo1"}; 							//"camo" = Base-Bag. camo1 = Radio
       	hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_backpacks\data\bullock_mc_co.paa", "ADF_Gear\adfrc_backpacks\data\rdo_co.paa"};
@@ -1210,7 +1223,7 @@ class CfgVehicles
       	author = "ADFU Team";
       	scope = 2;
       	model = "\ADF_Gear\adfrc_backpacks\bullock_177.p3d";
-      	displayname = "ADF Patrol Pack Bullock DPCU 177";
+      	displayname = "Patrol Pack Bullock DPCU 177";
       	picture = "\ADF_Gear\adfrc_backpacks\ui\bullock_177_ui.paa";
       	hiddenSelections[] = {"Camo", "Camo1"}; 							//"camo" = Base-Bag. camo1 = Radio
       	hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_backpacks\data\bullock_dpcu_co.paa", "ADF_Gear\adfrc_backpacks\data\rdo_co.paa"};
@@ -1227,7 +1240,7 @@ class CfgVehicles
       	author = "ADFU Team";
       	scope = 2;
       	model = "\ADF_Gear\adfrc_backpacks\bullock_177.p3d";
-      	displayname = "ADF Patrol Pack Bullock DPDU 177";
+      	displayname = "Patrol Pack Bullock DPDU 177";
       	picture = "\ADF_Gear\adfrc_backpacks\ui\bullock_177_ui.paa";
       	hiddenSelections[] = {"Camo", "Camo1"}; 							//"camo" = Base-Bag. camo1 = Radio
       	hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_backpacks\data\bullock_dpdu_co.paa", "ADF_Gear\adfrc_backpacks\data\rdo_co.paa"};
@@ -1244,7 +1257,7 @@ class CfgVehicles
       	author = "ADFU Team";
       	scope = 2;
       	model = "\ADF_Gear\adfrc_backpacks\bullock_177.p3d";
-      	displayname = "ADF Patrol Pack Bullock Coyote 177";
+      	displayname = "Patrol Pack Bullock Coyote 177";
       	picture = "\ADF_Gear\adfrc_backpacks\ui\bullock_177_ui.paa";
       	hiddenSelections[] = {"Camo", "Camo1"}; 							//"camo" = Base-Bag. camo1 = Radio
       	hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_backpacks\data\bullock_coyote_co.paa", "ADF_Gear\adfrc_backpacks\data\rdo_co.paa"};
