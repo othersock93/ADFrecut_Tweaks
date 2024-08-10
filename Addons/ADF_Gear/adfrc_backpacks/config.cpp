@@ -20,6 +20,7 @@ class CfgVehicles
 	class B_Kitbag_Base;
 	class B_AssaultPack_blk;
 	class B_AssaultPack_rgr_Medic;
+	class ReammoBox;
 
 // ASSAULTPACKS
 	class adfrc_assaultpack_black: B_assaultpack_Base
@@ -1086,4 +1087,173 @@ class CfgVehicles
 			};
 		};
 	};
+// BULLOCK BAGS (THANKS PROJECT:UNCUT!)
+	class adfrc_Bullock_Base: ReammoBox
+	{
+		scope = 1;
+		class TransportMagazines {};
+		class TransportWeapons{};
+		reversed = 1;
+		vehicleClass = Backpacks;
+		mapSize = 2;
+		isbackpack = 1;
+		allowedSlots[] = {901};
+		model = "\ADF_Gear\adfrc_backpacks\bullock.p3d";
+		picture = "\ADF_Gear\adfrc_backpacks\ui\bullock_ui.paa";
+		displayName = "ADF Bag";
+		icon = "iconBackpack";
+		transportMaxMagazines = 20;
+		transportMaxWeapons = 1;
+		class DestructionEffects {};
+		hiddenSelections[] = {"Camo, Camo1"};
+		hiddenSelectionsTextures[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_small_co.paa"};
+		maximumLoad = 0;
+		side = 3;
+	};
+	class adfrc_patrol_bullock_amcu: adfrc_Bullock_Base
+	{
+      	author = "ADFU Team";
+      	scope = 2;
+      	model = "\ADF_Gear\adfrc_backpacks\bullock.p3d";
+      	displayname = "ADF Patrol Pack Bullock AMCU";
+      	picture = "\ADF_Gear\adfrc_backpacks\ui\bullock_ui.paa";
+      	hiddenSelections[] = {"Camo", "Camo1"}; 							//"camo" = Base-Bag. camo1 = Radio
+      	hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_backpacks\data\bullock_amcu_co.paa"};
+      	maximumLoad = 360;
+      	mass = 60;
+    };
+    class adfrc_patrol_bullock_mc: adfrc_Bullock_Base 
+	{
+      	author = "ADFU Team";
+      	scope = 2;
+      	model = "\ADF_Gear\adfrc_backpacks\bullock.p3d";
+      	displayname = "ADF Patrol Pack Bullock MC";
+      	picture = "\ADF_Gear\adfrc_backpacks\ui\bullock_ui.paa";
+      	hiddenSelections[] = {"Camo", "Camo1"}; 							//"camo" = Base-Bag. camo1 = Radio
+      	hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_backpacks\data\bullock_mc_co.paa"};
+      	maximumLoad = 360;
+      	mass = 60;
+    };
+    class adfrc_patrol_bullock_dpdu: adfrc_Bullock_Base 
+	{
+      	author = "ADFU Team";
+      	scope = 2;
+      	model = "\ADF_Gear\adfrc_backpacks\bullock.p3d";
+      	displayname = "ADF Patrol Pack Bullock DPDU";
+      	picture = "\ADF_Gear\adfrc_backpacks\ui\bullock_ui.paa";
+      	hiddenSelections[] = {"Camo", "Camo1"}; 							//"camo" = Base-Bag. camo1 = Radio
+      	hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_backpacks\data\bullock_dpdu_co.paa"};
+      	maximumLoad = 360;
+      	mass = 60;
+    };
+    class adfrc_patrol_bullock_dpcu: adfrc_Bullock_Base 
+	{
+      	author = "ADFU Team";
+      	scope = 2;
+      	model = "\ADF_Gear\adfrc_backpacks\bullock.p3d";
+      	displayname = "ADF Patrol Pack Bullock DPCU";
+      	picture = "\ADF_Gear\adfrc_backpacks\ui\bullock_ui.paa";
+      	hiddenSelections[] = {"Camo", "Camo1"}; 							//"camo" = Base-Bag. camo1 = Radio
+      	hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_backpacks\data\bullock_dpcu_co.paa"};
+      	maximumLoad = 360;
+      	mass = 60;
+    };
+    class adfrc_patrol_bullock_coyote: adfrc_Bullock_Base 
+	{
+      	author = "ADFU Team";
+      	scope = 2;
+      	model = "\ADF_Gear\adfrc_backpacks\bullock.p3d";
+      	displayname = "ADF Patrol Pack Bullock Coyote";
+      	picture = "\ADF_Gear\adfrc_backpacks\ui\bullock_ui.paa";
+      	hiddenSelections[] = {"Camo", "Camo1"}; 							//"camo" = Base-Bag. camo1 = Radio
+      	hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_backpacks\data\bullock_coyote_co.paa"};
+      	maximumLoad = 360;
+      	mass = 60;
+    };
+// BULLOCK RADIO BAGS (THANKS PROJECT:UNCUT!)
+	class adfrc_patrol_bullock_amcu_177: adfrc_Bullock_Base
+	{
+      	author = "ADFU Team";
+      	scope = 2;
+      	model = "\ADF_Gear\adfrc_backpacks\bullock_177.p3d";
+      	displayname = "ADF Patrol Pack Bullock AMCU 177";
+      	picture = "\ADF_Gear\adfrc_backpacks\ui\bullock_177_ui.paa";
+      	hiddenSelections[] = {"Camo", "Camo1"}; 							//"camo" = Base-Bag. camo1 = Radio
+      	hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_backpacks\data\bullock_amcu_co.paa", "ADF_Gear\adfrc_backpacks\data\rdo_co.paa"};
+      	maximumLoad = 360;
+      	mass = 60;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+    };
+    class adfrc_patrol_bullock_mc_177: adfrc_Bullock_Base
+	{
+      	author = "ADFU Team";
+      	scope = 2;
+      	model = "\ADF_Gear\adfrc_backpacks\bullock_177.p3d";
+      	displayname = "ADF Patrol Pack Bullock MC 177";
+      	picture = "\ADF_Gear\adfrc_backpacks\ui\bullock_177_ui.paa";
+      	hiddenSelections[] = {"Camo", "Camo1"}; 							//"camo" = Base-Bag. camo1 = Radio
+      	hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_backpacks\data\bullock_mc_co.paa", "ADF_Gear\adfrc_backpacks\data\rdo_co.paa"};
+      	maximumLoad = 360;
+      	mass = 60;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+    };
+    class adfrc_patrol_bullock_dpcu_177: adfrc_Bullock_Base
+	{
+      	author = "ADFU Team";
+      	scope = 2;
+      	model = "\ADF_Gear\adfrc_backpacks\bullock_177.p3d";
+      	displayname = "ADF Patrol Pack Bullock DPCU 177";
+      	picture = "\ADF_Gear\adfrc_backpacks\ui\bullock_177_ui.paa";
+      	hiddenSelections[] = {"Camo", "Camo1"}; 							//"camo" = Base-Bag. camo1 = Radio
+      	hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_backpacks\data\bullock_dpcu_co.paa", "ADF_Gear\adfrc_backpacks\data\rdo_co.paa"};
+      	maximumLoad = 360;
+      	mass = 60;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+    };
+    class adfrc_patrol_bullock_dpdu_177: adfrc_Bullock_Base
+	{
+      	author = "ADFU Team";
+      	scope = 2;
+      	model = "\ADF_Gear\adfrc_backpacks\bullock_177.p3d";
+      	displayname = "ADF Patrol Pack Bullock DPDU 177";
+      	picture = "\ADF_Gear\adfrc_backpacks\ui\bullock_177_ui.paa";
+      	hiddenSelections[] = {"Camo", "Camo1"}; 							//"camo" = Base-Bag. camo1 = Radio
+      	hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_backpacks\data\bullock_dpdu_co.paa", "ADF_Gear\adfrc_backpacks\data\rdo_co.paa"};
+      	maximumLoad = 360;
+      	mass = 60;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+    };
+    class adfrc_patrol_bullock_coyote_177: adfrc_Bullock_Base
+	{
+      	author = "ADFU Team";
+      	scope = 2;
+      	model = "\ADF_Gear\adfrc_backpacks\bullock_177.p3d";
+      	displayname = "ADF Patrol Pack Bullock Coyote 177";
+      	picture = "\ADF_Gear\adfrc_backpacks\ui\bullock_177_ui.paa";
+      	hiddenSelections[] = {"Camo", "Camo1"}; 							//"camo" = Base-Bag. camo1 = Radio
+      	hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_backpacks\data\bullock_coyote_co.paa", "ADF_Gear\adfrc_backpacks\data\rdo_co.paa"};
+      	maximumLoad = 360;
+      	mass = 60;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+    };  
 };
