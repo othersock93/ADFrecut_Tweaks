@@ -637,6 +637,7 @@ class cfgVehicles
 			"ItemRadio",
 			"NVGoggles"
 		};
+	};
 	class ADFRC_teamleader_dpdu: ADFRC_rifleman_dpdu
 	{
 		author=$STR_ADF_AUTHOR;
