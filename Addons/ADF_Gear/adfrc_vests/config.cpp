@@ -148,7 +148,7 @@ class cfgWeapons
 	{
 		scope=2;
 		author=$STR_ADF_AUTHOR;
-		displayName="ADF Tactical Vest (DPDU)";
+		displayName="ADF Tactical Vest [DPDU]";
 		hiddenSelections[]=
 		{
 			"camo"
