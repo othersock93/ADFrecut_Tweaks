@@ -36,6 +36,7 @@ class WeaponCloudsGun;
 class WeaponFireMGun;
 class WeaponCloudsMGun;
 class RCWSOptics;
+class ACE_SelfActions;
 class ExhaustEffect_BushmasterRefract
 {
 	class ExhaustsEffectRefract01
@@ -1767,6 +1768,29 @@ class CfgVehicles
 		{
 			init="if (local (_this select 0)) then {[(_this select 0), """", [], false] call bis_fnc_initVehicle;};";
 		};
+		tf_RadioType = "TFAR_rt1523g_big";
+		tf_hasLRradio = 1;  // 1 = true, 0 = false
+		tf_isolatedAmount = 0.2;
+		tfar_additionalLR_cargo[] = {0, 1};
+		tfar_hasIntercom = 1;
+		class ACE_SelfActions : ACE_SelfActions {      
+			class TFAR_IntercomChannel {
+				displayName = "Intercom";
+				condition = "true";
+				statement = "";
+				icon = "";
+				class TFAR_IntercomChannel_disabled {
+					displayName = "Disable";
+					condition = "((vehicle ACE_Player) getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],0]) != -1";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)], -1, true];";
+				};
+				class TFAR_IntercomChannel_1 {
+					displayName = "Crew";
+					condition = "((vehicle ACE_Player) getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],0]) != 0";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)], 0, true];";
+				};
+			};
+		};
 	};
 	class adfrc_bushmaster_unarmed_F: adfrc_bushmaster_base_F
 	{
@@ -1822,13 +1846,13 @@ class CfgVehicles
 			"show_ant_high_1_2",
 			0.5,
 			"show_ammobox_01",
-			1,
+			0.5,
 			"show_ammobox_02",
-			1,
+			0.5,
 			"show_ammobox_03",
-			1,
+			0.5,
 			"show_ammobox_04",
-			1,
+			0.5,
 			"show_jerrycan_01",
 			0.5,
 			"show_jerrycan_02",
@@ -2300,6 +2324,82 @@ class CfgVehicles
 			1,
 			"show_ant_high_1_1",
 			0.5,
+			"show_ant_high_1_2",
+			0.5,
+			"show_ammobox_01",
+			1,
+			"show_ammobox_02",
+			1,
+			"show_ammobox_03",
+			1,
+			"show_ammobox_04",
+			1,
+			"show_jerrycan_01",
+			0.5,
+			"show_jerrycan_02",
+			0.5,
+			"show_jerrycan_03",
+			0.5,
+			"show_jerrycan_04",
+			0.5
+		};
+	};
+	class adfrc_bushmaster_unarmed_mev_F: adfrc_bushmaster_unarmed_F
+	{
+		scope=2;
+		scopeCurator=2;
+		displayName="Bushmaster Transport Medivac";
+		editorPreview="\bma3\bma3_bushmaster_data\adfrc_bushmaster_unarmed_command_F.jpg";
+		model="bma3\bma3_bushmaster\bma3_bushmaster_unarmed.p3d";
+		Icon="\bma3\bma3_bushmaster_data\ui\bushmaster_map_unarmed_command.paa";
+		author="P1NGA | Quiggs | Bones";
+		attendant = 1;
+		textureList[]=
+		{
+			"adf_med_001",1
+		};
+		animationList[]=
+		{
+			"show_ecm",
+			0,
+			"show_shovel",
+			0.5,
+			"show_fireaxe",
+			0.5,
+			"show_arm",
+			0.5,
+			"show_extension",
+			0.5,
+			"show_winch",
+			1,
+			"show_cover",
+			0.5,
+			"show_spare",
+			1,
+			"show_ant_powered",
+			1,
+			"show_ant_low_3_1",
+			1,
+			"show_ant_low_3_2",
+			1,
+			"show_ant_high_3_1",
+			0.5,
+			"show_ant_high_3_2",
+			0.5,
+			"show_ant_low_2_1",
+			1,
+			"show_ant_low_2_2",
+			1,
+			"show_ant_high_2_1",
+			0.5,
+			"show_ant_high_2_2",
+			0.5,
+			"show_ant_low_1_1",
+			0,
+			"show_ant_low_1_2",
+			1,
+			"show_ant_high_1_1",
+			0,
 			"show_ant_high_1_2",
 			0.5,
 			"show_ammobox_01",
