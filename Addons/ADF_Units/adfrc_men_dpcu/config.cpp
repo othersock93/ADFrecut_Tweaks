@@ -703,6 +703,10 @@ class cfgVehicles
 			"ADFRC_30Rnd_aug",
 			"ADFRC_30Rnd_aug",
 			"16Rnd_9x21_Mag",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
 			"ADFRC_F1_GRENADE",
 			"ADFRC_F1_GRENADE",
 			"SmokeShell",
@@ -719,6 +723,10 @@ class cfgVehicles
 			"ADFRC_30Rnd_aug",
 			"ADFRC_30Rnd_aug",
 			"16Rnd_9x21_Mag",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
 			"ADFRC_F1_GRENADE",
 			"ADFRC_F1_GRENADE",
 			"SmokeShell",
@@ -1293,11 +1301,13 @@ class cfgWeapons
 };
 class CfgGroups
 {
-	class WEST
+	class West
 	{
-		class ADFU
+		name="BLUFOR";
+		side=1;
+		class ADF
 		{
-			name="ADF";
+			name="Australian Army (2000-2008)";
 			class Infantry
 			{
 				name="Infantry";
@@ -1312,57 +1322,64 @@ class CfgGroups
 					{
 						side=1;
 						vehicle="ADFRC_squadleader_dpcu";
-						rank="LIEUTENANT";
-						position[]={0,-7.5,0};
+						rank="CORPORAL";
+						position[]={0,0,0};
 					};
 					class Unit1
 					{
 						side=1;
-						vehicle="ADFRC_teamleader_dpcu";
-						rank="SERGEANT";
-						position[]={5,0,0};
+						vehicle="ADFRC_rifleman_dpcu";
+						rank="PRIVATE";
+						position[]={5,-5,0};
 					};
 					class Unit2
 					{
 						side=1;
-						vehicle="ADFRC_lightgunner_dpcu";
-						rank="CORPORAL";
-						position[]={-5,0,0};
+						vehicle="ADFRC_grenadier_dpcu";
+						rank="PRIVATE";
+						position[]={-5,-5,0};
 					};
 					class Unit3
 					{
 						side=1;
-						vehicle="ADFRC_riflemanAT_dpcu";
-						rank="PRIVATE";
-						position[]={10,-5,0};
+						vehicle="ADFRC_teamleader_dpcu";
+						rank="CORPORAL";
+						position[]={15,-10,0};
 					};
 					class Unit4
 					{
 						side=1;
-						vehicle="ADFRC_medic_dpcu";
+						vehicle="ADFRC_lightGunner_dpcu";
 						rank="CORPORAL";
-						position[]={-10,-5,0};
+						position[]={20,-15,0};
 					};
 					class Unit5
 					{
 						side=1;
-						vehicle="ADFRC_ammobearer_dpcu";
+						vehicle="ADFRC_riflemanAT_dpcu";
 						rank="PRIVATE";
-						position[]={15,-10,0};
+						position[]={10,-15,0};
 					};
 					class Unit6
 					{
 						side=1;
-						vehicle="ADFRC_grenadier_dpcu";
+						vehicle="ADFRC_rifleman_dpcu";
 						rank="PRIVATE";
 						position[]={-15,-10,0};
 					};
 					class Unit7
 					{
 						side=1;
-						vehicle="ADFRC_rifleman_dpcu";
+						vehicle="ADFRC_lightGunner_dpcu";
 						rank="PRIVATE";
-						position[]={0,5,0};
+						position[]={-20,-15,0};
+					};
+					class Unit8
+					{
+						side=1;
+						vehicle="ADFRC_riflemanAT_dpcu";
+						rank="PRIVATE";
+						position[]={-10,-15,0};
 					};
 				};
 				class ADFRC_InfTeam_DPCU
@@ -1384,21 +1401,21 @@ class CfgGroups
 						side=1;
 						vehicle="ADFRC_lightGunner_dpcu";
 						rank="CORPORAL";
-						position[]={0,-5,0};
+						position[]={5,-5,0};
 					};
 					class Unit2
 					{
 						side=1;
 						vehicle="ADFRC_grenadier_dpcu";
 						rank="PRIVATE";
-						position[]={0,-10,0};
+						position[]={-5,-5,0};
 					};
 					class Unit3
 					{
 						side=1;
 						vehicle="ADFRC_ammobearer_dpcu";
 						rank="PRIVATE";
-						position[]={0,-15,0};
+						position[]={10,-10,0};
 					};
 				};
 				class ADFRC_ReconSquad_DPCU
@@ -1449,84 +1466,106 @@ class CfgGroups
 						side=1;
 						vehicle="ADFRC_squadleader_dpcu";
 						rank="LIEUTENANT";
-						position[]={0,-7.5,0};
+						position[]={0,0,0};
 					};
 					class Unit1
 					{
 						side=1;
 						vehicle="ADFRC_heavyGunner_dpcu";
 						rank="CORPORAL";
-						position[]={5,0,0};
+						position[]={5,-5,0};
 					};
 					class Unit2
 					{
 						side=1;
 						vehicle="ADFRC_heavyGunner_ass_dpcu";
 						rank="PRIVATE";
-						position[]={10,0,0};
+						position[]={0,-5,0};
 					};
 					class Unit3
 					{
 						side=1;
 						vehicle="ADFRC_medic_dpcu";
 						rank="PRIVATE";
-						position[]={10,-5,0};
+						position[]={-5,-5,0};
 					};
 					class Unit4
 					{
 						side=1;
 						vehicle="ADFRC_teamleader_dpcu";
 						rank="SERGEANT";
-						position[]={-10,-5,0};
+						position[]={-15,-10,0};
 					};
 					class Unit5
 					{
 						side=1;
 						vehicle="ADFRC_heavyGunner_dpcu";
 						rank="PRIVATE";
-						position[]={15,-10,0};
+						position[]={-10,-15,0};
 					};
 					class Unit6
 					{
 						side=1;
 						vehicle="ADFRC_heavyGunner_ass_dpcu";
 						rank="PRIVATE";
-						position[]={20,-10,0};
+						position[]={-15,-15,0};
 					};
 					class Unit7
 					{
 						side=1;
 						vehicle="ADFRC_riflemanAT_dpcu";
 						rank="PRIVATE";
-						position[]={0,5,0};
+						position[]={-20,-15,0};
 					};
 					class Unit8
 					{
 						side=1;
 						vehicle="ADFRC_teamleader_dpcu";
 						rank="SERGEANT";
-						position[]={-20,-10,0};
+						position[]={15,-10,0};
 					};
 					class Unit9
 					{
 						side=1;
 						vehicle="ADFRC_heavyGunner_dpcu";
 						rank="PRIVATE";
-						position[]={20,-15,0};
+						position[]={10,-15,0};
 					};
 					class Unit10
 					{
 						side=1;
 						vehicle="ADFRC_heavyGunner_ass_dpcu";
 						rank="PRIVATE";
-						position[]={25,-15,0};
+						position[]={15,-15,0};
 					};
 					class Unit11
 					{
 						side=1;
 						vehicle="ADFRC_riflemanAT_dpcu";
 						rank="PRIVATE";
-						position[]={-5,15,0};
+						position[]={20,-15,0};
+					};
+				};
+				class ADFRC_InfSentry_DPCU
+				{
+					faction="ADF";
+					author="$STR_ADF_AUTHOR";
+					name="Sentry";
+					side=1;
+					icon = "\A3\ui_f\data\map\markers\nato\b_support.paa";
+					class Unit0
+					{
+						side=1;
+						vehicle="ADFRC_grenadier_dpcu";
+						rank="PRIVATE";
+						position[]={0,0,0};
+					};
+					class Unit1
+					{
+						side=1;
+						vehicle="ADFRC_riflemanAT_dpcu";
+						rank="PRIVATE";
+						position[]={5,-5,0};
 					};
 				};
 			};
@@ -1542,109 +1581,102 @@ class CfgGroups
 					icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
 					class Unit0
 					{
-						position[]={0,0,0};
+						position[]={0,-5,0};
 						rank="LIEUTENANT";
 						side=1;
 						Vehicle="ADFRC_squadleader_dpcu";
 					};
 					class Unit1
 					{
-						position[]={0,-5,0};
+						position[]={5,-10,0};
 						rank="SERGEANT";
 						side=1;
 						Vehicle="ADFRC_teamleader_dpcu";
 					};
 					class Unit2
 					{
-						position[]={0,-10,0};
+						position[]={-5,-10,0};
 						rank="CORPORAL";
 						side=1;
 						Vehicle="ADFRC_medic_dpcu";
 					};
 					class Unit3
 					{
-						position[]={0,-15,0};
+						position[]={10,-15,0};
 						rank="PRIVATE";
 						side=1;
 						Vehicle="ADFRC_grenadier_dpcu";
 					};
 					class Unit4
 					{
-						position[]={5,-20,0};
+						position[]={-10,-15,0};
 						rank="PRIVATE";
 						side=1;
 						Vehicle="ADFRC_lightGunner_dpcu";
 					};
 					class Unit5
 					{
-						position[]={-5,-20,0};
+						position[]={15,-20,0};
 						rank="PRIVATE";
 						side=1;
 						Vehicle="ADFRC_riflemanAT_dpcu";
-					};
-					class Unit6
-					{
-						position[]={0,100,0};
-						rank="PRIVATE";
-						side=1;
-						Vehicle="ADFRC_bushmaster_pws127mm_F";
-					};
-				};
-				class ADFRC_MotInf_Team_DPCU_MATV
-				{
-					faction="ADFU";
-					author="$STR_ADF_AUTHOR";
-					name="M-ATV Section";
-					side=1;
-					icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
-					class Unit0
-					{
-						position[]={5,0,0};
-						rank="LIEUTENANT";
-						side=1;
-						Vehicle="ADFRC_squadleader_dpcu";
-					};
-					class Unit1
-					{
-						position[]={-5,0,0};
-						rank="SERGEANT";
-						side=1;
-						Vehicle="ADFRC_teamleader_dpcu";
-					};
-					class Unit2
-					{
-						position[]={10,-5,0};
-						rank="CORPORAL";
-						side=1;
-						Vehicle="ADFRC_medic_dpcu";
-					};
-					class Unit3
-					{
-						position[]={-10,-5,0};
-						rank="PRIVATE";
-						side=1;
-						Vehicle="ADFRC_grenadier_dpcu";
-					};
-					class Unit4
-					{
-						position[]={-10,-10,0};
-						rank="PRIVATE";
-						side=1;
-						Vehicle="ADFRC_riflemanAT_dpcu";
-					};
-					class Unit5
-					{
-						position[]={20,-20,0};
-						rank="PRIVATE";
-						side=1;
-						Vehicle="ADFRC_hunter_dpcu";
 					};
 					class Unit6
 					{
 						position[]={0,0,0};
 						rank="PRIVATE";
 						side=1;
-						Vehicle="ADFRC_hunterHMG_dpcu";
+						Vehicle="ADFRC_bushmaster_pws127mm_F";
+					};
+				};
+				class ADFRC_MotInf_Reinforcements_DPCU
+				{
+					faction="ADF";
+					author="$STR_ADF_AUTHOR";
+					name="Motorised Reinforcements";
+					side=1;
+					icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+					class Unit0
+					{
+						position[]={0,0,0};
+						rank="SERGEANT";
+						side=1;
+						Vehicle="ADFRC_hemtt_transport";
+					};
+					class Unit1
+					{
+						position[]={0,-5,0};
+						rank="SERGEANT";
+						side=1;
+						Vehicle="ADFRC_squadleader_dpcu";
+					};
+					class Unit2
+					{
+						position[]={5,10,0};
+						rank="CORPORAL";
+						side=1;
+						Vehicle="ADFRC_medic_dpcu";
+					};
+					class Unit3
+					{
+						position[]={-10,-10,0};
+						rank="PRIVATE";
+						side=1;
+						Vehicle="ADFRC_grenadier_dpcu";
+					};
+					class Unit4
+					{
+						position[]={20,20,0};
+						rank="PRIVATE";
+						side=1;
+						Vehicle="ADFRC_riflemanAT_dpcu";
+					};
+					class Unit5
+					{
+						position[]={-20,-20,0};
+						rank="PRIVATE";
+						side=1;
+						Vehicle="ADFRC_hemtt_transport";
 					};
 				};
 			};
@@ -1660,39 +1692,40 @@ class CfgGroups
 					icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
 					class Unit0
 					{
-						position[]={5,0,0};
+						position[]={0,5,0};
+						rank="PRIVATE";
+						side=1;
+						Vehicle="ADFRC_aslav";
+					};
+					class Unit1
+					{
+						position[]={0,-5,0};
 						rank="SERGEANT";
 						side=1;
 						Vehicle="ADFRC_teamleader_dpcu";
 					};
-					class Unit1
-					{
-						position[]={-5,0,0};
-						rank="CORPORAL";
-						side=1;
-						Vehicle="ADFRC_cavalryman_dpcu";
-					};
 					class Unit2
 					{
-						position[]={10,-5,0};
+						position[]={5,-10,0};
 						rank="CORPORAL";
 						side=1;
 						Vehicle="ADFRC_cavalryman_dpcu";
 					};
 					class Unit3
 					{
-						position[]={-10,-5,0};
+						position[]={-5,-10,0};
+						rank="CORPORAL";
+						side=1;
+						Vehicle="ADFRC_cavalryman_dpcu";
+					};
+					class Unit4
+					{
+						position[]={0,-10,0};
 						rank="CORPORAL";
 						side=1;
 						Vehicle="ADFRC_marksman_dpcu";
 					};
-					class Unit4
-					{
-						position[]={0,0,0};
-						rank="PRIVATE";
-						side=1;
-						Vehicle="ADFRC_land_aslav_mag58";
-					};
+					
 				};
 			};
 		};
