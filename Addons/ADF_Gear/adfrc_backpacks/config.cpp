@@ -370,6 +370,26 @@ class CfgVehicles
 			};
 		};
 	};
+	class adfrc_CarryAll_amcu_medic: adfrc_CarryAll_black_medic
+	{
+		scope = private;
+		author="$STR_ADFU_AUTHOR";
+		displayName="ADF Carryall Medic [AMC]";
+		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\CarryAll_AMC_co.paa"};
+		class TransportItems
+		{
+			class _xx_Medikit
+			{
+				name="Medikit";
+				count=1;
+			};
+			class _xx_FirstAidKit
+			{
+				name="FirstAidKit";
+				count=10;
+			};
+		};
+	};
 
 // CUSTOM DPCU BACKPACKS
 	class ADFRC_AssaultPack_TL_dpcu: B_AssaultPack_blk
