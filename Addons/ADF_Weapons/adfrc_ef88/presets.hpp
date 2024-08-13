@@ -274,3 +274,21 @@ class arifle_AUG_C_black_flash_F: arifle_AUG_C_black_F
 		};
 	};
 };
+// EF88 5.56 mm + Elcan C79 + IR Laser Pointer
+class arifle_AUG_Elcan_Pointer_F: arifle_AUG_black_F
+{
+	author = $STR_A3_AveryTheKitty_and_Luchador;
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_elcan_c79;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = acc_pointer_IR;
+		};
+	};
+};
