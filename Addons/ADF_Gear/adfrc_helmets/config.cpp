@@ -872,6 +872,34 @@ class CfgWeapons
 			};
 		};
 	};
+	class adfrc_opscore_marine_amcu_1_Aus: ItemCore
+	{
+		author="Exer";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "ADF Opscore Maritime AMCU";
+		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
+		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
+		hiddenSelections[] = {"patch","camo","battery1","battery2","comtac","amp","light","strobe"};
+		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_amcu_co.paa",""};
+		class ItemInfo: HeadgearItem
+		{
+			mass = 10;
+			uniformModel = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
+			modelSides[] = {"TCivilian","TWest"};
+			hiddenSelections[] = {"patch","camo","battery1","battery2","comtac","amp","light","strobe"};
+			hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_amcu_co.paa",""};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName = "HitHead";
+					armor = 15;
+					passThrough = 0.75;
+				};
+			};
+		};
+	};
 	class adfrc_teamwendy_exfil_grn_mcw_Aus: ItemCore
 	{
 		author = "Bones | ADF Re-Cut";
