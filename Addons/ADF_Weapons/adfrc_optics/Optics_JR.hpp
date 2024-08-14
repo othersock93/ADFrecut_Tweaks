@@ -8,6 +8,10 @@ class compatibleItems {
 ADFRC_MicroT2 = 1;
 ADFRC_MicroT2_Up = 1;
 ADFRC_MicroT2_Down = 1;
+ADFRC_Specter_RAR = 1;
+ADFRC_Specter_RAR_KF = 1;
+ADFRC_Specter_CDO = 1;
+ADFRC_Specter_CDO_KF = 1;
 
 //Legacy
 ADFRC_acog_ta31 = 1;
@@ -28,6 +32,10 @@ class compatibleItems: compatibleItems {
 ADFRC_MicroT2 = 1;
 ADFRC_MicroT2_Up = 1;
 ADFRC_MicroT2_Down = 1;
+ADFRC_Specter_RAR = 1;
+ADFRC_Specter_RAR_KF = 1;
+ADFRC_Specter_CDO = 1;
+ADFRC_Specter_CDO_KF = 1;
 
 //Legacy
 ADFRC_acog_ta31 = 1;
@@ -48,6 +56,10 @@ class compatibleItems: compatibleItems {
 ADFRC_MicroT2 = 1;
 ADFRC_MicroT2_Up = 1;
 ADFRC_MicroT2_Down = 1;
+ADFRC_Specter_RAR = 1;
+ADFRC_Specter_RAR_KF = 1;
+ADFRC_Specter_CDO = 1;
+ADFRC_Specter_CDO_KF = 1;
 
 //Legacy
 ADFRC_acog_ta31 = 1;

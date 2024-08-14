@@ -1,31 +1,67 @@
-class ADFRC_MicroT2 : ItemCore
+class ADFRC_Specter_RAR : ItemCore
 	{
-		displayName="Aimpoint T2";
-		author=Brucey;
-		picture="ADF_Weapons\adfrc_optics\T2\UI\T2_ca.paa";
-		uipicture="ADF_Weapons\adfrc_optics\T2\UI\T2_ca.paa";
-		model = "ADF_Weapons\adfrc_optics\T2\ADFRC_T2.p3d";
-		scope =2;
-		descriptionShort = "Aimpoint T2";
+		displayName="Elcan SpecterDR 1x/4x (RAR)";
+		author="Brucey";
+		picture="ADF_Weapons\adfrc_optics\Spectr\UI\Spectr_RAR_ca.paa";
+		uipicture="ADF_Weapons\adfrc_optics\Spectr\UI\Spectr_RAR_ca.paa";
+		model = "ADF_Weapons\adfrc_optics\Spectr\ADFRC_Spectr_RAR.p3d";
+		scope =1;
+		descriptionShort = "Spectr DR 1x/4x";
 		
 		class ItemInfo: InventoryOpticsItem_Base_F
 		{
-			mass = 1;
+			mass = 0.14;
 			modelOptics = "\A3\Weapons_F\empty";
 			optics = 1;
 			class OpticsModes
 			{
-				class Aco
+				class Optic1
 				{
 					opticsID = 1;
 					useModelOptics = 0;
 					opticsZoomMin = 0.25;
-					opticsZoomMax = 1.25;
+					opticsZoomMax = 0.6;
 					opticsZoomInit = 0.75;
-					memoryPointCamera = "eye";
+					memoryPointCamera = "eye1";
 					opticsFlare = 0;
 					opticsDisablePeripherialVision = 0;
-					discreteDistance[] = {25,50,100,200,300,400};
+					discreteDistance[] = {100};
+					discreteDistanceInitIndex = 2;
+					distanceZoomMin = 50;
+					distanceZoomMax = 50;
+					cameraDir = "";
+					visionMode[] = {};
+					opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
+				};
+				class Optic4
+				{
+					opticsID = 2;
+					useModelOptics = 0;
+					opticsZoomMin = 0.0625;
+					opticsZoomMax = 0.0625;
+					opticsZoomInit = 0.0625;
+					memoryPointCamera = "eye1";
+					opticsFlare = 1;
+					opticsDisablePeripherialVision = 1;
+					discreteDistance[] = {100};
+					discreteDistanceInitIndex = 2;
+					distanceZoomMin = 50;
+					distanceZoomMax = 50;
+					cameraDir = "";
+					visionMode[] = {};
+					opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
+				};
+				class Irons
+				{
+					opticsID = 3;
+					useModelOptics = 0;
+					opticsZoomMin = 0.25;
+					opticsZoomMax = 1.25;
+					opticsZoomInit = 0.75;
+					memoryPointCamera = "eye2";
+					opticsFlare = 0;
+					opticsDisablePeripherialVision = 0;
+					discreteDistance[] = {100};
 					discreteDistanceInitIndex = 2;
 					distanceZoomMin = 50;
 					distanceZoomMax = 50;
@@ -40,98 +76,29 @@ class ADFRC_MicroT2 : ItemCore
 	};
 	
 	
-////// Magnified 
-///DOWN
-class ADFRC_MicroT2_Down : ADFRC_MicroT2
+class ADFRC_Specter_RAR_KF : ADFRC_Specter_RAR
 	{
-		displayName="Aimpoint T2 (Mag - Down)";
-		author=Brucey;
-		picture="ADF_Weapons\adfrc_optics\T2\UI\T2_Mag_ca.paa";
-		uipicture="ADF_Weapons\adfrc_optics\T2\UI\T2_Mag_ca.paa";
-		model = "ADF_Weapons\adfrc_optics\T2\ADFRC_T2_Down.p3d";
-		scope =2;
-		descriptionShort = "Aimpoint T2";
-		
-		class ItemInfo: InventoryOpticsItem_Base_F
-		{
-			mass = 1;
-			modelOptics = "\A3\Weapons_F\empty";
-			optics = 1;
-			class OpticsModes
-			{
-				class Aco
-				{
-					opticsID = 1;
-					useModelOptics = 0;
-					opticsZoomMin = 0.25;
-					opticsZoomMax = 1.25;
-					opticsZoomInit = 0.75;
-					memoryPointCamera = "eye";
-					opticsFlare = 0;
-					opticsDisablePeripherialVision = 0;
-					discreteDistance[] = {25,50,100,200,300,400};
-					discreteDistanceInitIndex = 2;
-					distanceZoomMin = 50;
-					distanceZoomMax = 50;
-					cameraDir = "";
-					visionMode[] = {};
-					opticsPPEffects[] = {"Default"};
-				};
-			};
-		};
-		
-        MRT_SwitchItemNextClass = "ADFRC_MicroT2_Up";
-        MRT_switchItemHintText = "1x";
-		
-		inertia = 0.25;
+		displayName="Elcan SpecterDR 1x/4x (RAR - KF)";
+		author="Brucey";
+		picture="ADF_Weapons\adfrc_optics\Spectr\UI\Spectr_RAR_KF_ca.paa";
+		uipicture="ADF_Weapons\adfrc_optics\Spectr\UI\Spectr_RAR_KF_ca.paa";
+		model = "ADF_Weapons\adfrc_optics\Spectr\ADFRC_Spectr_RAR_KF.p3d";
 	};
 	
-class ADFRC_MicroT2_Up : ADFRC_MicroT2
+class ADFRC_Specter_CDO : ADFRC_Specter_RAR
 	{
-		displayName="Aimpoint T2 (Mag - UP)";
-		author=Brucey;
-		picture="ADF_Weapons\adfrc_optics\T2\UI\T2_Mag_ca.paa";
-		uipicture="ADF_Weapons\adfrc_optics\T2\UI\T2_Mag_ca.paa";
-		model = "ADF_Weapons\adfrc_optics\T2\ADFRC_T2_Up.p3d";
-		scope =2;
-		descriptionShort = "Aimpoint T2";
-		
-		class ItemInfo: InventoryOpticsItem_Base_F
-		{
-			mass = 1;
-			modelOptics = "\A3\Weapons_F\empty";
-			optics = 1;
-			class OpticsModes
-			{
-				class Magnified
-				{
-					opticsID = 1;
-					useModelOptics = 0;
-					opticsZoomMin = 3;
-					opticsZoomMax = 3.25;
-					opticsZoomInit = 0.75;
-					memoryPointCamera = "eye";
-					opticsFlare = 0;
-					opticsDisablePeripherialVision = 0;
-					discreteDistance[] = {25,50,100,200,300,400};
-					discreteDistanceInitIndex = 2;
-					distanceZoomMin = 50;
-					distanceZoomMax = 50;
-					cameraDir = "";
-					visionMode[] = {};
-					opticsPPEffects[]=
-					{
-						"OpticsCHAbera5",
-						"OpticsBlur5"
-					};
-				};
-			};
-		};
-		
-		
-		
-        MRT_SwitchItemNextClass = "ADFRC_MicroT2_Down";
-        MRT_switchItemHintText = "3x";
-		
-		inertia = 0.2;
+		displayName="Elcan SpecterDR 1x/4x (CDO)";
+		author="Brucey";
+		picture="ADF_Weapons\adfrc_optics\Spectr\UI\Spectr_CDO_ca.paa";
+		uipicture="ADF_Weapons\adfrc_optics\Spectr\UI\Spectr_CDO_ca.paa";
+		model = "ADF_Weapons\adfrc_optics\Spectr\ADFRC_Spectr_CDO.p3d";
+	};
+	
+class ADFRC_Specter_CDO_KF : ADFRC_Specter_CDO
+	{
+		displayName="Elcan SpecterDR 1x/4x (CDO - KF)";
+		author="Brucey";
+		picture="ADF_Weapons\adfrc_optics\Spectr\UI\Spectr_CDO_KF_ca.paa";
+		uipicture="ADF_Weapons\adfrc_optics\Spectr\UI\Spectr_CDO_KF_ca.paa";
+		model = "ADF_Weapons\adfrc_optics\Spectr\ADFRC_Spectr_CDO_KF.p3d";
 	};

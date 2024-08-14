@@ -175,6 +175,7 @@ class cfgWeapons
 	
 	#include "T2\T2.hpp"
 	#include "DPP\DPP.hpp"
+	#include "Spectr\Spectr.hpp"
 	class ADFRC_swarovski_optic: ItemCore
 	{
 		scope=2;
