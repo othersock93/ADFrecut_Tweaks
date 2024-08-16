@@ -1,6 +1,6 @@
 class cfgMarkers
 {
-	class ADFU_flag
+	class ADF_flag
 	{
 		name="Australian Flag";
 		icon="\ADF_Core\data\ADF_marker_ca.paa";
@@ -8,8 +8,9 @@ class cfgMarkers
 		size=32;
 		shadow=0;
 		scope=2;
+		markerClass = "Flags";
 	};
-	class ADFU_opfor_flag
+	class ADF_opfor_flag
 	{
 		name="Australian Colonial (Opfor)";
 		icon="\ADF_Core\data\adfopfor_marker_ca.paa";
@@ -17,5 +18,6 @@ class cfgMarkers
 		size=32;
 		shadow=0;
 		scope=2;
+		markerClass = "Flags";
 	};
 };
