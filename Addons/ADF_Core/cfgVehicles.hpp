@@ -4,9 +4,7 @@ class CfgVehicles
     class ADFRC_Soldier_base_F: SoldierWB
     {
         class EventHandlers;
-        class HitPoints
-        {
-        };
+		class HitPoints;
 		scope=1;
 		scopeCurator=0;
 		author="$STR_ADF_AUTHOR";
