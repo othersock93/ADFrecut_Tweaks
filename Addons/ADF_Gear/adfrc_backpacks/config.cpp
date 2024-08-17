@@ -53,21 +53,21 @@ class CfgVehicles
 	class adfrc_assaultpack_dpcu: adfrc_assaultpack_black
 	{
 		scope = public;
-		author="$STR_ADFU_AUTHOR";
+		author="$STR_ADF_AUTHOR";
 		displayName="ADF Assault Pack [DPCU]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\AssaultPack_DPCU_co.paa"};
 	};
 	class adfrc_assaultpack_dpdu: adfrc_assaultpack_black
 	{
 		scope = public;
-		author="$STR_ADFU_AUTHOR";
+		author="$STR_ADF_AUTHOR";
 		displayName="ADF Assault Pack [DPDU]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\AssaultPack_DPDU_co.paa"};
 	};
 	class adfrc_assaultpack_amc: adfrc_assaultpack_black
 	{
 		scope = public;
-		author="$STR_ADFU_AUTHOR";
+		author="$STR_ADF_AUTHOR";
 		displayName="ADF Assault Pack [AMC]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\AssaultPack_AMC_co.paa"};
 	};
@@ -210,7 +210,7 @@ class CfgVehicles
 	class adfrc_CarryAll_dpcu: adfrc_CarryAll_black
 	{
 		scope = public;
-		author="$STR_ADFU_AUTHOR";
+		author="$STR_ADF_AUTHOR";
 		displayName="ADF Carryall [DPCU]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\CarryAll_DPCU_co.paa"};
 		/*class TransportItems
@@ -248,7 +248,7 @@ class CfgVehicles
 	class adfrc_CarryAll_amc: adfrc_CarryAll_black
 	{
 		scope = public;
-		author="$STR_ADFU_AUTHOR";
+		author="$STR_ADF_AUTHOR";
 		displayName="ADF Carryall [AMC]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\CarryAll_AMC_co.paa"};
 		/*class TransportItems
@@ -286,7 +286,7 @@ class CfgVehicles
 	class adfrc_CarryAll_dpdu: adfrc_CarryAll_black
 	{
 		scope = public;
-		author="$STR_ADFU_AUTHOR";
+		author="$STR_ADF_AUTHOR";
 		displayName="ADF Carryall [DPDU]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\CarryAll_DPDU_co.paa"};
 	};
@@ -323,7 +323,7 @@ class CfgVehicles
 	class adfrc_CarryAll_dpdu_medic: adfrc_CarryAll_black_medic
 	{
 		scope = public;
-		author="$STR_ADFU_AUTHOR";
+		author="$STR_ADF_AUTHOR";
 		displayName="ADF Carryall Medic [DPDU]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\CarryAll_DPDU_M_co.paa"};
 		class TransportItems
@@ -348,7 +348,7 @@ class CfgVehicles
 	class adfrc_CarryAll_dpcu_medic: adfrc_CarryAll_black_medic
 	{
 		scope = public;
-		author="$STR_ADFU_AUTHOR";
+		author="$STR_ADF_AUTHOR";
 		displayName="ADF Carryall Medic [DPCU]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\CarryAll_DPCU_M_co.paa"};
 		class TransportItems
@@ -373,7 +373,7 @@ class CfgVehicles
 	class adfrc_CarryAll_amcu_medic: adfrc_CarryAll_black_medic
 	{
 		scope = private;
-		author="$STR_ADFU_AUTHOR";
+		author="$STR_ADF_AUTHOR";
 		displayName="ADF Carryall Medic [AMC]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\CarryAll_AMC_co.paa"};
 		class TransportItems

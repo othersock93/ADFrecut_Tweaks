@@ -77,7 +77,7 @@ class CfgWeapons
 	class ADFRC_minimi_BASE: Rifle_Long_Base_F
 	{
 		scope=1;
-		author="$STR_ADFU_AUTHOR";
+		author="$STR_ADF_AUTHOR";
 		reloadAction="GestureReloadM200";
 		handAnim[]=
 		{
@@ -337,7 +337,7 @@ class CfgWeapons
 	class ADFRC_minimi: ADFRC_minimi_BASE
 	{
 		scope=2;
-		author="$STR_ADFU_AUTHOR";
+		author="$STR_ADF_AUTHOR";
 		model="\ADF_Weapons\ADFRC_minimi\adfrc_F89.p3d";
 		displayName="F89 FN Minimi";
 		picture="\ADF_Weapons\ADFRC_minimi\UI\gear_f89_x_ca.paa";
@@ -350,7 +350,7 @@ class CfgWeapons
 	class ADFRC_minimi_elcan: ADFRC_minimi
 	{
 		scope=2;
-		author="$STR_ADFU_AUTHOR";
+		author="$STR_ADF_AUTHOR";
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -363,7 +363,7 @@ class CfgWeapons
 	class ADFRC_minimi_para: ADFRC_minimi
 	{
 		scope=2;
-		author="$STR_ADFU_AUTHOR";
+		author="$STR_ADF_AUTHOR";
 		model="\ADF_Weapons\ADFRC_minimi\ADFRC_F89_Para.p3d";
 		displayName="F89 FN Minimi Para";
 		picture="\ADF_Weapons\ADFRC_minimi\UI\gear_f89para_x_ca.paa";
@@ -392,7 +392,7 @@ class CfgWeapons
 	class ADFRC_minimi_para_elcan: ADFRC_minimi_para
 	{
 		scope=2;
-		author="$STR_ADFU_AUTHOR";
+		author="$STR_ADF_AUTHOR";
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -405,7 +405,7 @@ class CfgWeapons
 	class ADFRC_minimi_eotech: ADFRC_minimi
 	{
 		scope=2;
-		author="$STR_ADFU_AUTHOR";
+		author="$STR_ADF_AUTHOR";
 		class LinkedItems
 		{
 			class LinkedItemsOptic

@@ -1046,7 +1046,7 @@ class CfgWeapons
 	class adfrc_booniehat_amc: H_Booniehat_tan
 	{
 		scope = 2;
-		author=$STR_ADFU_AUTHOR;
+		author=$STR_ADF_AUTHOR;
 		displayName = "ADF Boonie [AMC]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Boonie_Cam_co.paa"};
@@ -1054,7 +1054,7 @@ class CfgWeapons
 	class adfrc_booniehat_dpcu: H_Booniehat_tan
 	{
 		scope=2;
-		author=$STR_ADFU_AUTHOR;
+		author=$STR_ADF_AUTHOR;
 		displayName="ADF Boonie [DPCU]";
 		model="\A3\Characters_F\common\booniehat";
 		hiddenSelections[] = {"camo"};
@@ -1063,7 +1063,7 @@ class CfgWeapons
 	class adfrc_booniehat_dpdu: H_Booniehat_tan
 	{
 		scope=2;
-		author="$STR_ADFU_AUTHOR";
+		author="$STR_ADF_AUTHOR";
 		displayName="ADF Boonie [DPDU]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Boonie_DPDU_co.paa"};
@@ -1251,7 +1251,7 @@ class CfgWeapons
 	class adfrc_ECH_DPCU: adfrc_ECH_Desert
 	{
 		scope = 2;
-		author="$STR_ADFU_AUTHOR";
+		author="$STR_ADF_AUTHOR";
 		displayName="ADF ECH [DPCU]";
 		picture="\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
 		hiddenSelections[] = {"camo"};
@@ -1260,7 +1260,7 @@ class CfgWeapons
 	class adfrc_ECH_AMCU: adfrc_ECH_Desert
 	{
 		scope = 2;
-		author="$STR_ADFU_AUTHOR";
+		author="$STR_ADF_AUTHOR";
 		displayName="ADF ECH [AMCU]";
 		picture="\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
 		hiddenSelections[] = {"camo"};
@@ -1269,7 +1269,7 @@ class CfgWeapons
 	class adfrc_ECH_DPDU: adfrc_ECH_Desert
 	{
 		scope = 2;
-		author="$STR_ADFU_AUTHOR";
+		author="$STR_ADF_AUTHOR";
 		displayName="ADF ECH [DPDU]";
 		picture="\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
 		hiddenSelections[] = {"camo"};
@@ -1338,7 +1338,7 @@ class CfgWeapons
 	class adfrc_Helmet_dpcu_canv: H_HelmetIA
 	{
 		scope=2;
-		author="$STR_ADFU_AUTHOR";
+		author="$STR_ADF_AUTHOR";
 		displayName="ADF Helmet Canvas (DPCU)";
 		weaponPoolAvailable=1;
 		picture="\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
@@ -1348,7 +1348,7 @@ class CfgWeapons
 	class adfrc_Helmet_dpdu_canv: H_HelmetIA
 	{
 		scope=2;
-		author="$STR_ADFU_AUTHOR";
+		author="$STR_ADF_AUTHOR";
 		displayName="ADF Helmet Canvas (DPDU)";
 		weaponPoolAvailable=1;
 		picture="\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
