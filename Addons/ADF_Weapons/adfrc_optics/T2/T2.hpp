@@ -7,6 +7,7 @@ class ADFRC_MicroT2 : ItemCore
 		model = "ADF_Weapons\adfrc_optics\T2\ADFRC_T2.p3d";
 		scope =2;
 		descriptionShort = "Aimpoint T2";
+		zeroingSound = ["A3\Sounds_F\arsenal\sfx\shared\zeroing_knob_tick_plastic",0.316228,1,5];
 		
 		class ItemInfo: InventoryOpticsItem_Base_F
 		{
@@ -107,9 +108,9 @@ class ADFRC_MicroT2_Up : ADFRC_MicroT2
 				{
 					opticsID = 1;
 					useModelOptics = 0;
-					opticsZoomMin = 0.05;
-					opticsZoomMax = 1.25;
-					opticsZoomInit = 0.05;
+					opticsZoomMin = "0.25/3";
+					opticsZoomMax = "0.25/3";
+					opticsZoomInit = "0.25/3";
 					memoryPointCamera = "eye";
 					opticsFlare = 0;
 					opticsDisablePeripherialVision = 0;
