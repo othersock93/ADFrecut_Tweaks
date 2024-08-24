@@ -69,9 +69,9 @@ class CfgWeapons
 		reloadAction = "GestureReloadAUG";
 		magazines[] =
 		{
-			30Rnd_556x45_AUG_Mag_F,
-			30Rnd_556x45_AUG_Mag_Tracer_F
+			"ADFRC_30Rnd_aug"
 		};
+		magazineWell[] = {"CBA_556x45_STEYR"};
 		magazineReloadSwitchPhase = 0.48;
 		htMin = 9;
 		htMax = 870;

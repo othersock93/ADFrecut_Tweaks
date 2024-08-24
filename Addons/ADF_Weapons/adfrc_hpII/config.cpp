@@ -45,11 +45,12 @@ class CfgWeapons
 		cursor = "hgun";
 		cursoraim = "cursorAim";
 		cursorAimOn = "";
-		cursorSize = 1;
+		cursorSize = 1;   
 		magazines[]=
 		{
-			"ADFRC_10Rnd_9x19_Mag"
+			"ADFRC_13Rnd_9x19_Mag", "ADFRC_10Rnd_9x19_Mag"
 		};
+		magazineWell[] = {"CBA_9x19_HiPower"};
 		reloadAction="GestureReloadPistol";
 		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1.0,1,10};
 		class WeaponSlotsInfo
@@ -61,7 +62,10 @@ class CfgWeapons
 				{};
 			};
 			class CowsSlot: CowsSlot
-			{};
+			{
+			compatibleitems[]=
+				{};
+			};
 			class PointerSlot: PointerSlot
 			{
 				compatibleitems[]=
