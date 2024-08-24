@@ -13,3 +13,18 @@ class CfgPatches
 		};
 	};
 };
+
+
+#include "CfgMovesBasic.hpp"
+#include "cfgFunctions.hpp"
+
+class recoil_default;
+class Mode_SemiAuto;
+
+class CfgWeapons
+{
+    class Rifle;
+    class Rifle_Base_F: Rifle {
+	class Eventhandlers;
+	};
+};
