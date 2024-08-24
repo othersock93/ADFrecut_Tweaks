@@ -2,7 +2,8 @@ class asdg_SlotInfo;
 
 class asdg_FrontSideRail: asdg_SlotInfo {
 class compatibleItems {
-
+ADFRC_WMLx_BLK_R_WL = 1;
+ADFRC_WMLx_BLK_R_IR = 1;
 };
 };
 

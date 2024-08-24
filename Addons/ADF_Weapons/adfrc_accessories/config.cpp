@@ -55,6 +55,7 @@ class CfgWeapons
 	////WEAPON LIGHTS
 	#include "F88LightLasers.HPP"
 	#include "X400\X400.HPP"
+	#include "WMLx\WMLx.HPP"
 	
 	////Bipods/Grips
 	#include "Grip_pod\Grippod.HPP"
