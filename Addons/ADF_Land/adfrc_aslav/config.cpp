@@ -1015,6 +1015,7 @@ class CfgVehicles
 				selection="Light_Rear";
 				color[]={1,0,0};
 				ambient[]={0,0,0};
+				brightness=0.001;
 				position="";
 				direction="";
 				hitpoint="";
@@ -1443,6 +1444,11 @@ class CfgVehicles
 				minTurn = -360;
 				maxTurn = 360;
 				initTurn = 0;
+				minOutElev=-30;
+				maxOutElev=50;
+				initOutElev=0;
+				minOutTurn=-135;
+				maxOutTurn=135;
 				maxHorizontalRotSpeed = "((360/10)/45)";
 				maxVerticalRotSpeed = 0.4;
 				gunnerAction = "commander_apcwheeled2_out_settlein";
@@ -1551,6 +1557,11 @@ class CfgVehicles
 						minTurn = -360;
 						maxTurn = 360;
 						initTurn = 0;
+						minOutElev=-30;
+						maxOutElev=50;
+						initOutElev=0;
+						minOutTurn=-135;
+						maxOutTurn=135;
 						isPersonTurret = 1;
 						hideWeaponscommander = 1;
 						commanding = 3;
@@ -1629,7 +1640,7 @@ class CfgVehicles
 		ace_cargo_space = 8;
 		ace_refuel_fuelCapacity = 269;
 		ace_cookoff_probability = 0.5;
-		ace_cookoff_cookoffSelections[] = {"hatch_gunner","hatch_commander"};
+		ace_cookoff_cookoffSelections[] = {"hatchgunner","hatchcommander"};
 		ace_vehicle_damage_hullDetonationProb = 0.2;
 		ace_vehicle_damage_turretDetonationProb = 0.2;
 		ace_vehicle_damage_engineDetonationProb = 0.0;
@@ -1774,9 +1785,9 @@ class CfgVehicles
 		vehicleClass="Armoured";
 		author="$STR_ADF_AUTHOR";
 		faction ="ADF";
-		//editorPreview = "\ADF_Land\adfrc_aslav\data\ADFRC_aslav.jpg"; FIX THIS LATER
+		editorPreview = "\ADF_Land\adfrc_aslav\preview\ADFRC_aslav.jpg";
 		model = "\ADF_Land\adfrc_aslav\ADFRC_ASLAV_25";
-		picture = "\ADF_Land\adfrc_aslav\data\UI\Picture_aslav_CA.paa";
+		picture = "\ADF_Land\adfrc_aslav\data\UI\aslav25.paa";
 		Icon = "\ADF_Land\adfrc_aslav\data\UI\Icon_aslav_CA.paa";
 		crew = "ADFRC_crewman_dpcu";
 		textureList[] = {Worn,1};
@@ -1813,9 +1824,9 @@ class CfgVehicles
 		vehicleClass="Armoured";
 		author="$STR_ADF_AUTHOR";
 		faction ="ADF";
-		//editorPreview = "\ADF_Land\adfrc_aslav\data\ADFRC_aslav.jpg"; FIX THIS LATER
+		editorPreview = "\ADF_Land\adfrc_aslav\preview\ADFRC_ASLAV_UN.jpg";
 		model = "\ADF_Land\adfrc_aslav\ADFRC_ASLAV_25";
-		picture = "\ADF_Land\adfrc_aslav\data\UI\Picture_aslav_CA.paa";
+		picture = "\ADF_Land\adfrc_aslav\data\UI\aslav25.paa";
 		Icon = "\ADF_Land\adfrc_aslav\data\UI\Icon_aslav_CA.paa";
 		crew = "ADFRC_crewman_dpcu";
 		textureList[] = {UN,1};
@@ -1863,9 +1874,9 @@ class CfgVehicles
 		driverInAction="driver_APC_Wheeled_01_in";
 		driverLeftHandAnimName="wheel_l";
 		driverRightHandAnimName="wheel_r";
-		//editorPreview = "\ADF_Land\adfrc_aslav\data\ADFRC_aslav.jpg"; FIX THIS LATER
+		editorPreview = "\ADF_Land\adfrc_aslav\preview\ADFRC_aslav_pc.jpg";
 		model = "\ADF_Land\adfrc_aslav\ADFRC_ASLAV_PC";
-		picture = "\ADF_Land\adfrc_aslav\data\UI\Picture_aslav_CA.paa";
+		picture = "\ADF_Land\adfrc_aslav\data\UI\aslavpc.paa";
 		Icon = "\ADF_Land\adfrc_aslav\data\UI\Icon_aslav_CA.paa";
 		crew = "ADFRC_crewman_dpcu";
 		transportSoldier=7;
@@ -1874,8 +1885,52 @@ class CfgVehicles
 		smokeLauncherOnTurret=0;
 		smokeLauncherAngle=60;
 		textureList[] = {Worn,1};
+		hiddenSelections[]=
+		{
+			camo1,
+			camo2,
+			camo3,
+			camo4,
+			labels
+		};
 		hiddenSelectionsTextures[]=
 		{
+			"\ADF_Land\adfrc_aslav\data\ASLAV-pc\texture1_co.paa",
+			"\ADF_Land\adfrc_aslav\data\ASLAV-pc\texture2_co.paa",
+			"\ADF_Land\adfrc_aslav\data\ASLAV-pc\texture3_co.paa",
+			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture4_co.paa",
+			"\ADF_Land\adfrc_aslav\data\labels\labels_01.paa"
+		};
+		class textureSources
+		{
+			class Worn
+			{
+				author = "ADFRC_Quiggs";
+				displayName = "Standard";
+				factions[] = {"ADF"};
+				textures[] = {"ADF_Land\adfrc_aslav\data\ASLAV-PC\texture1_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-PC\texture2_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-PC\texture3_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\texture4_co.paa"};
+			};
+			/*class Arid 
+			{
+				author = "ADFRC_Quiggs";
+				displayName = "Arid";
+				factions[] = {"ADF"};
+				textures[] = {"ADF_Land\adfrc_aslav\data\ASLAV-PC\arid\texture1_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-PC\arid\texture2_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-PC\arid\texture3_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-PC\arid\texture4_co.paa"};
+			};
+			class Jungle 
+			{
+				author = "ADFRC_Quiggs";
+				displayName = "Jungle";
+				factions[] = {"ADF"};
+				textures[] = {"ADF_Land\adfrc_aslav\data\ASLAV-PC\jungle\texture1_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-PC\jungle\texture2_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-PC\jungle\texture3_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-PC\jungle\texture4_co.paa"};
+			};
+			class Desert 
+			{
+				author = "ADFRC_Quiggs";
+				displayName = "Desert";
+				factions[] = {"ADF"};
+				textures[] = {"ADF_Land\adfrc_aslav\data\ASLAV-PC\desert\texture1_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-PC\desert\texture2_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-PC\desert\texture3_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-PC\desert\texture4_co.paa"};
+			};*/
 		};
 		class Turrets: Turrets
 		{
@@ -1890,7 +1945,7 @@ class CfgVehicles
 				gunEnd = "m2_chamber";
 				gunnerName="Commander";
 				proxyType="CPGunner";
-				animationSourceHatch="HatchGunner";
+				animationSourceHatch="hatchgunner";
 				proxyIndex=1;
 				turretFollowFreeLook = 0;
 				weapons[]=
@@ -1926,6 +1981,11 @@ class CfgVehicles
 				minElev=-25;
 				initElev=0;
 				maxElev=30;
+				minOutElev=-30;
+				maxOutElev=50;
+				initOutElev=0;
+				minOutTurn=-145;
+				maxOutTurn=125;
 				gunnerRightHandAnimName="handle_l";
 				gunnerLeftHandAnimName="handle_r";
 				gunnerLeftLegAnimName="OtocVez";
@@ -2018,10 +2078,16 @@ class CfgVehicles
 				proxyType="CPGunner";
 				proxyIndex=2;
 				isPersonTurret=1;
+				allowLauncherOut=1;
 				maxElev=150;
 				minElev=-80;
 				maxTurn=180;
 				minTurn=-180;
+				minOutElev=-30;
+				maxOutElev=50;
+				initOutElev=0;
+				minOutTurn=-135;
+				maxOutTurn=135;
 				ejectDeadGunner=0;
 				enabledByAnimationSource="";
 				usepip=0;
@@ -2059,10 +2125,16 @@ class CfgVehicles
 				proxyType="CPGunner";
 				proxyIndex=3;
 				isPersonTurret=1;
+				allowLauncherOut=1;
 				maxElev=150;
 				minElev=-80;
 				maxTurn=180;
 				minTurn=-180;
+				minOutElev=-30;
+				maxOutElev=50;
+				initOutElev=0;
+				minOutTurn=-135;
+				maxOutTurn=135;
 				ejectDeadGunner=0;
 				enabledByAnimationSource="";
 				usepip=0;
@@ -2087,9 +2159,6 @@ class CfgVehicles
 					maxFov = 1;
 				};
 			};
-		};
-		class textureSources
-		{
 		};
 		class AnimationSources
 		{
@@ -2124,7 +2193,7 @@ class CfgVehicles
 				animPeriod=0;
 				initPhase=0;
 				author="ADFRC";
-			};/*
+			};
 			class tools
 			{
 				DisplayName="Tools";
@@ -2132,7 +2201,7 @@ class CfgVehicles
 				animPeriod=0;
 				initPhase=0;
 				author="ADFRC";
-			};*/
+			};
 			class tow_bar
 			{
 				DisplayName="Tow Bar";
@@ -2151,7 +2220,7 @@ class CfgVehicles
 			};
 			class hull_jerry
 			{
-				DisplayName="Hull Jerry";
+				DisplayName="Rear Jerrys";
 				source="user";
 				animPeriod=0;
 				initPhase=0;
@@ -2165,9 +2234,17 @@ class CfgVehicles
 				initPhase=0;
 				author="ADFRC";
 			};
+			class tow_shackles
+			{
+				DisplayName="Recovery Shackles";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
 			class roof_box
 			{
-				DisplayName="Storage Box";
+				DisplayName="Roof Storage Box";
 				source="user";
 				animPeriod=0;
 				initPhase=0;
@@ -2181,14 +2258,30 @@ class CfgVehicles
 				initPhase=0;
 				author="ADFRC";
 			};
-			/*class storage_racks
+			class storageright
 			{
-				DisplayName="Storage Racks";
+				DisplayName="Right Storage Rack";
 				source="user";
 				animPeriod=0;
 				initPhase=0;
 				author="ADFRC";
-			};*/
+			};
+			class storageleft
+			{
+				DisplayName="Left Storage Rack";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class camonet
+			{
+				DisplayName="Hull Camouflage (Shaggy Dog)";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
 			class p3parts
 			{
 				DisplayName="Phase III Sensor Suite";
@@ -2299,9 +2392,9 @@ class CfgVehicles
 		driverInAction="driver_APC_Wheeled_01_in";
 		driverLeftHandAnimName="wheel_l";
 		driverRightHandAnimName="wheel_r";
-		//editorPreview = "\ADF_Land\adfrc_aslav\data\ADFRC_aslav.jpg"; FIX THIS LATER
+		editorPreview = "\ADF_Land\adfrc_aslav\preview\ADFRC_aslav_pc_rws.jpg";
 		model = "\ADF_Land\adfrc_aslav\ADFRC_ASLAV_PC_RWS";
-		picture = "\ADF_Land\adfrc_aslav\data\UI\Picture_aslav_CA.paa";
+		picture = "\ADF_Land\adfrc_aslav\data\UI\aslavpcrws.paa";
 		Icon = "\ADF_Land\adfrc_aslav\data\UI\Icon_aslav_CA.paa";
 		crew = "ADFRC_crewman_dpcu";
 		viewGunnerInExternal = 0;
@@ -2310,13 +2403,21 @@ class CfgVehicles
 		smokeLauncherVelocity=14;
 		smokeLauncherOnTurret=0;
 		smokeLauncherAngle=60;
-		textureList[] = {Worn,1};
+		hiddenSelections[]=
+		{
+			camo1,
+			camo2,
+			camo3,
+			camo4,
+			labels
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"\ADF_Land\adfrc_aslav\data\ASLAV-pc\texture1_co.paa",
 			"\ADF_Land\adfrc_aslav\data\ASLAV-pc\texture2_co.paa",
 			"\ADF_Land\adfrc_aslav\data\ASLAV-pc\texture3_co.paa",
-			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture4_co.paa"
+			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture4_co.paa",
+			"\ADF_Land\adfrc_aslav\data\labels\labels_01.paa"
 		};
 		class Turrets: Turrets
 		{
@@ -2332,6 +2433,7 @@ class CfgVehicles
 				gunnerName="Commander";
 				proxyType="CPGunner";
 				proxyIndex=1;
+				animationSourceHatch="hatchfront";
 				turretFollowFreeLook = 1;
 				weapons[]=
 				{
@@ -2359,6 +2461,11 @@ class CfgVehicles
 				minElev=-20;
 				initElev=0;
 				maxElev=45;
+				minOutElev=-30;
+				maxOutElev=50;
+				initOutElev=0;
+				minOutTurn=-145;
+				maxOutTurn=125;
 				gunnerAction = "vehicle_turnout_1";
 				lockWhenDriverOut = 0;
 				isPersonTurret = 1;
@@ -2384,8 +2491,8 @@ class CfgVehicles
 				usePip=1;
 				LODTurnedIn = 1100;
 				LODTurnedOut = 1000;
-				LODOpticsIn = -1;
-				LODOpticsOut = 1;
+				LODOpticsIn = 1202;
+				LODOpticsOut = 1000;
 				startEngine=0;
 				disableSoundAttenuation=1;
 				soundElevation = ["",0.00316228,1];
@@ -2433,10 +2540,16 @@ class CfgVehicles
 				proxyType="CPGunner";
 				proxyIndex=2;
 				isPersonTurret=1;
+				allowLauncherOut=1;
 				maxElev=150;
 				minElev=-80;
 				maxTurn=180;
 				minTurn=-180;
+				minOutElev=-30;
+				maxOutElev=50;
+				initOutElev=0;
+				minOutTurn=-135;
+				maxOutTurn=135;
 				ejectDeadGunner=0;
 				enabledByAnimationSource="";
 				usepip=0;
@@ -2474,10 +2587,16 @@ class CfgVehicles
 				proxyType="CPGunner";
 				proxyIndex=3;
 				isPersonTurret=1;
+				allowLauncherOut=1;
 				maxElev=150;
 				minElev=-80;
 				maxTurn=180;
 				minTurn=-180;
+				minOutElev=-30;
+				maxOutElev=50;
+				initOutElev=0;
+				minOutTurn=-135;
+				maxOutTurn=135;
 				ejectDeadGunner=0;
 				enabledByAnimationSource="";
 				usepip=0;
