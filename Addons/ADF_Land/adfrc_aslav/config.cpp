@@ -2491,8 +2491,8 @@ class CfgVehicles
 				usePip=1;
 				LODTurnedIn = 1100;
 				LODTurnedOut = 1000;
-				LODOpticsIn = -1;
-				LODOpticsOut = 1;
+				LODOpticsIn = 1202;
+				LODOpticsOut = 1000;
 				startEngine=0;
 				disableSoundAttenuation=1;
 				soundElevation = ["",0.00316228,1];

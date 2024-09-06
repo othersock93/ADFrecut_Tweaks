@@ -1879,6 +1879,11 @@ class CfgVehicles
 				minElev=-20;
 				initElev=0;
 				maxElev=45;
+				minOutElev=-20;
+				maxOutElev=50;
+				initOutElev=0;
+				minOutTurn=-140;
+				maxOutTurn=110;
 				gunnerAction = "vehicle_turnout_1";
 				lockWhenDriverOut = 0;
 				isPersonTurret = 1;
@@ -1904,8 +1909,8 @@ class CfgVehicles
 				usePip=1;
 				LODTurnedIn = 1200;
 				LODTurnedOut = 1000;
-				LODOpticsIn = -1;
-				LODOpticsOut = 1;
+				LODOpticsIn = 1202;
+				LODOpticsOut = 1000;
 				startEngine=0;
 				viewGunnerInExternal = 0;
 				disableSoundAttenuation=1;
@@ -1940,12 +1945,20 @@ class CfgVehicles
 						radius=0.20;
 					};
 				};
-			};	
-			class Turrets: Turrets
-			{
-				class CommanderOptics
+				class Commanderturret: Newturret
 				{
-					stabilizedInAxes=3;
+					memoryPointGunnerOutOptics="commanderview";
+					memoryPointGunnerOptics="commanderview";
+					body="commanderTurret";
+					gun="commanderGun";
+					gunnerName="Commander";
+					proxyType="CPCommander";
+					gunnerCompartments = "Compartment1";
+					minElev=-25;
+					maxElev=60;
+					initElev=0;
+					minTurn=-360;
+					maxTurn=360;stabilizedInAxes=3;
 					gunnerForceOptics=1;
 					viewGunnerInExternal=0;
 					minOutElev=-20;
@@ -1953,6 +1966,10 @@ class CfgVehicles
 					initOutElev=0;
 					minOutTurn=-110;
 					maxOutTurn=110;
+					LODTurnedIn = 1200;
+					LODTurnedOut = 1000;
+					LODOpticsIn = 1000;
+					LODOpticsOut = 1;
 					weapons[]=
 					{
 						"SmokeLauncher",
