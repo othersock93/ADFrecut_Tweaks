@@ -167,10 +167,11 @@ class Mode_FullAuto;
 
 class cfgWeapons
 {
-	class LMG_RCWS;
 	class MGun;
 	class HMG_M2_Mounted;
-	class ADFRC_aslav_coax: LMG_RCWS {
+	class LMG_coax_ext;
+	class ADFRC_aslav_coax: LMG_coax_ext
+	{
 		displayName = "MG 7.62mm Mag 58 Coax";
 		scope = 1;
 		magazines[]=
@@ -178,22 +179,41 @@ class cfgWeapons
 			"ADFRC_aslav_1000Rnd_762x51_Tracer",
 			"ADFRC_aslav_1000Rnd_762x51_Tracer"
 		};
-		class GunParticles {
+		class GunParticles 
+		{
 
-			class effect1 {
+			class effect1 
+			{
 				effectName = "MachineGunCloud";
 				positionName = "Konec hlavne2";
 				directionName = "Usti hlavne2";
 			};
-			class effect2 {
+			class effect2 
+			{
 				effectName = "ADFRC_mag58_casingeject";
 				positionName = "nabojnicestart2";
 				directionName = "nabojniceend2";
 			};
-			class effect3 {
+			class effect3 
+			{
 				effectName = "ADFRC_mag58_linkeject";
 				positionName = "nabojnicestart2";
 				directionName = "nabojniceend2";
+			};
+		};
+	};	
+	class ADFRC_aslav_mag58: ADFRC_aslav_coax
+	{
+		displayName = "MG 7.62mm Mag 58 Flex";
+		magazines[] = {"ADFRC_aslav_200Rnd_762x51_Tracer"};
+
+		class GunParticles 
+		{
+			class effect1
+			{
+				positionName = "gun_muzzle";
+				directionName = "gun_chamber";
+				effectName = "MachineGunCloud";
 			};
 		};
 		class manual: MGun {
@@ -258,7 +278,8 @@ class cfgWeapons
 				maxRangeProbab = 0.010000;
 			};	
 		};
-		class close: manual {
+		class close: manual 
+		{
 			burst = 7;
 			aiRateOfFire = 1;
 			aiRateOfFireDistance = 50;
@@ -270,7 +291,8 @@ class cfgWeapons
 			maxRangeProbab = 0.100000;
 			showToPlayer = 0;
 		};
-		class short: close {
+		class short: close 
+		{
 			burst = 6;
 			aiRateOfFire = 2;
 			aiRateOfFireDistance = 300;
@@ -281,7 +303,8 @@ class cfgWeapons
 			maxRange = 300;
 			maxRangeProbab = 0.100000;
 		};
-		class medium: close {
+		class medium: close 
+		{
 			burst = 5;
 			aiRateOfFire = 4;
 			aiRateOfFireDistance = 600;
@@ -302,20 +325,6 @@ class cfgWeapons
 			midRangeProbab = 0.400000;
 			maxRange = 1100;
 			maxRangeProbab = 0.010000;
-		};
-	};
-	class ADFRC_aslav_mag58: ADFRC_aslav_coax
-	{
-		displayName = "MG 7.62mm Mag 58 Flex";
-		magazines[] = {"ADFRC_aslav_200Rnd_762x51_Tracer"};
-
-		class GunParticles {
-			class effect1
-			{
-				positionName = "gun_muzzle";
-				directionName = "gun_chamber";
-				effectName = "MachineGunCloud";
-			};
 		};
 	};
 	class autocannon_Base_F;
