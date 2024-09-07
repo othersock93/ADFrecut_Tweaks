@@ -238,7 +238,7 @@ class CfgVehicles
 	};
 	class adfrc_boxer: APC_Wheeled_03_base_F
 	{
-		author="$STR_A3_Bohemia_Interactive";
+		author="$STR_ADF_AUTHOR";
 		mapSize=10.25;
 		accuracy=0.25;
 		displayName="$STR_A3_CFGVEHICLES_APC_WHEELED_03_WAPC0";
@@ -1252,6 +1252,7 @@ class CfgVehicles
 		icon="adf_wheeled\adfrc_boxer\data\ui\mapboxercrv.paa";
 		side=1;
 		scope=2;
+		scopeCurator=2;
 		faction="ADF";
 		crew="ADFRC_crewman_amcu";
 		transportSoldier=4;
@@ -1737,6 +1738,7 @@ class CfgVehicles
 		icon="adf_wheeled\adfrc_boxer\data\ui\mapboxerapc.paa";
 		side=1;
 		scope=2;
+		scopeCurator=2;
 		faction="ADF";
 		crew="ADFRC_crewman_amcu";
 		transportSoldier=8;
