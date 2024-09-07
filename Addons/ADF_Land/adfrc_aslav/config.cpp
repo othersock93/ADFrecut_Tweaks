@@ -497,42 +497,42 @@ class CfgVehicles
 			class coax_muzzle_rot
 			{
 				source="ammorandom";
-				weapon="ADFRC_land_coax";
+				weapon="ADFRC_aslav_coax";
 			};
 			class coax_muzzle_hide
 			{
 				source="reload";
-				weapon="ADFRC_land_coax";
+				weapon="ADFRC_aslav_coax";
 			};/*
 			class MAG58_reloadMagazine
 			{
 				source="reloadMagazine";
-				weapon="ADFRC_land_coax_mounted";//ADFRC_mag58_vehicle
+				weapon="ADFRC_aslav_coax_mounted";//ADFRC_mag58_vehicle
 			};
 			class MAG58_isEmpty
 			{
 				source="isEmpty";
-				weapon="ADFRC_land_coax_mounted";//ADFRC_mag58_vehicle
+				weapon="ADFRC_aslav_coax_mounted";//ADFRC_mag58_vehicle
 			};
 			class MAG58_reload
 			{
 				source="reload";
-				weapon="ADFRC_land_coax_mounted";//ADFRC_mag58_vehicle
+				weapon="ADFRC_aslav_coax_mounted";//ADFRC_mag58_vehicle
 			};
 			class MAG58_revolving
 			{
 				source="revolving";
-				weapon="ADFRC_land_coax_mounted";//ADFRC_mag58_vehicle
+				weapon="ADFRC_aslav_coax_mounted";//ADFRC_mag58_vehicle
 			};
 			class MAG58_muzzle_rot
 			{
 				source="ammorandom";
-				weapon="ADFRC_land_coax_mounted";//ADFRC_mag58_vehicle
+				weapon="ADFRC_aslav_coax_mounted";//ADFRC_mag58_vehicle
 			};
 			class MAG58_muzzle_hide
 			{
 				source="reload";
-				weapon="ADFRC_land_coax_mounted";//ADFRC_mag58_vehicle
+				weapon="ADFRC_aslav_coax_mounted";//ADFRC_mag58_vehicle
 			};*/
 			class slat_armor
 			{
