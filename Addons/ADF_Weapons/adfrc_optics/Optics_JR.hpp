@@ -18,6 +18,7 @@ ADFRC_EXPS3_Down = 1;
 
 //Legacy
 ADFRC_acog_ta31 = 1;
+ADFRC_acog_ta31_RDS = 1;
 ADFRC_acog_ta31_t = 1;
 ADFRC_acog_ta648 = 1;
 ADFRC_acog_ta648_rds = 1;
@@ -45,6 +46,7 @@ ADFRC_EXPS3_Down = 1;
 
 //Legacy
 ADFRC_acog_ta31 = 1;
+ADFRC_acog_ta31_RDS = 1;
 ADFRC_acog_ta31_t = 1;
 ADFRC_acog_ta648 = 1;
 ADFRC_acog_ta648_rds = 1;
@@ -72,6 +74,7 @@ ADFRC_EXPS3_Down = 1;
 
 //Legacy
 ADFRC_acog_ta31 = 1;
+ADFRC_acog_ta31_RDS = 1;
 ADFRC_acog_ta31_t = 1;
 ADFRC_acog_ta648 = 1;
 ADFRC_acog_ta648_rds = 1;

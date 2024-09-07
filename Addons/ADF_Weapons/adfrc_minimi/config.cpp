@@ -356,7 +356,7 @@ class CfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="ADFRC_elcan_c79";
+				item="ADFRC_Specter_RAR";
 			};
 		};
 	};
@@ -398,7 +398,7 @@ class CfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="ADFRC_elcan_c79";
+				item="ADFRC_Specter_RAR";
 			};
 		};
 	};
@@ -411,7 +411,7 @@ class CfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="ADFRC_eotech552";
+				item="ADFRC_EXPS3";
 			};
 		};
 	};

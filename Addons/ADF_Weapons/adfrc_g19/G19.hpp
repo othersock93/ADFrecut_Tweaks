@@ -138,3 +138,50 @@ class Pistol_Base_F;
 			libTextDesc = "G19 9mm";
 		};
 	};
+	
+
+class ADFRC_WP_G19_FK_Comp: ADFRC_G19_G5_MOS_9
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_DPP;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = ADFRC_X400_Light;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_Zev;
+		};
+	};
+};
+
+class ADFRC_WP_G19_FK_SUP: ADFRC_G19_G5_MOS_9
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_DPP;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = ADFRC_X400_Light;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_Ryder9;
+		};
+	};
+};

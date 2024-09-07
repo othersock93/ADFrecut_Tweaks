@@ -7,7 +7,7 @@ class arifle_AUG_ACO_Pointer_F: arifle_AUG_F
 		class LinkedItemsOptic
 		{
 			slot = CowsSlot;
-			item = optic_ACO;
+			item = ADFRC_EXPS3;
 		};
 		class LinkedItemsAcc
 		{
@@ -25,7 +25,7 @@ class arifle_AUG_Holo_Pointer_F: arifle_AUG_F
 		class LinkedItemsOptic
 		{
 			slot = CowsSlot;
-			item = optic_Holosight;
+			item = ADFRC_EXPS3;
 		};
 		class LinkedItemsAcc
 		{
@@ -43,7 +43,7 @@ class arifle_AUG_MRCO_Pointer_F: arifle_AUG_F
 		class LinkedItemsOptic
 		{
 			slot = CowsSlot;
-			item = optic_MRCO;
+			item = ADFRC_Specter_RAR_KF;
 		};
 		class LinkedItemsAcc
 		{
@@ -74,7 +74,7 @@ class arifle_AUG_GL_ACO_F: arifle_AUG_GL_F
 		class LinkedItemsOptic
 		{
 			slot = CowsSlot;
-			item = optic_ACO;
+			item = ADFRC_EXPS3;
 		};
 	};
 };
@@ -87,7 +87,7 @@ class arifle_AUG_GL_MRCO_Pointer_F: arifle_AUG_GL_F
 		class LinkedItemsOptic
 		{
 			slot = CowsSlot;
-			item = optic_MRCO;
+			item = ADFRC_Specter_RAR_KF;
 		};
 		class LinkedItemsAcc
 		{
@@ -118,7 +118,7 @@ class arifle_AUG_C_ACO_Pointer_F: arifle_AUG_C_F
 		class LinkedItemsOptic
 		{
 			slot = CowsSlot;
-			item = optic_ACO;
+			item = ADFRC_EXPS3;
 		};
 		class LinkedItemsAcc
 		{
@@ -136,7 +136,7 @@ class arifle_AUG_C_Holo_Pointer_F: arifle_AUG_C_F
 		class LinkedItemsOptic
 		{
 			slot = CowsSlot;
-			item = optic_Holosight;
+			item = ADFRC_EXPS3;
 		};
 		class LinkedItemsAcc
 		{
@@ -154,7 +154,7 @@ class arifle_AUG_C_Holo_F: arifle_AUG_C_F
 		class LinkedItemsOptic
 		{
 			slot = CowsSlot;
-			item = optic_Holosight;
+			item = ADFRC_EXPS3;
 		};
 	};
 };
@@ -167,12 +167,12 @@ class arifle_AUG_C_Holo_FL_F: arifle_AUG_C_F
 		class LinkedItemsOptic
 		{
 			slot = CowsSlot;
-			item = optic_Holosight;
+			item = ADFRC_EXPS3;
 		};
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = acc_flashlight;
+			item = ADFRC_WMLx_BLK_R_WL;
 		};
 	};
 };
@@ -185,7 +185,7 @@ class arifle_AUG_black_flash_F: arifle_AUG_black_F
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = acc_flashlight;
+			item = ADFRC_WMLx_BLK_R_WL;
 		};
 	};
 };
@@ -198,12 +198,12 @@ class arifle_AUG_black_aco_flash_F: arifle_AUG_black_F
 		class LinkedItemsOptic
 		{
 			slot = CowsSlot;
-			item = optic_ACO;
+			item = ADFRC_EXPS3;
 		};
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = acc_flashlight;
+			item = ADFRC_WMLx_BLK_R_WL;
 		};
 	};
 };
@@ -216,12 +216,12 @@ class arifle_AUG_black_arco_flash_F: arifle_AUG_black_F
 		class LinkedItemsOptic
 		{
 			slot = CowsSlot;
-			item = optic_Arco_blk_F;
+			item = ADFRC_Specter_RAR;
 		};
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = acc_flashlight;
+			item = ADFRC_WMLx_BLK_R_WL;
 		};
 	};
 };
@@ -234,12 +234,12 @@ class arifle_AUG_GL_black_aco_flash_F: arifle_AUG_GL_black_F
 		class LinkedItemsOptic
 		{
 			slot = CowsSlot;
-			item = optic_ACO;
+			item = ADFRC_EXPS3;
 		};
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = acc_flashlight;
+			item = ADFRC_WMLx_BLK_R_WL;
 		};
 	};
 };
@@ -252,12 +252,12 @@ class arifle_AUG_GL_black_arco_flash_F: arifle_AUG_GL_black_F
 		class LinkedItemsOptic
 		{
 			slot = CowsSlot;
-			item = optic_Arco_blk_F;
+			item = ADFRC_Specter_RAR;
 		};
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = acc_flashlight;
+			item = ADFRC_WMLx_BLK_R_WL;
 		};
 	};
 };
@@ -270,7 +270,26 @@ class arifle_AUG_C_black_flash_F: arifle_AUG_C_black_F
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = acc_flashlight;
+			item = ADFRC_WMLx_BLK_R_WL;
+		};
+	};
+};
+
+// AUR 90C 5.56 mm (Black) + Flashlight
+class arifle_AUG_C_Eotech_black_flash_F: arifle_AUG_C_black_F
+{
+	author = $STR_A3_AveryTheKitty_and_Luchador;
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_EXPS3;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = ADFRC_WMLx_BLK_R_WL;
 		};
 	};
 };

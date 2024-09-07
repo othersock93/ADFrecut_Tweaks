@@ -484,6 +484,13 @@ class cfgWeapons
 			};
 		};
 	};
+	
+	class ADFRC_acog_ta31_RDS: ADFRC_acog_ta31
+	{
+		scope=2;
+		displayName="ACOG TA31 (RMR)";
+	};
+	
 	class ADFRC_acog_ta31_t: ADFRC_acog_ta31
 	{
 		scope=2;

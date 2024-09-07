@@ -228,7 +228,7 @@ class CfgWeapons
 		{
 			class LinkedItemsOptic
 			{
-				item="ADFRC_ELCAN_c79";
+				item="ADFRC_Specter_CDO";
 				slot="CowsSlot";
 			};
 		};
@@ -241,7 +241,7 @@ class CfgWeapons
 		{
 			class LinkedItemsOptic
 			{
-				item="ADFRC_eotech552";
+				item="ADFRC_EXPS3";
 				slot="CowsSlot";
 			};
 			class LinkItemsPointer

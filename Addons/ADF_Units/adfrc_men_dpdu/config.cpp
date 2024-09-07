@@ -69,7 +69,7 @@ class cfgVehicles
 		uniformClass="U_B_CombatUniform_mcam_vest";
 		weapons[]=
 		{
-			"ADFRC_hk416_sand",
+			"ADFRC_WP_M4A5_KAC_EXPS3",
 			"adfrc_usp",
 			"Throw",
 			"Put",
@@ -77,7 +77,7 @@ class cfgVehicles
 		};
 		respawnWeapons[]=
 		{
-			"ADFRC_hk416_sand",
+			"ADFRC_WP_M4A5_KAC_EXPS3",
 			"adfrc_usp",
 			"Throw",
 			"Put",
@@ -93,14 +93,14 @@ class cfgVehicles
 		};
 		magazines[]=
 		{
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
 			"16Rnd_9x21_Mag",
 			"SmokeShell",
 			"SmokeShell",
@@ -109,14 +109,14 @@ class cfgVehicles
 		};
 		respawnMagazines[]=
 		{
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
 			"16Rnd_9x21_Mag",
 			"SmokeShell",
 			"SmokeShell",
@@ -184,7 +184,7 @@ class cfgVehicles
 		icon="iconManExplosive";
 		weapons[]=
 		{
-			"ADFRC_hk416_sand",
+			"ADFRC_WP_M4A5_KAC_ACOG",
 			"adfrc_usp",
 			"Throw",
 			"Put",
@@ -192,7 +192,7 @@ class cfgVehicles
 		};
 		respawnWeapons[]=
 		{
-			"ADFRC_hk416_sand",
+			"ADFRC_WP_M4A5_KAC_ACOG",
 			"adfrc_usp",
 			"Throw",
 			"Put",
@@ -200,14 +200,14 @@ class cfgVehicles
 		};
 		magazines[]=
 		{
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
 			"16Rnd_9x21_Mag",
 			"SmokeShell",
 			"SmokeShell",
@@ -216,14 +216,14 @@ class cfgVehicles
 		};
 		respawnMagazines[]=
 		{
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
 			"16Rnd_9x21_Mag",
 			"SmokeShell",
 			"SmokeShell",
@@ -395,7 +395,7 @@ class cfgVehicles
 		editorPreview = "\ADF_Units\ADFRC_men_dpdu\preview\ADFRC_riflemanAT_dpdu.jpg";
 		weapons[]=
 		{
-			"ADFRC_hk416_sand",
+			"ADFRC_WP_M4A5_KAC_EXPS3",
 			"ADFRC_carlgustav_m3",
 			"Throw",
 			"Put",
@@ -403,7 +403,7 @@ class cfgVehicles
 		};
 		respawnWeapons[]=
 		{
-			"ADFRC_hk416_sand",
+			"ADFRC_WP_M4A5_KAC_EXPS3",
 			"ADFRC_carlgustav_m3",
 			"Throw",
 			"Put",
@@ -411,14 +411,14 @@ class cfgVehicles
 		};
 		magazines[]=
 		{
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
 			"SmokeShell",
 			"SmokeShell",
 			"ADFRC_f1_grenade",
@@ -426,14 +426,14 @@ class cfgVehicles
 		};
 		respawnMagazines[]=
 		{
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
 			"SmokeShell",
 			"SmokeShell",
 			"ADFRC_f1_grenade",
@@ -505,14 +505,14 @@ class cfgVehicles
 		detectSkill=80;
 		magazines[]=
 		{
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
 			"16Rnd_9x21_Mag",
 			"SmokeShell",
 			"SmokeShell",
@@ -523,14 +523,14 @@ class cfgVehicles
 		};
 		respawnMagazines[]=
 		{
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
 			"16Rnd_9x21_Mag",
 			"SmokeShell",
 			"SmokeShell",
@@ -657,7 +657,7 @@ class cfgVehicles
 		editorPreview = "\ADF_Units\ADFRC_men_dpdu\preview\ADFRC_teamleader_dpdu.jpg";
 		weapons[]=
 		{
-			"ADFRC_hk416_GL_sand",
+			"ADFRC_WP_M4A5_KAC_EXPS3M",
 			"adfrc_usp",
 			"Throw",
 			"Put",
@@ -665,7 +665,7 @@ class cfgVehicles
 		};
 		respawnWeapons[]=
 		{
-			"ADFRC_hk416_GL_sand",
+			"ADFRC_WP_M4A5_KAC_EXPS3M",
 			"adfrc_usp",
 			"Throw",
 			"Put",
@@ -673,14 +673,14 @@ class cfgVehicles
 		};
 		magazines[]=
 		{
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
 			"16Rnd_9x21_Mag",
 			"SmokeShell",
 			"SmokeShell",
@@ -689,14 +689,14 @@ class cfgVehicles
 		};
 		respawnMagazines[]=
 		{
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
 			"16Rnd_9x21_Mag",
 			"SmokeShell",
 			"SmokeShell",
@@ -743,14 +743,14 @@ class cfgVehicles
 		editorPreview = "\ADF_Units\ADFRC_men_dpdu\preview\ADFRC_squadleader_dpdu.jpg";
 		magazines[]=
 		{
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
 			"16Rnd_9x21_Mag",
 			"SmokeShell",
 			"SmokeShell",
@@ -765,14 +765,14 @@ class cfgVehicles
 		};
 		respawnMagazines[]=
 		{
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
-			"30Rnd_556x45_Stanag_Sand_red",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
+			"ADFRC_30Rnd_STANAG_mixed",
 			"16Rnd_9x21_Mag",
 			"SmokeShell",
 			"SmokeShell",
