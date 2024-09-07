@@ -581,7 +581,7 @@ class CfgMagazines
 	{
 		scope= 1;
 		scopeArsenal= 1;
-		displayName= "13 Round 9x19 Browning";
+		displayName= "10 Round 9x19 Browning";
 		displayNameShort= "13 Rnd 9mm";
 		descriptionShort="Calibre: 9x19 mm<br/>Rounds: 13<br/>Used in: Browning High Power MKII";
 		count= 13;
@@ -592,7 +592,7 @@ class CfgMagazines
 	{
 		scope= 2;
 		scopeArsenal= 2;
-		displayName= "10 Round 9x19 Browning";
+		displayName= "13 Round 9x19 Browning";
 		displayNameShort= "13 Rnd 9mm";
 		descriptionShort="Calibre: 9x19 mm<br/>Rounds: 13<br/>Used in: Browning High Power MKII";
 		count= 13;
