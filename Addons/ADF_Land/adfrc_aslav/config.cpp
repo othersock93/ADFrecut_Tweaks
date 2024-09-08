@@ -214,6 +214,7 @@ class CfgVehicles
 		driverCanSee="4+8+2+32+16";
 		gunnerCanSee="4+2+8+32+16";
 		commanderCanSee="4+2+8+32+16";
+		incomingMissileDetectionSystem = 0;
 		//enableManualFire=0;
 		//enableManualFire = 1;
 		LODTurnedIn = -1;
@@ -497,42 +498,42 @@ class CfgVehicles
 			class coax_muzzle_rot
 			{
 				source="ammorandom";
-				weapon="ADFRC_aslav_coax";
+				weapon="ADFRC_land_coax";
 			};
 			class coax_muzzle_hide
 			{
 				source="reload";
-				weapon="ADFRC_aslav_coax";
+				weapon="ADFRC_land_coax";
 			};/*
 			class MAG58_reloadMagazine
 			{
 				source="reloadMagazine";
-				weapon="ADFRC_aslav_coax_mounted";//ADFRC_mag58_vehicle
+				weapon="ADFRC_land_coax_mounted";//ADFRC_mag58_vehicle
 			};
 			class MAG58_isEmpty
 			{
 				source="isEmpty";
-				weapon="ADFRC_aslav_coax_mounted";//ADFRC_mag58_vehicle
+				weapon="ADFRC_land_coax_mounted";//ADFRC_mag58_vehicle
 			};
 			class MAG58_reload
 			{
 				source="reload";
-				weapon="ADFRC_aslav_coax_mounted";//ADFRC_mag58_vehicle
+				weapon="ADFRC_land_coax_mounted";//ADFRC_mag58_vehicle
 			};
 			class MAG58_revolving
 			{
 				source="revolving";
-				weapon="ADFRC_aslav_coax_mounted";//ADFRC_mag58_vehicle
+				weapon="ADFRC_land_coax_mounted";//ADFRC_mag58_vehicle
 			};
 			class MAG58_muzzle_rot
 			{
 				source="ammorandom";
-				weapon="ADFRC_aslav_coax_mounted";//ADFRC_mag58_vehicle
+				weapon="ADFRC_land_coax_mounted";//ADFRC_mag58_vehicle
 			};
 			class MAG58_muzzle_hide
 			{
 				source="reload";
-				weapon="ADFRC_aslav_coax_mounted";//ADFRC_mag58_vehicle
+				weapon="ADFRC_land_coax_mounted";//ADFRC_mag58_vehicle
 			};*/
 			class slat_armor
 			{
@@ -2433,7 +2434,7 @@ class CfgVehicles
 				gunnerName="Commander";
 				proxyType="CPGunner";
 				proxyIndex=1;
-				animationSourceHatch="hatchfront";
+				animationSourceHatch="HatchFront";
 				turretFollowFreeLook = 1;
 				weapons[]=
 				{
