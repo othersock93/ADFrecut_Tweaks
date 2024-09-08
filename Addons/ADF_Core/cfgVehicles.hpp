@@ -1,14 +1,9 @@
 class CfgVehicles
-{	
-	class SoldierWB;
-    class ADFRC_Soldier_base_F: SoldierWB
+{	class B_Soldier_base_F;
+    class ADFRC_Soldier_base_F: B_Soldier_base_F
     {
-        class EventHandlers;
-		class HitPoints;
 		scope=1;
-		scopeCurator=0;
 		author="$STR_ADF_AUTHOR";
-		_generalMacro="adfrc_Soldier_base_F";
 		identityTypes[]= 
 		{
             "LanguageENG_F",
@@ -19,7 +14,6 @@ class CfgVehicles
 		faction="ADF";
 		vehicleClass="";
     };
-	class B_Soldier_base_F;
 	class adfrc_OPFOR_Soldier_base_F: B_Soldier_base_F
 	{
 		scope=2;
