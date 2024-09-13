@@ -214,6 +214,7 @@ class CfgVehicles
 		driverCanSee="4+8+2+32+16";
 		gunnerCanSee="4+2+8+32+16";
 		commanderCanSee="4+2+8+32+16";
+		incomingMissileDetectionSystem = 0;
 		//enableManualFire=0;
 		//enableManualFire = 1;
 		LODTurnedIn = -1;
@@ -1463,7 +1464,7 @@ class CfgVehicles
 				gunnerOpticsEffect[] = {"TankGunnerOptics2","OpticsBlur1","OpticsCHAbera1"};
 				turretInfoType="RscOptics_APC_Wheeled_03_gunner";
 				hideWeaponsGunner = 1;
-				lockWhenDriverOut = 1;
+				lockWhenDriverOut = 0;
 				discreteDistance[] = {0,100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,};
 				discreteDistanceInitIndex = 0;
 				ace_fcs_enabled = 0;
@@ -2433,7 +2434,7 @@ class CfgVehicles
 				gunnerName="Commander";
 				proxyType="CPGunner";
 				proxyIndex=1;
-				animationSourceHatch="hatchfront";
+				animationSourceHatch="HatchFront";
 				turretFollowFreeLook = 1;
 				weapons[]=
 				{
