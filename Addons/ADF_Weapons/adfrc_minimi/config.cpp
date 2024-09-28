@@ -26,6 +26,9 @@ class SlotInfo;
 class CowsSlot;
 class PointerSlot;
 class CowsSlot_ADFRC;
+class asdg_MuzzleSlot_556;
+class asdg_FrontSideRail;
+class asdg_OpticRail1913;
 class cfgCloudlets
 {
 	class MachineGunEject;
@@ -111,17 +114,17 @@ class CfgWeapons
 		{
 			mass=60;
 			allowedSlots[]={901};
-			class MuzzleSlot: SlotInfo
+			class MuzzleSlot: asdg_MuzzleSlot_556
 			{
 				linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
 				compatibleItems[]={};
 			};
-			class PointerSlot: PointerSlot
+			class PointerSlot: asdg_FrontSideRail
 			{
 				linkProxy="\A3\data_f\proxies\weapon_slots\SIDE";
 				compatibleItems[]={};
 			};
-			class CowsSlot: CowsSlot_ADFRC
+			class CowsSlot: asdg_OpticRail1913
 			{
 			};
 		};
@@ -371,22 +374,6 @@ class CfgWeapons
 		{
 			"OFP2_ManSkeleton",
 			"\ADF_Weapons\ADFRC_minimi\anim\f89_para.rtm"
-		};
-		class WeaponSlotsInfo
-		{
-			mass=60;
-			allowedSlots[]={901};
-			class MuzzleSlot: SlotInfo
-			{
-				linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
-				compatibleItems[]={};
-			};
-			class PointerSlot: PointerSlot
-			{
-			};
-			class CowsSlot: CowsSlot
-			{
-			};
 		};
 	};
 	class ADFRC_minimi_para_elcan: ADFRC_minimi_para
