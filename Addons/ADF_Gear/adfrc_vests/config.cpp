@@ -159,20 +159,20 @@ class cfgWeapons
 		};
 	};
 	// TBAS
-	class ADFRC_PC_Tan_1: Vest_Camo_Base
+	class ADFRC_TBAS_1: Vest_Camo_Base
 	{
 		scope=2;
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "ADF TBAS Vest 1 (Tan)";
+		displayName = "ADF TBAS Vest 1";
 		picture = "";
-		model="\ADF_Gear\adfrc_vests\PC_1.p3d";
+		model="\ADF_Gear\adfrc_vests\tbas_1.p3d";
 		hiddenSelections[]={};
 		hiddenSelectionsTextures[]={};
 		class ItemInfo: VestItem
 		{
-			uniformModel="\ADF_Gear\adfrc_vests\PC_1.p3d";
+			uniformModel="\ADF_Gear\adfrc_vests\tbas_1.p3d";
 			containerClass="Supply180";
 			mass=60;
 			hiddenSelections[]={};
@@ -206,410 +206,20 @@ class cfgWeapons
 			};
 		};
 	};
-	class ADFRC_PC_Tan_2: Vest_Camo_Base
+	class ADFRC_TBAS_2: Vest_Camo_Base
 	{
 		scope=2;
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "ADF TBAS Vest 2 (Tan)";
+		displayName = "ADF TBAS Vest 2";
 		picture = "";
-		model="\ADF_Gear\adfrc_vests\PC_2.p3d";
+		model="\ADF_Gear\adfrc_vests\tbas_2.p3d";
 		hiddenSelections[]={};
 		hiddenSelectionsTextures[]={};
 		class ItemInfo: VestItem
 		{
-			uniformModel="\ADF_Gear\adfrc_vests\PC_2.p3d";
-			containerClass="Supply180";
-			mass=60;
-			hiddenSelections[]={};
-			hiddenSelectionsTextures[]={};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName="HitChest";
-					armor=60;
-					PassThrough=0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName="HitDiaphragm";
-					armor=60;
-					PassThrough=0.1;
-				};
-				class Abdomen
-				{
-					HitpointName="HitAbdomen";
-					armor=60;
-					passThrough=0.1;
-				};
-				class Body
-				{
-					hitpointName="HitBody";
-					armor=60;
-					passThrough=0.1;
-				};
-			};
-		};
-	};
-	class ADFRC_PC_Tan_3: Vest_Camo_Base
-	{
-		scope=2;
-		author="Exer";
-		weaponPoolAvailable=1;
-		allowedSlots[]={901};
-		displayName = "ADF TBAS Vest 3 (Tan)";
-		picture = "";
-		model="\ADF_Gear\adfrc_vests\PC_3.p3d";
-		hiddenSelections[]={};
-		hiddenSelectionsTextures[]={};
-		class ItemInfo: VestItem
-		{
-			uniformModel="\ADF_Gear\adfrc_vests\PC_3.p3d";
-			containerClass="Supply180";
-			mass=60;
-			hiddenSelections[]={};
-			hiddenSelectionsTextures[]={};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName="HitChest";
-					armor=60;
-					PassThrough=0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName="HitDiaphragm";
-					armor=60;
-					PassThrough=0.1;
-				};
-				class Abdomen
-				{
-					HitpointName="HitAbdomen";
-					armor=60;
-					passThrough=0.1;
-				};
-				class Body
-				{
-					hitpointName="HitBody";
-					armor=60;
-					passThrough=0.1;
-				};
-			};
-		};
-	};
-	class ADFRC_PC_Tan_4: Vest_Camo_Base
-	{
-		scope=2;
-		author="Exer";
-		weaponPoolAvailable=1;
-		allowedSlots[]={901};
-		displayName = "ADF TBAS Vest 4 (Tan)";
-		picture = "";
-		model="\ADF_Gear\adfrc_vests\PC_4.p3d";
-		hiddenSelections[]={};
-		hiddenSelectionsTextures[]={};
-		class ItemInfo: VestItem
-		{
-			uniformModel="\ADF_Gear\adfrc_vests\PC_4.p3d";
-			containerClass="Supply180";
-			mass=60;
-			hiddenSelections[]={};
-			hiddenSelectionsTextures[]={};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName="HitChest";
-					armor=60;
-					PassThrough=0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName="HitDiaphragm";
-					armor=60;
-					PassThrough=0.1;
-				};
-				class Abdomen
-				{
-					HitpointName="HitAbdomen";
-					armor=60;
-					passThrough=0.1;
-				};
-				class Body
-				{
-					hitpointName="HitBody";
-					armor=60;
-					passThrough=0.1;
-				};
-			};
-		};
-	};
-	class ADFRC_PC_Tan_5: Vest_Camo_Base
-	{
-		scope=2;
-		author="Exer";
-		weaponPoolAvailable=1;
-		allowedSlots[]={901};
-		displayName = "ADF TBAS Vest 5 (Tan)";
-		picture = "";
-		model="\ADF_Gear\adfrc_vests\PC_5.p3d";
-		hiddenSelections[]={};
-		hiddenSelectionsTextures[]={};
-		class ItemInfo: VestItem
-		{
-			uniformModel="\ADF_Gear\adfrc_vests\PC_5.p3d";
-			containerClass="Supply180";
-			mass=60;
-			hiddenSelections[]={};
-			hiddenSelectionsTextures[]={};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName="HitChest";
-					armor=60;
-					PassThrough=0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName="HitDiaphragm";
-					armor=60;
-					PassThrough=0.1;
-				};
-				class Abdomen
-				{
-					HitpointName="HitAbdomen";
-					armor=60;
-					passThrough=0.1;
-				};
-				class Body
-				{
-					hitpointName="HitBody";
-					armor=60;
-					passThrough=0.1;
-				};
-			};
-		};
-	};
-	class ADFRC_PC_Tan_6: Vest_Camo_Base
-	{
-		scope=2;
-		author="Exer";
-		weaponPoolAvailable=1;
-		allowedSlots[]={901};
-		displayName = "ADF TBAS Vest 6 (Tan)";
-		picture = "";
-		model="\ADF_Gear\adfrc_vests\PC_6.p3d";
-		hiddenSelections[]={};
-		hiddenSelectionsTextures[]={};
-		class ItemInfo: VestItem
-		{
-			uniformModel="\ADF_Gear\adfrc_vests\PC_6.p3d";
-			containerClass="Supply180";
-			mass=60;
-			hiddenSelections[]={};
-			hiddenSelectionsTextures[]={};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName="HitChest";
-					armor=60;
-					PassThrough=0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName="HitDiaphragm";
-					armor=60;
-					PassThrough=0.1;
-				};
-				class Abdomen
-				{
-					HitpointName="HitAbdomen";
-					armor=60;
-					passThrough=0.1;
-				};
-				class Body
-				{
-					hitpointName="HitBody";
-					armor=60;
-					passThrough=0.1;
-				};
-			};
-		};
-	};
-	class ADFRC_PC_Tan_7: Vest_Camo_Base
-	{
-		scope=2;
-		author="Exer";
-		weaponPoolAvailable=1;
-		allowedSlots[]={901};
-		displayName = "ADF TBAS Vest 7 (Tan)";
-		picture = "";
-		model="\ADF_Gear\adfrc_vests\PC_7.p3d";
-		hiddenSelections[]={};
-		hiddenSelectionsTextures[]={};
-		class ItemInfo: VestItem
-		{
-			uniformModel="\ADF_Gear\adfrc_vests\PC_7.p3d";
-			containerClass="Supply180";
-			mass=60;
-			hiddenSelections[]={};
-			hiddenSelectionsTextures[]={};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName="HitChest";
-					armor=60;
-					PassThrough=0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName="HitDiaphragm";
-					armor=60;
-					PassThrough=0.1;
-				};
-				class Abdomen
-				{
-					HitpointName="HitAbdomen";
-					armor=60;
-					passThrough=0.1;
-				};
-				class Body
-				{
-					hitpointName="HitBody";
-					armor=60;
-					passThrough=0.1;
-				};
-			};
-		};
-	};
-	class ADFRC_LPC_Tan_1: Vest_Camo_Base
-	{
-		scope=2;
-		author="Exer";
-		weaponPoolAvailable=1;
-		allowedSlots[]={901};
-		displayName = "ADF LPC 1 (Tan)";
-		picture = "";
-		model="\ADF_Gear\adfrc_vests\LPC_1.p3d";
-		hiddenSelections[]={};
-		hiddenSelectionsTextures[]={};
-		class ItemInfo: VestItem
-		{
-			uniformModel="\ADF_Gear\adfrc_vests\LPC_1.p3d";
-			containerClass="Supply180";
-			mass=60;
-			hiddenSelections[]={};
-			hiddenSelectionsTextures[]={};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName="HitChest";
-					armor=60;
-					PassThrough=0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName="HitDiaphragm";
-					armor=60;
-					PassThrough=0.1;
-				};
-				class Abdomen
-				{
-					HitpointName="HitAbdomen";
-					armor=60;
-					passThrough=0.1;
-				};
-				class Body
-				{
-					hitpointName="HitBody";
-					armor=60;
-					passThrough=0.1;
-				};
-			};
-		};
-	};
-	class ADFRC_LPC_Tan_2: Vest_Camo_Base
-	{
-		scope=2;
-		author="Exer";
-		weaponPoolAvailable=1;
-		allowedSlots[]={901};
-		displayName = "ADF LPC 2 (Tan)";
-		picture = "";
-		model="\ADF_Gear\adfrc_vests\LPC_2.p3d";
-		hiddenSelections[]={};
-		hiddenSelectionsTextures[]={};
-		class ItemInfo: VestItem
-		{
-			uniformModel="\ADF_Gear\adfrc_vests\LPC_2.p3d";
-			containerClass="Supply180";
-			mass=60;
-			hiddenSelections[]={};
-			hiddenSelectionsTextures[]={};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName="HitChest";
-					armor=60;
-					PassThrough=0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName="HitDiaphragm";
-					armor=60;
-					PassThrough=0.1;
-				};
-				class Abdomen
-				{
-					HitpointName="HitAbdomen";
-					armor=60;
-					passThrough=0.1;
-				};
-				class Body
-				{
-					hitpointName="HitBody";
-					armor=60;
-					passThrough=0.1;
-				};
-			};
-		};
-	};
-	/*class ADFRC_PC_AMC_1: Vest_Camo_Base
-	{
-		scope=2;
-		author="Exer";
-		weaponPoolAvailable=1;
-		allowedSlots[]={901};
-		displayName = "AA - ADF TBAS(TEST)";
-		picture = "";
-		model="\ADF_Gear\adfrc_vests\LPC_1.p3d";
-		hiddenSelections[]={
-			"acc",
-			"Belt",
-			"camo3",
-			"holster",
-			"LeftUpLeg"
-			
-		};
-		hiddenSelectionsTextures[]={
-			"adf_gear\adfrc_vests\data\tan\acc1_tan_co.paa",
-			"adf_gear\adfrc_vests\data\tan\belt_tan_co.paa",
-			"adf_gear\adfrc_vests\data\tan\lpc_lasercut_tan_co.paa",
-			"adf_gear\adfrc_vests\data\tan\holster_tan_co.paa",
-			"adf_gear\adfrc_vests\data\tan\cryepants_tan_co.paa"
-			
-		};
-		class ItemInfo: VestItem
-		{
-			uniformModel="\ADF_Gear\adfrc_vests\LPC_1.p3d";
+			uniformModel="\ADF_Gear\adfrc_vests\tbas_2.p3d";
 			containerClass="Supply180";
 			mass=60;
 			hiddenSelections[]={};
@@ -643,20 +253,20 @@ class cfgWeapons
 			};
 		};
 	};
-	class ADFRC_PC_AMC_2: Vest_Camo_Base
+	class ADFRC_TBAS_3: Vest_Camo_Base
 	{
 		scope=2;
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "ADF TBAS Vest 2 (Tan)";
+		displayName = "ADF TBAS Vest 3";
 		picture = "";
-		model="\ADF_Gear\adfrc_vests\PC_2.p3d";
+		model="\ADF_Gear\adfrc_vests\tbas_3.p3d";
 		hiddenSelections[]={};
 		hiddenSelectionsTextures[]={};
 		class ItemInfo: VestItem
 		{
-			uniformModel="\ADF_Gear\adfrc_vests\PC_2.p3d";
+			uniformModel="\ADF_Gear\adfrc_vests\tbas_3.p3d";
 			containerClass="Supply180";
 			mass=60;
 			hiddenSelections[]={};
@@ -684,26 +294,26 @@ class cfgWeapons
 				class Body
 				{
 					hitpointName="HitBody";
-					armor=60;
+					armor=260;
 					passThrough=0.1;
 				};
 			};
 		};
 	};
-	class ADFRC_PC_AMC_3: Vest_Camo_Base
+	class ADFRC_TBAS_4: Vest_Camo_Base
 	{
 		scope=2;
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "ADF TBAS Vest 3 (Tan)";
+		displayName = "ADF TBAS Vest 4";
 		picture = "";
-		model="\ADF_Gear\adfrc_vests\PC_3.p3d";
+		model="\ADF_Gear\adfrc_vests\tbas_4.p3d";
 		hiddenSelections[]={};
 		hiddenSelectionsTextures[]={};
 		class ItemInfo: VestItem
 		{
-			uniformModel="\ADF_Gear\adfrc_vests\PC_3.p3d";
+			uniformModel="\ADF_Gear\adfrc_vests\tbas_4.p3d";
 			containerClass="Supply180";
 			mass=60;
 			hiddenSelections[]={};
@@ -731,26 +341,26 @@ class cfgWeapons
 				class Body
 				{
 					hitpointName="HitBody";
-					armor=60;
+					armor=260;
 					passThrough=0.1;
 				};
 			};
 		};
 	};
-	class ADFRC_PC_AMC_4: Vest_Camo_Base
+	class ADFRC_TBAS_5: Vest_Camo_Base
 	{
 		scope=2;
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "ADF TBAS Vest 4 (Tan)";
+		displayName = "ADF TBAS Vest 5";
 		picture = "";
-		model="\ADF_Gear\adfrc_vests\PC_4.p3d";
+		model="\ADF_Gear\adfrc_vests\tbas_5.p3d";
 		hiddenSelections[]={};
 		hiddenSelectionsTextures[]={};
 		class ItemInfo: VestItem
 		{
-			uniformModel="\ADF_Gear\adfrc_vests\PC_4.p3d";
+			uniformModel="\ADF_Gear\adfrc_vests\tbas_5.p3d";
 			containerClass="Supply180";
 			mass=60;
 			hiddenSelections[]={};
@@ -778,26 +388,26 @@ class cfgWeapons
 				class Body
 				{
 					hitpointName="HitBody";
-					armor=60;
+					armor=260;
 					passThrough=0.1;
 				};
 			};
 		};
 	};
-	class ADFRC_PC_AMC_5: Vest_Camo_Base
+	class ADFRC_TBAS_6: Vest_Camo_Base
 	{
 		scope=2;
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "ADF TBAS Vest 5 (Tan)";
+		displayName = "ADF TBAS Vest 6";
 		picture = "";
-		model="\ADF_Gear\adfrc_vests\PC_5.p3d";
+		model="\ADF_Gear\adfrc_vests\tbas_6.p3d";
 		hiddenSelections[]={};
 		hiddenSelectionsTextures[]={};
 		class ItemInfo: VestItem
 		{
-			uniformModel="\ADF_Gear\adfrc_vests\PC_5.p3d";
+			uniformModel="\ADF_Gear\adfrc_vests\tbas_6.p3d";
 			containerClass="Supply180";
 			mass=60;
 			hiddenSelections[]={};
@@ -825,26 +435,26 @@ class cfgWeapons
 				class Body
 				{
 					hitpointName="HitBody";
-					armor=60;
+					armor=260;
 					passThrough=0.1;
 				};
 			};
 		};
 	};
-	class ADFRC_PC_AMC_6: Vest_Camo_Base
+	class ADFRC_TBAS_7: Vest_Camo_Base
 	{
 		scope=2;
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "ADF TBAS Vest 6 (Tan)";
+		displayName = "ADF TBAS Vest 7";
 		picture = "";
-		model="\ADF_Gear\adfrc_vests\PC_6.p3d";
+		model="\ADF_Gear\adfrc_vests\tbas_7.p3d";
 		hiddenSelections[]={};
 		hiddenSelectionsTextures[]={};
 		class ItemInfo: VestItem
 		{
-			uniformModel="\ADF_Gear\adfrc_vests\PC_6.p3d";
+			uniformModel="\ADF_Gear\adfrc_vests\tbas_7.p3d";
 			containerClass="Supply180";
 			mass=60;
 			hiddenSelections[]={};
@@ -872,26 +482,26 @@ class cfgWeapons
 				class Body
 				{
 					hitpointName="HitBody";
-					armor=60;
+					armor=260;
 					passThrough=0.1;
 				};
 			};
 		};
 	};
-	class ADFRC_PC_AMC_7: Vest_Camo_Base
+	class ADFRC_TBAS_8: Vest_Camo_Base
 	{
 		scope=2;
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "ADF TBAS Vest 7 (Tan)";
+		displayName = "ADF TBAS Vest 8";
 		picture = "";
-		model="\ADF_Gear\adfrc_vests\PC_7.p3d";
+		model="\ADF_Gear\adfrc_vests\tbas_8.p3d";
 		hiddenSelections[]={};
 		hiddenSelectionsTextures[]={};
 		class ItemInfo: VestItem
 		{
-			uniformModel="\ADF_Gear\adfrc_vests\PC_7.p3d";
+			uniformModel="\ADF_Gear\adfrc_vests\tbas_8.p3d";
 			containerClass="Supply180";
 			mass=60;
 			hiddenSelections[]={};
@@ -919,104 +529,30 @@ class cfgWeapons
 				class Body
 				{
 					hitpointName="HitBody";
-					armor=60;
+					armor=260;
 					passThrough=0.1;
 				};
 			};
 		};
 	};
-	class ADFRC_LPC_AMC_1: Vest_Camo_Base
+	class ADFRC_PilotVest: Vest_Camo_Base
 	{
 		scope=2;
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "ADF LPC 1 (Tan)";
+		displayName = "ADF Aircrew Vest";
 		picture = "";
-		model="\ADF_Gear\adfrc_vests\LPC_1.p3d";
+		model="\ADF_Gear\adfrc_vests\vest_aircrew.p3d";
 		hiddenSelections[]={};
 		hiddenSelectionsTextures[]={};
 		class ItemInfo: VestItem
 		{
-			uniformModel="\ADF_Gear\adfrc_vests\LPC_1.p3d";
-			containerClass="Supply180";
-			mass=60;
+			uniformModel="\ADF_Gear\adfrc_vests\vest_aircrew.p3d";
+			containerClass="Supply90";
+			mass=30;
 			hiddenSelections[]={};
 			hiddenSelectionsTextures[]={};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName="HitChest";
-					armor=60;
-					PassThrough=0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName="HitDiaphragm";
-					armor=60;
-					PassThrough=0.1;
-				};
-				class Abdomen
-				{
-					HitpointName="HitAbdomen";
-					armor=60;
-					passThrough=0.1;
-				};
-				class Body
-				{
-					hitpointName="HitBody";
-					armor=60;
-					passThrough=0.1;
-				};
-			};
 		};
 	};
-	class ADFRC_LPC_AMC_2: Vest_Camo_Base
-	{
-		scope=2;
-		author="Exer";
-		weaponPoolAvailable=1;
-		allowedSlots[]={901};
-		displayName = "ADF LPC 2 (Tan)";
-		picture = "";
-		model="\ADF_Gear\adfrc_vests\LPC_2.p3d";
-		hiddenSelections[]={};
-		hiddenSelectionsTextures[]={};
-		class ItemInfo: VestItem
-		{
-			uniformModel="\ADF_Gear\adfrc_vests\LPC_2.p3d";
-			containerClass="Supply180";
-			mass=60;
-			hiddenSelections[]={};
-			hiddenSelectionsTextures[]={};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName="HitChest";
-					armor=60;
-					PassThrough=0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName="HitDiaphragm";
-					armor=60;
-					PassThrough=0.1;
-				};
-				class Abdomen
-				{
-					HitpointName="HitAbdomen";
-					armor=60;
-					passThrough=0.1;
-				};
-				class Body
-				{
-					hitpointName="HitBody";
-					armor=60;
-					passThrough=0.1;
-				};
-			};
-		};
-	};*/
 };
