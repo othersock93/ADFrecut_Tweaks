@@ -165,7 +165,7 @@ class cfgWeapons
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "ADF TBAS Vest 1";
+		displayName = "TBAS T5 Medic";
 		picture = "";
 		model="\ADF_Gear\adfrc_vests\tbas_1.p3d";
 		hiddenSelections[]={};
@@ -212,7 +212,7 @@ class cfgWeapons
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "ADF TBAS Vest 2";
+		displayName = "TBAS T5 Team Leader";
 		picture = "";
 		model="\ADF_Gear\adfrc_vests\tbas_2.p3d";
 		hiddenSelections[]={};
@@ -259,7 +259,7 @@ class cfgWeapons
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "ADF TBAS Vest 3";
+		displayName = "TBAS T5 Machine Gunner";
 		picture = "";
 		model="\ADF_Gear\adfrc_vests\tbas_3.p3d";
 		hiddenSelections[]={};
@@ -306,7 +306,7 @@ class cfgWeapons
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "ADF TBAS Vest 4";
+		displayName = "TBAS T5 Rifleman (Heavy)";
 		picture = "";
 		model="\ADF_Gear\adfrc_vests\tbas_4.p3d";
 		hiddenSelections[]={};
@@ -353,7 +353,7 @@ class cfgWeapons
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "ADF TBAS Vest 5";
+		displayName = "TBAS T5 Marksman";
 		picture = "";
 		model="\ADF_Gear\adfrc_vests\tbas_5.p3d";
 		hiddenSelections[]={};
@@ -400,7 +400,7 @@ class cfgWeapons
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "ADF TBAS Vest 6";
+		displayName = "TBAS T5 Engineer";
 		picture = "";
 		model="\ADF_Gear\adfrc_vests\tbas_6.p3d";
 		hiddenSelections[]={};
@@ -447,7 +447,7 @@ class cfgWeapons
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "ADF TBAS Vest 7";
+		displayName = "TBAS T5 Grenadier";
 		picture = "";
 		model="\ADF_Gear\adfrc_vests\tbas_7.p3d";
 		hiddenSelections[]={};
@@ -494,7 +494,7 @@ class cfgWeapons
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "ADF TBAS Vest 8";
+		displayName = "TBAS T5 Section Commander";
 		picture = "";
 		model="\ADF_Gear\adfrc_vests\tbas_8.p3d";
 		hiddenSelections[]={};
