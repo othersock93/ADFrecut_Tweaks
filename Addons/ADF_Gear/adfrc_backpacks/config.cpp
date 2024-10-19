@@ -1100,5 +1100,143 @@ class CfgVehicles{
 		tf_encryptionCode = "tf_west_radio_code";
 		tf_dialog = "rt1523g_radio_dialog";
 		tf_subtype = "digital_lr";
-    };  
+    };
+// MOLLE BACKPACKS
+	class Backpack_Base;
+	class adfrc_molle_bag_117g: ReammoBox
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		eden = 2;
+		class TransportMagazines {};
+		class TransportWeapons{};
+		reversed = 1;
+		displayName = "ADF Molle Backpack [117g]";
+		vehicleClass = Backpacks;
+		mapSize = 2;
+		isbackpack = 1;
+		allowedSlots[] = {901};
+		picture = "";
+		model = "ADF_Gear\adfrc_backpacks\molle_117g.p3d";
+		hiddenSelections[] = {""};
+		hiddenSelectionsTextures[] = {""};
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+	};
+	class adfrc_molle_bag_117g_slingshot: adfrc_molle_bag_117g
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		eden = 2;
+		displayName = "ADF Molle Backpack [117g Slingshot]";
+		picture = "";
+		model = "ADF_Gear\adfrc_backpacks\molle_117g_slingshot.p3d";
+		hiddenSelections[] = {""};
+		hiddenSelectionsTextures[] = {""};
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+	};
+	class adfrc_molle_bag_ASIP: adfrc_molle_bag_117g
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		eden = 2;
+		displayName = "ADF Molle Backpack [ASIP]";
+		picture = "";
+		model = "ADF_Gear\adfrc_backpacks\molle_asip.p3d";
+		hiddenSelections[] = {""};
+		hiddenSelectionsTextures[] = {""};
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+	};
+// EXERS MOLLE BACKPACKS
+	class ADFRC_BP_Placeholder_AMCU_1: ReammoBox
+	{
+		scope = 2;
+		author="Exer";
+		class TransportMagazines{};
+		class TransportWeapons{};
+		isbackpack = 1;
+		reversed = 1;
+		mapSize = 2;
+		vehicleClass = "Backpacks";
+		allowedSlots[] = {901};
+		model = "adf_gear\adfrc_backpacks\bp_1.p3d";
+		displayName = "Combat Pack";
+		picture = "";
+		icon  = "";
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {};
+		maximumLoad = 120;
+		mass=25;
+	};
+	class ADFRC_BP_Hydration_AMCU_1: ReammoBox
+	{
+		scope = 2;
+		author="Exer";
+		class TransportMagazines{};
+		class TransportWeapons{};
+		isbackpack = 1;
+		reversed = 1;
+		mapSize = 2;
+		vehicleClass = "Backpacks";
+		allowedSlots[] = {901};
+		model = "adf_gear\adfrc_backpacks\bp_2.p3d";
+		displayName = "Hydration Carrier";
+		picture = "";
+		icon  = "";
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {};
+		maximumLoad = 100;
+		mass=20;
+	};
+	class ADFRC_BP_Assault_AMCU_1: ReammoBox
+	{
+		scope = 2;
+		author="Exer";
+		class TransportMagazines{};
+		class TransportWeapons{};
+		isbackpack = 1;
+		reversed = 1;
+		mapSize = 2;
+		vehicleClass = "Backpacks";
+		allowedSlots[] = {901};
+		model = "adf_gear\adfrc_backpacks\bp_3.p3d";
+		displayName = "Assault Pack";
+		picture = "";
+		icon  = "";
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {};
+		maximumLoad = 220;
+		mass=30;
+	};
+	class ADFRC_BP_TacBag_AMCU_1: ReammoBox
+	{
+		scope = 2;
+		author="Exer";
+		class TransportMagazines{};
+		class TransportWeapons{};
+		isbackpack = 1;
+		reversed = 1;
+		mapSize = 2;
+		vehicleClass = "Backpacks";
+		allowedSlots[] = {901};
+		model = "adf_gear\adfrc_backpacks\bp_4.p3d";
+		displayName = "Tactical Backpack";
+		picture = "";
+		icon  = "";
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {};
+		maximumLoad = 300;
+		mass=30;
+	};
 };
