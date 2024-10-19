@@ -1158,4 +1158,85 @@ class CfgVehicles{
 		tf_dialog = "rt1523g_radio_dialog";
 		tf_subtype = "digital_lr";
 	};
+// EXERS MOLLE BACKPACKS
+	class ADFRC_BP_Placeholder_AMCU_1: ReammoBox
+	{
+		scope = 2;
+		author="Exer";
+		class TransportMagazines{};
+		class TransportWeapons{};
+		isbackpack = 1;
+		reversed = 1;
+		mapSize = 2;
+		vehicleClass = "Backpacks";
+		allowedSlots[] = {901};
+		model = "adf_gear\adfrc_backpacks\bp_1.p3d";
+		displayName = "Combat Pack";
+		picture = "";
+		icon  = "";
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {};
+		maximumLoad = 120;
+		mass=25;
+	};
+	class ADFRC_BP_Hydration_AMCU_1: ReammoBox
+	{
+		scope = 2;
+		author="Exer";
+		class TransportMagazines{};
+		class TransportWeapons{};
+		isbackpack = 1;
+		reversed = 1;
+		mapSize = 2;
+		vehicleClass = "Backpacks";
+		allowedSlots[] = {901};
+		model = "adf_gear\adfrc_backpacks\bp_2.p3d";
+		displayName = "Hydration Carrier";
+		picture = "";
+		icon  = "";
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {};
+		maximumLoad = 100;
+		mass=20;
+	};
+	class ADFRC_BP_Assault_AMCU_1: ReammoBox
+	{
+		scope = 2;
+		author="Exer";
+		class TransportMagazines{};
+		class TransportWeapons{};
+		isbackpack = 1;
+		reversed = 1;
+		mapSize = 2;
+		vehicleClass = "Backpacks";
+		allowedSlots[] = {901};
+		model = "adf_gear\adfrc_backpacks\bp_3.p3d";
+		displayName = "Assault Pack";
+		picture = "";
+		icon  = "";
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {};
+		maximumLoad = 220;
+		mass=30;
+	};
+	class ADFRC_BP_TacBag_AMCU_1: ReammoBox
+	{
+		scope = 2;
+		author="Exer";
+		class TransportMagazines{};
+		class TransportWeapons{};
+		isbackpack = 1;
+		reversed = 1;
+		mapSize = 2;
+		vehicleClass = "Backpacks";
+		allowedSlots[] = {901};
+		model = "adf_gear\adfrc_backpacks\bp_4.p3d";
+		displayName = "Tactical Backpack";
+		picture = "";
+		icon  = "";
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {};
+		maximumLoad = 300;
+		mass=30;
+	};
 };
