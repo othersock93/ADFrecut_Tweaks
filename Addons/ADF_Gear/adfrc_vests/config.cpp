@@ -159,13 +159,13 @@ class cfgWeapons
 		};
 	};
 	// TBAS
-	class ADFRC_TBAS_1: Vest_Camo_Base
+	class ADFRC_TBAS_T2_Medic: Vest_Camo_Base
 	{
 		scope=2;
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "TBAS T5 Medic";
+		displayName = "TBAS T2 - Medic";
 		picture = "";
 		model="\ADF_Gear\adfrc_vests\tbas_1.p3d";
 		hiddenSelections[]={};
@@ -206,13 +206,13 @@ class cfgWeapons
 			};
 		};
 	};
-	class ADFRC_TBAS_2: Vest_Camo_Base
+	class ADFRC_TBAS_T2_TL: Vest_Camo_Base
 	{
 		scope=2;
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "TBAS T5 Team Leader";
+		displayName = "TBAS T2 - Team Leader";
 		picture = "";
 		model="\ADF_Gear\adfrc_vests\tbas_2.p3d";
 		hiddenSelections[]={};
@@ -253,13 +253,13 @@ class cfgWeapons
 			};
 		};
 	};
-	class ADFRC_TBAS_3: Vest_Camo_Base
+	class ADFRC_TBAS_T2_LMG: Vest_Camo_Base
 	{
 		scope=2;
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "TBAS T5 Machine Gunner";
+		displayName = "TBAS T2 - Machine Gunner";
 		picture = "";
 		model="\ADF_Gear\adfrc_vests\tbas_3.p3d";
 		hiddenSelections[]={};
@@ -300,13 +300,13 @@ class cfgWeapons
 			};
 		};
 	};
-	class ADFRC_TBAS_4: Vest_Camo_Base
+	class ADFRC_TBAS_T2_Rifleman_Pistol: Vest_Camo_Base
 	{
 		scope=2;
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "TBAS T5 Rifleman (Heavy)";
+		displayName = "TBAS T2 - Rifleman (Pistol)";
 		picture = "";
 		model="\ADF_Gear\adfrc_vests\tbas_4.p3d";
 		hiddenSelections[]={};
@@ -347,13 +347,13 @@ class cfgWeapons
 			};
 		};
 	};
-	class ADFRC_TBAS_5: Vest_Camo_Base
+	class ADFRC_TBAS_T2_DMR: Vest_Camo_Base
 	{
 		scope=2;
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "TBAS T5 Marksman";
+		displayName = "TBAS T2 - DMR";
 		picture = "";
 		model="\ADF_Gear\adfrc_vests\tbas_5.p3d";
 		hiddenSelections[]={};
@@ -394,13 +394,13 @@ class cfgWeapons
 			};
 		};
 	};
-	class ADFRC_TBAS_6: Vest_Camo_Base
+	class ADFRC_TBAS_T2_Eng: Vest_Camo_Base
 	{
 		scope=2;
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "TBAS T5 Engineer";
+		displayName = "TBAS T2 - Engineer";
 		picture = "";
 		model="\ADF_Gear\adfrc_vests\tbas_6.p3d";
 		hiddenSelections[]={};
@@ -441,13 +441,13 @@ class cfgWeapons
 			};
 		};
 	};
-	class ADFRC_TBAS_7: Vest_Camo_Base
+	class ADFRC_TBAS_T2_Gren: Vest_Camo_Base
 	{
 		scope=2;
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "TBAS T5 Grenadier";
+		displayName = "TBAS T2 - Grenadier";
 		picture = "";
 		model="\ADF_Gear\adfrc_vests\tbas_7.p3d";
 		hiddenSelections[]={};
@@ -488,13 +488,13 @@ class cfgWeapons
 			};
 		};
 	};
-	class ADFRC_TBAS_8: Vest_Camo_Base
+	class ADFRC_TBAS_T2_Scout: Vest_Camo_Base
 	{
 		scope=2;
 		author="Exer";
 		weaponPoolAvailable=1;
 		allowedSlots[]={901};
-		displayName = "TBAS T5 Section Commander";
+		displayName = "TBAS T2 - Scout";
 		picture = "";
 		model="\ADF_Gear\adfrc_vests\tbas_8.p3d";
 		hiddenSelections[]={};
@@ -535,6 +535,109 @@ class cfgWeapons
 			};
 		};
 	};
+	
+
+	class ADFRC_TBAS_T2_Rifleman: Vest_Camo_Base
+	{
+		scope=2;
+		author="Exer";
+		weaponPoolAvailable=1;
+		allowedSlots[]={901};
+		displayName = "TBAS T2 - Rifleman";
+		picture = "";
+		model="\ADF_Gear\adfrc_vests\tbas_9.p3d";
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+		class ItemInfo: VestItem
+		{
+			uniformModel="\ADF_Gear\adfrc_vests\tbas_9.p3d";
+			containerClass="Supply180";
+			mass=60;
+			hiddenSelections[]={};
+			hiddenSelectionsTextures[]={};
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=60;
+					PassThrough=0.1;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=60;
+					PassThrough=0.1;
+				};
+				class Abdomen
+				{
+					HitpointName="HitAbdomen";
+					armor=60;
+					passThrough=0.1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					armor=260;
+					passThrough=0.1;
+				};
+			};
+		};
+	};
+	
+
+	class ADFRC_TBAS_T2_Rifleman_Light: Vest_Camo_Base
+	{
+		scope=2;
+		author="Exer";
+		weaponPoolAvailable=1;
+		allowedSlots[]={901};
+		displayName = "TBAS T2 - Rifleman (Light)";
+		picture = "";
+		model="\ADF_Gear\adfrc_vests\tbas_10.p3d";
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+		class ItemInfo: VestItem
+		{
+			uniformModel="\ADF_Gear\adfrc_vests\tbas_10.p3d";
+			containerClass="Supply180";
+			mass=60;
+			hiddenSelections[]={};
+			hiddenSelectionsTextures[]={};
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=60;
+					PassThrough=0.1;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=60;
+					PassThrough=0.1;
+				};
+				class Abdomen
+				{
+					HitpointName="HitAbdomen";
+					armor=60;
+					passThrough=0.1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					armor=260;
+					passThrough=0.1;
+				};
+			};
+		};
+	};
+	
+	
+	
+	
+	
 	class ADFRC_PilotVest: Vest_Camo_Base
 	{
 		scope=2;
