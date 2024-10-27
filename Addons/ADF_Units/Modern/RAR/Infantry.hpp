@@ -324,12 +324,12 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		cost=220000;
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		weapons[]={
-			"ADFRC_minimi",
+			"ADFRC_minimi_elcan",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"ADFRC_minimi",
+			"ADFRC_minimi_elcan",
 			"Throw",
 			"Put"
 		};
@@ -405,12 +405,12 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		cost=220000;
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		weapons[]={
-			"ADFRC_maximi",
+			"ADFRC_maximi_elcan",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"ADFRC_maximi",
+			"ADFRC_maximi_elcan",
 			"Throw",
 			"Put"
 		};
@@ -491,12 +491,12 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack="ADFRC_BP_Placeholder_AMCU_1";
 		weapons[]={
-			"adfrc_mag58",
+			"adfrc_mag58_elcan",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"adfrc_mag58",
+			"adfrc_mag58_elcan",
 			"Throw",
 			"Put"
 		};
