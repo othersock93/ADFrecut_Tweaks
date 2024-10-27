@@ -629,6 +629,7 @@
 			"ADFRC_F1_GRENADE",
 			"ADFRC_F1_GRENADE"
 		};
+		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
 			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
 			"ADFRC_PC_Tan_1",
