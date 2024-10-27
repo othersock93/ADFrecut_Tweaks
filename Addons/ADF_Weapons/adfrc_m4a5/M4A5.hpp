@@ -77,7 +77,7 @@
             {};
             class CowsSlot : asdg_OpticRail1913_long //Top / optic slot
             {};
-			 class UnderBarrelSlot : asdg_UnderSlot //bottom / bipod
+			class UnderBarrelSlot : asdg_UnderSlot //bottom / bipod
             {};
             class PointerSlot : asdg_FrontSideRail //side slot
             {};
