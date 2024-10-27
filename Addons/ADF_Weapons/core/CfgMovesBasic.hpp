@@ -5,32 +5,32 @@ class CfgMovesBasic
 
  	class ManActions
  	{
-		MSS_GestureRechamberM2010		= "MSS_GestureReloadM2010";
+		ADFRC_GestureRechamberM2010		= "ADFRC_GestureReloadM2010";
  	};
 
 	class Actions
 	{
 		class NoActions : ManActions
 		{
-			MSS_GestureRechamberM2010[]			= { "MSS_GestureRechamberM2010", "Gesture" };
+			ADFRC_GestureRechamberM2010[]			= { "ADFRC_GestureRechamberM2010", "Gesture" };
 		};
 		class RifleBaseStandActions;
 		class RifleProneActions: RifleBaseStandActions
 		{
-			MSS_GestureRechamberM2010[]			= { "MSS_GestureRechamberM2010_Prone", "Gesture" };
+			ADFRC_GestureRechamberM2010[]			= { "ADFRC_GestureRechamberM2010_Prone", "Gesture" };
 		};
 		class RifleAdjustProneBaseActions;
 		class RifleAdjustRProneActions: RifleAdjustProneBaseActions
 		{
-			MSS_GestureRechamberM2010[]			= { "MSS_GestureRechamberM2010_Context", "Gesture" };
+			ADFRC_GestureRechamberM2010[]			= { "ADFRC_GestureRechamberM2010_Context", "Gesture" };
 		};
 		class RifleAdjustLProneActions: RifleAdjustProneBaseActions
 		{
-			MSS_GestureRechamberM2010[]			= { "MSS_GestureRechamberM2010_Context", "Gesture" };
+			ADFRC_GestureRechamberM2010[]			= { "ADFRC_GestureRechamberM2010_Context", "Gesture" };
 		};
 		class RifleAdjustFProneActions: RifleAdjustProneBaseActions
 		{
-			MSS_GestureRechamberM2010[]			= { "MSS_GestureRechamberM2010", "Gesture" };
+			ADFRC_GestureRechamberM2010[]			= { "ADFRC_GestureRechamberM2010", "Gesture" };
 		};
 	};
 };
@@ -42,7 +42,7 @@ class CfgGesturesMale
 	class States
 	{
 		class GestureReloadBase;
-		class MSS_GestureRechamberM2010_Prone : Default
+		class ADFRC_GestureRechamberM2010_Prone : Default
 		{
 			file = "\ADF_Weapons\core\Anims\Gestures\rechamber_m2010_prone.rtm";
 			looped = 0;
@@ -60,7 +60,7 @@ class CfgGesturesMale
 			enableOptics = 1;
 		};
 
-		class MSS_GestureRechamberM2010 : Default
+		class ADFRC_GestureRechamberM2010 : Default
 		{
 			enableOptics = 1;
 			file = "\ADF_Weapons\core\Anims\Gestures\rechamber_m2010_standing.rtm";
@@ -79,7 +79,7 @@ class CfgGesturesMale
 			rightHandIKEnd = true;
 		};
 
-		class MSS_GestureRechamberM2010_Context : MSS_GestureRechamberM2010
+		class ADFRC_GestureRechamberM2010_Context : ADFRC_GestureRechamberM2010
 		{
 			mask = "handsWeapon_context";
 		};
