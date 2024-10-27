@@ -121,7 +121,7 @@ class ADFRC_MD_AMCU_Soldier_Light: ADFRC_MD_AMCU_Soldier_Base{
 			"ItemRadio"
 		};
 		respawnLinkedItems[]={
-			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
+			"adfrc_teamwendy_exfil_amcu_ct_Aus",
 			"ADFRC_TBAS_T2_Rifleman_Light",
 			"adfrc_facewear_kondor_blk_blk",
 			"ItemMap",
@@ -254,7 +254,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"1Rnd_SmokeRed_Grenade_shell", 
 			"1Rnd_SmokeBlue_Grenade_shell",
 			"SmokeShell",
-			"SmokeShell",
+			"SmokeShell"
 		};
 		respawnMagazines[]={
 			"ADFRC_30Rnd_aug_ef88",
@@ -276,7 +276,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"1Rnd_SmokeRed_Grenade_shell", 
 			"1Rnd_SmokeBlue_Grenade_shell",
 			"SmokeShell",
-			"SmokeShell",
+			"SmokeShell"
 		};
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
@@ -589,7 +589,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ADFRC_30Rnd_aug_ef88",
 			"ADFRC_30Rnd_aug_ef88",
 			"ADFRC_30Rnd_aug_ef88",
-			"ADFRC_30Rnd_aug_ef88",
+			"ADFRC_30Rnd_aug_ef88"
 		};
 		respawnMagazines[]={
 			"ADFRC_13Rnd_9x19_Mag",
@@ -603,7 +603,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ADFRC_30Rnd_aug_ef88",
 			"ADFRC_30Rnd_aug_ef88",
 			"ADFRC_30Rnd_aug_ef88",
-			"ADFRC_30Rnd_aug_ef88",
+			"ADFRC_30Rnd_aug_ef88"
 		};
 		items[] = {"FirstAidKit"};
 		linkedItems[]={
@@ -677,7 +677,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"SmokeShellPurple", 
 			"SmokeShellBlue", 
 			"SmokeShellBlue", 
-			"B_IR_Grenade", 
+			"B_IR_Grenade"
 		};
 		respawnMagazines[]={
 			"ADFRC_13Rnd_9x19_Mag",
@@ -703,7 +703,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"SmokeShellPurple", 
 			"SmokeShellBlue", 
 			"SmokeShellBlue", 
-			"B_IR_Grenade", 
+			"B_IR_Grenade"
 		};
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
@@ -774,7 +774,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ADFRC_30Rnd_aug_TR_ef88",
 			"SmokeShellRed", 
 			"SmokeShellPurple", 
-			"SmokeShellBlue", 
+			"SmokeShellBlue"
 		};
 		respawnMagazines[]={
 			"ADFRC_13Rnd_9x19_Mag",
@@ -797,7 +797,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ADFRC_30Rnd_aug_TR_ef88",
 			"SmokeShellRed", 
 			"SmokeShellPurple", 
-			"SmokeShellBlue", 
+			"SmokeShellBlue"
 		};
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit"};
 		linkedItems[]={

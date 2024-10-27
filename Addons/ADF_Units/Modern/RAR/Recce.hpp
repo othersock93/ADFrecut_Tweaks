@@ -308,7 +308,7 @@
 			"ADFRC_13Rnd_9x19_Mag",
 			"ADFRC_13Rnd_9x19_Mag",
 			"SmokeShell",
-			"ADFRC_F1_GRENADE",
+			"ADFRC_F1_GRENADE"
 		};
 		respawnMagazines[]={
 			"ADFRC_100Rnd_556_Belt",
@@ -321,7 +321,7 @@
 			"ADFRC_13Rnd_9x19_Mag",
 			"ADFRC_13Rnd_9x19_Mag",
 			"SmokeShell",
-			"ADFRC_F1_GRENADE",
+			"ADFRC_F1_GRENADE"
 		};
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
