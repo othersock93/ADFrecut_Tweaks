@@ -1,6 +1,4 @@
 	////////////////////////TAG-E/W Units///////////////////////////////////////////////////////////
-	class ADFRC_MD_Green_TAG_Base;
-	class ADFRC_MD_Green_TAG_Rolled_Base;
 	class ADFRC_MD_TAG_SASR_F: ADFRC_MD_Green_TAG_Rolled_Base{
 		displayName="Operator";
 		author="$STR_ADF_AUTHOR";
