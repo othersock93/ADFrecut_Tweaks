@@ -52,6 +52,20 @@ class arifle_AUG_MRCO_Pointer_F: arifle_AUG_F
 		};
 	};
 };
+
+// AUR 90 5.56 mm + MRCO + IR Laser Pointer
+class arifle_AUG_Specter_F: arifle_AUG_F
+{
+	author = $STR_A3_AveryTheKitty_and_Luchador;
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_Specter_RAR;
+		};
+	};
+};
 // AUR 90 5.56 mm + IR Laser Pointer
 class arifle_AUG_Pointer_F: arifle_AUG_F
 {
@@ -225,6 +239,43 @@ class arifle_AUG_black_arco_flash_F: arifle_AUG_black_F
 		};
 	};
 };
+
+// AUR 90 5.56 mm (Black) + ARCO (Black) + Flashlight
+class arifle_AUG_black_arco_F: arifle_AUG_black_F
+{
+	author = $STR_A3_AveryTheKitty_and_Luchador;
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_Specter_RAR;
+		};
+	};
+};
+// AUR 90 5.56 mm (Black) + ARCO (Black) + Flashlight
+class arifle_AUG_black_Spectr_flash_Sup_F: arifle_AUG_black_F
+{
+	author = $STR_A3_AveryTheKitty_and_Luchador;
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_Specter_RAR_KF;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = ADFRC_WMLx_BLK_R_WL;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_SOCOM_556;
+		};
+	};
+};
 // AUR 90 GL 5.56 mm (Black) + ACO (Red) + Flashlight
 class arifle_AUG_GL_black_aco_flash_F: arifle_AUG_GL_black_F
 {
@@ -267,6 +318,25 @@ class arifle_AUG_C_black_flash_F: arifle_AUG_C_black_F
 	author = $STR_A3_AveryTheKitty_and_Luchador;
 	class LinkedItems
 	{
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = ADFRC_WMLx_BLK_R_WL;
+		};
+	};
+};
+
+// AUR 90C 5.56 mm (Black) + Flashlight
+class arifle_AUG_C_Specter_black_flash_F: arifle_AUG_C_black_F
+{
+	author = $STR_A3_AveryTheKitty_and_Luchador;
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_Specter_RAR;
+		};
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;

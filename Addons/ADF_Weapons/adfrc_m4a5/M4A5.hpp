@@ -42,7 +42,7 @@
         distanceZoomMax = 300;
 		
 		magazines[] = {
-			"ADFU_30Rnd_PMAG"
+			"ADFRC_30Rnd_PMAG"
 		};
 		magazineWell[] = {"STANAG_556x45","STANAG_556x45_Large","CBA_556x45_STANAG","CBA_556x45_STANAG_L","CBA_556x45_STANAG_XL","CBA_556x45_STANAG_2D","CBA_556x45_STANAG_2D_XL"};
 
@@ -247,6 +247,9 @@ class ADFRC_M4A5_KAC_556: ADFRC_M4A5_556_Base
 		opticszoommin = 0.375;
 		aiDispersionCoefY = 10;
 		aiDispersionCoefX = 8;
+		magazines[] = {
+			"ADFRC_30Rnd_STANAG"
+		};
 		
 		   class WeaponSlotsInfo {
 			mass = 55;
@@ -293,6 +296,9 @@ class ADFRC_M4A5_KAC_NOFS_556: ADFRC_M4A5_556_Base
 		opticszoommin = 0.375;
 		aiDispersionCoefY = 10;
 		aiDispersionCoefX = 8;
+		magazines[] = {
+			"ADFRC_30Rnd_STANAG"
+		};
 		
 		   class WeaponSlotsInfo {
 			mass = 55;
