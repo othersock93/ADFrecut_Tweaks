@@ -109,7 +109,7 @@ class CfgVehicles
 		author="$STR_ADFRC_AUTHOR";
 		_generalMacro="ADFRC_blackhawk_BASE";
 		side=1;
-		faction="ADF";
+		faction="ADFRC_F_MD";
 		tf_RadioType = "TFAR_anarc210";
 		vehicleClass="AIR";
 		mapSize=16.82;
@@ -5743,7 +5743,7 @@ class CfgVehicles
 		author="$STR_ADFRC_AUTHOR";
 		_generalMacro="ADFRC_blackhawk_BASE_F";
 		mapSize=16.82;
-		crew="ADFRC_pilot_dpcu";
+		crew="ADFRC_MD_AMCU_Soldier_HeliPilot";
 		typicalCargo[]=
 		{
 			"ADFRC_crewman_dpcu"
@@ -5932,7 +5932,7 @@ class CfgVehicles
 		author="$STR_ADFRC_AUTHOR";
 		_generalMacro="ADFRC_blackhawk_MAG58_F";
 		mapSize=16.82;
-		crew="ADFRC_pilot_dpcu";
+		crew="ADFRC_MD_AMCU_Soldier_HeliPilot";
 		typicalCargo[]=
 		{
 			"ADFRC_crewman_dpcu"
@@ -6177,7 +6177,7 @@ class CfgVehicles
 		_generalMacro="ADFRC_blackhawk_MEV_F";
 		mapSize=16.82;
 		attendant=1;
-		crew="ADFRC_pilot_dpcu";
+		crew="ADFRC_MD_AMCU_Soldier_HeliPilot";
 		cargoAction[]=
 		{
 			"passenger_injured_medevac_truck02",
@@ -6270,7 +6270,7 @@ class CfgVehicles
 		author="$STR_ADFRC_AUTHOR";
 		_generalMacro="ADFRC_blackhawk_BASE_F";
 		mapSize=16.82;
-		crew="ADFRC_pilot_dpcu";
+		crew="ADFRC_MD_AMCU_Soldier_HeliPilot";
 		typicalCargo[]=
 		{
 			"ADFRC_crewman_dpcu"
@@ -6505,6 +6505,15 @@ class CfgVehicles
 				statement="this animateDoor ['door_gunner_R', 0]";
 			};
 		};
+	};
+//////////////////////// GWOT VERSIONS ////////////////////////////
+	class ADFRC_blackhawk_GWOT: ADFRC_blackhawk
+	{
+		faction = "ADFRC_F_GWOT";
+	};
+	class ADFRC_blackhawk_mag58_GWOT: ADFRC_blackhawk_MAG58
+	{
+		faction = "ADFRC_F_GWOT";
 	};
 };
 class cfgWeapons
