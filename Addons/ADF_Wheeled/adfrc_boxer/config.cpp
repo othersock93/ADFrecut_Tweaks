@@ -1188,7 +1188,7 @@ class CfgVehicles
 		side=1;
 		scope=2;
 		scopeCurator=2;
-		faction="ADF";
+		faction="ADFRC_F_MD";
 		crew="ADFRC_crewman_amcu";
 		transportSoldier=4;
 		accuracy = 0.3;
@@ -1674,7 +1674,7 @@ class CfgVehicles
 		side=1;
 		scope=2;
 		scopeCurator=2;
-		faction="ADF";
+		faction="ADFRC_F_MD";
 		crew="ADFRC_crewman_amcu";
 		transportSoldier=8;
 		accuracy = 0.3;
