@@ -32,6 +32,6 @@ class CfgVehicles
 		crew = "ADFRC_rifleman_dpcu";
 		typicalCargo[] = {"ADFRC_rifleman_dpcu"};
 		side = 1;
-		faction = "ADF";
+		faction = "ADFRC_F_MD";
 	};
 };

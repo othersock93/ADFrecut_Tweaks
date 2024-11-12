@@ -32,7 +32,7 @@ class CfgVehicles
 		crew = "ADFRC_rifleman_dpcu";
 		typicalCargo[] = {"ADFRC_rifleman_dpcu"};
 		side = 1;
-		faction = "ADF";
+		faction = "ADFRC_F_MD";
 	};
 	class B_G_HMG_02_high_F;
 	class ADFRC_m2qcb_high: B_G_HMG_02_high_F
@@ -45,6 +45,6 @@ class CfgVehicles
 		crew = "ADFRC_rifleman_dpcu";
 		typicalCargo[] = {"ADFRC_rifleman_dpcu"};
 		side = 1;
-		faction = "ADF";
+		faction = "ADFRC_F_MD";
 	};
 };
