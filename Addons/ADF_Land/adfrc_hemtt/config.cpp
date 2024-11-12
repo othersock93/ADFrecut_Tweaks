@@ -12,7 +12,7 @@ class CfgPatches
 		{
 			"A3_Soft_F_Enoch",
 			"A3_Soft_F_Gamma",
-			"ADFRC_uniform_dpcu",
+			"ADF_Units",
 			"ADF_Core"
 			
 		};
@@ -30,10 +30,10 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "HEMTT Cargo";
-		crew = "ADFRC_cavalryman_dpcu";
-		typicalCargo[] = {"ADFRC_cavalryman_dpcu"};
+		crew = "ADFRC_MD_AMCU_Soldier_CavalryScout";
+		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_CavalryScout"};
 		side = 1;
-		faction = "ADF";
+		faction = "ADFRC_F_MD";
 		textureList[] = {};
 		hiddenSelections[]= {"Camo1","Camo2","Camo3","Camo4"};
 		hiddenSelectionsTextures[]= {"\ADF_Land\adfrc_hemtt\data\truck_01_ext_01_co.paa","\ADF_Land\adfrc_hemtt\data\truck_01_ext_02_co.paa","\ADF_Land\adfrc_hemtt\data\truck_01_ammo_co.paa","\ADF_Land\adfrc_hemtt\data\Truck_01_cargo_CO.paa"};
@@ -46,10 +46,10 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "HEMTT Ammo";
-		crew = "ADFRC_cavalryman_dpcu";
-		typicalCargo[] = {"ADFRC_cavalryman_dpcu"};
+		crew = "ADFRC_MD_AMCU_Soldier_CavalryScout";
+		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_CavalryScout"};
 		side = 1;
-		faction = "ADF";
+		faction = "ADFRC_F_MD";
 		textureList[] = {};
 		hiddenSelections[]= {"Camo1","Camo2","Camo3"};
 		hiddenSelectionsTextures[]= {"\ADF_Land\adfrc_hemtt\data\truck_01_ext_01_co.paa","\ADF_Land\adfrc_hemtt\data\truck_01_ext_02_co.paa","\ADF_Land\adfrc_hemtt\data\Truck_01_ammo_CO.paa"};
@@ -62,10 +62,10 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "HEMTT Fuel";
-		crew = "ADFRC_cavalryman_dpcu";
-		typicalCargo[] = {"ADFRC_cavalryman_dpcu"};
+		crew = "ADFRC_MD_AMCU_Soldier_CavalryScout";
+		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_CavalryScout"};
 		side = 1;
-		faction = "ADF";
+		faction = "ADFRC_F_MD";
 		textureList[] = {};
 		hiddenSelections[]= {"Camo1","Camo2","Camo3"};
 		hiddenSelectionsTextures[]= {"\ADF_Land\adfrc_hemtt\data\truck_01_ext_01_co.paa","\ADF_Land\adfrc_hemtt\data\truck_01_ext_02_co.paa","\ADF_Land\adfrc_hemtt\data\truck_01_Fuel_CO.paa"};
@@ -78,10 +78,10 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "HEMTT Transport";
-		crew = "ADFRC_cavalryman_dpcu";
-		typicalCargo[] = {"ADFRC_cavalryman_dpcu"};
+		crew = "ADFRC_MD_AMCU_Soldier_CavalryScout";
+		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_CavalryScout"};
 		side = 1;
-		faction = "ADF";
+		faction = "ADFRC_F_MD";
 		textureList[] = {};
 		hiddenSelections[]= {"Camo1","Camo2","Camo3","Camo4"};
 		hiddenSelectionsTextures[]= {"\ADF_Land\adfrc_hemtt\data\truck_01_ext_01_co.paa","\ADF_Land\adfrc_hemtt\data\truck_01_ext_02_co.paa","\ADF_Land\adfrc_hemtt\data\Truck_01_cargo_co.paa","\ADF_Land\adfrc_hemtt\data\Truck_01_cover_CO.paa"};
@@ -94,10 +94,10 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "HEMTT Prime Mover";
-		crew = "ADFRC_cavalryman_dpcu";
-		typicalCargo[] = {"ADFRC_cavalryman_dpcu"};
+		crew = "ADFRC_MD_AMCU_Soldier_CavalryScout";
+		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_CavalryScout"};
 		side = 1;
-		faction = "ADF";
+		faction = "ADFRC_F_MD";
 		textureList[] = {};
 		hiddenSelections[]= {"Camo1","Camo2","Camo3"};
 		hiddenSelectionsTextures[]= {"\ADF_Land\adfrc_hemtt\data\truck_01_ext_01_co.paa","\ADF_Land\adfrc_hemtt\data\truck_01_ext_02_co.paa","\ADF_Land\adfrc_hemtt\data\truck_01_mprimer_CO.paa"};
@@ -110,12 +110,64 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "HEMTT Flatbed";
-		crew = "ADFRC_cavalryman_dpcu";
-		typicalCargo[] = {"ADFRC_cavalryman_dpcu"};
+		crew = "ADFRC_MD_AMCU_Soldier_CavalryScout";
+		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_CavalryScout"};
 		side = 1;
-		faction = "ADF";
+		faction = "ADFRC_F_MD";
 		textureList[] = {};
 		hiddenSelections[]= {"Camo1","Camo2","Camo3"};
 		hiddenSelectionsTextures[]= {"\ADF_Land\adfrc_hemtt\data\truck_01_ext_01_co.paa","\ADF_Land\adfrc_hemtt\data\truck_01_ext_02_co.paa","\ADF_Land\adfrc_hemtt\data\Truck_01_ammo_CO.paa"};
+	};
+	
+////////////////////// ADF GWOT VERSIONS //////////////////////
+	class ADFRC_hemtt_cargo_GWOT: ADFRC_hemtt_cargo
+	{
+		faction = "ADFRC_F_GWOT";
+	};
+	class ADFRC_hemtt_ammo_GWOT: ADFRC_hemtt_ammo
+	{
+		faction = "ADFRC_F_GWOT";
+	};
+	class ADFRC_hemtt_fuel_GWOT: ADFRC_hemtt_fuel
+	{
+		faction = "ADFRC_F_GWOT";
+	};
+	class ADFRC_hemtt_transport_GWOT: ADFRC_hemtt_transport
+	{
+		faction = "ADFRC_F_GWOT";
+	};
+	class ADFRC_hemtt_mover_GWOT: ADFRC_hemtt_mover
+	{
+		faction = "ADFRC_F_GWOT";
+	};
+	class ADFRC_hemtt_flatbed_GWOT: ADFRC_hemtt_flatbed
+	{
+		faction = "ADFRC_F_GWOT";
+	};
+	
+////////////////////// ADF PCW VERSIONS //////////////////////
+	class ADFRC_hemtt_cargo_PCW: ADFRC_hemtt_cargo
+	{
+		faction = "ADFRC_F_PCW";
+	};
+	class ADFRC_hemtt_ammo_PCW: ADFRC_hemtt_ammo
+	{
+		faction = "ADFRC_F_PCW";
+	};
+	class ADFRC_hemtt_fuel_PCW: ADFRC_hemtt_fuel
+	{
+		faction = "ADFRC_F_PCW";
+	};
+	class ADFRC_hemtt_transport_PCW: ADFRC_hemtt_transport
+	{
+		faction = "ADFRC_F_PCW";
+	};
+	class ADFRC_hemtt_mover_PCW: ADFRC_hemtt_mover
+	{
+		faction = "ADFRC_F_PCW";
+	};
+	class ADFRC_hemtt_flatbed_PCW: ADFRC_hemtt_flatbed
+	{
+		faction = "ADFRC_F_PCW";
 	};
 };
