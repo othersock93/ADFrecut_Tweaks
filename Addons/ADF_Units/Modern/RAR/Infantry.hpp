@@ -1455,7 +1455,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		};
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit", "ToolKit", "MineDetector"};
 		linkedItems[]={
-			"adfrc_teamwendy_exfil_grn_amcu_Aus",
+			"adfrc_teamwendy_exfil_cover",
 			"ADFRC_TBAS_T2_Eng",
 			"adfrc_facewear_ESS_1",
 			"adfrc_l3h_psq36",
@@ -1465,7 +1465,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ItemRadio"
 		};
 		respawnLinkedItems[]={
-			"adfrc_teamwendy_exfil_grn_amcu_Aus",
+			"adfrc_teamwendy_exfil_cover",
 			"ADFRC_TBAS_T2_Eng",
 			"adfrc_facewear_ESS_1",
 			"adfrc_l3h_psq36",
@@ -1538,7 +1538,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		};    
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit", "MineDetector"};
 		linkedItems[]={
-			"adfrc_teamwendy_exfil_grn_amcu_Aus",
+			"adfrc_teamwendy_exfil_cover",
 			"ADFRC_TBAS_T2_Eng",
 			"adfrc_facewear_ESS_1",
 			"adfrc_l3h_psq36",
@@ -1548,7 +1548,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ItemRadio"
 		};
 		respawnLinkedItems[]={
-			"adfrc_teamwendy_exfil_grn_amcu_Aus",
+			"adfrc_teamwendy_exfil_cover",
 			"ADFRC_TBAS_T2_Eng",
 			"adfrc_facewear_ESS_1",
 			"adfrc_l3h_psq36",
