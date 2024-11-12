@@ -1134,9 +1134,9 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		side = TWest;
-		faction = "ADF";
-		crew = adfrc_pilot_dpcu;
-		typicalCargo[] = {adfrc_pilot_dpcu};
+		faction = "ADFRC_F_MD";
+		crew = "ADFRC_MD_AMCU_Soldier_HeliPilot";
+		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_HeliPilot"};
 		textureList[] = {ADF,1};
 		hiddenSelectionsTextures[] =
 		{
