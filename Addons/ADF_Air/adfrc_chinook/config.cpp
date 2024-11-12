@@ -4506,7 +4506,7 @@ class CfgVehicles
 		scope=2;
 		side=1;
 		author="$STR_ADF_AUTHOR";
-		faction = "ADF";
+		faction = "ADFRC_F_MD";
 		model="ADF_Air\adfrc_chinook\CH_47F";
 		displayname="CH-47F Chinook";
 		editorPreview="\ADF_Air\adfrc_chinook\preview\adfrc_chinook.jpg";
@@ -5722,6 +5722,14 @@ class CfgVehicles
 				initPhase=0;
 			};
 		};
+	};
+	class ADFRC_chinook_GWOT: ADFRC_chinook
+	{
+		faction = "ADFRC_F_GWOT";
+	};
+	class ADFRC_chinook_PCW: ADFRC_chinook
+	{
+		faction = "ADFRC_F_PCW";
 	};
 };
 class CfgAmmo
