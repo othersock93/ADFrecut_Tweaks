@@ -6515,6 +6515,15 @@ class CfgVehicles
 	{
 		faction = "ADFRC_F_GWOT";
 	};
+//////////////////////// PCW  VERSIONS ////////////////////////////
+	class ADFRC_blackhawk_PCW: ADFRC_blackhawk
+	{
+		faction = "ADFRC_F_PCW";
+	};
+	class ADFRC_blackhawk_mag58_PCW: ADFRC_blackhawk_MAG58
+	{
+		faction = "ADFRC_F_PCW";
+	};
 };
 class cfgWeapons
 {
