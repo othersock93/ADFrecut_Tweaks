@@ -2064,7 +2064,7 @@ class CfgVehicles
 		scope=2;
 		faction="ADFRC_F_MD";
 		vehicleClass="Armored";
-		crew="adfrc_crewman_amcu";
+		crew="ADFRC_MD_AMCU_Soldier_Crewman";
 		typicalCargo[]={};
 	};
 	class adfrc_m1a1aim_GWOT: adfrc_m1a1aim

@@ -30,8 +30,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "HEMTT Cargo";
-		crew = "ADFRC_MD_AMCU_Soldier_CavalryScout";
-		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_CavalryScout"};
+		crew = "ADFRC_MD_AMCU_Soldier_Light";
+		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_Light"};
 		side = 1;
 		faction = "ADFRC_F_MD";
 		textureList[] = {};
@@ -46,8 +46,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "HEMTT Ammo";
-		crew = "ADFRC_MD_AMCU_Soldier_CavalryScout";
-		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_CavalryScout"};
+		crew = "ADFRC_MD_AMCU_Soldier_Light";
+		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_Light"};
 		side = 1;
 		faction = "ADFRC_F_MD";
 		textureList[] = {};
@@ -62,8 +62,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "HEMTT Fuel";
-		crew = "ADFRC_MD_AMCU_Soldier_CavalryScout";
-		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_CavalryScout"};
+		crew = "ADFRC_MD_AMCU_Soldier_Light";
+		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_Light"};
 		side = 1;
 		faction = "ADFRC_F_MD";
 		textureList[] = {};
@@ -78,8 +78,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "HEMTT Transport";
-		crew = "ADFRC_MD_AMCU_Soldier_CavalryScout";
-		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_CavalryScout"};
+		crew = "ADFRC_MD_AMCU_Soldier_Light";
+		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_Light"};
 		side = 1;
 		faction = "ADFRC_F_MD";
 		textureList[] = {};
@@ -94,8 +94,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "HEMTT Prime Mover";
-		crew = "ADFRC_MD_AMCU_Soldier_CavalryScout";
-		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_CavalryScout"};
+		crew = "ADFRC_MD_AMCU_Soldier_Light";
+		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_Light"};
 		side = 1;
 		faction = "ADFRC_F_MD";
 		textureList[] = {};
@@ -110,8 +110,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "HEMTT Flatbed";
-		crew = "ADFRC_MD_AMCU_Soldier_CavalryScout";
-		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_CavalryScout"};
+		crew = "ADFRC_MD_AMCU_Soldier_Light";
+		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_Light"};
 		side = 1;
 		faction = "ADFRC_F_MD";
 		textureList[] = {};

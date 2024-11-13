@@ -5564,11 +5564,11 @@ class CfgVehicles
 		picture="\ADF_Air\adfrc_chinook\data\Picture_ch47f_CA.paa";
 		icon="\ADF_Air\adfrc_chinook\data\Icon_ch47f_CA.paa";
 		mapSize=24;
-		crew="ADFRC_Pilot_dpcu";
+		crew="ADFRC_MD_AMCU_Soldier_HeliPilot";
 		typicalCargo[]=
 		{
-			"ADFRC_Pilot_dpcu",
-			"ADFRC_Pilot_dpcu"
+			"ADFRC_MD_AMCU_Soldier_HeliCrew",
+			"ADFRC_MD_AMCU_Soldier_HeliCrew"
 		};
 		driverAction="CH47_Pilot_EP1";
 		class Turrets: Turrets

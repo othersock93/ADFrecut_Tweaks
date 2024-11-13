@@ -123,7 +123,7 @@ class CfgVehicles
 		{
 			"GetOutLow"
 		};
-		crew="adfrc_rifleman_dpcu";
+		crew="ADFRC_MD_AMCU_Soldier_Light";
 		cargoIsCoDriver[]={0,0,0,0,0};
 		cargoProxyIndexes[]={4,5,6,7,8};
 		getInProxyOrder[]={4,5,6,7,8,1,2,3};

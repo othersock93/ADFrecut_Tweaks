@@ -5746,7 +5746,7 @@ class CfgVehicles
 		crew="ADFRC_MD_AMCU_Soldier_HeliPilot";
 		typicalCargo[]=
 		{
-			"ADFRC_crewman_dpcu"
+			"ADFRC_MD_AMCU_Soldier_HeliPilot"
 		};
 		transportSoldier=8;
 		availableForSupportTypes[]=
@@ -5935,7 +5935,7 @@ class CfgVehicles
 		crew="ADFRC_MD_AMCU_Soldier_HeliPilot";
 		typicalCargo[]=
 		{
-			"ADFRC_crewman_dpcu"
+			"ADFRC_MD_AMCU_Soldier_HeliCrew"
 		};
 		transportSoldier=8;
 		availableForSupportTypes[]=
@@ -6273,7 +6273,7 @@ class CfgVehicles
 		crew="ADFRC_MD_AMCU_Soldier_HeliPilot";
 		typicalCargo[]=
 		{
-			"ADFRC_crewman_dpcu"
+			"ADFRC_MD_AMCU_Soldier_HeliCrew"
 		};
 		transportSoldier=2;
 		availableForSupportTypes[]=
