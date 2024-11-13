@@ -237,6 +237,11 @@ class arifle_AUG_black_arco_flash_F: arifle_AUG_black_F
 			slot = PointerSlot;
 			item = ADFRC_WMLx_BLK_R_WL;
 		};
+		class LinkItemsUnder
+		{
+			slot = "UnderBarrelSlot";
+			item = "ADFRC_Grippod";
+		};
 	};
 };
 
@@ -292,6 +297,11 @@ class arifle_AUG_GL_black_aco_flash_F: arifle_AUG_GL_black_F
 			slot = PointerSlot;
 			item = ADFRC_WMLx_BLK_R_WL;
 		};
+		class LinkItemsUnder
+		{
+			slot = "UnderBarrelSlot";
+			item = "ADFRC_Grippod";
+		};
 	};
 };
 // AUR 90 GL 5.56 mm (Black) + ARCO (Black) + Flashlight
@@ -341,6 +351,11 @@ class arifle_AUG_C_Specter_black_flash_F: arifle_AUG_C_black_F
 		{
 			slot = PointerSlot;
 			item = ADFRC_WMLx_BLK_R_WL;
+		};
+		class LinkItemsUnder
+		{
+			slot = "UnderBarrelSlot";
+			item = "ADFRC_Grippod";
 		};
 	};
 };

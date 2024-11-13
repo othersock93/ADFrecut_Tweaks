@@ -1247,7 +1247,7 @@ class CfgVehicles
 		displayName = "C-130 Hercules 37 Sqn (Infantry)";
 		radarTargetSize = 1.8;
 		side = TWest;
-		faction = "ADF";
+		faction = "ADFRC_F_MD";
 		crew = B_Pilot_F;
 		typicalCargo[] = {B_Pilot_F};
 		textureList[] =
@@ -1271,7 +1271,7 @@ class CfgVehicles
 		displayName = "C-130 Hercules 37 Sqn (Vehicle)";
 		radarTargetSize = 2;
 		side = TWest;
-		faction = "ADF";
+		faction = "ADFRC_F_MD";
 		crew = B_Pilot_F;
 		typicalCargo[] = {B_Pilot_F};
 		textureList[] =
@@ -1296,7 +1296,7 @@ class CfgVehicles
 		displayName = "C-130 Hercules 36 Sqn (Infantry)";
 		radarTargetSize = 1.8;
 		side = TWest;
-		faction = "ADF";
+		faction = "ADFRC_F_MD";
 		crew = B_Pilot_F;
 		typicalCargo[] = {B_Pilot_F};
 		textureList[] = {ADF,1};
@@ -1316,7 +1316,7 @@ class CfgVehicles
 		displayName = "C-130 Hercules 36 Sqn (Vehicle)";
 		radarTargetSize = 2;
 		side = TWest;
-		faction = "ADF";
+		faction = "ADFRC_F_MD";
 		crew = B_Pilot_F;
 		typicalCargo[] = {B_Pilot_F};
 		textureList[] = {ADF,1};
@@ -1326,6 +1326,40 @@ class CfgVehicles
 			"\ADF_Air\adfrc_c130\data\Plane_Transport_01_wings_aucamo_CO.paa",
 			"\ADF_Air\adfrc_c130\data\Plane_Transport_01_interior_CO.paa"
 		};
+	};
+	
+	//////////////////////////// OTHER FACTION VERSIONS ////////////////////////////
+	class adfrc_c130_inf_GWOT: adfrc_c130_inf
+	{
+		faction = "ADFRC_F_GWOT";
+	};
+	class adfrc_c130_vic_GWOT: adfrc_c130_vic
+	{
+		faction = "ADFRC_F_GWOT";
+	};
+	class adfrc_c130_inf_auscam_GWOT: adfrc_c130_inf_auscam
+	{
+		faction = "ADFRC_F_GWOT";
+	};
+	class adfrc_c130_vic_auscam_GWOT: adfrc_c130_vic_auscam
+	{
+		faction = "ADFRC_F_GWOT";
+	};
+	class adfrc_c130_inf_PCW: adfrc_c130_inf
+	{
+		faction = "ADFRC_F_PCW";
+	};
+	class adfrc_c130_vic_PCW: adfrc_c130_vic
+	{
+		faction = "ADFRC_F_PCW";
+	};
+	class adfrc_c130_inf_auscam_PCW: adfrc_c130_inf_auscam
+	{
+		faction = "ADFRC_F_PCW";
+	};
+	class adfrc_c130_vic_auscam_PCW: adfrc_c130_vic_auscam
+	{
+		faction = "ADFRC_F_PCW";
 	};
 };
 class CfgNonAIVehicles

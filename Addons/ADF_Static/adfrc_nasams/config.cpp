@@ -1,7 +1,8 @@
 class CfgPatches
 {
-	class adfrc_m2
+	class adfrc_AA
 	{
+		addonRootClass = "ADF_Static";
 		units[]=
 		{
 			"ADFRC_mml",
@@ -30,7 +31,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayName = "MIM-145 Defender";
 		side = 1;
-		faction = "ADF";
+		faction = "ADFRC_F_MD";
 	};
 	class B_Radar_System_01_F;
 	class ADFRC_fdc: B_Radar_System_01_F
@@ -41,6 +42,6 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayName = "AN/MPQ-105 Radar";
 		side = 1;
-		faction = "ADF";
+		faction = "ADFRC_F_MD";
 	};
 };

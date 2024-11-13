@@ -2,6 +2,7 @@ class CfgPatches
 {
 	class adfrc_m252
 	{
+		addonRootClass = "ADF_Static";
 		units[]=
 		{
 			"ADFRC_m252"
@@ -11,7 +12,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"A3_Static_f",
-			"ADFRC_uniform_dpcu",
+			"ADF_Units",
 			"ADF_Core"
 			
 		};
@@ -29,9 +30,9 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "MK6 Mortar";
-		crew = "ADFRC_rifleman_dpcu";
-		typicalCargo[] = {"ADFRC_rifleman_dpcu"};
+		crew = "ADFRC_MD_AMCU_Soldier_Light";
+		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_Light"};
 		side = 1;
-		faction = "ADF";
+		faction = "ADFRC_F_MD";
 	};
 };

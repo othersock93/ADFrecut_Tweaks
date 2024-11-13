@@ -1188,8 +1188,8 @@ class CfgVehicles
 		side=1;
 		scope=2;
 		scopeCurator=2;
-		faction="ADF";
-		crew="ADFRC_crewman_amcu";
+		faction="ADFRC_F_MD";
+		crew="ADFRC_MD_AMCU_Soldier_Crewman";
 		transportSoldier=4;
 		accuracy = 0.3;
 		incomingMissileDetectionSystem = 16;
@@ -1674,8 +1674,8 @@ class CfgVehicles
 		side=1;
 		scope=2;
 		scopeCurator=2;
-		faction="ADF";
-		crew="ADFRC_crewman_amcu";
+		faction="ADFRC_F_MD";
+		crew="ADFRC_MD_AMCU_Soldier_Crewman";
 		transportSoldier=8;
 		accuracy = 0.3;
 		incomingMissileDetectionSystem = 16;

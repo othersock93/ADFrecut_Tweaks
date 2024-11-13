@@ -2,6 +2,7 @@ class CfgPatches
 {
 	class adfrc_lwagl
 	{
+		addonRootClass = "ADF_Static";
 		units[]=
 		{
 			"ADFRC_lwagl"
@@ -11,7 +12,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"A3_Static_F",
-			"ADFRC_uniform_dpcu",
+			"ADF_Units",
 			"ADF_Core"
 		};
 		magazines[]={};
@@ -28,12 +29,12 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		displayName="Mk47";
-		crew="ADFRC_rifleman_dpcu";
+		crew="ADFRC_MD_AMCU_Soldier_Light";
 		typicalCargo[]=
 		{
-			"ADFRC_rifleman_dpcu"
+			"ADFRC_MD_AMCU_Soldier_Light"
 		};
 		side=1;
-		faction="ADF";
+		faction="ADFRC_F_MD";
 	};
 };
