@@ -114,9 +114,9 @@ class CfgVehicles
 		author="ADFRC_Quiggs";
 		mapSize=11.57;
 		simulation="tankX";
-		fuelCapacity=20;
+		fuelCapacity=18;
 		brakeIdleSpeed=0.2;
-		maxSpeed=75;
+		maxSpeed=70;
 		normalSpeedForwardCoef=0.75;
 		slowSpeedForwardCoef=0.25;
 		waterResistanceCoef=0.25;
@@ -137,14 +137,14 @@ class CfgVehicles
 			{0.87878799,0.75999999},
 			{1,0.60000002}
 		};
-		thrustDelay=1;
-		engineMOI=30;
-		dampingRateFullThrottle=1;
-		dampingRateZeroThrottleClutchEngaged=1;
-		dampingRateZeroThrottleClutchDisengaged=1;
+		thrustDelay=0.5;
+		engineMOI=25;
+		dampingRateFullThrottle=2.5;
+		dampingRateZeroThrottleClutchEngaged=8;
+		dampingRateZeroThrottleClutchDisengaged=2;
 		clutchStrength=40;
-		latency=1.0;
-		switchTime=0.3;
+		latency=2;
+		switchTime=0;
 		changeGearType="rpmratio";
 		changeGearOmegaRatios[]={1,0.42424199,0.45454499,0.33333299,0.98484802,0.42424199,0.98484802,0.60606098,0.98484802,0.57575798,1,0.54545498};
 		class complexGearbox
@@ -152,7 +152,7 @@ class CfgVehicles
 			GearboxRatios[]=
 			{
 				"R1",
-				-3,
+				-6,
 				"N",
 				0,
 				"D1",
@@ -162,7 +162,9 @@ class CfgVehicles
 				"D3",
 				2.2,
 				"D4",
-				1
+				1.6,
+				"D5",
+				0.8
 			};
 			transmissionRatios[]=
 			{
@@ -170,17 +172,17 @@ class CfgVehicles
 				13
 			};
 			gearBoxMode="auto";
-			moveOffGear=1;
+			moveOffGear=2;
 			driveString="D";
 			neutralString="N";
 			reverseString="R";
 		};
-		tankTurnForce=750000;
-		tankTurnForceAngMinSpd=1;
-		tankTurnForceAngSpd=1;
-		accelAidForceCoef=2;
+		tankTurnForce=800000;
+		tankTurnForceAngMinSpd=0.25;
+		tankTurnForceAngSpd=0.8;
+		accelAidForceCoef=1;
 		accelAidForceYOffset=-1;
-		accelAidForceSpd=2;
+		accelAidForceSpd=1;
 		class Wheels
 		{
 			class L2
@@ -192,25 +194,25 @@ class CfgVehicles
 				boundary="wheel_1_2_bound";
 				steering=0;
 				width=0.5;
-				mass=200;
-				MOI=19;
+				mass=150;
+				MOI=17;
 				dampingRate=1000;
 				dampingRateInAir=3000;
 				dampingRateDestroyed=3000;
-				maxDroop=0.15000001;
-				maxCompression=0.15000001;
-				sprungMass=6400;
+				maxDroop=0.15;
+				maxCompression=0.15;
+				sprungMass=4729;
 				springStrength=300000;
-				springDamperRate=28000;
+				springDamperRate=20000;
 				maxBrakeTorque=10000;
-				latStiffX=25;
-				latStiffY=280;
+				latStiffX=2;
+				latStiffY=33;
 				longitudinalStiffnessPerUnitGravity=12000;
 				frictionVsSlipGraph[]=
 				{
-					{0,0.75},
-					{0.050000001,1.5},
-					{0.5,0.89999998}
+					{0,0.55000001},
+					{0.30000001,1.28},
+					{0.64999998,0.55000001}
 				};
 			};
 			class L3: L2
@@ -1238,12 +1240,6 @@ class CfgVehicles
 				source="revolving";
 				weapon="ADFRC_abrams_MAG58";
 			};
-			class plow
-			{
-				source="door";
-				initPhase=0;
-				animPeriod=3;
-			};
 			/*class towcable
 			{
 				DisplayName="Rear Tow Cable";
@@ -1289,7 +1285,7 @@ class CfgVehicles
 				DisplayName="Sprocket Covers";
 				source="user";
 				animPeriod=0;
-				initPhase=0;
+				initPhase=1;
 				author="ADFRC";
 			};
 			class abramstowbar
@@ -1316,6 +1312,12 @@ class CfgVehicles
 				initPhase=0;
 				author="ADFRC";
 			};
+			class plow
+			{
+				source="door";
+				initPhase=0;
+				animPeriod=3;
+			};
 		};
 		animationList[]=
 		{
@@ -1333,14 +1335,14 @@ class CfgVehicles
                 priority=1;
                 position="gunnerview";
                 onlyForPlayer=0;
-                condition="((this DoorPhase 'plow') == 0) AND Alive (this) and driver this == player";
+                condition="(alive this) && (isengineon this) && (this animationsourcephase 'plow' == 0) && (player in this) && (this animationsourcephase 'hideplow' == 1)";
                 statement="this animateDoor ['plow', 1]; playSound3D [""adf_wheeled\adfrc_boxer\sound\skid_extend.ogg"", this, false,(this modelToWorld (this selectionPosition ""plow_axis"")), 5, 1, 25]; ";
             };
             class raise_plow: lower_plow
             {
                 userActionID=51;
                 displayName="Raise plow";
-                condition="((this DoorPhase 'plow') > 0) AND Alive (this) and driver this == player";
+                condition="(alive this) && (isengineon this) && (this animationsourcephase 'plow' == 1) && (player in this) && (this animationsourcephase 'hideplow' == 1)";
                 statement="this animateDoor [""plow"", 0]; playSound3D [""adf_wheeled\adfrc_boxer\sound\skid_extend.ogg"", this, false,(this modelToWorld (this selectionPosition ""plow_axis"")), 0, 0, 0]; ";
             };
         };
@@ -1428,7 +1430,7 @@ class CfgVehicles
 					"a3\sounds_f_jets\vehicles\air\plane_fighter_02\o_plane_fighter_02_engine_low_ext",
 					1,
 					1,
-					280
+					500
 				};
 				frequency="0.8 + ((rpm/ 2640) factor[(700/ 2640),(1100/ 2640)])*0.2";
 				volume="engineOn*camPos*(((rpm/ 2640) factor[(705/ 2640),(850/ 2640)]) * ((rpm/ 2640) factor[(1100 / 2640),(950/ 2640)]))";
@@ -2052,7 +2054,7 @@ class CfgVehicles
 		numberPhysicalWheels=18;
 		destrType="DestructWreck";
 	};
-	class adfrc_m1a1aim: adfrc_abrams
+	class adfrc_m1a1aim: adfrc_abrams // MODERN
 	{
 		displayName="M1A1AIM";
 		author="ADFRC - Quiggs";
@@ -2067,12 +2069,8 @@ class CfgVehicles
 		crew="ADFRC_MD_AMCU_Soldier_Crewman";
 		typicalCargo[]={};
 	};
-	class adfrc_m1a1aim_GWOT: adfrc_m1a1aim
+	class adfrc_m1a1aim_GWOT: adfrc_m1a1aim // GWOT
 	{
-		faction = "ADFRC_F_GWOT";
-	};
-	class adfrc_m1a1aim_PCW: adfrc_m1a1aim
-	{
-		faction = "ADFRC_F_PCW";
+		faction="ADFRC_F_GWOT";
 	};
 };

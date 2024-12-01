@@ -262,9 +262,9 @@ class cfgWeapons
 		airateoffire = 2;
 		airateoffiredistance = 1000;
 		canlock = 1;
-		reloadMagazineSound[]={"\ADF_Tracked\adfrc_abrams\sounds\weapons\shells\adfrc_abrams_reload",3.51189,1,1};
+		//reloadMagazineSound[]={"ADF_Tracked\adfrc_abrams\sounds\weapons\shells\adfrc_abrams_reload.wss",100,100};
 		magazineReloadTime = 6;
-		reloadSound[]={"\ADF_Tracked\adfrc_abrams\sounds\weapons\shells\adfrc_abrams_reload",3.51189,1,1};
+		//reloadSound[]={"ADF_Tracked\adfrc_abrams\sounds\weapons\shells\adfrc_abrams_reload.wss",100,100};
 		reloadTime = 6;
 	};
 	class ADFRC_abrams_M2HBQCB: HMG_M2_Mounted 
