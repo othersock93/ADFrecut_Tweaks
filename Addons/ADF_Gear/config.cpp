@@ -11,6 +11,6 @@ class CfgPatches
 		};
 		units[]={};
 		weapons[]={};
-		fileName = "ADF_Weapons.pbo";
+		fileName = "ADF_Gear.pbo";
 	};
 };
