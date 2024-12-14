@@ -30,6 +30,22 @@ class ADFRC_F9_Romeo2 : ItemCore
 					visionMode[] = {};
 					opticsPPEffects[] = {"Default"};
 				};
+				class Irons
+				{
+					opticsID = 1;
+					useModelOptics = 0;
+					opticsZoomMin = 0.25;
+					opticsZoomMax = 1.25;
+					opticsZoomInit = 0.75;
+					memoryPointCamera = "eye2";
+					opticsFlare = 0;
+					opticsDisablePeripherialVision = 0;
+					distanceZoomMin = 25;
+					distanceZoomMax = 25;
+					cameraDir = "";
+					visionMode[] = {};
+					opticsPPEffects[] = {"Default"};
+				};
 			};
 		};
 		

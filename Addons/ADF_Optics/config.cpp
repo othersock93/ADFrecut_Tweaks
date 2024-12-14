@@ -29,140 +29,7 @@ class CfgPatches
 };
 
 #include "Optics_JR.hpp"
-class SlotInfo;
-class CowsSlot: SlotInfo
-{
-};
-class CowsSlot_ADFU: CowsSlot
-{
-	linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
-	displayName="$STR_A3_CowsSlot0";
-	compatibleItems[]=
-	{
-		"ADFRC_acog_ta31",
-		"ADFRC_acog_ta31_t",
-		"ADFRC_acog_ta648",
-		"ADFRC_acog_ta648_rds",
-		"ADFRC_acog_ta648_rds_t",
-		"ADFRC_acog_ta648_t",
-		"ADFRC_elcan_c79",
-		"ADFRC_elcan_c79",
-		"ADFRC_eotech552",
-		"ADFRC_eotech552_3XDOWN",
-		"ADFRC_eotech552_3XUP",
-		"optic_ACO_grn",
-		"optic_Arco",
-		"optic_DMS",
-		"optic_Holosight",
-		"optic_LRPS",
-		"optic_MRCO",
-		"optic_NVS",
-		"optic_Nightstalker",
-		"optic_SOS",
-		"optic_aco",
-		"optic_hamr",
-		"optic_tws",
-		"optic_tws_mg"
-	};
-};
-class CowsSlot_ADFRC_Styer: CowsSlot
-{
-	linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
-	displayName="$STR_A3_CowsSlot0";
-	compatibleItems[]=
-	{
-		"ADFRC_swarovski_optic",
-		"ADFRC_elcan_c79",
-		"ADFRC_acog_ta648",
-		"ADFRC_acog_ta648_rds",
-		"ADFRC_acog_ta648_t",
-		"ADFRC_acog_ta648_rds_t",
-		"ADFRC_acog_ta31",
-		"ADFRC_acog_ta31_t",
-		"ADFRC_eotech552",
-		"ADFRC_eotech552_3XDOWN",
-		"ADFRC_eotech552_3XUP",
-		"optic_Nightstalker",
-		"optic_NVS",
-		"optic_DMS",
-		"optic_LRPS",
-		"optic_SOS",
-		"optic_MRCO",
-		"optic_Arco",
-		"optic_aco",
-		"optic_ACO_grn",
-		"optic_hamr",
-		"optic_Holosight",
-		"optic_tws"
-	};
-};
-class CowsSlot_ADFRC_Rifle: CowsSlot
-{
-	linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
-	displayName="$STR_A3_CowsSlot0";
-	compatibleItems[]=
-	{
-		"ADFRC_elcan_c79",
-		"ADFRC_acog_ta648",
-		"ADFRC_acog_ta648_rds",
-		"ADFRC_acog_ta648_t",
-		"ADFRC_acog_ta648_rds_t",
-		"ADFRC_acog_ta31",
-		"ADFRC_acog_ta31_t",
-		"ADFRC_eotech552",
-		"ADFRC_eotech552_3XDOWN",
-		"ADFRC_eotech552_3XUP",
-		"optic_Nightstalker",
-		"optic_NVS",
-		"optic_DMS",
-		"optic_LRPS",
-		"optic_SOS",
-		"optic_MRCO",
-		"optic_Arco",
-		"optic_aco",
-		"optic_ACO_grn",
-		"optic_hamr",
-		"optic_Holosight",
-		"optic_tws",
-		"optic_AMS",
-		"optic_AMS_KHK",
-		"optic_AMS_snd",
-		"optic_KHS_blk",
-		"optic_KHS_hex",
-		"optic_KHS_old",
-		"optic_KHS_tan"
-	};
-};
-class CowsSlot_ADFRC_MG: CowsSlot
-{
-	linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
-	displayName="$STR_A3_CowsSlot0";
-	compatibleItems[]=
-	{
-		"ADFRC_elcan_c79",
-		"ADFRC_acog_ta648",
-		"ADFRC_acog_ta648_rds",
-		"ADFRC_acog_ta648_t",
-		"ADFRC_acog_ta648_rds_t",
-		"ADFRC_acog_ta31",
-		"ADFRC_acog_ta31_t",
-		"ADFRC_eotech552",
-		"ADFRC_eotech552_3XDOWN",
-		"ADFRC_eotech552_3XUP",
-		"optic_Nightstalker",
-		"optic_NVS",
-		"optic_DMS",
-		"optic_LRPS",
-		"optic_SOS",
-		"optic_MRCO",
-		"optic_Arco",
-		"optic_aco",
-		"optic_ACO_grn",
-		"optic_hamr",
-		"optic_Holosight",
-		"optic_tws_mg"
-	};
-};
+
 class cfgWeapons
 {
 	class SlotInfo;
@@ -200,7 +67,7 @@ class cfgWeapons
 				{
 					opticsID=1;
 					opticsDisplayName="OPTIC";
-					useModelOptics=1;
+					useModelOptics=0;
 					opticsPPEffects[]=
 					{
 						"OpticsCHAbera1",
@@ -215,7 +82,6 @@ class cfgWeapons
 					distanceZoomMax=300;
 					discreteInitIndex=0;
 					memoryPointCamera="opticView";
-					modelOptics[]={};
 					visionMode[]=
 					{
 						"Normal"

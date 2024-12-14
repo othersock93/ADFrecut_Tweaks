@@ -23,6 +23,7 @@ ADFRC_TA31_KF_FDE = 1;
 ADFRC_TA31_KF_BLK = 1;
 ADFRC_TA31_KF_RMR_BLK = 1;
 ADFRC_TA31_KF_RMR_FDE = 1;
+ADFRC_swarovski_optic = 1;
 
 //Legacy
 ADFRC_acog_ta31 = 1;
@@ -59,6 +60,7 @@ ADFRC_TA31_KF_FDE = 1;
 ADFRC_TA31_KF_BLK = 1;
 ADFRC_TA31_KF_RMR_BLK = 1;
 ADFRC_TA31_KF_RMR_FDE = 1;
+ADFRC_swarovski_optic = 1;
 
 //Legacy
 ADFRC_acog_ta31 = 1;
@@ -95,6 +97,7 @@ ADFRC_TA31_KF_FDE = 1;
 ADFRC_TA31_KF_BLK = 1;
 ADFRC_TA31_KF_RMR_BLK = 1;
 ADFRC_TA31_KF_RMR_FDE = 1;
+ADFRC_swarovski_optic = 1;
 
 //Legacy
 ADFRC_acog_ta31 = 1;
@@ -110,6 +113,7 @@ ADFRC_eotech552_3XDOWN = 1;
 ADFRC_eotech552_3XUP = 1;
 };
 };
+
 ////PISTOL RAILS
 class asdg_PistolOpticRail1913: asdg_OpticRail {
 class compatibleItems {
