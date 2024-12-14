@@ -10,7 +10,7 @@ class ADFRC_F9 : ADFRC_G19_Base
 		magazineWell[] = {"CBA_9x19_P320"};
 		model = "ADF_Weapons\ADFRC_F9\ADFRC_F9";
 		descriptionShort = "Sig Sauer <br/> P320 X-Carry Pro <br/>Caliber: 9MM";
-		inertia = 0.75;
+		inertia = 0.65;
 		scope=2;
 		scopeWeapon=2;
 		scopeArsenal = 2;
@@ -56,7 +56,7 @@ class ADFRC_F9 : ADFRC_G19_Base
 	};
 };
 
-class ADFRC_F9_SWS: ADFRC_F9
+class ADFRC_WP_F9_SWS: ADFRC_F9
 {
 	author = "Brucey";
 	class LinkedItems
