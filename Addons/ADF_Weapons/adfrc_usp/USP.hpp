@@ -113,6 +113,21 @@ class ADFRC_USP_9MM : ADFRC_USP_Base
 		class WeaponSlotsInfo {
 			mass = 16.875;
 			allowedSlots[] = {901};
+            class MuzzleSlot : asdg_MuzzleSlot_9MM
+           {
+	iconPinpoint="center";
+	iconPosition[] = {0.148,0.328};
+	iconScale  = 0.34;
+	iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+};
+            class PointerSlot : asdg_PistolUnderRail //side slot
+          {
+	iconPinpoint="center";
+	iconPosition[] = {0.396,0.516};
+	iconScale  = 0.25;
+	iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
+};
+        };
 		class Library
 		{
 			libTextDesc = "HK USP";
