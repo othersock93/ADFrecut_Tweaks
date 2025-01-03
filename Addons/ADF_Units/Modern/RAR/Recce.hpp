@@ -15,14 +15,14 @@
 		backpack = "ADFRC_BP_Hydration_AMCU_1";
 		weapons[]={
 			"arifle_AUG_black_Spectr_flash_Sup_F",
-			"ADFRC_HP_MK3",
+			"ADFRC_WP_F9_SWS",
 			"Rangefinder",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_Spectr_flash_Sup_F",
-			"ADFRC_HP_MK3",
+			"ADFRC_WP_F9_SWS",
 			"Rangefinder",
 			"Throw",
 			"Put"
@@ -39,9 +39,9 @@
 			"ADFRC_30Rnd_aug_ef88",
 			"ADFRC_30Rnd_aug_mixed_ef88",
 			"ADFRC_30Rnd_aug_mixed_ef88",
-			"ADFRC_13Rnd_9x19_Mag",
-			"ADFRC_13Rnd_9x19_Mag",
-			"ADFRC_13Rnd_9x19_Mag",
+			"ADFRC_17rnd_9MM_BALL_F9",
+			"ADFRC_17rnd_9MM_BALL_F9",
+			"ADFRC_17rnd_9MM_BALL_F9",
 			"SmokeShell",
 			"SmokeShell",
 			"ADFRC_F1_GRENADE",
@@ -59,9 +59,9 @@
 			"ADFRC_30Rnd_aug_ef88",
 			"ADFRC_30Rnd_aug_mixed_ef88",
 			"ADFRC_30Rnd_aug_mixed_ef88",
-			"ADFRC_13Rnd_9x19_Mag",
-			"ADFRC_13Rnd_9x19_Mag",
-			"ADFRC_13Rnd_9x19_Mag",
+			"ADFRC_17rnd_9MM_BALL_F9",
+			"ADFRC_17rnd_9MM_BALL_F9",
+			"ADFRC_17rnd_9MM_BALL_F9",
 			"SmokeShell",
 			"SmokeShell",
 			"ADFRC_F1_GRENADE",
@@ -103,14 +103,14 @@
 		backpack = "adfrc_molle_bag_ASIP";
 		weapons[]={
 			"arifle_AUG_black_Spectr_flash_Sup_F",
-			"ADFRC_HP_MK3",
+			"ADFRC_WP_F9_SWS",
 			"Laserdesignator",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_Spectr_flash_Sup_F",
-			"ADFRC_HP_MK3",
+			"ADFRC_WP_F9_SWS",
 			"Laserdesignator",
 			"Throw",
 			"Put"
@@ -127,9 +127,9 @@
 			"ADFRC_30Rnd_aug_ef88",
 			"ADFRC_30Rnd_aug_mixed_ef88",
 			"ADFRC_30Rnd_aug_mixed_ef88",
-			"ADFRC_13Rnd_9x19_Mag",
-			"ADFRC_13Rnd_9x19_Mag",
-			"ADFRC_13Rnd_9x19_Mag",
+			"ADFRC_17rnd_9MM_BALL_F9",
+			"ADFRC_17rnd_9MM_BALL_F9",
+			"ADFRC_17rnd_9MM_BALL_F9",
 			"SmokeShell",
 			"SmokeShell",
 			"Chemlight_blue", 
@@ -150,9 +150,9 @@
 			"ADFRC_30Rnd_aug_ef88",
 			"ADFRC_30Rnd_aug_mixed_ef88",
 			"ADFRC_30Rnd_aug_mixed_ef88",
-			"ADFRC_13Rnd_9x19_Mag",
-			"ADFRC_13Rnd_9x19_Mag",
-			"ADFRC_13Rnd_9x19_Mag",
+			"ADFRC_17rnd_9MM_BALL_F9",
+			"ADFRC_17rnd_9MM_BALL_F9",
+			"ADFRC_17rnd_9MM_BALL_F9",
 			"SmokeShell",
 			"SmokeShell",
 			"Chemlight_blue", 
@@ -200,13 +200,13 @@
 		backpack = "ADFRC_BP_TacBag_AMCU_1";
 		weapons[]={
 			"arifle_AUG_black_Spectr_flash_Sup_F",
-			"ADFRC_HP_MK3",
+			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_Spectr_flash_Sup_F",
-			"ADFRC_HP_MK3",
+			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
@@ -220,9 +220,9 @@
 			"ADFRC_30Rnd_aug_ef88",
 			"ADFRC_30Rnd_aug_ef88",
 			"ADFRC_30Rnd_aug_ef88",
-			"ADFRC_13Rnd_9x19_Mag",
-			"ADFRC_13Rnd_9x19_Mag",
-			"ADFRC_13Rnd_9x19_Mag",
+			"ADFRC_17rnd_9MM_BALL_F9",
+			"ADFRC_17rnd_9MM_BALL_F9",
+			"ADFRC_17rnd_9MM_BALL_F9",
 			"SmokeShell",
 			"SmokeShell",
 			"Chemlight_blue",
@@ -242,9 +242,9 @@
 			"ADFRC_30Rnd_aug_ef88",
 			"ADFRC_30Rnd_aug_mixed_ef88",
 			"ADFRC_30Rnd_aug_mixed_ef88",
-			"ADFRC_13Rnd_9x19_Mag",
-			"ADFRC_13Rnd_9x19_Mag",
-			"ADFRC_13Rnd_9x19_Mag",
+			"ADFRC_17rnd_9MM_BALL_F9",
+			"ADFRC_17rnd_9MM_BALL_F9",
+			"ADFRC_17rnd_9MM_BALL_F9",
 			"SmokeShell",
 			"SmokeShell",
 			"ADFRC_F1_GRENADE",
@@ -287,13 +287,13 @@
 		backpack = "ADFRC_BP_Assault_AMCU_1";
 		weapons[]={
 			"ADFRC_minimi_elcan",
-			"ADFRC_HP_MK3",
+			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"ADFRC_minimi_elcan",
-			"ADFRC_HP_MK3",
+			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
@@ -304,9 +304,9 @@
 			"ADFRC_100Rnd_556_Belt",
 			"ADFRC_100Rnd_556_Belt",
 			"ADFRC_100Rnd_556_Belt",
-			"ADFRC_13Rnd_9x19_Mag",
-			"ADFRC_13Rnd_9x19_Mag",
-			"ADFRC_13Rnd_9x19_Mag",
+			"ADFRC_17rnd_9MM_BALL_F9",
+			"ADFRC_17rnd_9MM_BALL_F9",
+			"ADFRC_17rnd_9MM_BALL_F9",
 			"SmokeShell",
 			"ADFRC_F1_GRENADE"
 		};
@@ -317,9 +317,9 @@
 			"ADFRC_100Rnd_556_Belt",
 			"ADFRC_100Rnd_556_Belt",
 			"ADFRC_100Rnd_556_Belt",
-			"ADFRC_13Rnd_9x19_Mag",
-			"ADFRC_13Rnd_9x19_Mag",
-			"ADFRC_13Rnd_9x19_Mag",
+			"ADFRC_17rnd_9MM_BALL_F9",
+			"ADFRC_17rnd_9MM_BALL_F9",
+			"ADFRC_17rnd_9MM_BALL_F9",
 			"SmokeShell",
 			"ADFRC_F1_GRENADE"
 		};
@@ -360,13 +360,13 @@
 		//backpack="ADFRC_Kitbag_AMCU";
 		weapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_HP_MK3",
+			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_HP_MK3",
+			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
@@ -435,13 +435,13 @@
 		//backpack="ADFRC_Kitbag_AMCU";
 		weapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_HP_MK3",
+			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_HP_MK3",
+			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
@@ -510,13 +510,13 @@
 		//backpack="ADFRC_Kitbag_AMCU";
 		weapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_HP_MK3",
+			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_HP_MK3",
+			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
@@ -585,13 +585,13 @@
 		//backpack="ADFRC_Kitbag_AMCU";
 		weapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_HP_MK3",
+			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_HP_MK3",
+			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
