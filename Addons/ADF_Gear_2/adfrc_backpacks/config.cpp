@@ -1239,4 +1239,23 @@ class CfgVehicles{
 		maximumLoad = 300;
 		mass=30;
 	};
+	
+	
+	/////TBAS T5 Backpanels
+	class adfrc_T5_Backpanels: adfrc_molle_bag_117g
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		eden = 2;
+		displayName = "TBAS T5 Backpanel Base";
+		picture = "";
+		model = "ADF_Gear_2\adfrc_backpacks\TBAS_T5_Backpannel.p3d";
+		hiddenSelections[] = {""};
+		hiddenSelectionsTextures[] = {""};
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+	};
 };
