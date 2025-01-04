@@ -40,7 +40,7 @@ ADFRC_eotech552_3XUP = 1;
 };
 };
 
-class asdg_OpticRail1913_long: asdg_OpticRail {
+class asdg_OpticRail1913_long: asdg_OpticRail1913 {
 class compatibleItems: compatibleItems {
 ADFRC_MicroT2 = 1;
 ADFRC_MicroT2_Up = 1;
