@@ -5,6 +5,8 @@ class asdg_MuzzleSlot;
 class asdg_MuzzleSlot_556: asdg_MuzzleSlot { // for 556 Pistol universal mount suppressors
 class compatibleItems {
 ADFRC_SOCOM_556 = 1;
+ADFRC_WARCOMP_556 = 1;
+ADFRC_KAC_NT4 = 1;
 ADFRC_f88_muzzle_snds = 1;
 ADFRC_f88_muzzle_snds_tan= 1;
 };

@@ -1577,7 +1577,7 @@ class ADFRC_M4A5_Combo_556_10_BLK_EXPS3_WMLx: ADFRC_M4A5_Combo_556_10_BLK
 		class LinkedItemsMuzzle
 		{
 			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
+			item = ADFRC_KAC_NT4;
 		};
 	};
 };
@@ -1600,7 +1600,7 @@ class ADFRC_M4A5_Combo_556_10_BLK_EXPS3M_WMLx: ADFRC_M4A5_Combo_556_10_BLK
 		class LinkedItemsMuzzle
 		{
 			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
+			item = ADFRC_KAC_NT4;
 		};
 	};
 };
@@ -1623,7 +1623,7 @@ class ADFRC_WP_M4A5_Combo_10_BLK_EXPS3_PEQ: ADFRC_M4A5_Combo_556_10_BLK
 		class LinkedItemsMuzzle
 		{
 			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
+			item = ADFRC_KAC_NT4;
 		};
 	};
 };
@@ -1646,7 +1646,7 @@ class ADFRC_WP_M4A5_Combo_10_BLK_EXPS3M_PEQ: ADFRC_M4A5_Combo_556_10_BLK
 		class LinkedItemsMuzzle
 		{
 			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
+			item = ADFRC_KAC_NT4;
 		};
 	};
 };
@@ -1670,7 +1670,7 @@ class ADFRC_WP_M4A5_Combo_10_BLK_T2_WMLx: ADFRC_M4A5_Combo_556_10_BLK
 		class LinkedItemsMuzzle
 		{
 			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
+			item = ADFRC_KAC_NT4;
 		};
 	};
 };
@@ -1711,7 +1711,7 @@ class ADFRC_WP_M4A5_Combo_10_BLK_T2M_WMLx: ADFRC_M4A5_Combo_556_10_BLK
 		class LinkedItemsMuzzle
 		{
 			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
+			item = ADFRC_KAC_NT4;
 		};
 	};
 };
@@ -1734,7 +1734,7 @@ class ADFRC_WP_M4A5_Combo_10_BLK_T2_PEQ: ADFRC_M4A5_Combo_556_10_BLK
 		class LinkedItemsMuzzle
 		{
 			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
+			item = ADFRC_KAC_NT4;
 		};
 	};
 };
@@ -1757,7 +1757,7 @@ class ADFRC_WP_M4A5_Combo_10_BLK_T2M_PEQ: ADFRC_M4A5_Combo_556_10_BLK
 		class LinkedItemsMuzzle
 		{
 			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
+			item = ADFRC_KAC_NT4;
 		};
 	};
 };
@@ -1786,7 +1786,7 @@ class ADFRC_WP_M4A5_Combo_14_BLK_EXPS3_WMLx: ADFRC_M4A5_Combo_556_14_BLK
 		class LinkedItemsMuzzle
 		{
 			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
+			item = ADFRC_KAC_NT4;
 		};
 	};
 };
@@ -1809,7 +1809,7 @@ class ADFRC_WP_M4A5_Combo_14_BLK_EXPS3M_WMLx: ADFRC_M4A5_Combo_556_14_BLK
 		class LinkedItemsMuzzle
 		{
 			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
+			item = ADFRC_KAC_NT4;
 		};
 	};
 };
@@ -1832,7 +1832,7 @@ class ADFRC_WP_M4A5_Combo_14_BLK_EXPS3_PEQ: ADFRC_M4A5_Combo_556_14_BLK
 		class LinkedItemsMuzzle
 		{
 			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
+			item = ADFRC_KAC_NT4;
 		};
 	};
 };
@@ -1855,7 +1855,7 @@ class ADFRC_WP_M4A5_Combo_14_BLK_EXPS3M_PEQ: ADFRC_M4A5_Combo_556_14_BLK
 		class LinkedItemsMuzzle
 		{
 			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
+			item = ADFRC_KAC_NT4;
 		};
 	};
 };
@@ -1879,7 +1879,7 @@ class ADFRC_WP_M4A5_Combo_14_BLK_T2_WMLx: ADFRC_M4A5_Combo_556_14_BLK
 		class LinkedItemsMuzzle
 		{
 			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
+			item = ADFRC_KAC_NT4;
 		};
 	};
 };
@@ -1902,7 +1902,7 @@ class ADFRC_WP_M4A5_Combo_14_BLK_T2M_WMLx: ADFRC_M4A5_Combo_556_14_BLK
 		class LinkedItemsMuzzle
 		{
 			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
+			item = ADFRC_KAC_NT4;
 		};
 	};
 };
@@ -1925,7 +1925,7 @@ class ADFRC_WP_M4A5_Combo_14_BLK_T2_PEQ: ADFRC_M4A5_Combo_556_14_BLK
 		class LinkedItemsMuzzle
 		{
 			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
+			item = ADFRC_KAC_NT4;
 		};
 	};
 };
@@ -1948,7 +1948,7 @@ class ADFRC_WP_M4A5_Combo_14_BLK_T2M_PEQ: ADFRC_M4A5_Combo_556_14_BLK
 		class LinkedItemsMuzzle
 		{
 			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
+			item = ADFRC_KAC_NT4;
 		};
 	};
 };
@@ -1973,7 +1973,7 @@ class ADFRC_WP_M4A5_Combo_14_BLK_Specter_WMLx: ADFRC_M4A5_Combo_556_14_BLK
 		class LinkedItemsMuzzle
 		{
 			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
+			item = ADFRC_KAC_NT4;
 		};
 	};
 };
@@ -1996,7 +1996,7 @@ class ADFRC_WP_M4A5_Combo_14_BLK_SpecterKF_WMLx: ADFRC_M4A5_Combo_556_14_BLK
 		class LinkedItemsMuzzle
 		{
 			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
+			item = ADFRC_KAC_NT4;
 		};
 	};
 };
@@ -2038,7 +2038,7 @@ class ADFRC_WP_M4A5_Combo_14_BLK_Specter_PEQ: ADFRC_M4A5_Combo_556_14_BLK
 		class LinkedItemsMuzzle
 		{
 			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
+			item = ADFRC_KAC_NT4;
 		};
 	};
 };
@@ -2061,7 +2061,7 @@ class ADFRC_WP_M4A5_Combo_14_BLK_SpecterKF_PEQ: ADFRC_M4A5_Combo_556_14_BLK
 		class LinkedItemsMuzzle
 		{
 			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
+			item = ADFRC_KAC_NT4;
 		};
 	};
 };

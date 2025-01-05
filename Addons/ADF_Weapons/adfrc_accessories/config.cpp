@@ -48,6 +48,7 @@ class CfgWeapons
 	////MUZZLE DEVICES
 	class muzzle_snds_M;
 	#include "SUREFIRE_RC\SOCOM_RC.HPP"
+	#include "NT4\NT4.HPP"
 	#include "Ryder9\Ryder9.HPP"
 	#include "Zev\Zev.HPP"
 	#include "F88_Silencer\F88_Silencer.HPP"
