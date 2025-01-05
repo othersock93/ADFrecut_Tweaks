@@ -1969,22 +1969,23 @@ class cfgWeapons
 			};
 		};
 	};
-	class ADFRC_TBAS_T0_AMCU_Rifleman: Vest_Camo_Base
+	
+	class ADFRC_Peacekeeper_Mk5_MC: Vest_Camo_Base
 	{
 		scope = 2;
 		author = "Brucey";
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
-		displayName = "TBAS T0 - Rifleman (EF88)";
+		displayName = "Platatac Peacekeeper Mk5 (MC)";
 		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
+		model = "\ADF_Gear_2\adfrc_vests\Peacekeeper\Peacekeeper_SOCOM.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
 		class ItemInfo: VestItem
 		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
+			uniformModel = "\ADF_Gear_2\adfrc_vests\Peacekeeper\Peacekeeper_SOCOM.p3d";
 			containerClass = "Supply180";
-			mass = 60;
+			mass = 40;
 			hiddenSelections[] = {};
 			hiddenSelectionsTextures[] = {};
 			class HitpointsProtectionInfo
@@ -1992,46 +1993,47 @@ class cfgWeapons
 				class Chest
 				{
 					HitpointName = "HitChest";
-					armor = 60;
+					armor = 10;
 					PassThrough = 0.1;
 				};
 				class Diaphragm
 				{
 					HitpointName = "HitDiaphragm";
-					armor = 60;
+					armor = 10;
 					PassThrough = 0.1;
 				};
 				class Abdomen
 				{
 					HitpointName = "HitAbdomen";
-					armor = 60;
+					armor = 10;
 					passThrough = 0.1;
 				};
 				class Body
 				{
 					hitpointName = "HitBody";
-					armor = 260;
+					armor = 30;
 					passThrough = 0.1;
 				};
 			};
 		};
 	};
-	class ADFRC_TBAS_T0_AMCU_CFA: Vest_Camo_Base
+	
+		class ADFRC_Peacekeeper_Mk5_MC_NoFlaps: Vest_Camo_Base
 	{
 		scope = 2;
 		author = "Brucey";
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
-		displayName = "TBAS T0 - CFA";
+		displayName = "Platatac Peacekeeper Mk5 (MC) - NO Flaps";
 		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
+		model = "\ADF_Gear_2\adfrc_vests\Peacekeeper\Peacekeeper_SOCOM_Noflaps.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
 		class ItemInfo: VestItem
 		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
+			uniformModel = "\ADF_Gear_2\adfrc_vests\Peacekeeper\Peacekeeper_SOCOM_Noflaps.p3d";
 			containerClass = "Supply180";
-			mass = 60;
+			mass = 40;
 			hiddenSelections[] = {};
 			hiddenSelectionsTextures[] = {};
 			class HitpointsProtectionInfo
@@ -2039,46 +2041,47 @@ class cfgWeapons
 				class Chest
 				{
 					HitpointName = "HitChest";
-					armor = 60;
+					armor = 10;
 					PassThrough = 0.1;
 				};
 				class Diaphragm
 				{
 					HitpointName = "HitDiaphragm";
-					armor = 60;
+					armor = 10;
 					PassThrough = 0.1;
 				};
 				class Abdomen
 				{
 					HitpointName = "HitAbdomen";
-					armor = 60;
+					armor = 10;
 					passThrough = 0.1;
 				};
 				class Body
 				{
 					hitpointName = "HitBody";
-					armor = 260;
+					armor = 30;
 					passThrough = 0.1;
 				};
 			};
 		};
 	};
-	class ADFRC_TBAS_T0_AMCU_TL: Vest_Camo_Base
+	
+		class ADFRC_Peacekeeper_Mk5_AMCU: Vest_Camo_Base
 	{
 		scope = 2;
 		author = "Brucey";
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
-		displayName = "TBAS T0 - Team Leader";
+		displayName = "Platatac Peacekeeper Mk5 (AMCU)";
 		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
+		model = "\ADF_Gear_2\adfrc_vests\Peacekeeper\Peacekeeper_RAR.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
 		class ItemInfo: VestItem
 		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
+			uniformModel = "\ADF_Gear_2\adfrc_vests\Peacekeeper\Peacekeeper_RAR.p3d";
 			containerClass = "Supply180";
-			mass = 60;
+			mass = 40;
 			hiddenSelections[] = {};
 			hiddenSelectionsTextures[] = {};
 			class HitpointsProtectionInfo
@@ -2086,594 +2089,32 @@ class cfgWeapons
 				class Chest
 				{
 					HitpointName = "HitChest";
-					armor = 60;
+					armor = 10;
 					PassThrough = 0.1;
 				};
 				class Diaphragm
 				{
 					HitpointName = "HitDiaphragm";
-					armor = 60;
+					armor = 10;
 					PassThrough = 0.1;
 				};
 				class Abdomen
 				{
 					HitpointName = "HitAbdomen";
-					armor = 60;
+					armor = 10;
 					passThrough = 0.1;
 				};
 				class Body
 				{
 					hitpointName = "HitBody";
-					armor = 260;
+					armor = 30;
 					passThrough = 0.1;
 				};
 			};
 		};
 	};
-	class ADFRC_TBAS_T0_AMCU_LMG: Vest_Camo_Base
-	{
-		scope = 2;
-		author = "Brucey";
-		weaponPoolAvailable = 1;
-		allowedSlots[] = {901};
-		displayName = "TBAS T0 - LMG";
-		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-		hiddenSelections[] = {};
-		hiddenSelectionsTextures[] = {};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-			containerClass = "Supply180";
-			mass = 60;
-			hiddenSelections[] = {};
-			hiddenSelectionsTextures[] = {};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName = "HitDiaphragm";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Abdomen
-				{
-					HitpointName = "HitAbdomen";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 260;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
-	class ADFRC_TBAS_T0_AMCU_S_SR25: Vest_Camo_Base
-	{
-		scope = 2;
-		author = "Brucey";
-		weaponPoolAvailable = 1;
-		allowedSlots[] = {901};
-		displayName = "TBAS T0 - Sniper (SR25)";
-		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-		hiddenSelections[] = {};
-		hiddenSelectionsTextures[] = {};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-			containerClass = "Supply180";
-			mass = 60;
-			hiddenSelections[] = {};
-			hiddenSelectionsTextures[] = {};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName = "HitDiaphragm";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Abdomen
-				{
-					HitpointName = "HitAbdomen";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 260;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
-	class ADFRC_TBAS_T0_AMCU_S_SR98: Vest_Camo_Base
-	{
-		scope = 2;
-		author = "Brucey";
-		weaponPoolAvailable = 1;
-		allowedSlots[] = {901};
-		displayName = "TBAS T0 - Sniper (SR98)";
-		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-		hiddenSelections[] = {};
-		hiddenSelectionsTextures[] = {};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-			containerClass = "Supply180";
-			mass = 60;
-			hiddenSelections[] = {};
-			hiddenSelectionsTextures[] = {};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName = "HitDiaphragm";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Abdomen
-				{
-					HitpointName = "HitAbdomen";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 260;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
-	class ADFRC_TBAS_T0_AMCU_S_Tac2: Vest_Camo_Base
-	{
-		scope = 2;
-		author = "Brucey";
-		weaponPoolAvailable = 1;
-		allowedSlots[] = {901};
-		displayName = "TBAS T0 - Sniper (Tac2)";
-		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-		hiddenSelections[] = {};
-		hiddenSelectionsTextures[] = {};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-			containerClass = "Supply180";
-			mass = 60;
-			hiddenSelections[] = {};
-			hiddenSelectionsTextures[] = {};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName = "HitDiaphragm";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Abdomen
-				{
-					HitpointName = "HitAbdomen";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 260;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
-	class ADFRC_TBAS_T0_AMCU_S_AXSR: Vest_Camo_Base
-	{
-		scope = 2;
-		author = "Brucey";
-		weaponPoolAvailable = 1;
-		allowedSlots[] = {901};
-		displayName = "TBAS T0 - Sniper (AXSR)";
-		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-		hiddenSelections[] = {};
-		hiddenSelectionsTextures[] = {};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-			containerClass = "Supply180";
-			mass = 60;
-			hiddenSelections[] = {};
-			hiddenSelectionsTextures[] = {};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName = "HitDiaphragm";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Abdomen
-				{
-					HitpointName = "HitAbdomen";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 260;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
-	class ADFRC_TBAS_T0_AMCU_S_AW50F: Vest_Camo_Base
-	{
-		scope = 2;
-		author = "Brucey";
-		weaponPoolAvailable = 1;
-		allowedSlots[] = {901};
-		displayName = "TBAS T0 - Sniper (AW50F)";
-		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-		hiddenSelections[] = {};
-		hiddenSelectionsTextures[] = {};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-			containerClass = "Supply180";
-			mass = 60;
-			hiddenSelections[] = {};
-			hiddenSelectionsTextures[] = {};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName = "HitDiaphragm";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Abdomen
-				{
-					HitpointName = "HitAbdomen";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 260;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
-	class ADFRC_TBAS_T0_AMCU_S_SR25E2: Vest_Camo_Base
-	{
-		scope = 2;
-		author = "Brucey";
-		weaponPoolAvailable = 1;
-		allowedSlots[] = {901};
-		displayName = "TBAS T0 - Sniper (SR25E2)";
-		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-		hiddenSelections[] = {};
-		hiddenSelectionsTextures[] = {};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-			containerClass = "Supply180";
-			mass = 60;
-			hiddenSelections[] = {};
-			hiddenSelectionsTextures[] = {};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName = "HitDiaphragm";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Abdomen
-				{
-					HitpointName = "HitAbdomen";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 260;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
-	class ADFRC_TBAS_T0_AMCU_S_M107A1: Vest_Camo_Base
-	{
-		scope = 2;
-		author = "Brucey";
-		weaponPoolAvailable = 1;
-		allowedSlots[] = {901};
-		displayName = "TBAS T0 - Sniper (M107A1)";
-		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-		hiddenSelections[] = {};
-		hiddenSelectionsTextures[] = {};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-			containerClass = "Supply180";
-			mass = 60;
-			hiddenSelections[] = {};
-			hiddenSelectionsTextures[] = {};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName = "HitDiaphragm";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Abdomen
-				{
-					HitpointName = "HitAbdomen";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 260;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
-	class ADFRC_TBAS_T0_MC_S_Tac2: Vest_Camo_Base
-	{
-		scope = 2;
-		author = "Brucey";
-		weaponPoolAvailable = 1;
-		allowedSlots[] = {901};
-		displayName = "TBAS T0 MC - Sniper (Tac2)";
-		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-		hiddenSelections[] = {};
-		hiddenSelectionsTextures[] = {};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-			containerClass = "Supply180";
-			mass = 60;
-			hiddenSelections[] = {};
-			hiddenSelectionsTextures[] = {};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName = "HitDiaphragm";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Abdomen
-				{
-					HitpointName = "HitAbdomen";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 260;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
-	class ADFRC_TBAS_T0_MC_S_AXSR: Vest_Camo_Base
-	{
-		scope = 2;
-		author = "Brucey";
-		weaponPoolAvailable = 1;
-		allowedSlots[] = {901};
-		displayName = "TBAS T0 MC - Sniper (AXSR)";
-		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-		hiddenSelections[] = {};
-		hiddenSelectionsTextures[] = {};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-			containerClass = "Supply180";
-			mass = 60;
-			hiddenSelections[] = {};
-			hiddenSelectionsTextures[] = {};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName = "HitDiaphragm";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Abdomen
-				{
-					HitpointName = "HitAbdomen";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 260;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
-	class ADFRC_TBAS_T0_MC_S_M107A1: Vest_Camo_Base
-	{
-		scope = 2;
-		author = "Brucey";
-		weaponPoolAvailable = 1;
-		allowedSlots[] = {901};
-		displayName = "TBAS T0 MC - Sniper (M107A1)";
-		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-		hiddenSelections[] = {};
-		hiddenSelectionsTextures[] = {};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-			containerClass = "Supply180";
-			mass = 60;
-			hiddenSelections[] = {};
-			hiddenSelectionsTextures[] = {};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName = "HitDiaphragm";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Abdomen
-				{
-					HitpointName = "HitAbdomen";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 260;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
-	class ADFRC_TBAS_T0_MC_S_SR25E2: Vest_Camo_Base
-	{
-		scope = 2;
-		author = "Brucey";
-		weaponPoolAvailable = 1;
-		allowedSlots[] = {901};
-		displayName = "TBAS T0 MC - Sniper (SR25E2)";
-		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-		hiddenSelections[] = {};
-		hiddenSelectionsTextures[] = {};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
-			containerClass = "Supply180";
-			mass = 60;
-			hiddenSelections[] = {};
-			hiddenSelectionsTextures[] = {};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName = "HitDiaphragm";
-					armor = 60;
-					PassThrough = 0.1;
-				};
-				class Abdomen
-				{
-					HitpointName = "HitAbdomen";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 260;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
+	
+	
 	class ADFRC_PilotVest: Vest_Camo_Base
 	{
 		scope = 2;
