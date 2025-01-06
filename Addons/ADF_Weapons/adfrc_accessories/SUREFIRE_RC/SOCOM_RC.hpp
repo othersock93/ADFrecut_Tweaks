@@ -59,7 +59,7 @@ class ADFRC_WARCOMP_556 : muzzle_snds_M
  		
  		class ItemInfo: InventoryMuzzleItem_Base_F
  		{	
- 			soundTypeIndex = 1; // index of sound in sounds[] in weapon modes (inherited 1 from parent class)
+ 			soundTypeIndex = 0; // index of sound in sounds[] in weapon modes (inherited 1 from parent class)
 			
 			class MagazineCoef
 			{
