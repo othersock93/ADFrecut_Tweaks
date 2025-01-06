@@ -10,7 +10,7 @@
 		editorPreview = "\ADF_Units\data\editorPreviews\MD\AMCU_CDO_F.jpg";
 		role="Rifleman";
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat	
-		backpack = "adfrc_T5_Backpanels";
+		backpack = "adfrc_T5_Backpanel";
 		weapons[]={
 			"ADFRC_WP_M4A5_Combo_14_BLK_SpecterKF_WMLx_NOSUP",
 			"ADFRC_WP_G19_FK_Comp",
@@ -577,7 +577,7 @@ class ADFRC_MD_AMCU_CDO_Light_Tee: ADFRC_MD_AMCU_CDO_Tee_Base{
 		role="Rifleman";
 		cost=250000;
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
-		backpack = "adfrc_T5_Backpanels";
+		backpack = "adfrc_T5_Backpanel";
 		weapons[]={
 			"ADFRC_WP_M4A5_Troy_14_T2M_PEQ",
 			"ADFRC_WP_USP_WL",
@@ -673,7 +673,7 @@ class ADFRC_MD_AMCU_CDO_Light_Tee: ADFRC_MD_AMCU_CDO_Tee_Base{
 		role="Rifleman";
 		cost=250000;
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
-		backpack = "adfrc_T5_Backpanels";
+		backpack = "adfrc_T5_Backpanel";
 		weapons[]={
 			"ADFRC_WP_M4A5_Troy_14_SpecterKF_PEQ_Atlas",
 			"ADFRC_WP_G19_FK_SUP",
@@ -968,7 +968,7 @@ class ADFRC_MD_AMCU_CDO_Light_Tee: ADFRC_MD_AMCU_CDO_Tee_Base{
 		editorPreview = "\ADF_Units\data\editorPreviews\MD\AMCU_CDO_Breacher.jpg";
 		role="Rifleman";
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
-		backpack = "adfrc_T5_Backpanels";
+		backpack = "adfrc_T5_Backpanel";
 		weapons[]={
 			"ADFRC_WP_M4A5_Combo_10_BLK_T2_WMLx_NoSup",
 			"ADFRC_WP_G19_FK_Comp",
