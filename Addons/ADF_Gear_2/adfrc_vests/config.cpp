@@ -996,7 +996,7 @@ class cfgWeapons
 		class ItemInfo: VestItem
 		{
 			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
-			containerClass = "Supply180";
+			containerClass = "Supply170";
 			mass = 60;
 			hiddenSelections[] = {};
 			hiddenSelectionsTextures[] = {};
@@ -1043,7 +1043,7 @@ class cfgWeapons
 		class ItemInfo: VestItem
 		{
 			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_CQB.p3d";
-			containerClass = "Supply180";
+			containerClass = "Supply160";
 			mass = 60;
 			hiddenSelections[] = {};
 			hiddenSelectionsTextures[] = {};
@@ -1090,7 +1090,7 @@ class cfgWeapons
 		class ItemInfo: VestItem
 		{
 			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_PC.p3d";
-			containerClass = "Supply180";
+			containerClass = "Supply170";
 			mass = 60;
 			hiddenSelections[] = {};
 			hiddenSelectionsTextures[] = {};
@@ -1419,8 +1419,8 @@ class cfgWeapons
 		class ItemInfo: VestItem
 		{
 			uniformModel = "\ADF_Gear_2\adfrc_vests\JPC\JPC_Base.p3d";
-			containerClass = "Supply180";
-			mass = 60;
+			containerClass = "Supply210";
+			mass = 70;
 			hiddenSelections[] = {};
 			hiddenSelectionsTextures[] = {};
 			class HitpointsProtectionInfo
@@ -1466,7 +1466,7 @@ class cfgWeapons
 		class ItemInfo: VestItem
 		{
 			uniformModel = "\ADF_Gear_2\adfrc_vests\JPC\JPC_Base.p3d";
-			containerClass = "Supply180";
+			containerClass = "Supply190";
 			mass = 60;
 			hiddenSelections[] = {};
 			hiddenSelectionsTextures[] = {};
@@ -1513,7 +1513,7 @@ class cfgWeapons
 		class ItemInfo: VestItem
 		{
 			uniformModel = "\ADF_Gear_2\adfrc_vests\JPC\JPC_Base.p3d";
-			containerClass = "Supply180";
+			containerClass = "Supply200";
 			mass = 60;
 			hiddenSelections[] = {};
 			hiddenSelectionsTextures[] = {};
@@ -1560,7 +1560,7 @@ class cfgWeapons
 		class ItemInfo: VestItem
 		{
 			uniformModel = "\ADF_Gear_2\adfrc_vests\JPC\JPC_Base.p3d";
-			containerClass = "Supply180";
+			containerClass = "Supply170";
 			mass = 60;
 			hiddenSelections[] = {};
 			hiddenSelectionsTextures[] = {};
@@ -1654,7 +1654,7 @@ class cfgWeapons
 		class ItemInfo: VestItem
 		{
 			uniformModel = "\ADF_Gear_2\adfrc_vests\JPC\JPC_Base.p3d";
-			containerClass = "Supply180";
+			containerClass = "Supply160";
 			mass = 60;
 			hiddenSelections[] = {};
 			hiddenSelectionsTextures[] = {};
@@ -1701,7 +1701,7 @@ class cfgWeapons
 		class ItemInfo: VestItem
 		{
 			uniformModel = "\ADF_Gear_2\adfrc_vests\JPC\JPC_Base.p3d";
-			containerClass = "Supply180";
+			containerClass = "Supply140";
 			mass = 60;
 			hiddenSelections[] = {};
 			hiddenSelectionsTextures[] = {};
@@ -1748,7 +1748,7 @@ class cfgWeapons
 		class ItemInfo: VestItem
 		{
 			uniformModel = "\ADF_Gear_2\adfrc_vests\JPC\JPC_Base.p3d";
-			containerClass = "Supply180";
+			containerClass = "Supply170";
 			mass = 60;
 			hiddenSelections[] = {};
 			hiddenSelectionsTextures[] = {};
@@ -1783,7 +1783,7 @@ class cfgWeapons
 	};
 	class ADFRC_JPC_TAG: Vest_Camo_Base
 	{
-		scope = 2;
+		scope = 1;
 		author = "Brucey";
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
@@ -1984,7 +1984,7 @@ class cfgWeapons
 		class ItemInfo: VestItem
 		{
 			uniformModel = "\ADF_Gear_2\adfrc_vests\Peacekeeper\Peacekeeper_SOCOM.p3d";
-			containerClass = "Supply180";
+			containerClass = "Supply160";
 			mass = 40;
 			hiddenSelections[] = {};
 			hiddenSelectionsTextures[] = {};
@@ -2032,7 +2032,7 @@ class cfgWeapons
 		class ItemInfo: VestItem
 		{
 			uniformModel = "\ADF_Gear_2\adfrc_vests\Peacekeeper\Peacekeeper_SOCOM_Noflaps.p3d";
-			containerClass = "Supply180";
+			containerClass = "Supply160";
 			mass = 40;
 			hiddenSelections[] = {};
 			hiddenSelectionsTextures[] = {};
@@ -2080,7 +2080,7 @@ class cfgWeapons
 		class ItemInfo: VestItem
 		{
 			uniformModel = "\ADF_Gear_2\adfrc_vests\Peacekeeper\Peacekeeper_RAR.p3d";
-			containerClass = "Supply180";
+			containerClass = "Supply160";
 			mass = 40;
 			hiddenSelections[] = {};
 			hiddenSelectionsTextures[] = {};
