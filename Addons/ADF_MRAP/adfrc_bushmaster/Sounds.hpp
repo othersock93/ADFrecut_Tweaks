@@ -1,11 +1,11 @@
 soundGetIn[] = {
-    "\adfrc_bushmaster\data\sounds\getin",
+    "\adf_mrap\adfrc_bushmaster\data\sounds\getin",
     1,
     1
 };
 
 soundGetOut[] = {
-    "\adfrc_bushmaster\data\sounds\getout",
+    "\adf_mrap\adfrc_bushmaster\data\sounds\getout",
     1,
     1,
     40
@@ -17,26 +17,26 @@ soundDammage[] = {
 };
 
 soundEngineOnInt[] = {
-    "\adfrc_bushmaster\data\sounds\Start_int",
+    "\adf_mrap\adfrc_bushmaster\data\sounds\Start_int",
     0.5,
     1
 };
 
 soundEngineOnExt[] = {
-    "\adfrc_bushmaster\data\sounds\start_ext",
+    "\adf_mrap\adfrc_bushmaster\data\sounds\start_ext",
     0.6,
     1,
     100
 };
 
 soundEngineOffInt[] = {
-    "\adfrc_bushmaster\data\sounds\stop_int",
+    "\adf_mrap\adfrc_bushmaster\data\sounds\stop_int",
     0.5,
     1
 };
 
 soundEngineOffExt[] = {
-    "\adfrc_bushmaster\data\sounds\stop_ext",
+    "\adf_mrap\adfrc_bushmaster\data\sounds\stop_ext",
     0.6,
     1,
     100
@@ -188,7 +188,7 @@ class Sounds {
         volume    = "1*engineOn*camPos*(((rpm/ 4500) factor[(600/ 4500),(1100/ 4500)]) * ((rpm/ 4500) factor[(1800/ 4500),(1300/ 4500)]))";
 
         sound[] = {
-            "\adfrc_bushmaster\data\sounds\IDLE_EXT",
+            "\adf_mrap\adfrc_bushmaster\data\sounds\IDLE_EXT",
             0.75,
             1,
             150
@@ -200,7 +200,7 @@ class Sounds {
         volume = "1*engineOn*camPos*(thrust factor[0,1])*(((rpm/ 4500) factor[(850/ 4500),(1100/ 4500)]) * ((rpm/ 4500) factor[(4500/ 4500),(4500/ 4500)]))";
 
         sound[] = {
-            "\adfrc_bushmaster\data\sounds\HIGH_EXT",
+            "\adf_mrap\adfrc_bushmaster\data\sounds\HIGH_EXT",
             0.75,
             1,
             300
@@ -212,7 +212,7 @@ class Sounds {
         volume    = "1*engineOn*camPos*(thrust factor[1,0])*(((rpm/ 4500) factor[(850/ 4500),(1100/ 4500)]) * ((rpm/ 4500) factor[(4500/ 4500),(4500/ 4500)]))";
 
         sound[] = {
-            "\adfrc_bushmaster\data\sounds\LOW_EXT",
+            "\adf_mrap\adfrc_bushmaster\data\sounds\LOW_EXT",
             0.5,
             1,
             200
@@ -224,7 +224,7 @@ class Sounds {
         volume    = "1*engineOn*camPos*(thrust factor[0,0.6])*(((rpm/ 4500) factor[(850/ 4500),(1100/ 4500)]) * ((rpm/ 4500) factor[(4500/ 4500),(4500/ 4500)]))";
 
         sound[] = {
-            "\adfrc_bushmaster\data\sounds\DISTANCE",
+            "\adf_mrap\adfrc_bushmaster\data\sounds\DISTANCE",
             1,
             1,
             1000
@@ -236,7 +236,7 @@ class Sounds {
         volume    = "engineOn*camPos*(thrust factor[0.9,1])*(((rpm/ 4500) factor[(2500/ 4500),(3100/ 4500)]) * ((rpm/ 4500) factor[(4500/ 4500),(3700/ 4500)]))";
 
         sound[] = {
-            "\adfrc_bushmaster\data\sounds\turbo",
+            "\adf_mrap\adfrc_bushmaster\data\sounds\turbo",
             0.5,
             1,
             50
@@ -248,7 +248,7 @@ class Sounds {
         volume    = "engineOn*camPos*((rpm/ 4500) factor[(4000/ 4500),(4500/ 4500)])";
 
         sound[] = {
-            "\adfrc_bushmaster\data\sounds\rev_ext",
+            "\adf_mrap\adfrc_bushmaster\data\sounds\rev_ext",
             0.5,
             1,
             200
@@ -261,7 +261,7 @@ class Sounds {
         volume    = "1*engineOn*(1-camPos)*(((rpm/ 4500) factor[(600/ 4500),(1100/ 4500)]) * ((rpm/ 4500) factor[(1800/ 4500),(1300/ 4500)]))";
 
         sound[] = {
-            "\adfrc_bushmaster\data\sounds\IDLE_int",
+            "\adf_mrap\adfrc_bushmaster\data\sounds\IDLE_int",
             0.5,
             1
         };
@@ -272,7 +272,7 @@ class Sounds {
         volume    = "1*engineOn*(1-camPos)*(thrust factor[0,1])*(((rpm/ 4500) factor[(850/ 4500),(1100/ 4500)]) * ((rpm/ 4500) factor[(4500/ 4500),(4500/ 4500)]))";
 
         sound[] = {
-            "\adfrc_bushmaster\data\sounds\HIGH_int",
+            "\adf_mrap\adfrc_bushmaster\data\sounds\HIGH_int",
             0.5,
             1
         };
@@ -283,7 +283,7 @@ class Sounds {
         volume    = "1*engineOn*(1-camPos)*(thrust factor[1,0])*(((rpm/ 4500) factor[(850/ 4500),(1100/ 4500)]) * ((rpm/ 4500) factor[(4500/ 4500),(4500/ 4500)]))";
 
         sound[] = {
-            "\adfrc_bushmaster\data\sounds\LOW_int",
+            "\adf_mrap\adfrc_bushmaster\data\sounds\LOW_int",
             0.4,
             1
         };
@@ -294,7 +294,7 @@ class Sounds {
         volume    = "0";
 
         sound[] = {
-            "\adfrc_bushmaster\data\sounds\NoSound",
+            "\adf_mrap\adfrc_bushmaster\data\sounds\NoSound",
             0,
             0
         };
@@ -305,7 +305,7 @@ class Sounds {
         volume    = "engineOn*(1-camPos)*(thrust factor[0.9,1])*(((rpm/ 4500) factor[(2500/ 4500),(3100/ 4500)]) * ((rpm/ 4500) factor[(4500/ 4500),(3700/ 4500)]))";
 
         sound[] = {
-            "\adfrc_bushmaster\data\sounds\turbo",
+            "\adf_mrap\adfrc_bushmaster\data\sounds\turbo",
             0.05,
             1
         };
@@ -316,7 +316,7 @@ class Sounds {
         volume    = "engineOn*(1-camPos)*((rpm/ 4500) factor[(4000/ 4500),(4500/ 4500)])";
 
         sound[] = {
-            "\adfrc_bushmaster\data\sounds\rev",
+            "\adf_mrap\adfrc_bushmaster\data\sounds\rev",
             0.4,
             1
         };
@@ -327,7 +327,7 @@ class Sounds {
         volume    = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 4500) factor[(600/ 4500),(1100/ 4500)]) * ((rpm/ 4500) factor[(1800/ 4500),(1300/ 4500)]))";
 
         sound[] = {
-            "\adfrc_bushmaster\data\sounds\ext_exhaust_2",
+            "\adf_mrap\adfrc_bushmaster\data\sounds\ext_exhaust_2",
             0.6,
             1,
             200
@@ -339,7 +339,7 @@ class Sounds {
         volume    = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 4500) factor[(1400/ 4500),(1800/ 4500)]) * ((rpm/ 4500) factor[(2300/ 4500),(2000/ 4500)]))";
 
         sound[] = {
-            "\adfrc_bushmaster\data\sounds\ext_exhaust_3",
+            "\adf_mrap\adfrc_bushmaster\data\sounds\ext_exhaust_3",
             0.6,
             1,
             250
@@ -351,7 +351,7 @@ class Sounds {
         volume    = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 4500) factor[(1900/ 4500),(2300/ 4500)]) * ((rpm/ 4500) factor[(3000/ 4500),(2500/ 4500)]))";
 
         sound[] = {
-            "\adfrc_bushmaster\data\sounds\ext_exhaust_5",
+            "\adf_mrap\adfrc_bushmaster\data\sounds\ext_exhaust_5",
             0.6,
             1,
             300
@@ -363,7 +363,7 @@ class Sounds {
         volume    = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 4500) factor[(2500/ 4500),(3100/ 4500)]) * ((rpm/ 4500) factor[(4500/ 4500),(3700/ 4500)]))";
 
         sound[] = {
-            "\adfrc_bushmaster\data\sounds\ext_exhaust_6",
+            "\adf_mrap\adfrc_bushmaster\data\sounds\ext_exhaust_6",
             0.6,
             1,
             325
@@ -375,7 +375,7 @@ class Sounds {
         volume    = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/ 4500) factor[(3800/ 4500),(4500/ 4500)])";
 
         sound[] = {
-            "\adfrc_bushmaster\data\sounds\ext_exhaust_7",
+            "\adf_mrap\adfrc_bushmaster\data\sounds\ext_exhaust_7",
             0.6,
             1,
             350
@@ -387,7 +387,7 @@ class Sounds {
         volume    = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 4500) factor[(600/ 4500),(1100/ 4500)]) * ((rpm/ 4500) factor[(1800/ 4500),(1300/ 4500)]))";
 
         sound[] = {
-            "\adfrc_bushmaster\data\sounds\int_exhaust_2",
+            "\adf_mrap\adfrc_bushmaster\data\sounds\int_exhaust_2",
             0.6,
             1
         };
@@ -398,7 +398,7 @@ class Sounds {
         volume    = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 4500) factor[(1400/ 4500),(1800/ 4500)]) * ((rpm/ 4500) factor[(2300/ 4500),(2000/ 4500)]))";
 
         sound[] = {
-            "\adfrc_bushmaster\data\sounds\int_exhaust_3",
+            "\adf_mrap\adfrc_bushmaster\data\sounds\int_exhaust_3",
             0.6,
             1
         };
@@ -409,7 +409,7 @@ class Sounds {
         volume    = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 4500) factor[(1900/ 4500),(2300/ 4500)]) * ((rpm/ 4500) factor[(3000/ 4500),(2500/ 4500)]))";
 
         sound[] = {
-            "\adfrc_bushmaster\data\sounds\int_exhaust_5",
+            "\adf_mrap\adfrc_bushmaster\data\sounds\int_exhaust_5",
             0.6,
             1
         };
@@ -420,7 +420,7 @@ class Sounds {
         volume    = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 4500) factor[(2500/ 4500),(3100/ 4500)]) * ((rpm/ 4500) factor[(4500/ 4500),(3700/ 4500)]))";
 
         sound[] = {
-            "\adfrc_bushmaster\data\sounds\int_exhaust_6",
+            "\adf_mrap\adfrc_bushmaster\data\sounds\int_exhaust_6",
             0.6,
             1
         };
@@ -431,7 +431,7 @@ class Sounds {
         volume    = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/ 4500) factor[(3800/ 4500),(4500/ 4500)])";
 
         sound[] = {
-            "\adfrc_bushmaster\data\sounds\int_exhaust_7",
+            "\adf_mrap\adfrc_bushmaster\data\sounds\int_exhaust_7",
             0.6,
             1
         };

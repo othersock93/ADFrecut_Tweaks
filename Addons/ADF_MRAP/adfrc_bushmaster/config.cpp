@@ -11,4 +11,8 @@ class CfgPatches {
 	};
 };
 
+class RCWSOptics;
+
+#include <CfgEffects.hpp>
+#include <CfgMoves.hpp>
 #include <CfgVehicles.hpp>

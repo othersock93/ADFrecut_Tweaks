@@ -6,10 +6,10 @@ class textureSources {
 		factions[]  = { };
 
 		textures[] = {
-			"\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
-			"\adfrc_bushmaster\data\textures\labels\labels_army_01.paa"
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\labels\labels_army_01.paa"
 		};
     };
 
@@ -18,10 +18,10 @@ class textureSources {
         displayName = "Australian Army 002";
 
         textures[] = {
-            "\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
-			"\adfrc_bushmaster\data\textures\labels\labels_army_02.paa"
+            "\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\labels\labels_army_02.paa"
         };
     };
 
@@ -30,10 +30,10 @@ class textureSources {
         displayName = "Australian Army 003";
 
         textures[] = {
-            "\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
-			"\adfrc_bushmaster\data\textures\labels\labels_army_03.paa"
+            "\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\labels\labels_army_03.paa"
         };
     };
 
@@ -42,10 +42,10 @@ class textureSources {
         displayName = "Australian Army 004";
 
         textures[] = {
-            "\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
-			"\adfrc_bushmaster\data\textures\labels\labels_army_04.paa"
+            "\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\labels\labels_army_04.paa"
         };
     };
 
@@ -54,10 +54,10 @@ class textureSources {
         displayName = "Australian Army 005";
 
         textures[] = {
-            "\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
-			"\adfrc_bushmaster\data\textures\labels\labels_army_05.paa"
+            "\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\labels\labels_army_05.paa"
         };
     };
 
@@ -66,10 +66,10 @@ class textureSources {
         displayName = "Australian Army 006";
 
         textures[] = {
-            "\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
-			"\adfrc_bushmaster\data\textures\labels\labels_army_06.paa"
+            "\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\labels\labels_army_06.paa"
         };
     };
 
@@ -78,10 +78,10 @@ class textureSources {
         displayName = "Australian Army 007";
 
         textures[] = {
-            "\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
-			"\adfrc_bushmaster\data\textures\labels\labels_army_07.paa"
+            "\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\labels\labels_army_07.paa"
         };
     };
 
@@ -90,10 +90,10 @@ class textureSources {
         displayName = "Australian Army 008";
 
         textures[] = {
-            "\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
-			"\adfrc_bushmaster\data\textures\labels\labels_army_08.paa"
+            "\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\labels\labels_army_08.paa"
         };
     };
 
@@ -102,10 +102,10 @@ class textureSources {
         displayName = "Australian Army 009";
 
         textures[] = {
-            "\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
-			"\adfrc_bushmaster\data\textures\labels\labels_army_09.paa"
+            "\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\labels\labels_army_09.paa"
         };
     };
 
@@ -114,10 +114,10 @@ class textureSources {
         displayName = "Australian Army 010";
 
         textures[] = {
-            "\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
-			"\adfrc_bushmaster\data\textures\labels\labels_army_10.paa"
+            "\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\labels\labels_army_10.paa"
         };
     };
 
@@ -128,38 +128,38 @@ class textureSources {
         factions[]  = { };
 
         textures[] = {
-            "\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
-			"\adfrc_bushmaster\data\textures\labels\labels_airforce_01.paa"
-        };
-    };/*
-
-    class adf_med_001 {
-        author      =  "ADFRC - Quiggs";
-        displayName =  "Australian Army Medical";
-
-        factions[]  =  { };
-
-        textures[] = {
-            "\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
-			"\adfrc_bushmaster\data\textures\labels\labels_army_med.paa"
+            "\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\labels\labels_airforce_01.paa"
         };
     };
 
-    class adf_un_001 {
-        author      =  "ADFRC - Quiggs";
-        displayName =  "Australian Army United Nations";
+    // class adf_med_001 {
+    //     author      =  "ADFRC - Quiggs";
+    //     displayName =  "Australian Army Medical";
 
-        factions[]  =  { };
+    //     factions[]  =  { };
 
-        textures[] = {
-            "\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
-			"\adfrc_bushmaster\data\textures\labels\labels_army_un.paa"
-        };
-    };*/
+    //     textures[] = {
+    //         "\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
+	// 		"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
+	// 		"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
+	// 		"\adf_mrap\adfrc_bushmaster\data\textures\labels\labels_army_med.paa"
+    //     };
+    // };
+
+    // class adf_un_001 {
+    //     author      =  "ADFRC - Quiggs";
+    //     displayName =  "Australian Army United Nations";
+
+    //     factions[]  =  { };
+
+    //     textures[] = {
+    //         "\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
+	// 		"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
+	// 		"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
+	// 		"\adf_mrap\adfrc_bushmaster\data\textures\labels\labels_army_un.paa"
+    //     };
+    // };
 };

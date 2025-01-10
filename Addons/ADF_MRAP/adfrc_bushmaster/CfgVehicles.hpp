@@ -4,14 +4,18 @@ class CfgVehicles {
     //? Imports
     //?
 
-    class Car;
-	class Car_F : Car {
+	class Car_F;
+	class MRAP_01_base_F : Car_F {
 		class AnimationSources;
 		class CargoTurret;
 		class EventHandlers;
+		class NewTurret;
 
         class Turrets {
-			class MainTurret;
+			class MainTurret : NewTurret {
+				class Components;
+				class ViewGunner;
+			};
 		};
 
 		class HitPoints {
@@ -29,14 +33,14 @@ class CfgVehicles {
     //? Protected
     //?
 
-    class ADFRC_Bushmaster_Base_F : Car_F {
+    class ADFRC_Bushmaster_Base_F : MRAP_01_base_F {
 		attenuationEffectType                   = "CarAttenuation";
 		author                                  = "ADFRC - Quiggs & Index";
-		crew                                    = "adfrc_rifleman_dpcu";
+		crew                                    = "ADFRC_MD_AMCU_Soldier_Crewman";
 		destrType                               = "DestructWreck";
 		differentialType                        = "all_limited";
-		driverAction                            = "bushmaster_driver";
-		driverInAction                          = "bushmaster_driver";
+		driverAction                            = "adfrc_bushmaster_driver";
+		driverInAction                          = "adfrc_bushmaster_driver";
 		driverLeftHandAnimName                  = "driveWheel";
 		driverOpticsModel                       = "";
 		driverRightHandAnimName                 = "driveWheel";
@@ -50,15 +54,15 @@ class CfgVehicles {
 		memoryPointDriverOptics                 = "driverview";
 		memoryPointsGetInDriver                 = "pos_driver";
 		memoryPointsGetInDriverDir              = "pos_driver_dir";
-		memoryPointTrackBLL                     = "track_bll";
-		memoryPointTrackBLR                     = "track_blr";
-		memoryPointTrackBRL                     = "track_brl";
-		memoryPointTrackBRR                     = "track_brr";
-		memoryPointTrackFLL                     = "track_fll";
-		memoryPointTrackFLR                     = "track_flr";
-		memoryPointTrackFRL                     = "track_frl";
-		memoryPointTrackFRR                     = "track_frr";
-		picture                                 = "\adfrc_bushmaster\data\ui\bushmaster_picture_ca.paa";
+		memoryPointTrackBLL                     = "track_bll"; //! FIXME
+		memoryPointTrackBLR                     = "track_blr"; //! FIXME
+		memoryPointTrackBRL                     = "track_brl"; //! FIXME
+		memoryPointTrackBRR                     = "track_brr"; //! FIXME
+		memoryPointTrackFLL                     = "track_fll"; //! FIXME
+		memoryPointTrackFLR                     = "track_flr"; //! FIXME
+		memoryPointTrackFRL                     = "track_frl"; //! FIXME
+		memoryPointTrackFRR                     = "track_frr"; //! FIXME
+		picture                                 = "\adf_mrap\adfrc_bushmaster\data\ui\bushmaster_picture_ca.paa";
 		simulation                              = "CarX";
 		vehicleClass                            = "Car";
 
@@ -88,9 +92,9 @@ class CfgVehicles {
 		fuelCapacity                            = 319;
 		fuelExplosionPower                      = 5;
 		hideProxyInCombat                       = 1;
-		idleRpm                                 = 700;
+		idleRpm                                 = 750;
 		latency                                 = 1;
-		maxOmega                                = 262;
+		maxOmega                                = 293.215066;
 		maxSpeed                                = 130;
 		peakTorque                              = 1166;
 		rearBias                                = 1.3;
@@ -119,13 +123,15 @@ class CfgVehicles {
         cargoIsCoDriver[]                       = { 0, 0, 0, 0, 0 };
         weapons[]                               = { "TruckHorn2" };
 
-        torqueCurve[] = {
-			{ 0, 0.8 },
-			{ 0.2, 0.9 },
-			{ 0.33, 1 },
-			{ 0.5, 0.9 },
-			{ 0.75, 0.85 },
-			{ 1, 0.7 }
+        torqueCurve[]= {
+			{ 0, 0 },
+			{ 0.125, 0.5 },
+			{ 0.25, 0.85 },
+			{ 0.4, 0.9 },
+			{ 0.5, 1 },
+			{ 0.725, 0.95 },
+			{ 0.85, 0.6 },
+			{ 1, 0.3 }
 		};
 
         hiddenSelections[] = {
@@ -136,10 +142,10 @@ class CfgVehicles {
 		};
 
 		hiddenSelectionsTextures[] = {
-			"\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
-			"\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
-			"\adfrc_bushmaster\data\textures\labels\labels_army_01.paa"
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull1_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmhull2_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\exterior\bmsusp_co.paa",
+			"\adf_mrap\adfrc_bushmaster\data\textures\labels\labels_army_01.paa"
 		};
 
 		cargoAction[] = {
@@ -189,7 +195,7 @@ class CfgVehicles {
 
 			class AirCon_Vents {
 				direction = "exhaust1_dir";
-				effect    = "ExhaustEffect_BushmasterRefract";
+				effect    = "ADFRC_ExhaustEffect_BushmasterRefract";
 				position  = "exhaust1_pos";
 			};
 		};
@@ -330,16 +336,16 @@ class CfgVehicles {
 				latStiffY                           = 180;
 				longitudinalStiffnessPerUnitGravity = 5000;
 				mass                                = 150;
-				maxBrakeTorque                      = 10000;
+				maxBrakeTorque                      = 15000;
 				maxCompression                      = 0.15;
 				maxHandBrakeTorque                  = 0;
 				maxDroop                            = 0.15;
 				MOI                                 = 40;
-				springDamperRate                    = 19158;
-				springStrength                      = 201234;
-				sprungMass                          = 4000;
+				springDamperRate                    = 11073.3;
+				springStrength                      = 553665;
+				sprungMass                          = 2768.325;
 				steering                            = 1;
-				width                               = 0.4;
+				width                               = 0.2;
 
 				frictionVsSlipGraph[]               = { { 0, 1 }, { 0.5, 1 }, { 1, 1 } };
 				suspTravelDirection[]               = { 0, -1, 0 };
@@ -352,7 +358,7 @@ class CfgVehicles {
 				suspForceAppPointOffset = "wheel_1_2_axis";
 				tireForceAppPointOffset = "wheel_1_2_axis";
 
-				maxHandBrakeTorque      = 275000;
+				maxHandBrakeTorque      = 30000;
 				steering                = 0;
 			};
 
@@ -374,7 +380,7 @@ class CfgVehicles {
 				suspForceAppPointOffset = "wheel_2_2_axis";
 				tireForceAppPointOffset = "wheel_2_2_axis";
 
-				maxHandBrakeTorque      = 275000;
+				maxHandBrakeTorque      = 30000;
 				steering                = 0;
 			};
 		};
@@ -390,12 +396,12 @@ class CfgVehicles {
             GearboxRatios[] = {
 				"R1", -4.84,
 				"N",  0,
-				"D1", 3.4,
-				"D2", 2,
-				"D3", 1.4,
+				"D1", 2.43,
+				"D2", 2.01,
+				"D3", 1.42,
 				"D4", 1,
-				"D5", 0.7,
-				"D6", 0.5
+				"D5", 0.83,
+				"D6", 0.59
 			};
 
 			TransmissionRatios[] = {
@@ -498,9 +504,9 @@ class CfgVehicles {
     class ADFRC_F_GWOT_Bushmaster_Unarmed_F : ADFRC_Bushmaster_Base_F {
 		author        = "ADFRC - Quiggs & Index";
 		displayName   = "Bushmaster";
-		editorPreview = "\adfrc_bushmaster\data\previews\adfrc_bushmaster_unarmed_f.jpg";
-		icon          = "\adfrc_bushmaster\data\ui\bushmaster_map_unarmed.paa";
-		model         = "\adfrc_bushmaster\adfrc_bushmaster_unarmed.p3d";
+		editorPreview = "\adf_mrap\adfrc_bushmaster\data\previews\adfrc_bushmaster_unarmed_f.jpg";
+		icon          = "\adf_mrap\adfrc_bushmaster\data\ui\bushmaster_map_unarmed.paa";
+		model         = "\adf_mrap\adfrc_bushmaster\adfrc_bushmaster_unarmed.p3d";
 
 		scopeCurator  = 2;
         scope         = 2;
@@ -556,7 +562,7 @@ class CfgVehicles {
 				gunnerCompartments         = "Compartment1";
 				gunnerGetInAction          = "GetInLow";
 				gunnerGetOutAction         = "GetOutLow";
-				gunnerInAction             = "bushmaster_ffv_front";
+				gunnerInAction             = "adfrc_bushmaster_ffv_front";
 				memoryPointsGetInGunnerDir = "pos_gunner_dir";
                 gunnerAction               = "vehicle_turnout_1";
                 gunnerName                 = "Front Cover";
@@ -578,7 +584,7 @@ class CfgVehicles {
 
 			class Turret_02 : Turret_01 {
 				animationSourceHatch       = "HatchGunnerRearLeft";
-				gunnerInAction             = "bushmaster_ffv_rearleft";
+				gunnerInAction             = "adfrc_bushmaster_ffv_rearleft";
 				gunnerName                 = "Left Rear Cover";
 				memoryPointsGetInGunner    = "pos_cargo_l";
 				memoryPointsGetInGunnerDir = "pos_cargo_l_dir";
@@ -589,12 +595,179 @@ class CfgVehicles {
 
 			class Turret_03 : Turret_01 {
 				animationSourceHatch       = "HatchGunnerRearRight";
-				gunnerInAction             = "bushmaster_ffv_rearright";
+				gunnerInAction             = "adfrc_bushmaster_ffv_rearright";
 				memoryPointsGetInGunner    = "pos_cargo_r";
 				memoryPointsGetInGunnerDir = "pos_cargo_r_dir";
                 gunnerName                 = "Right Rear Cover";
 
 				commanding                 = 3;
+				proxyIndex                 = 3;
+			};
+		};
+	};
+
+	class ADFRC_F_GWOT_Bushmaster_RWS_M2_F : ADFRC_Bushmaster_Base_F {
+		author        = "ADFRC - Quiggs & Index";
+		displayName   = "Bushmaster (RWS M2)";
+		editorPreview = "\adf_mrap\adfrc_bushmaster\data\previews\adfrc_bushmaster_unarmed_f.jpg";
+		icon          = "\adf_mrap\adfrc_bushmaster\data\ui\bushmaster_map_unarmed.paa";
+		model         = "\adf_mrap\adfrc_bushmaster\adfrc_bushmaster_rws_m2.p3d";
+
+		scopeCurator  = 2;
+        scope         = 2;
+
+		animationList[] = {
+			"show_ecm", 0,
+			"show_shovel", 0.5,
+			"show_fireaxe", 0.5,
+			"show_arm", 0.5,
+			"show_extension", 0.5,
+			"show_winch", 1,
+			"show_cover", 0.5,
+			"show_spare", 1,
+			"show_ant_powered", 0,
+			"show_ant_low_3_1", 1,
+			"show_ant_low_3_2", 1,
+			"show_ant_high_3_1", 0.5,
+			"show_ant_high_3_2", 0.5,
+			"show_ant_low_2_1", 1,
+			"show_ant_low_2_2", 1,
+			"show_ant_high_2_1", 0.5,
+			"show_ant_high_2_2", 0.5,
+			"show_ant_low_1_1", 1,
+			"show_ant_low_1_2", 1,
+			"show_ant_high_1_1", 0.5,
+			"show_ant_high_1_2", 0.5,
+			"show_ammobox_01", 0.5,
+			"show_ammobox_02", 0.5,
+			"show_ammobox_03", 0.5,
+			"show_ammobox_04", 0.5,
+			"show_jerrycan_01", 0.5,
+			"show_jerrycan_02", 0.5,
+			"show_jerrycan_03", 0.5,
+			"show_jerrycan_04", 0.5
+		};
+
+		textureList[] = {
+			"adf_001", 1,
+			"adf_002", 1,
+			"adf_003", 1,
+			"adf_004", 1,
+			"adf_005", 1,
+			"adf_006", 1,
+			"adf_007", 1,
+			"adf_008", 1,
+			"adf_009", 1,
+			"adf_010", 1
+		};
+
+		class Turrets : Turrets {
+			class MainTurret : MainTurret {
+				animationSourceStickX     = "joystick_gunner_x";
+				animationSourceStickY     = "joystick_gunner_y";
+				body                      = "mainTurret";
+				gun                       = "mainGun";
+				gunBeg                    = "m2_muzzle";
+				gunEnd                    = "m2_chamber";
+				gunnerDoor                = "";
+				gunnerInAction            = "adfrc_bushmaster_gunner";
+				gunnerLeftHandAnimName    = "";
+				gunnerOpticsModel         = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
+				gunnerRightHandAnimName   = "joystick_gunner";
+				memoryPointGunnerOptics   = "gunnerviewout";
+				turretInfoType            = "RscOptics_crows";
+
+				castGunnerShadow          = 1;
+				discreteDistanceInitIndex = 2;
+				forceHideGunner           = 1;
+				gunnerForceOptics         = 0;
+				initElev                  = 0;
+				maxElev                   = 60;
+				minElev                   = -25;
+				proxyIndex                = 1;
+				stabilizedInAxes          = 3;
+				usePip                    = 1;
+				viewGunnerInExternal      = 1;
+
+				discreteDistance[]        = { 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000 };
+				magazines[]               = { "200Rnd_127x99_mag", "200Rnd_127x99_mag", "200Rnd_127x99_mag", "200Rnd_127x99_mag" };
+				soundServo[]              = { "A3\Sounds_F\vehicles\soft\noises\servo_turret_MRAP01", 0.17782794, 1, 10 };
+				soundServoVertical[]      = { "A3\Sounds_F\vehicles\soft\noises\servo_turret_MRAP01", 0.17782794, 1, 10 };
+				weapons[]                 = { "HMG_127" };
+
+				class ViewOptics : RCWSOptics { };
+
+				class ViewGunner : ViewGunner {
+					initAngleX = -5;
+					initFov    = 0.9;
+					maxFov     = 1.25;
+					minFov     = 0.25;
+				};
+
+				class HitPoints : HitPoints {
+					class HitTurret {
+						armorComponent     = "hit_main_turret";
+						name               = "hit_main_turret_point";
+						visual             = "otocvez";
+
+						armor              = -250;
+						explosionShielding = 0.4;
+						isTurret           = 1;
+						material           = -1;
+						minimalHit         = 0.03;
+						passThrough        = 0;
+						radius             = 0.25;
+					};
+
+					class HitGun {
+						armorComponent     = "hit_main_gun";
+						name               = "hit_main_gun_point";
+						visual             = "otochlaven";
+
+						armor              = -250;
+						explosionShielding = 0.2;
+						isGun              = 1;
+						material           = -1;
+						minimalHit         = 0.03;
+						passThrough        = 0;
+						radius             = 0.2;
+					};
+				};
+			};
+
+			class Turret_01 : CargoTurret {
+				animationSourceHatch       = "HatchGunnerRearLeft";
+				gunnerCompartments         = "Compartment1";
+				gunnerGetInAction          = "GetInLow";
+				gunnerGetOutAction         = "GetOutLow";
+				gunnerInAction             = "adfrc_bushmaster_ffv_rearleft";
+				gunnerName                 = "Left Rear Cover";
+				memoryPointsGetInGunner    = "pos_cargo_l";
+				memoryPointsGetInGunnerDir = "pos_cargo_l_dir";
+                gunnerAction               = "vehicle_turnout_1";
+
+				commanding                 = 1;
+				gunnerForceOptics          = 0;
+				gunnerOutForceOptics       = 0;
+				initTurn                   = 0;
+				isPersonTurret             = 1;
+				LODTurnedOut               = 1;
+				maxElev                    = 45;
+				maxTurn                    = 75;
+				minElev                    = -45;
+				minTurn                    = -75;
+				preciseGetInOut            = 0;
+                proxyIndex                 = 2;
+			};
+
+			class Turret_02 : Turret_01 {
+				animationSourceHatch       = "HatchGunnerRearRight";
+				gunnerInAction             = "adfrc_bushmaster_ffv_rearright";
+				memoryPointsGetInGunner    = "pos_cargo_r";
+				memoryPointsGetInGunnerDir = "pos_cargo_r_dir";
+                gunnerName                 = "Right Rear Cover";
+
+				commanding                 = 2;
 				proxyIndex                 = 3;
 			};
 		};

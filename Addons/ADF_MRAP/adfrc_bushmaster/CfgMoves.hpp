@@ -25,7 +25,7 @@ class CfgMovesMaleSdr : CfgMovesBasic {
 		//?
 
 		class adfrc_bushmaster_driver : Crew {
-			file               = "\adfrc_bushmaster\data\anims\bushmaster_driver.rtm";
+			file               = "\adf_mrap\adfrc_bushmaster\data\anims\bushmaster_driver.rtm";
 
 			speed              = -30;
 
@@ -51,7 +51,7 @@ class CfgMovesMaleSdr : CfgMovesBasic {
 		};
 
 		class adfrc_bushmaster_gunner : Crew {
-			file            = "\adfrc_bushmaster\data\anims\bushmaster_gunner_mocap.rtm";
+			file            = "\adf_mrap\adfrc_bushmaster\data\anims\bushmaster_gunner_mocap.rtm";
 
 			speed           = -30;
 
@@ -59,7 +59,7 @@ class CfgMovesMaleSdr : CfgMovesBasic {
 		};
 
 		class adfrc_bushmaster_ffv_front_settlein : passenger_generic01_foldhands_settlein {
-			file             = "\adfrc_bushmaster\data\anims\bushmaster_ffv_front_settlein.rtm";
+			file             = "\adf_mrap\adfrc_bushmaster\data\anims\bushmaster_ffv_front_settlein.rtm";
 
 			looped           = 0;
 			speed            = -1.5;
@@ -71,7 +71,7 @@ class CfgMovesMaleSdr : CfgMovesBasic {
 		};
 
 		class adfrc_bushmaster_ffv_front_idle : passenger_generic01_foldhands {
-			file            = "\adfrc_bushmaster\data\anims\bushmaster_ffv_front_sitting.rtm";
+			file            = "\adf_mrap\adfrc_bushmaster\data\anims\bushmaster_ffv_front_sitting.rtm";
 
 			speed           = -30;
 
@@ -79,7 +79,7 @@ class CfgMovesMaleSdr : CfgMovesBasic {
 		};
 
 		class adfrc_bushmaster_ffv_front : passenger_generic01_foldhands {
-			file            = "\adfrc_bushmaster\data\anims\bushmaster_ffv_front_mocap.rtm";
+			file            = "\adf_mrap\adfrc_bushmaster\data\anims\bushmaster_ffv_front_mocap.rtm";
 
 			speed           = -30;
 
@@ -87,13 +87,13 @@ class CfgMovesMaleSdr : CfgMovesBasic {
 		};
 
 		class adfrc_bushmaster_ffv_front_kia : KIA_passenger_generic01 {
-			file        = "\adfrc_bushmaster\data\anims\bushmaster_ffv_front_kia.rtm";
+			file        = "\adf_mrap\adfrc_bushmaster\data\anims\bushmaster_ffv_front_kia.rtm";
 
 			connectTo[] = { "Unconscious", 0.1 };
 		};
 
 		class adfrc_bushmaster_ffv_left_settlein : passenger_generic01_foldhands_settlein {
-			file             = "\adfrc_bushmaster\data\anims\bushmaster_ffv_left_settlein.rtm";
+			file             = "\adf_mrap\adfrc_bushmaster\data\anims\bushmaster_ffv_left_settlein.rtm";
 
 			looped           = 0;
 			speed            = -1.5;
@@ -105,7 +105,7 @@ class CfgMovesMaleSdr : CfgMovesBasic {
 		};
 
 		class adfrc_bushmaster_ffv_left_idle : passenger_generic01_foldhands {
-			file            = "\adfrc_bushmaster\data\anims\bushmaster_ffv_left_sitting.rtm";
+			file            = "\adf_mrap\adfrc_bushmaster\data\anims\bushmaster_ffv_left_sitting.rtm";
 
 			speed           = -30;
 
@@ -113,7 +113,7 @@ class CfgMovesMaleSdr : CfgMovesBasic {
 		};
 
 		class adfrc_bushmaster_ffv_left : passenger_generic01_foldhands {
-			file            = "\adfrc_bushmaster\data\anims\bushmaster_ffv_left_mocap.rtm";
+			file            = "\adf_mrap\adfrc_bushmaster\data\anims\bushmaster_ffv_left_mocap.rtm";
 
 			speed           = -30;
 
@@ -121,13 +121,13 @@ class CfgMovesMaleSdr : CfgMovesBasic {
 		};
 
 		class adfrc_bushmaster_ffv_left_kia : KIA_passenger_generic01 {
-			file        = "\adfrc_bushmaster\data\anims\bushmaster_ffv_left_kia.rtm";
+			file        = "\adf_mrap\adfrc_bushmaster\data\anims\bushmaster_ffv_left_kia.rtm";
 
 			connectTo[] = { "Unconscious", 0.1 };
 		};
 
 		class adfrc_bushmaster_ffv_right_settlein : passenger_generic01_foldhands_settlein {
-			file             = "\adfrc_bushmaster\data\anims\bushmaster_ffv_right_settlein.rtm";
+			file             = "\adf_mrap\adfrc_bushmaster\data\anims\bushmaster_ffv_right_settlein.rtm";
 
 			looped           = 0;
 			speed            = -1.5;
@@ -139,7 +139,7 @@ class CfgMovesMaleSdr : CfgMovesBasic {
 		};
 
 		class adfrc_bushmaster_ffv_right_idle : passenger_generic01_foldhands {
-			file            = "\adfrc_bushmaster\data\anims\bushmaster_ffv_right_sitting.rtm";
+			file            = "\adf_mrap\adfrc_bushmaster\data\anims\bushmaster_ffv_right_sitting.rtm";
 
 			speed           = -30;
 
@@ -147,7 +147,7 @@ class CfgMovesMaleSdr : CfgMovesBasic {
 		};
 
 		class adfrc_bushmaster_ffv_right : passenger_generic01_foldhands {
-			file            = "\adfrc_bushmaster\data\anims\bushmaster_ffv_right_mocap.rtm";
+			file            = "\adf_mrap\adfrc_bushmaster\data\anims\bushmaster_ffv_right_mocap.rtm";
 
 			speed           = -30;
 
@@ -155,7 +155,7 @@ class CfgMovesMaleSdr : CfgMovesBasic {
 		};
 
 		class adfrc_bushmaster_ffv_right_kia : KIA_passenger_generic01 {
-			file        = "\adfrc_bushmaster\data\anims\bushmaster_ffv_right_kia.rtm";
+			file        = "\adf_mrap\adfrc_bushmaster\data\anims\bushmaster_ffv_right_kia.rtm";
 
 			connectTo[] = { "Unconscious", 0.1 };
 		};
