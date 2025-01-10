@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {"ADFRC_AW50"};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"ADF_Core", "ADFRC_Weapons_Tags", "adfrc_accessories"};
+		requiredAddons[] = {"ADF_Core", "adfrc_accessories"};
 		fileName = "ADF_AW50.pbo";
 	};
 };
