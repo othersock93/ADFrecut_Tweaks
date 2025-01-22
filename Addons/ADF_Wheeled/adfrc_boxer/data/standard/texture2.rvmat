@@ -22,6 +22,8 @@ PixelShaderID = "Super";
 
 VertexShaderID = "Super";
 
+//renderFlags[] = {"NoZWrite"};
+
 class Stage1
 
 {

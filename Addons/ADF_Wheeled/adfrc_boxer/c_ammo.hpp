@@ -1,11 +1,21 @@
+class SensorTemplatePassiveRadar;
+class SensorTemplateAntiRadiation;
+class SensorTemplateActiveRadar;
+class SensorTemplateIR;
+class SensorTemplateVisual;
+class SensorTemplateMan;
+class SensorTemplateLaser;
+class SensorTemplateNV;
+class SensorTemplateDataLink;
 class cfgCloudlets 
 {
 	class MachineGunCartridge;
 	class ADFRC_boxer_cartridge: MachineGunCartridge 
 	{
-		moveVelocity[] = { "-directionX * 1", "- directionY * 1", "- directionZ * 1" };
+		moveVelocity[] = { "-directionX * 4", "- directionY * 4", "- directionZ * 4" };
+		moveVelocityVar[] = { "-directionX * 1", "- directionY * 1", "- directionZ * 1" };
 		lifeTime = 20;
-		size[] = {4.2};
+		size[] = {3.5};
 		bounceOnSurface = 0.3;
 	};
 };
@@ -21,6 +31,8 @@ class ADFRC_mk30_casingeject {
 };
 class cfgAmmo
 {
+	class Components;
+	class SensorTemplateIR;
 	class B_30mm_MP_Tracer_Red;
 	class ADFRC_boxer_30mm_HE: B_30mm_MP_Tracer_Red
 	{
@@ -29,9 +41,10 @@ class cfgAmmo
 		indirectHit = 13;
 		indirectHitRange = 5;
 		explosive = 0.8;
-		caliber = 1.5;
+		caliber = 4;
 		tracerScale = 2.25;
 		airLock = 1;
+		canLock = 2;
 	};
 	class B_30mm_APFSDS;
 	class ADFRC_boxer_30mm_AP: B_30mm_APFSDS
@@ -39,13 +52,14 @@ class cfgAmmo
 		hit = 110;
 		indirectHit = 1;
 		indirectHitRange = 1;
-		caliber = 6;
+		caliber = 4;
 		visibleFire = 32;
 		audibleFire = 32;
 		visibleFireTime = 3;
 		cost = 50;
 		model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
 		airLock = 1;
+		canLock = 2;
 	};
 	class B_762x54_Tracer_Green;
 	class ADFRC_boxer_762x51_Tracer: B_762x54_Tracer_Green
@@ -53,18 +67,133 @@ class cfgAmmo
 		model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
 		tracerColor[] = {0.7,0.7,0.5,0.04};
 		tracerColorR[] = {0.7,0.7,0.5,0.04};
+		airLock = 1;
+		canLock = 2;
+	};
+	class M_Titan_AT_long;
+	class ADFRC_Spike_LR2: M_Titan_AT_long
+	{
+		submunitionAmmo="ammo_Penetrator_Titan_AT_long";
+		submunitionDirectionType="SubmunitionModelDirection";
+		submunitionInitSpeed=1000;
+		submunitionParentSpeedCoef=0;
+		submunitionInitialOffset[]={0,0,-0.2};
+		triggerOnImpact=1;
+		deleteParentWhenTriggered=0;
+		warheadName="TandemHEAT";
+		autoSeekTarget = 1;
+		cameraViewAvailable = 1;
+		hit=150;
+		indirectHit=40;
+		indirectHitRange=4;
+		timeToLive=35;
+		initTime=0.15000001;
+		thrustTime=8;
+		thrust=35;
+		maxSpeed=180;
+		typicalSpeed=1660;
+		missileManualControlCone = 45;
+		missileLockCone=90;
+		missileLockMaxDistance=5000;
+		missileLockMinDistance=200;
+		missileLockMaxSpeed=55;
+		maxControlRange=5000;
+		weaponLockSystem="4 + 8 + 16";
+		airLock = 1;
+		canLock = 2;
+		irLock = 1;
+		laserLock = 1;
+		cmImmunity=0.5;
+		flightProfiles[]=
+		{
+			"Direct",
+			"TopDown",
+			"LOALDistance",
+			"Cruise",
+		};
+		class Direct
+		{
+		};
+		class TopDown
+		{
+			ascendHeight=200;
+			descendDistance=240;
+			minDistance=240;
+			ascendAngle=30;
+		};
+		class LoalDistance : Direct
+		{
+			lockSeekDistanceFromParent = 300.0;
+		};
+		class Cruise : Direct
+		{
+			preferredFlightAltitude = 50.0;
+		};
+		class Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class IRSensorComponent: SensorTemplateIR
+					{
+						class AirTarget
+						{
+							minRange=250;
+							maxRange=5000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=250;
+							maxRange=5000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						animDirection = "mainTurret";
+						maxTrackableSpeed=35;
+						angleRangeHorizontal=9.5;
+						angleRangeVertical=6;
+						maxTrackableATL=0;
+					};
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+						class AirTarget
+						{
+							minRange=250;
+							maxRange=5000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=250;
+							maxRange=5000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						animDirection = "mainTurret";
+						maxTrackableSpeed=35;
+						angleRangeHorizontal=9.5;
+						angleRangeVertical=6;
+						maxTrackableATL=0;
+					};
+				};
+			};
+		};
 	};
 };
 class cfgMagazines
 {
 	class 150Rnd_762x51_Box;
-	class ADFRC_boxer_1000Rnd_762x51_Tracer: 150Rnd_762x51_Box {
+	class ADFRC_boxer_600Rnd_762x51_Tracer: 150Rnd_762x51_Box {
 		scope = 1;
 		ammo = "ADFRC_boxer_762x51_Tracer";
-		displayName = "1000 Round 7.62mm Tracer";
+		displayName = "600 Round 7.62mm Tracer";
 		displayNameShort = "Tracer";
 		descriptionShort = "$STR_A3_CfgMagazines_150Rnd_762x51_Box_Tracer1";
-		count = 1000;
+		count = 600;
 		type = "2*		256";
 		tracersEvery = 4;
 	};
@@ -98,6 +227,17 @@ class cfgMagazines
 		tracersEvery = 1;
 		count = 125;
 	};
+	class 2Rnd_GAT_missiles;
+	class ADFRC_2RND_Spike: 2Rnd_GAT_missiles
+	{
+		scope = 2;
+		ammo="ADFRC_Spike_LR2";
+		model="\A3\Weapons_F_beta\Launchers\titan\titan_missile_atl";
+		displayName = "SPIKE-LR";
+		displayNameShort = "SPIKE-LR";
+		initSpeed=100;
+		count=2;
+	};
 };
 
 class Mode_SemiAuto;
@@ -106,15 +246,36 @@ class Mode_FullAuto;
 
 class cfgWeapons
 {
+	class Laserdesignator_mounted;
+	class ADFRC_laser_commander: Laserdesignator_mounted
+	{
+		muzzleEnd = "lasercom_dir";
+		muzzlePos = "lasercom_pos";
+		irLaserEnd = "lasercom_dir";
+		irLaserPos = "lasercom_pos";
+		
+	};
+	class ADFRC_laser_gunner: Laserdesignator_mounted
+	{
+		muzzleEnd = "lasergun_dir";
+		muzzlePos = "lasergun_pos";
+		irLaserEnd = "lasercom_dir";
+		irLaserPos = "lasercom_pos";
+	};
 	class LMG_coax_ext;
 	class ADFRC_boxer_coax: LMG_coax_ext 
 	{
 		displayName = "MG 7.62mm Mag 58 Coax";
 		scope = 1;
+		canlock = 2;
+		FCSMaxLeadSpeed = 70;
+		ballisticsComputer = 1+2+16;
+		weaponLockSystem = 2+4;
+		weaponLockDelay = 2;
 		magazines[]=
 		{
-			"ADFRC_boxer_1000Rnd_762x51_Tracer",
-			"ADFRC_boxer_1000Rnd_762x51_Tracer"
+			"ADFRC_boxer_600Rnd_762x51_Tracer",
+			"ADFRC_boxer_600Rnd_762x51_Tracer"
 		};
 		class GunParticles {
 
@@ -122,6 +283,81 @@ class cfgWeapons
 				effectName = "MachineGunCloud";
 				positionName = "Usti hlavne3";
 				directionName = "Konec hlavne3";
+			};
+		};
+		class Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class IRSensorComponent: SensorTemplateIR
+					{
+						componentType = "IRSensorComponent";
+						class AirTarget		// ranges for targets with sky background
+						{
+							minRange	= 3000;	// minimum possible range in meters
+							maxRange	= 3000;	// maximum possible range in meters
+							objectDistanceLimitCoef	= -1; // range not limited by obj. view distance
+							viewDistanceLimitCoef	= -1; // range not limited by view distance
+						};
+						class GroundTarget	// ranges for targets with ground background
+						{
+							minRange = 3000;
+							maxRange = 3000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef 	= -1;
+						};
+						animDirection = "mainturret";
+						typeRecognitionDistance = 3000; // distance how far the target type gets recognized
+						angleRangeHorizontal 	= 360;	// sensor azimuth coverage in degrees
+						angleRangeVertical 		= 180;	// sensor elevation coverage in degrees
+					};
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+						LaserSensorComponent = "LaserSensorComponent";
+						class AirTarget		// ranges for targets with sky background
+						{
+							minRange	= 3000;	// minimum possible range in meters
+							maxRange	= 3000;	// maximum possible range in meters
+							objectDistanceLimitCoef	= -1; // range not limited by obj. view distance
+							viewDistanceLimitCoef	= -1; // range not limited by view distance
+						};
+						class GroundTarget	// ranges for targets with ground background
+						{
+							minRange = 3000;
+							maxRange = 3000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef 	= -1;
+						};
+						animDirection = "mainturret";
+						typeRecognitionDistance = 1000; // distance how far the target type gets recognized
+						angleRangeHorizontal 	= 360;	// sensor azimuth coverage in degrees
+						angleRangeVertical 		= 180;	// sensor elevation coverage in degrees
+					};
+					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
+					{
+						LaserSensorComponent = "PassiveRadarSensorComponent";
+						class AirTarget		// ranges for targets with sky background
+						{
+							minRange	= 3000;	// minimum possible range in meters
+							maxRange	= 3000;	// maximum possible range in meters
+							objectDistanceLimitCoef	= -1; // range not limited by obj. view distance
+							viewDistanceLimitCoef	= -1; // range not limited by view distance
+						};
+						class GroundTarget	// ranges for targets with ground background
+						{
+							minRange = 3000;
+							maxRange = 3000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef 	= -1;
+						};
+						animDirection = "mainturret";
+						typeRecognitionDistance = 1000; // distance how far the target type gets recognized
+						angleRangeHorizontal 	= 360;	// sensor azimuth coverage in degrees
+						angleRangeVertical 		= 180;	// sensor elevation coverage in degrees
+					};
+				};
 			};
 		};
 	};
@@ -133,9 +369,11 @@ class cfgWeapons
 		aiDispersioncoefY = 6;
 		airateoffire = 2;
 		airateoffiredistance = 1000;
-		canlock = 2;
-		FCSMaxLeadSpeed = 55.5556;
-		weaponLockSystem = 12;
+		airLock = 1;
+		canLock = 2;
+		FCSMaxLeadSpeed = 70;
+		weaponLockSystem = 4;
+		weaponLockDelay = 2;
 		class GunParticles
 		{
 			class Effect1
@@ -158,9 +396,12 @@ class cfgWeapons
 			displayName = "MK 30-2/ABM 30mm Autocannon";
 			magazines[] = {"ADFRC_boxer_360RND_30mm_HE","ADFRC_boxer_360RND_30mm_AP"};
 			magazineWell[] = {};
-			canlock = 2;
+			airLock = 1;
+			canLock = 2;
 			ballisticsComputer = 1+2+16;
-			FCSMaxLeadSpeed = 55.5556;
+			FCSMaxLeadSpeed = 70;
+			weaponLockSystem = 4;
+			weaponLockDelay = 2;
 			magazineReloadTime = 0.3;
 			sounds[] = {"StandardSound"};
 			modes[] = {"player","close","short","medium","far"};
@@ -175,8 +416,11 @@ class cfgWeapons
 			displayName = "PMC287 APFSDS";
 			magazines[] = {"ADFRC_boxer_360RND_30mm_AP"};
 			magazineWell[] = {};
-			canlock = 2;
-			FCSMaxLeadSpeed = 55.5556;
+			airLock = 1;
+			canLock = 2;
+			FCSMaxLeadSpeed = 70;
+			weaponLockSystem = 4;
+			weaponLockDelay = 2;
 			showToPlayer=0;
 			class player: player
 			{
@@ -222,9 +466,9 @@ class cfgWeapons
 			{
 				class Components
 				{
-					class SomeRadarSensorComponent
+					class IRSensorComponent: SensorTemplateIR
 					{
-						componentType = "ActiveRadarSensorComponent";
+						componentType = "IRSensorComponent";
 						class AirTarget		// ranges for targets with sky background
 						{
 							minRange	= 3000;	// minimum possible range in meters
@@ -239,8 +483,53 @@ class cfgWeapons
 							objectDistanceLimitCoef = -1;
 							viewDistanceLimitCoef 	= -1;
 						};
+						animDirection = "mainturret";
+						typeRecognitionDistance = 3000; // distance how far the target type gets recognized
+						angleRangeHorizontal 	= 360;	// sensor azimuth coverage in degrees
+						angleRangeVertical 		= 180;	// sensor elevation coverage in degrees
+					};
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+						LaserSensorComponent = "LaserSensorComponent";
+						class AirTarget		// ranges for targets with sky background
+						{
+							minRange	= 3000;	// minimum possible range in meters
+							maxRange	= 3000;	// maximum possible range in meters
+							objectDistanceLimitCoef	= -1; // range not limited by obj. view distance
+							viewDistanceLimitCoef	= -1; // range not limited by view distance
+						};
+						class GroundTarget	// ranges for targets with ground background
+						{
+							minRange = 3000;
+							maxRange = 3000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef 	= -1;
+						};
+						animDirection = "mainturret";
 						typeRecognitionDistance = 1000; // distance how far the target type gets recognized
-						angleRangeHorizontal 	= 180;	// sensor azimuth coverage in degrees
+						angleRangeHorizontal 	= 360;	// sensor azimuth coverage in degrees
+						angleRangeVertical 		= 180;	// sensor elevation coverage in degrees
+					};
+					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
+					{
+						LaserSensorComponent = "PassiveRadarSensorComponent";
+						class AirTarget		// ranges for targets with sky background
+						{
+							minRange	= 3000;	// minimum possible range in meters
+							maxRange	= 3000;	// maximum possible range in meters
+							objectDistanceLimitCoef	= -1; // range not limited by obj. view distance
+							viewDistanceLimitCoef	= -1; // range not limited by view distance
+						};
+						class GroundTarget	// ranges for targets with ground background
+						{
+							minRange = 3000;
+							maxRange = 3000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef 	= -1;
+						};
+						animDirection = "mainturret";
+						typeRecognitionDistance = 1000; // distance how far the target type gets recognized
+						angleRangeHorizontal 	= 360;	// sensor azimuth coverage in degrees
 						angleRangeVertical 		= 180;	// sensor elevation coverage in degrees
 					};
 				};
@@ -272,6 +561,88 @@ class cfgWeapons
 				effectName = "MachineGunCartridge2";
 				positionName = "case_eject_pos";
 			};
+		};
+	};
+	class MissileLauncher;
+	class missiles_titan;
+	class ADFRC_spike_launcher: missiles_titan
+	{
+		displayName="Missile Launcher";
+		showAimCursorInternal=0;
+		magazineReloadTime=30;
+		reloadMagazineSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\reload_Missile_Launcher",
+			0.89125091,
+			1,
+			10
+		};
+		lockingTargetSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\Locking_Titan",
+			0.56234133,
+			1
+		};
+		lockedTargetSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\Locked_Titan",
+			0.56234133,
+			2.5
+		};
+		magazines[]=
+		{
+			"ADFRC_2RND_Spike"
+		};
+		ballisticsComputer = 1+2+16;
+		FCSMaxLeadSpeed = 55.5556;
+		weaponLockSystem = 12;
+		weaponLockDelay = 5;
+		cmImmunity=0.5;
+		modes[]=
+		{
+			"Player",
+			"TopDown"
+		};
+		class Player: MissileLauncher
+		{
+			textureType="semi";
+			reloadTime=1;
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\Titan",
+					1.4125376,
+					1,
+					1100
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			minRange=100;
+			minRangeProbab=0.5;
+			midRange=600;
+			midRangeProbab=0.85000002;
+			maxRange=5000;
+			maxRangeProbab=0.89999998;
+		};
+		class TopDown: Player
+		{
+			textureType="topDown";
+			displayName="Top-down";
+			minRange=200;
+			minRangeProbab=0.40000001;
+			midRange=1000;
+			midRangeProbab=0.89999998;
+			maxRange=5000;
+			maxRangeProbab=0.94999999;
 		};
 	};
 	class TruckHorn3;
