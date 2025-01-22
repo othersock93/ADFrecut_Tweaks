@@ -528,7 +528,7 @@ class ADFRC_WP_M4A5_KAC_NFS_ACOG_RD_PEQ: ADFRC_M4A5_KAC_NOFS_556
 // M4A5 TROY Alpha 10.5 (2010/2020s era) TAN RAIL
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Eotech WL
-class ADFRC_WP_M4A5_Troy_10_EXPS3_WMLx: ADFRC_M4A5_Troy_556_10
+class ADFRC_WP_M4A5_Troy_10_EXPS3_WMLx: ADFRC_M4A5_Combo_556_10_FDE
 {
 	author = "Brucey";
 	class LinkedItems
@@ -551,7 +551,7 @@ class ADFRC_WP_M4A5_Troy_10_EXPS3_WMLx: ADFRC_M4A5_Troy_556_10
 	};
 };
 
-class ADFRC_WP_M4A5_Troy_10_EXPS3M_WMLx: ADFRC_M4A5_Troy_556_10
+class ADFRC_WP_M4A5_Troy_10_EXPS3M_WMLx: ADFRC_M4A5_Combo_556_10_FDE
 {
 	author = "Brucey";
 	class LinkedItems
@@ -574,7 +574,7 @@ class ADFRC_WP_M4A5_Troy_10_EXPS3M_WMLx: ADFRC_M4A5_Troy_556_10
 	};
 };
 //Eotech Peq
-class ADFRC_WP_M4A5_Troy_10_EXPS3_PEQ: ADFRC_M4A5_Troy_556_10
+class ADFRC_WP_M4A5_Troy_10_EXPS3_PEQ: ADFRC_M4A5_Combo_556_10_FDE
 {
 	author = "Brucey";
 	class LinkedItems
@@ -597,7 +597,7 @@ class ADFRC_WP_M4A5_Troy_10_EXPS3_PEQ: ADFRC_M4A5_Troy_556_10
 	};
 };
 
-class ADFRC_WP_M4A5_Troy_10_EXPS3M_PEQ: ADFRC_M4A5_Troy_556_10
+class ADFRC_WP_M4A5_Troy_10_EXPS3M_PEQ: ADFRC_M4A5_Combo_556_10_FDE
 {
 	author = "Brucey";
 	class LinkedItems
@@ -621,7 +621,7 @@ class ADFRC_WP_M4A5_Troy_10_EXPS3M_PEQ: ADFRC_M4A5_Troy_556_10
 };
 ///////////////////////////////////////////////////////
 //Aimpoint WL
-class ADFRC_WP_M4A5_Troy_10_T2_WMLx: ADFRC_M4A5_Troy_556_10
+class ADFRC_WP_M4A5_Troy_10_T2_WMLx: ADFRC_M4A5_Combo_556_10_FDE
 {
 	author = "Brucey";
 	class LinkedItems
@@ -644,7 +644,7 @@ class ADFRC_WP_M4A5_Troy_10_T2_WMLx: ADFRC_M4A5_Troy_556_10
 	};
 };
 
-class ADFRC_WP_M4A5_Troy_10_T2M_WMLx: ADFRC_M4A5_Troy_556_10
+class ADFRC_WP_M4A5_Troy_10_T2M_WMLx: ADFRC_M4A5_Combo_556_10_FDE
 {
 	author = "Brucey";
 	class LinkedItems
@@ -667,7 +667,7 @@ class ADFRC_WP_M4A5_Troy_10_T2M_WMLx: ADFRC_M4A5_Troy_556_10
 	};
 };
 //Aimpoint Peq
-class ADFRC_WP_M4A5_Troy_10_T2_PEQ: ADFRC_M4A5_Troy_556_10
+class ADFRC_WP_M4A5_Troy_10_T2_PEQ: ADFRC_M4A5_Combo_556_10_FDE
 {
 	author = "Brucey";
 	class LinkedItems
@@ -690,7 +690,7 @@ class ADFRC_WP_M4A5_Troy_10_T2_PEQ: ADFRC_M4A5_Troy_556_10
 	};
 };
 
-class ADFRC_WP_M4A5_Troy_10_T2M_PEQ: ADFRC_M4A5_Troy_556_10
+class ADFRC_WP_M4A5_Troy_10_T2M_PEQ: ADFRC_M4A5_Combo_556_10_FDE
 {
 	author = "Brucey";
 	class LinkedItems
@@ -713,7 +713,7 @@ class ADFRC_WP_M4A5_Troy_10_T2M_PEQ: ADFRC_M4A5_Troy_556_10
 	};
 };
 
-class ADFRC_WP_M4A5_Troy_10_T2_PEQ_CQB: ADFRC_M4A5_Troy_556_10
+class ADFRC_WP_M4A5_Troy_10_T2_PEQ_CQB: ADFRC_M4A5_Combo_556_10_FDE
 {
 	author = "Brucey";
 	class LinkedItems
@@ -1065,7 +1065,7 @@ class ADFRC_WP_M4A5_Troy_14_SpecterKF_PEQ_Atlas: ADFRC_M4A5_Troy_556_14
 // M4A5 TROY Alpha 10.5 (2010/2020s era) BLACK RAIL
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Eotech WL
-class ADFRC_M4A5_Troy_556_10_BLK_EXPS3_WMLx: ADFRC_M4A5_Troy_556_10_BLK
+class ADFRC_M4A5_Combo_556_10_FDE_BLK_EXPS3_WMLx: ADFRC_M4A5_Combo_556_10_BLK
 {
 	author = "Brucey";
 	class LinkedItems
@@ -1088,7 +1088,7 @@ class ADFRC_M4A5_Troy_556_10_BLK_EXPS3_WMLx: ADFRC_M4A5_Troy_556_10_BLK
 	};
 };
 
-class ADFRC_M4A5_Troy_556_10_BLK_EXPS3M_WMLx: ADFRC_M4A5_Troy_556_10_BLK
+class ADFRC_M4A5_Combo_556_10_BLK_EXPS3M_WMLx: ADFRC_M4A5_Combo_556_10_BLK
 {
 	author = "Brucey";
 	class LinkedItems
@@ -1111,7 +1111,7 @@ class ADFRC_M4A5_Troy_556_10_BLK_EXPS3M_WMLx: ADFRC_M4A5_Troy_556_10_BLK
 	};
 };
 //Eotech Peq
-class ADFRC_WP_M4A5_Troy_10_BLK_EXPS3_PEQ: ADFRC_M4A5_Troy_556_10_BLK
+class ADFRC_WP_M4A5_Troy_10_BLK_EXPS3_PEQ: ADFRC_M4A5_Combo_556_10_BLK
 {
 	author = "Brucey";
 	class LinkedItems
@@ -1134,7 +1134,7 @@ class ADFRC_WP_M4A5_Troy_10_BLK_EXPS3_PEQ: ADFRC_M4A5_Troy_556_10_BLK
 	};
 };
 
-class ADFRC_WP_M4A5_Troy_10_BLK_EXPS3M_PEQ: ADFRC_M4A5_Troy_556_10_BLK
+class ADFRC_WP_M4A5_Troy_10_BLK_EXPS3M_PEQ: ADFRC_M4A5_Combo_556_10_BLK
 {
 	author = "Brucey";
 	class LinkedItems
@@ -1158,7 +1158,7 @@ class ADFRC_WP_M4A5_Troy_10_BLK_EXPS3M_PEQ: ADFRC_M4A5_Troy_556_10_BLK
 };
 ///////////////////////////////////////////////////////
 //Aimpoint WL
-class ADFRC_WP_M4A5_Troy_10_BLK_T2_WMLx: ADFRC_M4A5_Troy_556_10_BLK
+class ADFRC_WP_M4A5_Troy_10_BLK_T2_WMLx: ADFRC_M4A5_Combo_556_10_BLK
 {
 	author = "Brucey";
 	class LinkedItems
@@ -1181,7 +1181,7 @@ class ADFRC_WP_M4A5_Troy_10_BLK_T2_WMLx: ADFRC_M4A5_Troy_556_10_BLK
 	};
 };
 
-class ADFRC_WP_M4A5_Troy_10_BLK_T2M_WMLx: ADFRC_M4A5_Troy_556_10_BLK
+class ADFRC_WP_M4A5_Troy_10_BLK_T2M_WMLx: ADFRC_M4A5_Combo_556_10_BLK
 {
 	author = "Brucey";
 	class LinkedItems
@@ -1204,7 +1204,7 @@ class ADFRC_WP_M4A5_Troy_10_BLK_T2M_WMLx: ADFRC_M4A5_Troy_556_10_BLK
 	};
 };
 //Aimpoint Peq
-class ADFRC_WP_M4A5_Troy_10_BLK_T2_PEQ: ADFRC_M4A5_Troy_556_10_BLK
+class ADFRC_WP_M4A5_Troy_10_BLK_T2_PEQ: ADFRC_M4A5_Combo_556_10_BLK
 {
 	author = "Brucey";
 	class LinkedItems
@@ -1228,7 +1228,7 @@ class ADFRC_WP_M4A5_Troy_10_BLK_T2_PEQ: ADFRC_M4A5_Troy_556_10_BLK
 };
 
 //Aimpoint Peq
-class ADFRC_WP_M4A5_Troy_10_BLK_T2_PEQ_CQB: ADFRC_M4A5_Troy_556_10_BLK
+class ADFRC_WP_M4A5_Troy_10_BLK_T2_PEQ_CQB: ADFRC_M4A5_Combo_556_10_BLK
 {
 	author = "Brucey";
 	class LinkedItems
@@ -1246,7 +1246,7 @@ class ADFRC_WP_M4A5_Troy_10_BLK_T2_PEQ_CQB: ADFRC_M4A5_Troy_556_10_BLK
 	};
 };
 
-class ADFRC_WP_M4A5_Troy_10_BLK_T2M_PEQ: ADFRC_M4A5_Troy_556_10_BLK
+class ADFRC_WP_M4A5_Troy_10_BLK_T2M_PEQ: ADFRC_M4A5_Combo_556_10_BLK
 {
 	author = "Brucey";
 	class LinkedItems
