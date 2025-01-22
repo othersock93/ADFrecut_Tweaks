@@ -186,8 +186,15 @@ class ADFRC_M4A5_Combo_556_14_FDE: ADFRC_M4A5_Troy_556_14
 		model = "adf_weapons\adfrc_m4a5\adfrc_m4A5_c_145";
 	};
 	
-class ADFRC_M4A5_Troy_556_10: ADFRC_M4A5_556_Base
+class ADFRC_M4A5_Combo_556_10_BLK: ADFRC_M4A5_556_Base
 	{
+		displayName = "M4A5 5.56MM Troy Rail 10.5 'Combo' (Black)";
+		model = "adf_weapons\adfrc_m4a5\adfrc_m4A5_c_105";
+		hiddenSelections[] = { "CamoTroy" };
+		hiddenSelectionsTextures[] = { 
+		"ADF_Weapons\ADFRC_M4A5\Textures\Handguard\adfrc_troy_blk_Co.paa"
+		};
+		
 		author = "Brucey";
 		ACE_barrelTwist = 292.1;
 		ACE_barrelLength = 254;
@@ -197,7 +204,6 @@ class ADFRC_M4A5_Troy_556_10: ADFRC_M4A5_556_Base
 		deployedPivot = "deploypoint";       /// what point should be used to be on surface while unfoldedsoundBipodUp[] = { "A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_AAF_up", db - 3, 1, 20 }; /// sound of folding the bipod
 		cursor = "srifle";
 		cursorAim = "EmptyCursor";
-		model = "adf_weapons\adfrc_m4a5\adfrc_m4A5_t_105";
 		descriptionShort = "M4A5 Troy Rail<br/>10.5in<br/>Caliber: 5.56";
 		inertia = 0.325;
 		scope=2;
@@ -205,7 +211,6 @@ class ADFRC_M4A5_Troy_556_10: ADFRC_M4A5_556_Base
 		scopeArsenal = 2;
 		picture = "\A3\Data_F_Exp\Images\WeaponSPAR_ca.paa";
 		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
-		displayName = "M4A5 5.56MM Troy Rail 10.5 (FDE)";
 		discretedistance[] = { 100, 200, 300, 400 };
 		discretedistanceinitindex = 2;
 		opticszoominit = 0.75;
@@ -217,26 +222,7 @@ class ADFRC_M4A5_Troy_556_10: ADFRC_M4A5_556_Base
 		 
 		class Library
 		{
-			libTextDesc = "M4A5-T 10.5";
-		};
-	};
-	
-class ADFRC_M4A5_Troy_556_10_BLK: ADFRC_M4A5_Troy_556_10
-	{
-		displayName = "M4A5 5.56MM Troy Rail 10.5 (Black)";
-		hiddenSelections[] = { "CamoTroy" };
-		hiddenSelectionsTextures[] = { 
-		"ADF_Weapons\ADFRC_M4A5\Textures\Handguard\adfrc_troy_blk_Co.paa"
-		};
-	};
-	
-class ADFRC_M4A5_Combo_556_10_BLK: ADFRC_M4A5_Troy_556_10
-	{
-		displayName = "M4A5 5.56MM Troy Rail 10.5 'Combo' (Black)";
-		model = "adf_weapons\adfrc_m4a5\adfrc_m4A5_c_105";
-		hiddenSelections[] = { "CamoTroy" };
-		hiddenSelectionsTextures[] = { 
-		"ADF_Weapons\ADFRC_M4A5\Textures\Handguard\adfrc_troy_blk_Co.paa"
+			libTextDesc = "M4A5-C 10.5";
 		};
 	};
 	
