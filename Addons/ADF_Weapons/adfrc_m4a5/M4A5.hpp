@@ -146,7 +146,7 @@ class ADFRC_M4A5_Troy_556_14: ADFRC_M4A5_556_Base
 		scopeArsenal = 2;
 		picture = "\A3\Data_F_Exp\Images\WeaponSPAR_ca.paa";
 		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
-		displayName = "M4A5 5.56MM Troy Rail 14.5";
+		displayName = "M4A5 5.56MM Troy Rail 14.5 (FDE)";
 		discretedistance[] = { 100, 200, 300, 400 };
 		discretedistanceinitindex = 2;
 		opticszoominit = 0.75;
@@ -230,6 +230,10 @@ class ADFRC_M4A5_Combo_556_10_FDE: ADFRC_M4A5_Combo_556_10_BLK
 	{
 		displayName = "M4A5 5.56MM Troy Rail 10.5 'Combo' (FDE)";
 		model = "adf_weapons\adfrc_m4a5\adfrc_m4A5_c_105";
+		hiddenSelections[] = { "CamoTroy" };
+		hiddenSelectionsTextures[] = { 
+		"ADF_Weapons\ADFRC_M4A5\Textures\Handguard\adfrc_troy_fde_Co.paa"
+		};
 		};
 	
 class ADFRC_M4A5_KAC_556: ADFRC_M4A5_556_Base
