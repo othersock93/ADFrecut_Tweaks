@@ -2018,55 +2018,20 @@ class cfgWeapons
 		};
 	};
 	
-		class ADFRC_Peacekeeper_Mk5_MC_NoFlaps: Vest_Camo_Base
+	class ADFRC_Peacekeeper_Mk5_MC_NoFlaps: ADFRC_Peacekeeper_Mk5_MC
 	{
-		scope = 2;
+		scope = 1;  // Needs some attention to try to hide the flaps via config, I know it's do-able but not sure why it won't hide! Bones
 		author = "Brucey";
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
-		displayName = "Platatac Peacekeeper Mk5 (MC) - NO Flaps";
+		displayName = "Platatac Peacekeeper Mk5 (MC) - No Flaps";
 		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\Peacekeeper\Peacekeeper_SOCOM_Noflaps.p3d";
-		hiddenSelections[] = {};
+		model = "\ADF_Gear_2\adfrc_vests\Peacekeeper\Peacekeeper_SOCOM.p3d";
+		hiddenSelections[] = {"magazine_flap_01", "magazine_flap_02", "magazine_flap_03"};
 		hiddenSelectionsTextures[] = {};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\Peacekeeper\Peacekeeper_SOCOM_Noflaps.p3d";
-			containerClass = "Supply160";
-			mass = 40;
-			hiddenSelections[] = {};
-			hiddenSelectionsTextures[] = {};
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 10;
-					PassThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					HitpointName = "HitDiaphragm";
-					armor = 10;
-					PassThrough = 0.1;
-				};
-				class Abdomen
-				{
-					HitpointName = "HitAbdomen";
-					armor = 10;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 30;
-					passThrough = 0.1;
-				};
-			};
-		};
 	};
 	
-		class ADFRC_Peacekeeper_Mk5_AMCU: Vest_Camo_Base
+	class ADFRC_Peacekeeper_Mk5_AMCU: Vest_Camo_Base
 	{
 		scope = 2;
 		author = "Brucey";
