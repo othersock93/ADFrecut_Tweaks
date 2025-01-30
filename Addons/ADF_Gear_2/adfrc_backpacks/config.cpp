@@ -1252,11 +1252,8 @@ class CfgVehicles{
 		model = "ADF_Gear_2\adfrc_backpacks\TBAS_T5_Backpannel.p3d";
 		hiddenSelections[] = {""};
 		hiddenSelectionsTextures[] = {""};
-		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio = 1;
-		tf_encryptionCode = "tf_west_radio_code";
-		tf_dialog = "rt1523g_radio_dialog";
-		tf_subtype = "digital_lr";
+		maximumLoad = 100;
+		mass=05;
 	};
 	
 	
@@ -1271,5 +1268,7 @@ class CfgVehicles{
 		model = "ADF_Gear_2\adfrc_backpacks\JPC_Backpannel.p3d";
 		hiddenSelections[] = {""};
 		hiddenSelectionsTextures[] = {""};
+		maximumLoad = 100;
+		mass=05;
 	};
 };
