@@ -1,10 +1,3 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: P:\ADF_Gear_2\adfrc_vests\config.bin
-//Produced from mikero's Dos Tools Dll version 9.66
-//https://mikero.bytex.digital/Downloads
-//'now' is Sat Nov 30 17:25:50 2024 : 'file' last modified on Sat Nov 30 17:25:50 2024
-////////////////////////////////////////////////////////////////////
-
 #define _ARMA_
 
 class CfgPatches
@@ -2099,5 +2092,45 @@ class cfgWeapons
 			hiddenSelections[] = {};
 			hiddenSelectionsTextures[] = {};
 		};
+	};
+	
+	
+	
+	//////////////////////// LEGACY VESTS POINTING TO NEW VESTS ////////////////////////
+	class ADFRC_PC_Tan_1: ADFRC_TBAS_T2_Rifleman_Pistol
+	{
+		scope=1;
+	};
+	class ADFRC_PC_Tan_2: ADFRC_TBAS_T2_Rifleman_Pistol
+	{
+		scope=1;
+	};
+	class ADFRC_PC_Tan_3: ADFRC_TBAS_T2_Rifleman_Pistol
+	{
+		scope=1;
+	};
+    class ADFRC_PC_Tan_4: ADFRC_TBAS_T2_Rifleman_Pistol
+	{
+		scope=1;
+	};
+    class ADFRC_PC_Tan_5: ADFRC_TBAS_T2_Rifleman_Pistol
+	{
+		scope=1;
+	};
+    class ADFRC_PC_Tan_6: ADFRC_TBAS_T2_Rifleman_Pistol
+	{
+		scope=1;
+	};
+    class ADFRC_PC_Tan_7: ADFRC_TBAS_T2_Rifleman_Pistol
+	{
+		scope=1;
+	};
+    class ADFRC_LPC_Tan_1: ADFRC_TBAS_T2_Rifleman_Light
+	{
+		scope=1;
+	};
+    class ADFRC_LPC_Tan_2: ADFRC_TBAS_T2_Rifleman_Light
+	{
+		scope=1;
 	};
 };
