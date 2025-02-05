@@ -903,12 +903,13 @@ class CfgWeapons
 	};
 	
 	// TEAM WENDY EXFIL
-	class adfrc_teamwendy_exfil_cover: ItemCore
+	
+	class adfrc_teamwendy_exfil_g2_cover: ItemCore
 	{
 		author = "Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "Team Wendy Exfil (Cover) [AMC]";
+		displayName = "Team Wendy Exfil (Gen 2) [AMC]";
 		picture = "ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
 		model = "ADF_Gear\adfrc_helmets\exfil.p3d";
 		hiddenSelections[] = {"cover"};
@@ -931,14 +932,16 @@ class CfgWeapons
 			};
 		};
 	};
-	
-	/////BRUCEY TEST WITH Gen 3 model & Growlor Textures.
-		class adfrc_teamwendy_exfil_cover_AMCU: ItemCore
+	class adfrc_teamwendy_exfil_cover: adfrc_teamwendy_exfil_g2_cover
+	{
+		scope=1;
+	};
+	class adfrc_teamwendy_exfil_g3_cover_AMCU: ItemCore
 	{
 		author = "Growlor/Brucey";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "Team Wendy Exfil (Cover) [AMCU]";
+		displayName = "Team Wendy Exfil (Gen 3) [AMCU]";
 		picture = "ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
 		model = "ADF_Gear\adfrc_helmets\Brucey_exfil.p3d";
 		hiddenSelections[] = {"cover"};
@@ -961,14 +964,12 @@ class CfgWeapons
 			};
 		};
 	};
-	
-	/////BRUCEY TEST WITH Gen 3 model & Growlor Textures.
-		class adfrc_teamwendy_exfil_cover_MC: ItemCore
+	class adfrc_teamwendy_exfil_g3_cover_MC: ItemCore
 	{
 		author = "Growlor/Brucey";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "Team Wendy Exfil (Cover) [MC]";
+		displayName = "Team Wendy Exfil (Gen 3) [MC]";
 		picture = "ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
 		model = "ADF_Gear\adfrc_helmets\Brucey_exfil.p3d";
 		hiddenSelections[] = {"cover"};
@@ -991,14 +992,12 @@ class CfgWeapons
 			};
 		};
 	};
-	
-	/////BRUCEY TEST WITH Gen 3 model & Growlor Textures.
-		class adfrc_teamwendy_exfil_cover_OD: ItemCore
+	class adfrc_teamwendy_exfil_g3_cover_OD: ItemCore
 	{
 		author = "Growlor/Brucey";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "Team Wendy Exfil (Cover) [OD]";
+		displayName = "Team Wendy Exfil (Gen 3) [OD]";
 		picture = "ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
 		model = "ADF_Gear\adfrc_helmets\Brucey_exfil.p3d";
 		hiddenSelections[] = {"cover"};
@@ -1021,14 +1020,12 @@ class CfgWeapons
 			};
 		};
 	};
-	
-	/////BRUCEY TEST WITH Gen 3 model & Growlor Textures.
-		class adfrc_teamwendy_exfil_NoCover: ItemCore
+	class adfrc_teamwendy_exfil_g3_NoCover: ItemCore
 	{
 		author = "Growlor/Brucey";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "Team Wendy Exfil [OD]";
+		displayName = "Team Wendy Exfil (Gen 3) No Cover [OD]";
 		picture = "ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
 		model = "ADF_Gear\adfrc_helmets\Brucey_exfil.p3d";
 		hiddenSelections[] = {"cover"};
