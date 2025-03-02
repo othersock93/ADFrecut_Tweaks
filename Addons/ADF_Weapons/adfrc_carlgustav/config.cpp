@@ -461,11 +461,11 @@ class cfgWeapons
 		};
 	};
 	
-	class ADFRC_carlgustav_m4: Launcher_Base_F
+	class ADFRC_carlgustav_m4: ADFRC_carlgustav_m3
 	{
 		scope=2;
 		displayName="Carl Gustav M4";
-		author="$STR_ADFRC_AUTHOR";
+		author="Brucey";
 		model="\adf_weapons\adfrc_carlgustav\ADFRC_CGM4";
 		class Library
 		{
