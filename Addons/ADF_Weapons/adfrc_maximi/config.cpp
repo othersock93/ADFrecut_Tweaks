@@ -42,9 +42,18 @@ class CfgWeapons
 	{
 		scope=2;
 		model="\ADF_Weapons\adfrc_maximi\ADFRC_F89_Maximi.p3d";
-		displayName="FN Maximi";
-		author="$STR_ADF_AUTHOR";
+		displayName="F89 Maximi";
+		author="Brucey";
 		picture="\ADF_Weapons\adfrc_maximi\UI\gear_f89_max_x_ca.paa";
+		ace_overheating_mrbs = 2500; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
+        ace_overheating_slowdownFactor = 1; //Slowdown Factor, reduces the velocity of the projectile (this will be scaled based on the barrel temp)
+        ace_overheating_allowSwapBarrel = 1; // 1 to enable barrel swap. 0 to disable. Meant for machine guns where you can easily swap the barrel without dismantling the whole weapon.
+        ace_overheating_dispersion = 0.25; 
+		ace_overheating_closedBolt = 1; 
+		ace_overheating_barrelMass = 4;
+		ACE_barrelTwist = 177.8;
+		ACE_barrelLength = 465;
+		
 		handAnim[]=
 		{
 			"OFP2_ManSkeleton",
@@ -224,7 +233,80 @@ class CfgWeapons
             class PointerSlot : asdg_FrontSideRail //side slot
             {};
         };
-	};class ADFRC_maximi_Spectr: ADFRC_maximi
+	};
+	
+	class ADFRC_maximi_Modern: ADFRC_maximi
+	{
+		scope=2;
+		model="\ADF_Weapons\adfrc_maximi\ADFRC_F89_Maximi_Mod.p3d";
+		displayName="F89 Maximi Modernised";
+		author="Brucey";
+		picture="\ADF_Weapons\adfrc_maximi\UI\gear_f89_max_x_ca.paa";
+	};
+	
+	class ADFRC_maximi_Modern_Short: ADFRC_maximi
+	{
+		scope=2;
+		model="\ADF_Weapons\adfrc_maximi\ADFRC_F89_Maximi_Mods.p3d";
+		displayName="F89 Maximi Modernised (Short)";
+		author="Brucey";
+		picture="\ADF_Weapons\adfrc_maximi\UI\gear_f89_max_x_ca.paa";
+		ACE_barrelLength = 349;
+	
+		   class WeaponSlotsInfo {
+			mass = 165;
+			allowedSlots[] = {901};
+            class MuzzleSlot : asdg_MuzzleSlot_762
+            {};
+            class CowsSlot : asdg_OpticRail1913 //Top / optic slot
+            {};
+            class PointerSlot : asdg_FrontSideRail //side slot
+            {};
+        };
+	};
+	
+	class ADFRC_maximi_Para: ADFRC_maximi
+	{
+		scope=2;
+		model="\ADF_Weapons\adfrc_maximi\ADFRC_F89_Maximi_para.p3d";
+		displayName="F89 Maximi Para";
+		author="Brucey";
+		picture="\ADF_Weapons\adfrc_maximi\UI\gear_f89_max_x_ca.paa";
+	
+		   class WeaponSlotsInfo {
+			mass = 155;
+			allowedSlots[] = {901};
+            class MuzzleSlot : asdg_MuzzleSlot_762
+            {};
+            class CowsSlot : asdg_OpticRail1913 //Top / optic slot
+            {};
+            class PointerSlot : asdg_FrontSideRail //side slot
+            {};
+        };
+	};
+	
+	class ADFRC_maximi_Para_Short: ADFRC_maximi
+	{
+		scope=2;
+		model="\ADF_Weapons\adfrc_maximi\ADFRC_F89_Maximi_paras.p3d";
+		displayName="F89 Maximi Para (Short)";
+		author="Brucey";
+		picture="\ADF_Weapons\adfrc_maximi\UI\gear_f89_max_x_ca.paa";
+		ACE_barrelLength = 349;
+	
+		   class WeaponSlotsInfo {
+			mass = 145;
+			allowedSlots[] = {901};
+            class MuzzleSlot : asdg_MuzzleSlot_762
+            {};
+            class CowsSlot : asdg_OpticRail1913 //Top / optic slot
+            {};
+            class PointerSlot : asdg_FrontSideRail //side slot
+            {};
+        };
+	};
+	
+	class ADFRC_maximi_Spectr: ADFRC_maximi
 	{
 		author="$STR_ADF_AUTHOR";
 		class LinkedItems
