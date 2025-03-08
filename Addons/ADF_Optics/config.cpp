@@ -71,12 +71,11 @@ class cfgWeapons
 					useModelOptics=0;
 					opticsPPEffects[]=
 					{
-						"OpticsCHAbera1",
 						"OpticsBlur1"
 					};
 					opticsZoomMin=0.375;
-					opticsZoomMax=1;
-					opticsZoomInit=0.75;
+					opticsZoomMax=2;
+					opticsZoomInit=1.5;
 					discreteDistance[]={300};
 					discreteDistanceInitIndex=0;
 					distanceZoomMin=300;
