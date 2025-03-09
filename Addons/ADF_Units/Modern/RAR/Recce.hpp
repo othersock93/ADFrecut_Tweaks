@@ -14,14 +14,14 @@
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
 		backpack = "adfrc_patrol_bullock_amcu";
 		weapons[]={
-			"arifle_AUG_black_Spectr_flash_Sup_F",
+			"ADFRC_Preset_EF88_Camo_Spectr_Squad",
 			"ADFRC_WP_F9_SWS",
 			"Rangefinder",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_Spectr_flash_Sup_F",
+			"ADFRC_Preset_EF88_Camo_Spectr_Squad",
 			"ADFRC_WP_F9_SWS",
 			"Rangefinder",
 			"Throw",
@@ -102,14 +102,14 @@
 		cost=250000;
 		backpack = "adfrc_patrol_bullock_amcu_177";
 		weapons[]={
-			"arifle_AUG_black_Spectr_flash_Sup_F",
+			"ADFRC_Preset_EF88_Camo_Spectr_Squad",
 			"ADFRC_WP_F9_SWS",
 			"Laserdesignator",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_Spectr_flash_Sup_F",
+			"ADFRC_Preset_EF88_Camo_Spectr_Squad",
 			"ADFRC_WP_F9_SWS",
 			"Laserdesignator",
 			"Throw",
@@ -199,13 +199,13 @@
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack = "ADFRC_BP_TacBag_AMCU_1";
 		weapons[]={
-			"arifle_AUG_black_Spectr_flash_Sup_F",
+			"ADFRC_Preset_EF88_Camo_Spectr_Squad",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_Spectr_flash_Sup_F",
+			"ADFRC_Preset_EF88_Camo_Spectr_Squad",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
@@ -286,13 +286,13 @@
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack = "ADFRC_BP_Assault_AMCU_1";
 		weapons[]={
-			"ADFRC_minimi_elcan",
+			"ADFRC_Minimi_PRESET_Spectr_Squad",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"ADFRC_minimi_elcan",
+			"ADFRC_Minimi_PRESET_Spectr_Squad",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"

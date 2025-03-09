@@ -472,19 +472,19 @@ class ADFRC_MD_MC_SASR_Scout: ADFRC_MD_MC_SASR_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack="ADFRC_Kitbag_Green";
 		weapons[]={
-			"ADFRC_maximi_elcan",
+			"ADFRC_Maximi_Mod_PRESET_Spectr_PEQ15",
 			"ADFRC_WP_G19_FK_Comp",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"ADFRC_maximi_elcan",
+			"ADFRC_Maximi_Mod_PRESET_Spectr_PEQ15",
 			"ADFRC_WP_G19_FK_Comp",
 			"Throw",
 			"Put"
 		};
 		magazines[]={
-			"ADFRC_50Rnd_762_Belt_TR5",
+			"ADFRC_100Rnd_762_Maximi_TR5",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -492,16 +492,16 @@ class ADFRC_MD_MC_SASR_Scout: ADFRC_MD_MC_SASR_Base{
 			"ADFRC_15rnd_9MM_BALL_G19", 
 			"ADFRC_15rnd_9MM_BALL_G19", 
 			"ADFRC_15rnd_9MM_BALL_G19", 
-			"ADFRC_150Rnd_762_Belt_TR5",
+			"ADFRC_100Rnd_762_Maximi_TR5",
 			"ADFRC_100Rnd_762_Belt",
-			"ADFRC_50Rnd_762_Belt_TR",
-			"ADFRC_50Rnd_762_Belt_TR5",
-			"ADFRC_50Rnd_762_Belt_TR5",
-			"ADFRC_50Rnd_762_Belt_TR5",
-			"ADFRC_100_Rnd_762_Belt_TR5"
+			"ADFRC_100Rnd_762_Maximi_TR",
+			"ADFRC_100Rnd_762_Maximi_TR5",
+			"ADFRC_100Rnd_762_Maximi_TR5",
+			"ADFRC_100Rnd_762_Maximi",
+			"ADFRC_100Rnd_762_Maximi"
 		};
 		respawnMagazines[]={
-			"ADFRC_50Rnd_762_Belt_TR5",
+			"ADFRC_100Rnd_762_Maximi_TR5",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -509,13 +509,13 @@ class ADFRC_MD_MC_SASR_Scout: ADFRC_MD_MC_SASR_Base{
 			"ADFRC_15rnd_9MM_BALL_G19", 
 			"ADFRC_15rnd_9MM_BALL_G19", 
 			"ADFRC_15rnd_9MM_BALL_G19", 
-			"ADFRC_150Rnd_762_Belt_TR5",
+			"ADFRC_100Rnd_762_Maximi_TR5",
 			"ADFRC_100Rnd_762_Belt",
-			"ADFRC_50Rnd_762_Belt_TR",
-			"ADFRC_50Rnd_762_Belt_TR5",
-			"ADFRC_50Rnd_762_Belt_TR5",
-			"ADFRC_50Rnd_762_Belt_TR5",
-			"ADFRC_100_Rnd_762_Belt_TR5"
+			"ADFRC_100Rnd_762_Maximi_TR",
+			"ADFRC_100Rnd_762_Maximi_TR5",
+			"ADFRC_100Rnd_762_Maximi_TR5",
+			"ADFRC_100Rnd_762_Maximi",
+			"ADFRC_100Rnd_762_Maximi"
 		};
 		items[] = {"FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
