@@ -523,6 +523,19 @@ class cfgWeapons
 			};
 		};
 	};
+	class ADFRC_carlgustav_m4_mrco: ADFRC_carlgustav_m4
+	{
+		scope=2;
+		author="$STR_ADFRC_AUTHOR";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				item="optic_MRCO";
+				slot="CowsSlot";
+			};
+		};
+	};
 };
 class CfgCloudlets
 {

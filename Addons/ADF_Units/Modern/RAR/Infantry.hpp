@@ -1107,7 +1107,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		backpack="ADFRC_AssaultPack_AMCU";
 		weapons[]={
 			"ADFRC_Preset_EF88C_Camo_Spectr",
-			"ADFRC_carlgustav_m4",
+			"ADFRC_carlgustav_m4_mrco",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
@@ -1115,7 +1115,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		respawnWeapons[]=
 		{
 			"ADFRC_Preset_EF88C_Camo_Spectr",
-			"ADFRC_carlgustav_m4",
+			"ADFRC_carlgustav_m4_mrco",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
