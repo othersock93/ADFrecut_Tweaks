@@ -726,4 +726,19 @@ class CfgMagazineWells
 			"ADFRC_100Rnd_762_Maximi_TR5"
 		};
 	};
+	
+	class CBA_556x45_MINIMI
+	{
+		// Magazines listed by mod
+		// It is possible to add new arrays to class but for now inheritance (i.e. STANAG_556x45_New: STANAG_556x45 {};) is not supported 
+		ADFRC_Magazines[] =
+		{
+			"ADFRC_100Rnd_556_Belt",
+			"ADFRC_100Rnd_556_Belt_TR",
+			"ADFRC_100Rnd_556_Belt_TR5",
+			"ADFRC_200Rnd_556_Belt",
+			"ADFRC_200Rnd_556_Belt_TR",
+			"ADFRC_200Rnd_556_Belt_TR5"
+		};
+	};
 };
