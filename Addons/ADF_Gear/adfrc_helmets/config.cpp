@@ -934,7 +934,9 @@ class CfgWeapons
 	};
 	class adfrc_teamwendy_exfil_cover: adfrc_teamwendy_exfil_g2_cover
 	{
-		scope=1;
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
 	};
 	class adfrc_teamwendy_exfil_g3_cover_AMCU: ItemCore
 	{
