@@ -592,6 +592,36 @@ class CfgMagazines
 #include "F9_Magazines.hpp"
 #include "BHP_Magazines.hpp"
 #include "USP_Magazines.hpp"
+
+
+	class ADFRC_100Rnd_762_Maximi: ADFRC_50Rnd_762_Belt
+	{
+		scope=2;
+		displayName="100Round 7.62mm Maximi Box";
+		picture="\ADF_Weapons\adfrc_magazines\UI\gear_762x100_ca.paa";
+		author="Brucey";
+		count=100;
+		mass=45;
+		initSpeed=820;
+		modelSpecial = "ADF_Weapons\adfrc_maximi\magazines\100rd.p3d";
+		modelSpecialIsProxy = 1;
+		descriptionShort="Calibre: 7.62x51 mm NATO<br/>Rounds: 100<br/>Cartridge: Thales F4 Ball";
+	};
+	class ADFRC_100Rnd_762_Maximi_TR: ADFRC_100Rnd_762_Maximi
+	{
+		scope=2;
+		displayName="100Round 7.62mm Maximi Box Tracer Red";
+		author="Brucey";
+		ammo="B_762x51_Tracer_Red";
+		tracersEvery=1;
+	};
+	class ADFRC_100Rnd_762_Maximi_TR5: ADFRC_100Rnd_762_Maximi
+	{
+		scope=2;
+		displayName="100Round 7.62mm Maximi BoxTracer 1:5 Red";
+		author="Brucey";
+		tracersEvery=5;
+	};
 };
 
 class CfgMagazineWells
@@ -680,6 +710,35 @@ class CfgMagazineWells
 			"ADFRC_30Rnd_aug_TG_ef88",
 			"ADFRC_30Rnd_aug_IR_ef88",
 			"ADFRC_30Rnd_aug_Mixed_ef88"
+		};
+	};
+	
+	
+	
+	class CBA_762x51_MINIMI
+	{
+		// Magazines listed by mod
+		// It is possible to add new arrays to class but for now inheritance (i.e. STANAG_556x45_New: STANAG_556x45 {};) is not supported 
+		ADFRC_Magazines[] =
+		{
+			"ADFRC_100Rnd_762_Maximi",
+			"ADFRC_100Rnd_762_Maximi_TR",
+			"ADFRC_100Rnd_762_Maximi_TR5"
+		};
+	};
+	
+	class CBA_556x45_MINIMI
+	{
+		// Magazines listed by mod
+		// It is possible to add new arrays to class but for now inheritance (i.e. STANAG_556x45_New: STANAG_556x45 {};) is not supported 
+		ADFRC_Magazines[] =
+		{
+			"ADFRC_100Rnd_556_Belt",
+			"ADFRC_100Rnd_556_Belt_TR",
+			"ADFRC_100Rnd_556_Belt_TR5",
+			"ADFRC_200Rnd_556_Belt",
+			"ADFRC_200Rnd_556_Belt_TR",
+			"ADFRC_200Rnd_556_Belt_TR5"
 		};
 	};
 };

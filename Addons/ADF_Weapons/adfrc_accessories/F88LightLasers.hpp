@@ -35,27 +35,30 @@ class ADFRC_F88SA1_laser: ItemCore
 			mass=4;
 			class FlashLight
 			{
-				color[]={0.75,0.89999998,0.89999998,0.89999998};
-				ambient[]={0.1,0.1,0.1,1};
-				position="flash_dir";
-				direction="flash";
-				innerAngle=50;
-				outerAngle=80;
-				scale[]={0};
-				brightness=0.44999999;
-				size=1;
-				coneFadeCoef=7;
-				intensity=115;
-				useFlare=1;
-				dayLight=1;
-				FlareSize=0.64999998;
+				color[] = {180,160,130};
+				ambient[] = {0.9,0.81,0.7};
+				intensity = 100;
+				size = 1;
+				innerAngle = 5;
+				outerAngle = 60;
+				coneFadeCoef = 6;
+				position = "flashdir";
+				direction = "flashpos";
+				useFlare = 1;
+				flareSize = 1.4;
+				flareMaxDistance = 100;
+				dayLight = 0;
 				class Attenuation
 				{
-					start=0;
-					constant=2;
-					linear=1;
-					quadratic=75;
+					start = 0;
+					constant = 0.5;
+					linear = 0.1;
+					quadratic = 0.2;
+					hardLimitStart = 27;
+					hardLimitEnd = 34;
 				};
+				volumeShape = "a3\data_f\VolumeLightFlashlight.p3d";
+				scale[] = {1,1,1};
 			};
 		};
 	};

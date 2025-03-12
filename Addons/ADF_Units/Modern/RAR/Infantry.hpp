@@ -11,12 +11,12 @@
 		role="Rifleman";
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr_Squad",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr_Squad",
 			"Throw",
 			"Put"
 		};
@@ -83,12 +83,12 @@ class ADFRC_MD_AMCU_Soldier_Light: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		//backpack="ADFRC_AssaultPack_AMCU";
 		weapons[]={
-			"arifle_AUG_black_arco_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"Throw",
 			"Put"
 		};
@@ -141,13 +141,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack="ADFRC_BP_Placeholder_AMCU_1";
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Camo_Spectr_Squad",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Camo_Spectr_Squad",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
@@ -223,13 +223,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack="ADFRC_BP_Assault_AMCU_1";
 		weapons[]={
-			"arifle_AUG_GL_black_arco_flash_F",
+			"ADFRC_Preset_EF88_SL40_Camo_Spectr",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_GL_black_arco_flash_F",
+			"ADFRC_Preset_EF88_SL40_Camo_Spectr",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
@@ -324,12 +324,12 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		cost=220000;
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		weapons[]={
-			"ADFRC_minimi_elcan",
+			"ADFRC_Minimi_PRESET_Spectr_Squad",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"ADFRC_minimi_elcan",
+			"ADFRC_Minimi_PRESET_Spectr_Squad",
 			"Throw",
 			"Put"
 		};
@@ -405,44 +405,44 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		cost=220000;
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		weapons[]={
-			"ADFRC_maximi_elcan",
+			"ADFRC_Maximi_PRESET_Spectr_Squad",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"ADFRC_maximi_elcan",
+			"ADFRC_Maximi_PRESET_Spectr_Squad",
 			"Throw",
 			"Put"
 		};
 		magazines[]={
-			"ADFRC_50Rnd_762_Belt_TR5",
+			"ADFRC_100Rnd_762_Maximi",
 			"ADFRC_F1_Grenade",
 			"ADFRC_F1_Grenade",
 			"SmokeShell",
 			"Chemlight_blue",
 			"Chemlight_blue",
-			"ADFRC_150Rnd_762_Belt_TR5",
-			"ADFRC_100Rnd_762_Belt",
-			"ADFRC_50Rnd_762_Belt_TR",
-			"ADFRC_50Rnd_762_Belt_TR5",
-			"ADFRC_50Rnd_762_Belt_TR5",
-			"ADFRC_50Rnd_762_Belt_TR5",
-			"ADFRC_100_Rnd_762_Belt_TR5"
+			"ADFRC_100Rnd_762_Maximi_TR5",
+			"ADFRC_100Rnd_762_Maximi",
+			"ADFRC_100Rnd_762_Maximi_TR",
+			"ADFRC_100Rnd_762_Maximi_TR5",
+			"ADFRC_100Rnd_762_Maximi_TR5",
+			"ADFRC_100Rnd_762_Maximi_TR5",
+			"ADFRC_100Rnd_762_Maximi_TR"
 		};
 		respawnMagazines[]={
-			"ADFRC_50Rnd_762_Belt_TR5",
+			"ADFRC_100Rnd_762_Maximi",
 			"ADFRC_F1_Grenade",
 			"ADFRC_F1_Grenade",
 			"SmokeShell",
 			"Chemlight_blue",
 			"Chemlight_blue",
-			"ADFRC_150Rnd_762_Belt_TR5",
-			"ADFRC_100Rnd_762_Belt",
-			"ADFRC_50Rnd_762_Belt_TR",
-			"ADFRC_50Rnd_762_Belt_TR5",
-			"ADFRC_50Rnd_762_Belt_TR5",
-			"ADFRC_50Rnd_762_Belt_TR5",
-			"ADFRC_100_Rnd_762_Belt_TR5"
+			"ADFRC_100Rnd_762_Maximi_TR5",
+			"ADFRC_100Rnd_762_Maximi",
+			"ADFRC_100Rnd_762_Maximi_TR",
+			"ADFRC_100Rnd_762_Maximi_TR5",
+			"ADFRC_100Rnd_762_Maximi_TR5",
+			"ADFRC_100Rnd_762_Maximi_TR5",
+			"ADFRC_100Rnd_762_Maximi_TR"
 		};
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
@@ -566,13 +566,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack="adfrc_molle_bag_ASIP";
 		weapons[]={
-			"arifle_AUG_C_Specter_black_flash_F",
+			"ADFRC_Preset_EF88C_Black_Spectr",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_C_Specter_black_flash_F",
+			"ADFRC_Preset_EF88C_Black_Spectr",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
@@ -642,13 +642,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack="adfrc_molle_bag_117g_slingshot";
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
@@ -718,13 +718,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack="adfrc_molle_bag_ASIP";
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Camo_Spectr_Squad",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Camo_Spectr_Squad",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
@@ -818,13 +818,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack="ADFRC_BP_Assault_AMCU_1";
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Camo_Spectr_PEQ15",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Camo_Spectr_PEQ15",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
@@ -1020,13 +1020,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		threat[]={0.80000001,0.80000001,0.30000001}; // From vanilla values
 		backpack="ADFRC_AssaultPack_AMCU";
 		weapons[]={
-			"arifle_AUG_C_Specter_black_flash_F",
+			"ADFRC_Preset_EF88C_Black_Spectr",
 			"launch_O_Titan_short_F",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_C_Specter_black_flash_F",
+			"ADFRC_Preset_EF88C_Black_Spectr",
 			"launch_O_Titan_short_F",
 			"Throw",
 			"Put"
@@ -1106,16 +1106,16 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		threat[]={0.80000001,0.80000001,0.30000001}; // From vanilla values
 		backpack="ADFRC_AssaultPack_AMCU";
 		weapons[]={
-			"arifle_AUG_C_Specter_black_flash_F",
-			"ADFRC_carlgustav_m3",
+			"ADFRC_Preset_EF88C_Camo_Spectr",
+			"ADFRC_carlgustav_m4_mrco",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"arifle_AUG_C_Specter_black_flash_F",
-			"ADFRC_carlgustav_m3",
+			"ADFRC_Preset_EF88C_Camo_Spectr",
+			"ADFRC_carlgustav_m4_mrco",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
@@ -1202,14 +1202,14 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		threat[]={0.80000001,0.80000001,0.30000001}; // From vanilla values
 		//backpack="";
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88C_Camo_Spectr",
 			"launch_NLAW_F",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88C_Camo_Spectr",
 			"launch_NLAW_F",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
@@ -1295,12 +1295,12 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack="ADFRC_Kitbag_AMCU";
 		weapons[]={
-			"arifle_AUG_C_Specter_black_flash_F",
+			"ADFRC_Preset_EF88C_Black_Spectr",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_C_Specter_black_flash_F",
+			"ADFRC_Preset_EF88C_Black_Spectr",
 			"Throw",
 			"Put"
 		};
@@ -1402,12 +1402,12 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack="ADFRC_Kitbag_AMCU";
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"Throw",
 			"Put"
 		};
@@ -1491,12 +1491,12 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack="ADFRC_CarryAll_AMCU";
 		weapons[]={
-			"arifle_AUG_C_Specter_black_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr_WMLX",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_C_Specter_black_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr_WMLX",
 			"Throw",
 			"Put"
 		};
@@ -1715,13 +1715,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		//backpack="";
 		weapons[]={
-			"arifle_AUG_C_Specter_black_flash_F",
+			"ADFRC_Preset_EF88C_Black_Spectr",
 			"Throw",
 			"Put",
 			"Binocular"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_C_Specter_black_flash_F",
+			"ADFRC_Preset_EF88C_Black_Spectr",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -1781,13 +1781,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		//backpack="";
 		weapons[]={
-			"arifle_AUG_C_Specter_black_flash_F", 
+			"ADFRC_Preset_EF88C_Black_Spectr_Squad", 
 			"Throw", 
 			"Put",
 			"Binocular"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_C_Specter_black_flash_F",
+			"ADFRC_Preset_EF88C_Black_Spectr_Squad",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -1857,14 +1857,14 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		///backpack="ADFRC_BP_Assault_AMCU_1";
 		weapons[]={
-			"arifle_AUG_C_Specter_black_flash_F", 
+			"ADFRC_Preset_EF88C_Black_Spectr_Squad", 
 			"ADFRC_WP_F9_SWS", 
 			"Throw", 
 			"Put",
 			"Rangefinder"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_C_Specter_black_flash_F",
+			"ADFRC_Preset_EF88C_Black_Spectr_Squad",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put",
@@ -1937,12 +1937,12 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack="ADFRC_CarryAll_AMCU";
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"Throw",
 			"Put"
 		};
@@ -2053,13 +2053,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack="ADFRC_Kitbag_AMCU";
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"Throw",
 			"Put",
 			"Binocular"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -2131,12 +2131,12 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack="ADFRC_CarryAll_AMCU";
 		weapons[]={
-			"arifle_AUG_C_Specter_black_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_C_Specter_black_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"Throw",
 			"Put"
 		};
@@ -2203,13 +2203,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack="ADFRC_CarryAll_AMCU";
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
@@ -2285,13 +2285,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack="ADFRC_Kitbag_AMCU";
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"Throw",
 			"Put",
 			"Binocular"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -2472,12 +2472,12 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
 		backpack="B_Mortar_01_support_F";
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"Throw",
 			"Put"
 		};
@@ -2542,12 +2542,12 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
 		backpack="B_HMG_01_support_F";
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"Throw",
 			"Put"
 		};
@@ -2612,12 +2612,12 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
 		backpack="B_GMG_01_weapon_F";
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"Throw",
 			"Put"
 		};
@@ -2682,12 +2682,12 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
 		backpack="B_HMG_01_weapon_F";
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"Throw",
 			"Put"
 		};
@@ -2752,12 +2752,12 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
 		backpack="B_Mortar_01_weapon_F";
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_Preset_EF88_Black_Spectr",
 			"Throw",
 			"Put"
 		};
@@ -2821,13 +2821,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
 		backpack="B_UAV_01_backpack_F";
 		weapons[]={
-			"arifle_AUG_C_Specter_black_flash_F",
+			"ADFRC_Preset_EF88C_Black_Spectr",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_C_Specter_black_flash_F",
+			"ADFRC_Preset_EF88C_Black_Spectr",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
