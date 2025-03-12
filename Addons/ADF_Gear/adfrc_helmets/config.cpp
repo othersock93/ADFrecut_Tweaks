@@ -31,7 +31,7 @@ class CfgWeapons
 	class H_HelmetB;
 	class H_HelmetIA;
 	class H_Cap_headphones;
-	
+
 	// OPSCORE MARITIME
 	class adfrc_opscore_marine_Snakeskin_Tan_Ct_1_Aus: ItemCore
 	{
@@ -901,9 +901,9 @@ class CfgWeapons
 			};
 		};
 	};
-	
+
 	// TEAM WENDY EXFIL
-	
+
 	class adfrc_teamwendy_exfil_g2_cover: ItemCore
 	{
 		author = "Exer";
@@ -1050,8 +1050,8 @@ class CfgWeapons
 			};
 		};
 	};
-	
-	
+
+
 
 
 	// BOONIE HATS AND CAPS
@@ -1368,7 +1368,7 @@ class CfgWeapons
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_dpcu_M_co.paa"};
 	};
-	
+
 	// CANVAS HELMETS
 	class adfrc_Helmet_dpcu_canv: H_HelmetIA
 	{
@@ -1390,7 +1390,7 @@ class CfgWeapons
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\helmet_dpdu_canv_co.paa"};
 	};
-	
+
 	// OPSCORE AIRFRAME
 	class adfrc_opscore_airframe_1: ItemCore
 	{
@@ -1482,7 +1482,7 @@ class CfgWeapons
 			};
 		};
 	};
-	
+
 	// OPSCORE FAST XP
 	class adfrc_opscore_fast_xp: ItemCore
 	{
@@ -1511,5 +1511,426 @@ class CfgWeapons
 					};
 				};
 			};
+	};
+
+	//?
+	//? PASGT
+	//?
+
+	class ADFRC_PASGT_Tan_No_Cover : ItemCore {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "PASGT (Tan, No Cover)";
+		model                      = "\ADF_Gear\adfrc_helmets\adfrc_pasgt.p3d";
+		picture                    = "";
+
+		scope                      = 2;
+
+		hiddenSelections[]         = { "camo", "camo1", "camo2", "camo3" };
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
+			"",
+			"",
+			""
+		};
+
+		class ItemInfo : HeadgearItem {
+			uniformModel               = "\ADF_Gear\adfrc_helmets\adfrc_pasgt.p3d";
+
+			mass                       = 40;
+
+			hiddenSelections[]         = { "camo", "camo1", "camo2", "camo3" };
+			modelSides[]               = { 1, 3 };
+
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
+				"",
+				"",
+				""
+			};
+
+			class HitpointsProtectionInfo {
+				class Head {
+					hitpointName = "HitHead";
+
+					armor        = 1.666 * 4; //? Level IIIA
+					passThrough  = 0.5;
+				};
+			};
+		};
+	};
+
+	class ADFRC_PASGT_Olive_No_Cover : ADFRC_PASGT_Tan_No_Cover {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "PASGT (Olive, No Cover)";
+		picture                    = "";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
+			"",
+			"",
+			""
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
+				"",
+				"",
+				""
+			};
+		};
+	};
+
+	class ADFRC_PASGT_DPC : ADFRC_PASGT_Tan_No_Cover {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "PASGT (DPC)";
+		picture                    = "";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
+			"",
+			""
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
+				"",
+				""
+			};
+		};
+	};
+
+	class ADFRC_PASGT_DPC_Goggles : ADFRC_PASGT_Tan_No_Cover {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "PASGT (DPC, Goggles)";
+		picture                    = "";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
+			};
+		};
+	};
+
+	class ADFRC_PASGT_DPD : ADFRC_PASGT_Tan_No_Cover {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "PASGT (DPD)";
+		picture                    = "";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
+			"",
+			""
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
+				"",
+				""
+			};
+		};
+	};
+
+	class ADFRC_PASGT_DPD_Goggles : ADFRC_PASGT_Tan_No_Cover {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "PASGT (DPD, Goggles)";
+		picture                    = "";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
+			};
+		};
+	};
+
+	class ADFRC_PASGT_DPD_Middle_East : ADFRC_PASGT_Tan_No_Cover {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "PASGT (DPD Middle East)";
+		picture                    = "";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
+			"",
+			""
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
+				"",
+				""
+			};
+		};
+	};
+
+	class ADFRC_PASGT_DPD_Middle_East_Goggles : ADFRC_PASGT_Tan_No_Cover {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "PASGT (DPD Middle East, Goggles)";
+		picture                    = "";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
+			};
+		};
+	};
+
+	class ADFRC_PASGT_DPD_Midpoint : ADFRC_PASGT_Tan_No_Cover {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "PASGT (DPD Midpoint)";
+		picture                    = "";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
+			"",
+			""
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
+				"",
+				""
+			};
+		};
+	};
+
+	class ADFRC_PASGT_DPD_Midpoint_Goggles : ADFRC_PASGT_Tan_No_Cover {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "PASGT (DPD Midpoint, Goggles)";
+		picture                    = "";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
+			};
+		};
+	};
+
+	class ADFRC_PASGT_DPD_Early : ADFRC_PASGT_Tan_No_Cover {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "PASGT (DPD Early)";
+		picture                    = "";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
+			"",
+			""
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
+				"",
+				""
+			};
+		};
+	};
+
+	class ADFRC_PASGT_DPD_Early_Goggles : ADFRC_PASGT_Tan_No_Cover {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "PASGT (DPD Early, Goggles)";
+		picture                    = "";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
+			};
+		};
+	};
+
+	class ADFRC_PASGT_Multicam : ADFRC_PASGT_Tan_No_Cover {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "PASGT (Multicam)";
+		picture                    = "";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
+			"",
+			""
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
+				"",
+				""
+			};
+		};
+	};
+
+	class ADFRC_PASGT_Multicam_Goggles : ADFRC_PASGT_Tan_No_Cover {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "PASGT (Multicam, Goggles)";
+		picture                    = "";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
+			};
+		};
+	};
+
+	class ADFRC_PASGT_Tan : ADFRC_PASGT_Tan_No_Cover {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "PASGT (Tan)";
+		picture                    = "";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
+			"",
+			""
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
+				"",
+				""
+			};
+		};
+	};
+
+	class ADFRC_PASGT_Tan_Goggles : ADFRC_PASGT_Tan_No_Cover {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "PASGT (Tan, Goggles)";
+		picture                    = "";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
+			};
+		};
+	};
+
+	class ADFRC_PASGT_Olive : ADFRC_PASGT_Tan_No_Cover {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "PASGT (Olive)";
+		picture                    = "";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
+			"",
+			""
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
+				"",
+				""
+			};
+		};
+	};
+
+	class ADFRC_PASGT_Olive_Goggles : ADFRC_PASGT_Tan_No_Cover {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "PASGT (Olive, Goggles)";
+		picture                    = "";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
+			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
+				"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
+			};
+		};
 	};
 };
