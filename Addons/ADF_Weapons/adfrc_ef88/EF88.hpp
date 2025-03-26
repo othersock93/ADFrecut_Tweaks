@@ -307,10 +307,15 @@ class ADFRC_EF88GL_Base: Rifle_Base_F
 				75,
 				100,
 				150,
+				175,
 				200,
+				225,
 				250,
+				275,
 				300,
+				325,
 				350,
+				375,
 				400
 			};
 			discreteDistanceCameraPoint[] =
@@ -319,10 +324,15 @@ class ADFRC_EF88GL_Base: Rifle_Base_F
 				OP_eye_75,
 				OP_eye_100,
 				OP_eye_150,
+				OP_eye_175,
 				OP_eye_200,
+				OP_eye_225,
 				OP_eye_250,
+				OP_eye_275,
 				OP_eye_300,
+				OP_eye_325,
 				OP_eye_350,
+				OP_eye_375,
 				OP_eye_400
 			};
 			discreteDistanceInitIndex = 1;
