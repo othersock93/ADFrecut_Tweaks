@@ -104,7 +104,7 @@ class ADFRC_PEQ15_M4_Top_BLK_IRL: ItemCore
 	{
 		author = "Brucey";
 		scope = 2;
-		displayName = "L3 AN/PEQ-15 Black (IR-Laser)";
+		displayName = "L3 AN/PEQ-15 TOP Black (IR-Laser)";
 		picture = "\ADF_Weapons\adfrc_accessories\PEQ15\ui\PEQ15_BLK_ca.paa";
 		UiPicture = "\ADF_Weapons\adfrc_accessories\PEQ15\ui\PEQ15_BLK_ca.paa";
 		model = "ADF_Weapons\adfrc_accessories\PEQ15\ADFRC_PEQ15_M4_Top_BLK";
@@ -129,7 +129,7 @@ class ADFRC_PEQ15_M4_Top_BLK_IRT: ItemCore
 	{
 		author = "Brucey";
 		scope = 2;
-		displayName = "L3 AN/PEQ-15 Black (IR-Light)";
+		displayName = "L3 AN/PEQ-15 TOP Black (IR-Light)";
 		picture = "\ADF_Weapons\adfrc_accessories\PEQ15\ui\PEQ15_BLK_ca.paa";
 		UiPicture = "\ADF_Weapons\adfrc_accessories\PEQ15\ui\PEQ15_BLK_ca.paa";
 		model = "ADF_Weapons\adfrc_accessories\PEQ15\ADFRC_PEQ15_M4_Top_BLK";
@@ -177,7 +177,7 @@ class ADFRC_PEQ15_M4_Top_FDE_IRL: ADFRC_PEQ15_M4_Top_BLK_IRL
 	{
 		author = "Brucey";
 		scope = 2;
-		displayName = "L3 AN/PEQ-15 FDE (IR-Laser)";
+		displayName = "L3 AN/PEQ-15 TOP FDE (IR-Laser)";
 		picture = "\ADF_Weapons\adfrc_accessories\PEQ15\ui\PEQ15_FDE_ca.paa";
 		UiPicture = "\ADF_Weapons\adfrc_accessories\PEQ15\ui\PEQ15_FDE_ca.paa";
 		model = "ADF_Weapons\adfrc_accessories\PEQ15\ADFRC_PEQ15_M4_Top_FDE";
@@ -190,7 +190,7 @@ class ADFRC_PEQ15_M4_Top_FDE_IRT: ADFRC_PEQ15_M4_Top_BLK_IRT
 	{
 		author = "Brucey";
 		scope = 2;
-		displayName = "L3 AN/PEQ-15 FDE (IR-Light)";
+		displayName = "L3 AN/PEQ-15 TOP FDE (IR-Light)";
 		picture = "\ADF_Weapons\adfrc_accessories\PEQ15\ui\PEQ15_FDE_ca.paa";
 		UiPicture = "\ADF_Weapons\adfrc_accessories\PEQ15\ui\PEQ15_FDE_ca.paa";
 		model = "ADF_Weapons\adfrc_accessories\PEQ15\ADFRC_PEQ15_M4_Top_FDE";
