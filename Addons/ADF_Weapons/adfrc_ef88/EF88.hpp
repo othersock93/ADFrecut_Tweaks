@@ -78,17 +78,36 @@
 		modes[] = {"Single","FullAuto","single_medium_optics1","single_medium_optics2","fullauto_medium"};
 	
 		   class WeaponSlotsInfo {
-			mass = 71;
+			mass = 74;
 			allowedSlots[] = {901};
             class MuzzleSlot : asdg_MuzzleSlot_556
-            {};
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.076,0.328};
+			iconScale  = 0.17;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+			};
             class CowsSlot : asdg_OpticRail1913 //Top / optic slot
-            {};
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.527,0.184};
+			iconScale  = 0.15;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+			};
 			class UnderBarrelSlot : asdg_UnderSlot //bottom / bipod
-            {};
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.332,0.641};
+			iconScale  = 0.25;
+			iconPicture = "\A3\weapons_f_mark\data\UI\attachment_under.paa";
+			};
             class PointerSlot : asdg_FrontSideRail //side slot
             {
-			class compatibleItems {
+			iconPinpoint="center";
+			iconPosition[] = {0.404,0.316};
+			iconScale  = 0.18;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
+			class compatibleItems: compatibleItems {
 			ADFRC_L3Squad_EF88_Top_IRL = 1;
 			ADFRC_L3Squad_EF88_Top_IRT = 1;
 			};
@@ -193,8 +212,8 @@ class ADFRC_EF88_Black: ADFRC_EF88_Base
 		scope=2;
 		scopeWeapon=2;
 		scopeArsenal = 2;
-		picture = "\A3\Data_F_Exp\Images\WeaponSPAR_ca.paa";
-		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
+		picture = "\ADF_Weapons\adfrc_ef88\Data\UI\adfrc_ef88_UI_CA.paa";
+		UiPicture = "\ADF_Weapons\adfrc_ef88\Data\UI\adfrc_ef88_UI_CA.paa";
 		displayName = "EF88 5.56 (Black)";
 		discretedistance[] = { 100, 200, 300, 400 };
 		discretedistanceinitindex = 2;
@@ -213,6 +232,8 @@ class ADFRC_EF88_Black: ADFRC_EF88_Base
 class ADFRC_EF88_Camo: ADFRC_EF88_Black
 	{
 		displayName = "EF88 5.56 (Camo)";
+		picture = "\ADF_Weapons\adfrc_ef88\Data\UI\adfrc_ef88_c_UI_CA.paa";
+		UiPicture = "\ADF_Weapons\adfrc_ef88\Data\UI\adfrc_ef88_c_UI_CA.paa";
 		hiddenSelections[] = { "CamoMetal","CamoPlastic" };
 		hiddenSelectionsTextures[] = { 
 		"ADF_Weapons\ADFRC_EF88\Textures\ADFRC_EF88_C_CO.paa", "ADF_Weapons\ADFRC_EF88\Textures\ADFRC_EF88_C_CO.paa"
@@ -238,8 +259,8 @@ class ADFRC_EF88C_Black: ADFRC_EF88_Base
 		scope=2;
 		scopeWeapon=2;
 		scopeArsenal = 2;
-		picture = "\A3\Data_F_Exp\Images\WeaponSPAR_ca.paa";
-		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
+		picture = "\ADF_Weapons\adfrc_ef88\Data\UI\adfrc_ef88c_UI_CA.paa";
+		UiPicture = "\ADF_Weapons\adfrc_ef88\Data\UI\adfrc_ef88c_UI_CA.paa";
 		displayName = "EF88C 5.56 (Black)";
 		discretedistance[] = { 100, 200, 300, 400 };
 		discretedistanceinitindex = 2;
@@ -248,6 +269,43 @@ class ADFRC_EF88C_Black: ADFRC_EF88_Base
 		opticszoommin = 0.375;
 		aiDispersionCoefY = 10;
 		aiDispersionCoefX = 8;
+		
+		 class WeaponSlotsInfo {
+			mass = 71;
+			allowedSlots[] = {901};
+            class MuzzleSlot : asdg_MuzzleSlot_556
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.131,0.328};
+			iconScale  = 0.23;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+			};
+            class CowsSlot : asdg_OpticRail1913 //Top / optic slot
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.527,0.184};
+			iconScale  = 0.15;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+			};
+			class UnderBarrelSlot : asdg_UnderSlot //bottom / bipod
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.332,0.641};
+			iconScale  = 0.25;
+			iconPicture = "\A3\weapons_f_mark\data\UI\attachment_under.paa";
+			};
+            class PointerSlot : asdg_FrontSideRail //side slot
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.404,0.316};
+			iconScale  = 0.18;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
+			class compatibleItems: compatibleItems {
+			ADFRC_L3Squad_EF88_Top_IRL = 1;
+			ADFRC_L3Squad_EF88_Top_IRT = 1;
+			};
+			};
+        };
 		 
 		class Library
 		{
@@ -258,6 +316,8 @@ class ADFRC_EF88C_Black: ADFRC_EF88_Base
 class ADFRC_EF88C_Camo: ADFRC_EF88C_Black
 	{
 		displayName = "EF88C 5.56 (Camo)";
+		picture = "\ADF_Weapons\adfrc_ef88\Data\UI\adfrc_ef88c_c_UI_CA.paa";
+		UiPicture = "\ADF_Weapons\adfrc_ef88\Data\UI\adfrc_ef88c_c_UI_CA.paa";
 		hiddenSelections[] = { "CamoMetal","CamoPlastic" };
 		hiddenSelectionsTextures[] = { 
 		"ADF_Weapons\ADFRC_EF88\Textures\ADFRC_EF88_C_CO.paa", "ADF_Weapons\ADFRC_EF88\Textures\ADFRC_EF88_C_CO.paa"
@@ -396,15 +456,33 @@ class ADFRC_EF88GL_Base: Rifle_Base_F
 		soundBipodUp[] = {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_up",0.70794576,1,20};
 		modes[] = {"Single","FullAuto","single_medium_optics1","single_medium_optics2","fullauto_medium"};
 	
- class WeaponSlotsInfo {
-			mass = 82;
+class WeaponSlotsInfo {
+			mass = 97;
 			allowedSlots[] = {901};
             class MuzzleSlot : asdg_MuzzleSlot_556
-            {};
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.131,0.328};
+			iconScale  = 0.23;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+			};
             class CowsSlot : asdg_OpticRail1913 //Top / optic slot
-            {};
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.527,0.184};
+			iconScale  = 0.15;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+			};
             class PointerSlot : asdg_FrontSideRail //side slot
-            {};
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.404,0.316};
+			iconScale  = 0.18;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
+			class compatibleItems: compatibleItems {
+
+			};
+			};
         };
 		
        class Single : Mode_SemiAuto
@@ -506,8 +584,8 @@ class ADFRC_EF88_SL40_Black: ADFRC_EF88GL_Base
 		scope=2;
 		scopeWeapon=2;
 		scopeArsenal = 2;
-		picture = "\A3\Data_F_Exp\Images\WeaponSPAR_ca.paa";
-		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
+		picture = "\ADF_Weapons\adfrc_ef88\Data\UI\adfrc_ef88gl_UI_CA.paa";
+		UiPicture = "\ADF_Weapons\adfrc_ef88\Data\UI\adfrc_ef88gl_UI_CA.paa";
 		displayName = "EF88 SL40 5.56 (Black)";
 		discretedistance[] = { 100, 200, 300, 400 };
 		discretedistanceinitindex = 2;
@@ -526,6 +604,8 @@ class ADFRC_EF88_SL40_Black: ADFRC_EF88GL_Base
 class ADFRC_EF88_SL40_Camo: ADFRC_EF88_SL40_Black
 	{
 		displayName = "EF88 SL40 5.56 (Camo)";
+		picture = "\ADF_Weapons\adfrc_ef88\Data\UI\adfrc_ef88gl_c_UI_CA.paa";
+		UiPicture = "\ADF_Weapons\adfrc_ef88\Data\UI\adfrc_ef88gl_c_UI_CA.paa";
 		hiddenSelections[] = { "CamoMetal","CamoPlastic","Camogl","Camogls" };
 		hiddenSelectionsTextures[] = { 
 		"ADF_Weapons\ADFRC_EF88\Textures\ADFRC_EF88_C_CO.paa", "ADF_Weapons\ADFRC_EF88\Textures\ADFRC_EF88_C_CO.paa", "ADF_Weapons\ADFRC_EF88\Textures\ADFRC_SL40_C_CO.paa", "ADF_Weapons\ADFRC_EF88\Textures\ADFRC_GLS_C_CO.paa"
