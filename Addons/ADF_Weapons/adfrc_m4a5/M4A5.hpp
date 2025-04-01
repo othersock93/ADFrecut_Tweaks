@@ -151,8 +151,8 @@ class ADFRC_M4A5_Troy_556_14: ADFRC_M4A5_556_Base
 		scope=2;
 		scopeWeapon=2;
 		scopeArsenal = 2;
-		picture = "\A3\Data_F_Exp\Images\WeaponSPAR_ca.paa";
-		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
+		picture = "\ADF_Weapons\adfrc_m4a5\UI\adfrc_M4A1-AU_Troy_FDE_UI_ca.paa";
+		UiPicture = "\ADF_Weapons\adfrc_m4a5\UI\adfrc_M4A1-AU_Troy_FDE_UI_ca.paa";
 		displayName = "M4A1-AU Carbine 5.56MM Troy Rail(FDE)";
 		discretedistance[] = { 100, 200, 300, 400 };
 		discretedistanceinitindex = 2;
@@ -161,6 +161,45 @@ class ADFRC_M4A5_Troy_556_14: ADFRC_M4A5_556_Base
 		opticszoommin = 0.375;
 		aiDispersionCoefY = 10;
 		aiDispersionCoefX = 8;
+		
+		class WeaponSlotsInfo {
+			mass = 73;
+			allowedSlots[] = {901};
+            class MuzzleSlot : asdg_MuzzleSlot_556
+            {	
+			iconPinpoint="center";
+			iconPosition[] = {-0.008,0.406};
+			iconScale  = 0.18;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+			};
+            class CowsSlot : asdg_OpticRail1913_long //Top / optic slot
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.523,0.223};
+			iconScale  = 0.25;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+			};
+			class UnderBarrelSlot : asdg_UnderSlot //bottom / bipod
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.193,0.637};
+			iconScale  = 0.15;
+			iconPicture = "\A3\weapons_f_mark\data\UI\attachment_under.paa";
+			};
+            class PointerSlot : asdg_FrontSideRail //side slot
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.211,0.406};
+			iconScale  = 0.25;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
+			class compatibleItems: compatibleItems {
+			ADFRC_PEQ15_M4_Top_BLK_IRL = 1;
+			ADFRC_PEQ15_M4_Top_BLK_IRT = 1;
+			ADFRC_PEQ15_M4_Top_FDE_IRL = 1;
+			ADFRC_PEQ15_M4_Top_FDE_IRT = 1;
+			};
+			};
+        };
 		 
 		class Library
 		{
@@ -171,6 +210,8 @@ class ADFRC_M4A5_Troy_556_14: ADFRC_M4A5_556_Base
 class ADFRC_M4A5_Troy_556_14_BLK: ADFRC_M4A5_Troy_556_14
 	{
 		displayName = "M4A1-AU Carbine 5.56MM Troy Rail (Black)";
+		picture = "\ADF_Weapons\adfrc_m4a5\UI\adfrc_M4A1-AU_Troy_BLK_UI_ca.paa";
+		UiPicture = "\ADF_Weapons\adfrc_m4a5\UI\adfrc_M4A1-AU_Troy_BLK_UI_ca.paa";
 		hiddenSelections[] = { "CamoTroy" };
 		hiddenSelectionsTextures[] = { 
 		"ADF_Weapons\ADFRC_M4A5\Textures\Handguard\adfrc_troy_blk_Co.paa"
@@ -180,6 +221,8 @@ class ADFRC_M4A5_Troy_556_14_BLK: ADFRC_M4A5_Troy_556_14
 class ADFRC_M4A5_Combo_556_14_BLK: ADFRC_M4A5_Troy_556_14
 	{
 		displayName = "M4A1-AU Combo 5.56MM 14.5 'Combo' (Black)";
+		picture = "\ADF_Weapons\adfrc_m4a5\UI\adfrc_M4A1-AU_C145_BLK_UI_ca.paa";
+		UiPicture = "\ADF_Weapons\adfrc_m4a5\UI\adfrc_M4A1-AU_C145_BLK_UI_ca.paa";
 		model = "adf_weapons\adfrc_m4a5\adfrc_m4A5_c_145";
 		hiddenSelections[] = { "CamoTroy" };
 		hiddenSelectionsTextures[] = { 
@@ -187,9 +230,11 @@ class ADFRC_M4A5_Combo_556_14_BLK: ADFRC_M4A5_Troy_556_14
 		};
 	};
 
-class ADFRC_M4A5_Combo_556_14_FDE: ADFRC_M4A5_Troy_556_14
+class ADFRC_M4A5_Combo_556_14_FDE: ADFRC_M4A5_Combo_556_14_BLK
 	{
 		displayName = "M4A1-AU Combo 5.56MM 14.5 'Combo' (FDE)";
+		picture = "\ADF_Weapons\adfrc_m4a5\UI\adfrc_M4A1-AU_C145_FDE_UI_ca.paa";
+		UiPicture = "\ADF_Weapons\adfrc_m4a5\UI\adfrc_M4A1-AU_C145_FDE_UI_ca.paa";
 		model = "adf_weapons\adfrc_m4a5\adfrc_m4A5_c_145";
 	};
 	
@@ -216,8 +261,8 @@ class ADFRC_M4A5_Combo_556_10_BLK: ADFRC_M4A5_556_Base
 		scope=2;
 		scopeWeapon=2;
 		scopeArsenal = 2;
-		picture = "\A3\Data_F_Exp\Images\WeaponSPAR_ca.paa";
-		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
+		picture = "\ADF_Weapons\adfrc_m4a5\UI\adfrc_M4A1-AU_C115_BLK_UI_ca.paa";
+		UiPicture = "\ADF_Weapons\adfrc_m4a5\UI\adfrc_M4A1-AU_C115_BLK_UI_ca.paa";
 		discretedistance[] = { 100, 200, 300, 400 };
 		discretedistanceinitindex = 2;
 		opticszoominit = 0.75;
@@ -225,6 +270,45 @@ class ADFRC_M4A5_Combo_556_10_BLK: ADFRC_M4A5_556_Base
 		opticszoommin = 0.375;
 		aiDispersionCoefY = 10;
 		aiDispersionCoefX = 8;
+		
+		class WeaponSlotsInfo {
+			mass = 67;
+			allowedSlots[] = {901};
+            class MuzzleSlot : asdg_MuzzleSlot_556
+            {	
+			iconPinpoint="center";
+			iconPosition[] = {0.086,0.41};
+			iconScale  = 0.18;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+			};
+            class CowsSlot : asdg_OpticRail1913_long //Top / optic slot
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.5,0.25};
+			iconScale  = 0.25;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+			};
+			class UnderBarrelSlot : asdg_UnderSlot //bottom / bipod
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.307,0.633};
+			iconScale  = 0.15;
+			iconPicture = "\A3\weapons_f_mark\data\UI\attachment_under.paa";
+			};
+            class PointerSlot : asdg_FrontSideRail //side slot
+            {
+				iconPinpoint="center";
+			iconPosition[] = {0.307,0.406};
+			iconScale  = 0.25;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
+			class compatibleItems: compatibleItems {
+			ADFRC_PEQ15_M4_Top_BLK_IRL = 1;
+			ADFRC_PEQ15_M4_Top_BLK_IRT = 1;
+			ADFRC_PEQ15_M4_Top_FDE_IRL = 1;
+			ADFRC_PEQ15_M4_Top_FDE_IRT = 1;
+			};
+			};
+        };
 		
 		 
 		class Library
@@ -236,6 +320,8 @@ class ADFRC_M4A5_Combo_556_10_BLK: ADFRC_M4A5_556_Base
 class ADFRC_M4A5_Combo_556_10_FDE: ADFRC_M4A5_Combo_556_10_BLK
 	{
 		displayName = "M4A1-AU Combo 5.56MM 11.5 'Combo' (FDE)";
+		picture = "\ADF_Weapons\adfrc_m4a5\UI\adfrc_M4A1-AU_C115_FDE_UI_ca.paa";
+		UiPicture = "\ADF_Weapons\adfrc_m4a5\UI\adfrc_M4A1-AU_C115_FDE_UI_ca.paa";
 		model = "adf_weapons\adfrc_m4a5\adfrc_m4A5_c_105";
 		hiddenSelections[] = { "CamoTroy" };
 		hiddenSelectionsTextures[] = { 
@@ -259,8 +345,8 @@ class ADFRC_M4A5_KAC_556: ADFRC_M4A5_556_Base
 		scope=2;
 		scopeWeapon=2;
 		scopeArsenal = 2;
-		picture = "\A3\Data_F_Exp\Images\WeaponSPAR_ca.paa";
-		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
+		picture = "\ADF_Weapons\adfrc_m4a5\UI\adfrc_M4A1-AU_UI_ca.paa";
+		UiPicture = "\ADF_Weapons\adfrc_m4a5\UI\adfrc_M4A1-AU_UI_ca.paa";
 		displayName = "M4A1-AU Carbine 5.56MM";
 		discretedistance[] = { 100, 200, 300, 400 };
 		discretedistanceinitindex = 2;
@@ -272,6 +358,42 @@ class ADFRC_M4A5_KAC_556: ADFRC_M4A5_556_Base
 		magazines[] = {
 			"ADFRC_30Rnd_STANAG"
 		};
+		
+		
+		
+		class WeaponSlotsInfo {
+			mass = 75;
+			allowedSlots[] = {901};
+            class MuzzleSlot : asdg_MuzzleSlot_556
+            {	
+			iconPinpoint="center";
+			iconPosition[] = {-0.008,0.406};
+			iconScale  = 0.18;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+			};
+            class CowsSlot : asdg_OpticRail1913_long //Top / optic slot
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.523,0.223};
+			iconScale  = 0.25;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+			};
+			class UnderBarrelSlot : asdg_UnderSlot //bottom / bipod
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.377,0.633};
+			iconScale  = 0.15;
+			iconPicture = "\A3\weapons_f_mark\data\UI\attachment_under.paa";
+			};
+            class PointerSlot : asdg_FrontSideRail //side slot
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.363,0.414};
+			iconScale  = 0.25;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
+			class compatibleItems: compatibleItems {};
+			};
+        };
 		
 		class Library
 		{
@@ -295,8 +417,8 @@ class ADFRC_M4A5_KAC_NOFS_556: ADFRC_M4A5_556_Base
 		scope=2;
 		scopeWeapon=2;
 		scopeArsenal = 2;
-		picture = "\A3\Data_F_Exp\Images\WeaponSPAR_ca.paa";
-		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
+		picture = "\ADF_Weapons\adfrc_m4a5\UI\adfrc_M4A1-AU_NOFS_UI_ca.paa";
+		UiPicture = "\ADF_Weapons\adfrc_m4a5\UI\adfrc_M4A1-AU_NOFS_UI_ca.paa";
 		displayName = "M4A1-AU Carbine 5.56MM (No Front Sight)";
 		discretedistance[] = { 100, 200, 300, 400 };
 		discretedistanceinitindex = 2;
@@ -309,6 +431,39 @@ class ADFRC_M4A5_KAC_NOFS_556: ADFRC_M4A5_556_Base
 			"ADFRC_30Rnd_STANAG"
 		};
 		
+		class WeaponSlotsInfo {
+			mass = 74;
+			allowedSlots[] = {901};
+            class MuzzleSlot : asdg_MuzzleSlot_556
+            {	
+			iconPinpoint="center";
+			iconPosition[] = {-0.008,0.406};
+			iconScale  = 0.18;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+			};
+            class CowsSlot : asdg_OpticRail1913_long //Top / optic slot
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.523,0.223};
+			iconScale  = 0.25;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+			};
+			class UnderBarrelSlot : asdg_UnderSlot //bottom / bipod
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.377,0.633};
+			iconScale  = 0.15;
+			iconPicture = "\A3\weapons_f_mark\data\UI\attachment_under.paa";
+			};
+            class PointerSlot : asdg_FrontSideRail //side slot
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.363,0.414};
+			iconScale  = 0.25;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
+			class compatibleItems: compatibleItems {};
+			};
+        };
 		 
 		class Library
 		{
@@ -425,14 +580,28 @@ class ADFRC_M4A5_556_GLBase: Rifle_Base_F
 			mass = 105;
 			allowedSlots[] = {901};
             class MuzzleSlot : asdg_MuzzleSlot_556
-            {};
+            {	
+			iconPinpoint="center";
+			iconPosition[] = {-0.008,0.406};
+			iconScale  = 0.18;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+			};
             class CowsSlot : asdg_OpticRail1913_long //Top / optic slot
-            {};
-			class UnderBarrelSlot : asdg_UnderSlot //bottom / bipod
-            {};
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.523,0.223};
+			iconScale  = 0.25;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+			};
             class PointerSlot : asdg_FrontSideRail //side slot
-            {};
-		};
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.363,0.414};
+			iconScale  = 0.25;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
+			class compatibleItems: compatibleItems {};
+			};
+        };
 		
        class Single : Mode_SemiAuto
 {			autofire = 0;
@@ -495,8 +664,8 @@ class ADFRC_M4A5_KAC_M203_556: ADFRC_M4A5_556_GLBase
 		scope=2;
 		scopeWeapon=2;
 		scopeArsenal = 2;
-		picture = "\A3\Data_F_Exp\Images\WeaponSPAR_ca.paa";
-		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
+		picture = "\ADF_Weapons\adfrc_m4a5\UI\adfrc_M4A1-AU_M203_UI_ca.paa";
+		UiPicture = "\ADF_Weapons\adfrc_m4a5\UI\adfrc_M4A1-AU_M203_UI_ca.paa";
 		displayName = "M4A1-AU Carbine M203 5.56MM 14.5";
 		discretedistance[] = { 100, 200, 300, 400 };
 		discretedistanceinitindex = 2;
