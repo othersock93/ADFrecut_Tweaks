@@ -104,7 +104,6 @@ class CfgVehicles
 	{
 		scope=0;
 		model="ADF_Air\adfrc_blackhawk\S70A";
-		displayName="S70A-9 Black Hawk";
 		editorPreview = "ADF_Air\adfrc_blackhawk\preview\ADFRC_blackhawk.jpg";
 		author="$STR_ADFRC_AUTHOR";
 		_generalMacro="ADFRC_blackhawk_BASE";
@@ -5395,6 +5394,30 @@ class CfgVehicles
 				animPeriod=1;
 				initPhase=0;
 			};
+			class pcw_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class gwot_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class md_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
 		};
 		driverCompartments="Compartment1";
 		cargoCompartments[]=
@@ -5474,16 +5497,67 @@ class CfgVehicles
 		};
 		hiddenSelections[]=
 		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
 			"camo5"
 		};
 		hiddenSelectionsTextures[]=
 		{
+			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_fuselage_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_engine_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_interior_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_navijak_co.paa",
 			"ADF_Air\adfrc_blackhawk\data\labels\labels_110_ca.paa"
+			//"ADF_Air\adfrc_blackhawk\data\sensors\.paa"
 		};
+		class TextureSources
+		{
+			class modern
+			{
+				displayName="Olive Drab";
+				author="Quiggs";
+				textures[]=
+				{
+					"ADF_Air\adfrc_blackhawk\data\modern\uh60m_fuselage_co.paa",
+					"ADF_Air\adfrc_blackhawk\data\modern\uh60m_engine_co.paa",
+					"ADF_Air\adfrc_blackhawk\data\modern\uh60m_interior_co.paa",
+					"ADF_Air\adfrc_blackhawk\data\modern\uh60m_navijak_co.paa",
+					"ADF_Air\adfrc_blackhawk\data\labels\labels_110_ca.paa"
+					//"ADF_Air\adfrc_blackhawk\data\sensors\.paa"
+				};
+				factions[]=
+				{
+					"ADFRC_F_MD"
+				};
+			};
+			class classic
+			{
+				displayName="Disruptive Pattern (Auscam)";
+				author="Quiggs";
+				textures[]=
+				{
+					"ADF_Air\adfrc_blackhawk\data\fuselage\uh60m_fuselage_co.paa",
+					"ADF_Air\adfrc_blackhawk\data\engine\uh60m_engine_co.paa",
+					"ADF_Air\adfrc_blackhawk\data\interior\uh60m_interior_co.paa",
+					"ADF_Air\adfrc_blackhawk\data\winch\uh60m_winch_co.paa",
+					"ADF_Air\adfrc_blackhawk\data\labels\labels_110_ca.paa"
+					//"ADF_Air\adfrc_blackhawk\data\sensors\.paa"
+				};
+				factions[]=
+				{
+					"ADFRC_F_GWOT",
+					"ADFRC_F_PCW"
+					
+				};
+			};
+		};
+		textureList[] = {modern,1};
 		cost=1500000;
 		class EventHandlers: Eventhandlers
 		{
-			init="(_this select 0) execVM ""\ADF_Air\adfrc_blackhawk\scripts\init_base.sqf"" ";
+			//init="(_this select 0) execVM ""\ADF_Air\adfrc_blackhawk\scripts\init_base.sqf"" ";
 		};
 		class RotorLibHelicopterProperties
 		{
@@ -5506,7 +5580,6 @@ class CfgVehicles
 	{
 		scope=0;
 		model="ADF_Air\adfrc_blackhawk\S70A_MAG58";
-		displayName="S70A-9 Black Hawk";
 		editorPreview = "\adf_air\adfrc_blackhawk\preview\ADFRC_blackhawk_mag58.jpg";
 		author="$STR_ADFRC_AUTHOR";
 		_generalMacro="ADFRC_blackhawk_BASE_MAG58";
@@ -5555,6 +5628,38 @@ class CfgVehicles
 			{
 				source="ammorandom";
 				weapon="ADFRC_blackhawk_MAG582";
+			};
+			class pcw_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class gwot_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class md_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class flarepod
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=0;
 			};
 		};
 		class CargoTurret;
@@ -5738,12 +5843,30 @@ class CfgVehicles
 	{
 		scope=2;
 		model="ADF_Air\adfrc_blackhawk\S70A";
-		displayName="S70 Blackhawk";
+		displayName="UH60M Blackhawk";
 		editorPreview = "ADF_Air\adfrc_blackhawk\preview\ADFRC_blackhawk.jpg";
 		author="$STR_ADFRC_AUTHOR";
 		_generalMacro="ADFRC_blackhawk_BASE_F";
 		mapSize=16.82;
 		crew="ADFRC_MD_AMCU_Soldier_HeliPilot";
+		textureList[] = {modern,1};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_fuselage_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_engine_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_interior_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_navijak_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\labels\labels_110_ca.paa"
+			//"ADF_Air\adfrc_blackhawk\data\sensors\.paa"
+		};
 		typicalCargo[]=
 		{
 			"ADFRC_MD_AMCU_Soldier_HeliPilot"
@@ -5817,6 +5940,54 @@ class CfgVehicles
 				source="door";
 				initPhase=1;
 				animPeriod=1.6;
+			};
+			class pcw_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class gwot_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class md_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class flarepod
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class labelhide
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class cargoseats
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=1;
 			};
 		};
 		class CargoTurret;
@@ -5928,11 +6099,29 @@ class CfgVehicles
 	{
 		scope=2;
 		model="ADF_Air\adfrc_blackhawk\S70A_MAG58";
-		displayName="S70 Blackhawk MAG-58";
+		displayName="UH60M Blackhawk MAG-58";
 		author="$STR_ADFRC_AUTHOR";
 		_generalMacro="ADFRC_blackhawk_MAG58_F";
 		mapSize=16.82;
 		crew="ADFRC_MD_AMCU_Soldier_HeliPilot";
+		textureList[] = {modern,1};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_fuselage_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_engine_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_interior_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_navijak_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\labels\labels_110_ca.paa"
+			//"ADF_Air\adfrc_blackhawk\data\sensors\.paa"
+		};
 		typicalCargo[]=
 		{
 			"ADFRC_MD_AMCU_Soldier_HeliCrew"
@@ -5988,6 +6177,46 @@ class CfgVehicles
 			{
 				source="ammorandom";
 				weapon="ADFRC_blackhawk_MAG582";
+			};
+			class pcw_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class gwot_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class md_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class flarepod
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class labelhide
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=0;
 			};
 		};
 		class CargoTurret;
@@ -6264,13 +6493,31 @@ class CfgVehicles
 	class ADFRC_blackhawk_cargo: ADFRC_blackhawk
 	{
 		scope=2;
-		model="ADF_Air\adfrc_blackhawk\S70A_CARGO";
-		displayName="S70 Blackhawk Cargo";
+		//model="ADF_Air\adfrc_blackhawk\S70A_CARGO";
+		displayName="UH60M Blackhawk (Cargo)";
 		editorPreview = "ADF_Air\adfrc_blackhawk\preview\ADFRC_blackhawk_cargo.jpg";
 		author="$STR_ADFRC_AUTHOR";
 		_generalMacro="ADFRC_blackhawk_BASE_F";
 		mapSize=16.82;
 		crew="ADFRC_MD_AMCU_Soldier_HeliPilot";
+		textureList[] = {modern,1};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_fuselage_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_engine_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_interior_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_navijak_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\labels\labels_110_ca.paa"
+			//"ADF_Air\adfrc_blackhawk\data\sensors\.paa"
+		};
 		typicalCargo[]=
 		{
 			"ADFRC_MD_AMCU_Soldier_HeliCrew"
@@ -6505,24 +6752,479 @@ class CfgVehicles
 				statement="this animateDoor ['door_gunner_R', 0]";
 			};
 		};
+		class AnimationSources: AnimationSources
+		{
+			class cargoseats
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+		};
 	};
 //////////////////////// GWOT VERSIONS ////////////////////////////
 	class ADFRC_blackhawk_GWOT: ADFRC_blackhawk
 	{
 		faction = "ADFRC_F_GWOT";
+		displayName="S70A9 Blackhawk";
+		textureList[] = {classic,1};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ADF_Air\adfrc_blackhawk\data\fuselage\uh60m_fuselage_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\engine\uh60m_engine_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\interior\uh60m_interior_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\winch\uh60m_winch_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\labels\labels_110_ca.paa"
+			//"ADF_Air\adfrc_blackhawk\data\sensors\.paa"
+		};
+		class AnimationSources: AnimationSources
+		{
+			class pcw_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class gwot_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class md_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class flarepod
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class labelhide
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=1;
+			};
+			class cargoseats
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=1;
+			};
+			class supplydrop
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=1;
+			};
+		};
+	};
+	class ADFRC_blackhawk_cargo_GWOT: ADFRC_blackhawk_cargo
+	{
+		faction = "ADFRC_F_GWOT";
+		displayName="S70A9 Blackhawk (Cargo)";
+		textureList[] = {classic,1};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ADF_Air\adfrc_blackhawk\data\fuselage\uh60m_fuselage_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\engine\uh60m_engine_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\interior\uh60m_interior_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\winch\uh60m_winch_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\labels\labels_110_ca.paa"
+			//"ADF_Air\adfrc_blackhawk\data\sensors\.paa"
+		};
+		class AnimationSources: AnimationSources
+		{
+			class pcw_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class gwot_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class md_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class flarepod
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class labelhide
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=1;
+			};
+			class cargoseats
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class supplydrop
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+		};
 	};
 	class ADFRC_blackhawk_mag58_GWOT: ADFRC_blackhawk_MAG58
 	{
 		faction = "ADFRC_F_GWOT";
+		displayName="S70A9 Blackhawk Mag58";
+		textureList[] = {classic,1};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ADF_Air\adfrc_blackhawk\data\fuselage\uh60m_fuselage_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\engine\uh60m_engine_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\interior\uh60m_interior_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\winch\uh60m_winch_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\labels\labels_110_ca.paa"
+			//"ADF_Air\adfrc_blackhawk\data\sensors\.paa"
+		};
+		class AnimationSources: AnimationSources
+		{
+			class pcw_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class gwot_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class md_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class flarepod
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class labelhide
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=1;
+			};
+			class cargoseats
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=1;
+			};
+		};
 	};
 //////////////////////// PCW  VERSIONS ////////////////////////////
 	class ADFRC_blackhawk_PCW: ADFRC_blackhawk
 	{
 		faction = "ADFRC_F_PCW";
+		displayName="S70A9 Blackhawk";
+		textureList[] = {classic,1};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ADF_Air\adfrc_blackhawk\data\fuselage\uh60m_fuselage_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\engine\uh60m_engine_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\interior\uh60m_interior_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\winch\uh60m_winch_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\labels\labels_110_ca.paa"
+			//"ADF_Air\adfrc_blackhawk\data\sensors\.paa"
+		};
+		class AnimationSources: AnimationSources
+		{
+			class pcw_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class gwot_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class md_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class flarepod
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class labelhide
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=1;
+			};
+			class cargoseats
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=1;
+			};
+		};
+	};
+	class ADFRC_blackhawk_cargo_pcw: ADFRC_blackhawk_cargo
+	{
+		faction = "ADFRC_F_PCW";
+		displayName="S70A9 Blackhawk (Cargo)";
+		textureList[] = {classic,1};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ADF_Air\adfrc_blackhawk\data\fuselage\uh60m_fuselage_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\engine\uh60m_engine_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\interior\uh60m_interior_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\winch\uh60m_winch_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\labels\labels_110_ca.paa"
+			//"ADF_Air\adfrc_blackhawk\data\sensors\.paa"
+		};
+		class AnimationSources: AnimationSources
+		{
+			class pcw_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class gwot_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class md_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class flarepod
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class labelhide
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=1;
+			};
+			class cargoseats
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+		};
 	};
 	class ADFRC_blackhawk_mag58_PCW: ADFRC_blackhawk_MAG58
 	{
 		faction = "ADFRC_F_PCW";
+		displayName="S70A9 Blackhawk Mag58";
+		textureList[] = {classic,1};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ADF_Air\adfrc_blackhawk\data\fuselage\uh60m_fuselage_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\engine\uh60m_engine_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\interior\uh60m_interior_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\winch\uh60m_winch_co.paa",
+			"ADF_Air\adfrc_blackhawk\data\labels\labels_110_ca.paa"
+			//"ADF_Air\adfrc_blackhawk\data\sensors\.paa"
+		};
+		class AnimationSources: AnimationSources
+		{
+			class pcw_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class gwot_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class md_parts
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class flarepod
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+			class labelhide
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=1;
+			};
+			class cargoseats
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=1;
+			};
+		};
 	};
 };
 class cfgWeapons
