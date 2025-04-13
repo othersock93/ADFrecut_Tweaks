@@ -5557,7 +5557,7 @@ class CfgVehicles
 		cost=1500000;
 		class EventHandlers: Eventhandlers
 		{
-			//init="(_this select 0) execVM ""\ADF_Air\adfrc_blackhawk\scripts\init_base.sqf"" ";
+			init="(_this select 0) execVM ""\ADF_Air\adfrc_blackhawk\scripts\init_base.sqf"" ";
 		};
 		class RotorLibHelicopterProperties
 		{
@@ -5839,6 +5839,7 @@ class CfgVehicles
 			};
 		};
 	};
+//////////////////////// MODERN  VERSIONS ////////////////////////////
 	class ADFRC_blackhawk: ADFRC_blackhawk_BASE
 	{
 		scope=2;
@@ -5849,6 +5850,7 @@ class CfgVehicles
 		_generalMacro="ADFRC_blackhawk_BASE_F";
 		mapSize=16.82;
 		crew="ADFRC_MD_AMCU_Soldier_HeliPilot";
+		class EventHandlers: Eventhandlers{};
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -5863,7 +5865,7 @@ class CfgVehicles
 			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_engine_co.paa",
 			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_interior_co.paa",
 			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_navijak_co.paa",
-			"ADF_Air\adfrc_blackhawk\data\labels\labels_110_ca.paa"
+			"ADF_Air\adfrc_blackhawk\data\labels\blank_label_ca.paa"
 			//"ADF_Air\adfrc_blackhawk\data\sensors\.paa"
 		};
 		class TextureSources
@@ -6154,6 +6156,7 @@ class CfgVehicles
 		mapSize=16.82;
 		crew="ADFRC_MD_AMCU_Soldier_HeliPilot";
 		textureList[] = {modern,1};
+		class EventHandlers: Eventhandlers{};
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -6168,7 +6171,7 @@ class CfgVehicles
 			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_engine_co.paa",
 			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_interior_co.paa",
 			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_navijak_co.paa",
-			"ADF_Air\adfrc_blackhawk\data\labels\labels_110_ca.paa"
+			"ADF_Air\adfrc_blackhawk\data\labels\blank_label_ca.paa"
 			//"ADF_Air\adfrc_blackhawk\data\sensors\.paa"
 		};
 		typicalCargo[]=
@@ -6550,6 +6553,7 @@ class CfgVehicles
 		mapSize=16.82;
 		crew="ADFRC_MD_AMCU_Soldier_HeliPilot";
 		textureList[] = {modern,1};
+		class EventHandlers: Eventhandlers{};
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -6903,6 +6907,10 @@ class CfgVehicles
 				forceAnimatePhase=0;
 			};
 		};
+		class EventHandlers: Eventhandlers
+		{
+			init="(_this select 0) execVM ""\ADF_Air\adfrc_blackhawk\scripts\init_base.sqf"" ";
+		};
 	};
 	class ADFRC_blackhawk_cargo_GWOT: ADFRC_blackhawk_cargo
 	{
@@ -6984,6 +6992,10 @@ class CfgVehicles
 				author="ADFRC";
 				forceAnimatePhase=1;
 			};
+		};
+		class EventHandlers: Eventhandlers
+		{
+			init="(_this select 0) execVM ""\ADF_Air\adfrc_blackhawk\scripts\init_base.sqf"" ";
 		};
 	};
 	class ADFRC_blackhawk_mag58_GWOT: ADFRC_blackhawk_MAG58
@@ -7134,6 +7146,10 @@ class CfgVehicles
 				forceAnimatePhase=0;
 			};
 		};
+		class EventHandlers: Eventhandlers
+		{
+			init="(_this select 0) execVM ""\ADF_Air\adfrc_blackhawk\scripts\init_base.sqf"" ";
+		};
 	};
 	class ADFRC_blackhawk_cargo_pcw: ADFRC_blackhawk_cargo
 	{
@@ -7216,6 +7232,10 @@ class CfgVehicles
 				forceAnimatePhase=1;
 			};
 		};
+		class EventHandlers: Eventhandlers
+		{
+			init="(_this select 0) execVM ""\ADF_Air\adfrc_blackhawk\scripts\init_base.sqf"" ";
+		};
 	};
 	class ADFRC_blackhawk_mag58_PCW: ADFRC_blackhawk_MAG58
 	{
@@ -7289,6 +7309,10 @@ class CfgVehicles
 				author="ADFRC";
 				forceAnimatePhase=1;
 			};
+		};
+		class EventHandlers: Eventhandlers
+		{
+			init="(_this select 0) execVM ""\ADF_Air\adfrc_blackhawk\scripts\init_base.sqf"" ";
 		};
 	};
 };

@@ -82,7 +82,7 @@ if (local _this) then
 	];
 
 	_heliCamo =  _arrayMarkings call BIS_fnc_selectRandom;
-	_this setObjectTexture [0, _heliCamo];
+	_this setObjectTexture [4, _heliCamo];
 
 	// Ensure Pilot Doors Are Closed
 	_this animateDoor ['door_CoPilot_Open', 0];
