@@ -5524,7 +5524,7 @@ class CfgVehicles
 					"ADF_Air\adfrc_blackhawk\data\modern\uh60m_engine_co.paa",
 					"ADF_Air\adfrc_blackhawk\data\modern\uh60m_interior_co.paa",
 					"ADF_Air\adfrc_blackhawk\data\modern\uh60m_navijak_co.paa",
-					"ADF_Air\adfrc_blackhawk\data\labels\labels_110_ca.paa"
+					"ADF_Air\adfrc_blackhawk\data\labels\blank_label_ca.paa"
 					//"ADF_Air\adfrc_blackhawk\data\sensors\.paa"
 				};
 				factions[]=
@@ -5849,7 +5849,6 @@ class CfgVehicles
 		_generalMacro="ADFRC_blackhawk_BASE_F";
 		mapSize=16.82;
 		crew="ADFRC_MD_AMCU_Soldier_HeliPilot";
-		textureList[] = {modern,1};
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -5866,6 +5865,48 @@ class CfgVehicles
 			"ADF_Air\adfrc_blackhawk\data\modern\uh60m_navijak_co.paa",
 			"ADF_Air\adfrc_blackhawk\data\labels\labels_110_ca.paa"
 			//"ADF_Air\adfrc_blackhawk\data\sensors\.paa"
+		};
+		class TextureSources
+		{
+			class modern
+			{
+				displayName="Olive Drab";
+				author="Quiggs";
+				textures[]=
+				{
+					"ADF_Air\adfrc_blackhawk\data\modern\uh60m_fuselage_co.paa",
+					"ADF_Air\adfrc_blackhawk\data\modern\uh60m_engine_co.paa",
+					"ADF_Air\adfrc_blackhawk\data\modern\uh60m_interior_co.paa",
+					"ADF_Air\adfrc_blackhawk\data\modern\uh60m_navijak_co.paa",
+					"ADF_Air\adfrc_blackhawk\data\labels\blank_label_ca.paa"
+					//"ADF_Air\adfrc_blackhawk\data\sensors\.paa"
+				};
+				factions[]=
+				{
+					"ADFRC_F_MD"
+				};
+			};
+			class classic
+			{
+				displayName="Disruptive Pattern (Auscam)";
+				author="Quiggs";
+				textures[]=
+				{
+					"ADF_Air\adfrc_blackhawk\data\fuselage\uh60m_fuselage_co.paa",
+					"ADF_Air\adfrc_blackhawk\data\engine\uh60m_engine_co.paa",
+					"ADF_Air\adfrc_blackhawk\data\interior\uh60m_interior_co.paa",
+					"ADF_Air\adfrc_blackhawk\data\winch\uh60m_winch_co.paa",
+					"ADF_Air\adfrc_blackhawk\data\labels\labels_110_ca.paa"
+					//"ADF_Air\adfrc_blackhawk\data\sensors\.paa"
+				};
+				factions[]=
+				{
+					"ADFRC_F_GWOT",
+					"ADFRC_F_PCW",
+					"ADFRC_F_MD"
+					
+				};
+			};
 		};
 		typicalCargo[]=
 		{
@@ -5988,6 +6029,14 @@ class CfgVehicles
 				initPhase=1;
 				author="ADFRC";
 				forceAnimatePhase=1;
+			};
+			class supplydrop
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
 			};
 		};
 		class CargoTurret;
@@ -6762,6 +6811,14 @@ class CfgVehicles
 				author="ADFRC";
 				forceAnimatePhase=0;
 			};
+			class supplydrop
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=1;
+			};
 		};
 	};
 //////////////////////// GWOT VERSIONS ////////////////////////////
@@ -6841,9 +6898,9 @@ class CfgVehicles
 			{
 				source="user";
 				animPeriod=1;
-				initPhase=1;
+				initPhase=0;
 				author="ADFRC";
-				forceAnimatePhase=1;
+				forceAnimatePhase=0;
 			};
 		};
 	};
@@ -6923,9 +6980,9 @@ class CfgVehicles
 			{
 				source="user";
 				animPeriod=1;
-				initPhase=0;
+				initPhase=1;
 				author="ADFRC";
-				forceAnimatePhase=0;
+				forceAnimatePhase=1;
 			};
 		};
 	};
@@ -7060,14 +7117,6 @@ class CfgVehicles
 				author="ADFRC";
 				forceAnimatePhase=0;
 			};
-			class labelhide
-			{
-				source="user";
-				animPeriod=0.001;
-				initPhase=1;
-				author="ADFRC";
-				forceAnimatePhase=1;
-			};
 			class cargoseats
 			{
 				source="user";
@@ -7075,6 +7124,14 @@ class CfgVehicles
 				initPhase=1;
 				author="ADFRC";
 				forceAnimatePhase=1;
+			};
+			class supplydrop
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
 			};
 		};
 	};
@@ -7149,6 +7206,14 @@ class CfgVehicles
 				initPhase=0;
 				author="ADFRC";
 				forceAnimatePhase=0;
+			};
+			class supplydrop
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=1;
 			};
 		};
 	};
