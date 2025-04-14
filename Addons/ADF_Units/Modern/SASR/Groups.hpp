@@ -6,13 +6,13 @@ class ADFRC_G_MD_SASR
       {
         name="Infantry (SASR)";
 
-		
 		///Standard Section
         class ADFRC_G_MD_SASR_Patrol
         {
           name="Patrol";
           faction="ADFRC_F_MD";
           side=1;
+		  icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
           class Unit0
           {
             side=1;
@@ -77,6 +77,7 @@ class ADFRC_G_MD_SASR
           name="Section (CFA)";
           faction="ADFRC_F_MD";
           side=1;
+		  icon = "\A3\ui_f\data\map\markers\nato\b_med.paa";
           class Unit0
           {
             side=1;
@@ -135,8 +136,7 @@ class ADFRC_G_MD_SASR
           };
         };
 		
-		
-///Standard Marksman
+		///Standard Marksman
        /* class ADFRC_G_MD_SASR_Section_DMR
         {
           name="Section (DMR)";
@@ -201,12 +201,13 @@ class ADFRC_G_MD_SASR
         };		
 		*/
 		
-///Standard GSMG
+		///Standard MMG
         class ADFRC_G_MD_SASR_Section_MMG
         {
           name="Section (MMG)";
           faction="ADFRC_F_MD";
           side=1;
+		  icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
           class Unit0
           {
             side=1;
@@ -272,13 +273,13 @@ class ADFRC_G_MD_SASR
           };
         };	
 		
-		
-	///Bricks
+		///Bricks
         class ADFRC_G_MD_SASR_Team
         {
           name="Team";
           faction="ADFRC_F_MD";
           side=1;
+		  icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
           class Unit0
           {
             side=1;
@@ -309,11 +310,12 @@ class ADFRC_G_MD_SASR
           };
         };	
 		
-      class ADFRC_G_MD_SASR_Team_CQB
+		class ADFRC_G_MD_SASR_Team_CQB
         {
           name="Team (CQB)";
           faction="ADFRC_F_MD";
           side=1;
+		  icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
           class Unit0
           {
             side=1;
@@ -342,81 +344,7 @@ class ADFRC_G_MD_SASR
             rank="PRIVATE";
             position[]={0,-15,0};
           };
-        };			
-		
-		
-		///Specialist Teams
-        class ADFRC_G_MD_SASR_Team_Engineer
-        {
-          name="Team (Engineer)";
-          faction="ADFRC_F_MD";
-          side=1;
-          class Unit0
-          {
-            side=1;
-            vehicle="ADFRC_MD_MC_SASR_PatrolCom";
-            rank="SERGEANT";
-            position[]={0,-0,0};
-          };
-          class Unit1
-          {
-            side=1;
-            vehicle="ADFRC_MD_MC_SASR_EOD";
-            rank="CORPORAL";
-            position[]={0,-5,0};
-          };
-          class Unit2
-          {
-            side=1;
-            vehicle="ADFRC_MD_MC_SASR_EOD";
-            rank="CORPORAL";
-            position[]={0,-10,0};
-          };
-		  class Unit3
-          {
-            side=1;
-            vehicle="ADFRC_MD_MC_SASR_Breacher";
-            rank="PRIVATE";
-            position[]={0,-15,0};
-          }; 
-        };	
-				
-		
-		
-        class ADFRC_G_MD_SASR_Team_MMG
-        {
-          name="MMG Team";
-          faction="ADFRC_F_MD";
-          side=1;
-          class Unit0
-          {
-            side=1;
-            vehicle="ADFRC_MD_MC_SASR_TL";
-            rank="SERGEANT";
-            position[]={0,-0,0};
-          };
-          class Unit1
-          {
-            side=1;
-            vehicle="ADFRC_MD_MC_SASR_F";
-            rank="CORPORAL";
-            position[]={0,-5,0};
-          };
-          class Unit2
-          {
-            side=1;
-            vehicle="ADFRC_MD_MC_SASR_MMG";
-            rank="CORPORAL";
-            position[]={0,-10,0};
-          };
-		  class Unit3
-          {
-            side=1;
-            vehicle="ADFRC_MD_MC_SASR_MMG";
-            rank="PRIVATE";
-            position[]={0,-15,0};
-          }; 
-        };	
+        };				
 		
 		///Specialist Teams
         class ADFRC_G_MD_SASR_Team_CFA
@@ -424,6 +352,7 @@ class ADFRC_G_MD_SASR
           name="CFA Team";
           faction="ADFRC_F_MD";
           side=1;
+		  icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
           class Unit0
           {
             side=1;
@@ -457,9 +386,10 @@ class ADFRC_G_MD_SASR
 		///Sentry Teams
         class ADFRC_G_MD_SASR_Sentry
         {
-          name="Sentries";
+          name="Sentry";
           faction="ADFRC_F_MD";
           side=1;
+		  icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
           class Unit0
           {
             side=1;
@@ -476,13 +406,13 @@ class ADFRC_G_MD_SASR
           };
         };	
 		
-		
 		///RECON Section
         class ADFRC_G_MD_SASR_Recon_Section
         {
           name="Recon Section";
           faction="ADFRC_F_MD";
           side=1;
+		  icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
           class Unit0
           {
             side=1;
@@ -541,12 +471,13 @@ class ADFRC_G_MD_SASR
           };
         };
 		
-///RECON Team
+		///RECON Team
         class ADFRC_G_MD_SASR_Recon_Team
         {
           name="Recon Team";
           faction="ADFRC_F_MD";
           side=1;
+		  icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
           class Unit0
           {
             side=1;
@@ -576,7 +507,291 @@ class ADFRC_G_MD_SASR
             position[]={0,-15,0};
           }; 
     };
+  };
+  class Motorized {
+	name = "Motorized";
+    class Motorized_Team {
+        name = "Motorized Team - Bushmaster";
+        faction = "ADFRC_F_MD";
+        side = 1;
+		icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+		class Unit2 {
+            side = 1;
+            vehicle = "adfrc_bushmaster_unarmed_F";
+            rank = "SERGEANT";
+            position[] = {0, 0, 0};
+        };
+        class Unit0 {
+            side = 1;
+            vehicle = "ADFRC_MD_MC_SASR_TL";
+            rank = "SERGEANT";
+            position[] = {2, -5, 0};
+        };
+        class Unit1 {
+            side = 1;
+            vehicle = "ADFRC_MD_MC_SASR_CQB";
+            rank = "CORPORAL";
+            position[] = {4, -5, 0};
+        };
+        class Unit3 {
+          side = 1;
+          vehicle = "ADFRC_MD_MC_SASR_Grenadier";
+          rank = "PRIVATE";
+          position[] = {6, -5, 0};
+        };
+        class Unit4 {
+          side = 1;
+          vehicle = "ADFRC_MD_MC_SASR_MMG";
+          rank = "PRIVATE";
+          position[] = {-2, -5, 0};
+        };
+        class Unit5 {
+          side = 1;
+          vehicle = "ADFRC_MD_MC_SASR_F";
+          rank = "PRIVATE";
+          position[] = {-4, -5, 0};
+        };
+        class Unit6 {
+          side = 1;
+          vehicle = "ADFRC_MD_MC_SASR_CFA";
+          rank = "PRIVATE";
+          position[] = {-6, -5, 0};
+        };
+    };
+	class Motorized_Team_Armed {
+        name = "Motorized Team - Bushmaster (Armed)";
+        faction = "ADFRC_F_MD";
+        side = 1;
+		icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+		class Unit2 {
+            side = 1;
+            vehicle = "adfrc_bushmaster_pws127mm_F";
+            rank = "SERGEANT";
+            position[] = {0, 0, 0};
+        };
+        class Unit0 {
+            side = 1;
+            vehicle = "ADFRC_MD_MC_SASR_TL";
+            rank = "SERGEANT";
+            position[] = {2, -5, 0};
+        };
+        class Unit1 {
+            side = 1;
+            vehicle = "ADFRC_MD_MC_SASR_CQB";
+            rank = "CORPORAL";
+            position[] = {4, -5, 0};
+        };
+        class Unit3 {
+          side = 1;
+          vehicle = "ADFRC_MD_MC_SASR_Grenadier";
+          rank = "PRIVATE";
+          position[] = {6, -5, 0};
+        };
+        class Unit4 {
+          side = 1;
+          vehicle = "ADFRC_MD_MC_SASR_MMG";
+          rank = "PRIVATE";
+          position[] = {-2, -5, 0};
+        };
+        class Unit5 {
+          side = 1;
+          vehicle = "ADFRC_MD_MC_SASR_F";
+          rank = "PRIVATE";
+          position[] = {-4, -5, 0};
+        };
+        class Unit6 {
+          side = 1;
+          vehicle = "ADFRC_MD_MC_SASR_CFA";
+          rank = "PRIVATE";
+          position[] = {-6, -5, 0};
+        };
+    };
+  };
+  class Mechanized {
+    name = "Mechanized";
+    class Mechanized_Team {
+		name = "Mechanized Team - ASLAV-25";
+		faction = "ADFRC_F_MD";
+		side = 1;
+		icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+		class Unit0 {
+          side = 1;
+          vehicle = "ADFRC_ASLAV";
+          rank = "SERGEANT";
+          position[] = {0, 0, 0};
+		};
+		class Unit1 {
+            side=1;
+            vehicle="ADFRC_MD_MC_SASR_TL";
+            rank="SERGEANT";
+            position[]={2,-10,0};
+         };
+        class Unit2 {
+            side=1;
+            vehicle="ADFRC_MD_MC_SASR_CFA";
+            rank="PRIVATE";
+            position[]={4,-15,0};
+         };
+		class Unit3 {
+            side=1;
+            vehicle="ADFRC_MD_MC_SASR_F";
+            rank="PRIVATE";
+            position[]={-2,-10,0};
+         }; 
+		class Unit4 {
+            side=1;
+            vehicle="ADFRC_MD_MC_SASR_F";
+            rank="PRIVATE";
+            position[]={-4,-15,0};
+         };
+    };
+    class Mechanized_Team_Boxer_APC {
+		name = "Mechanized Team - Boxer APC";
+		faction = "ADFRC_F_MD";
+		side = 1;
+		icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+		class Unit0 {
+          side = 1;
+          vehicle = "adfrc_boxer_apc";
+          rank = "SERGEANT";
+          position[] = {0, 0, 0};
+		};
+		class Unit1 {
+            side=1;
+            vehicle="ADFRC_MD_MC_SASR_TL";
+            rank="SERGEANT";
+            position[]={2,-10,0};
+         };
+        class Unit2 {
+            side=1;
+            vehicle="ADFRC_MD_MC_SASR_CFA";
+            rank="PRIVATE";
+            position[]={4,-15,0};
+         };
+		class Unit3 {
+            side=1;
+            vehicle="ADFRC_MD_MC_SASR_F";
+            rank="PRIVATE";
+            position[]={-2,-10,0};
+         }; 
+		class Unit4 {
+            side=1;
+            vehicle="ADFRC_MD_MC_SASR_F";
+            rank="PRIVATE";
+            position[]={-4,-15,0};
+         };
+    };
+    class Mechanized_Team_CRV {
+		name = "Mechanized Team - Boxer CRV";
+		faction = "ADFRC_F_MD";
+		side = 1;
+		icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+		class Unit0 {
+          side = 1;
+          vehicle = "adfrc_boxer_crv_late";
+          rank = "SERGEANT";
+          position[] = {0, 0, 0};
+		};
+		class Unit1 {
+            side=1;
+            vehicle="ADFRC_MD_MC_SASR_TL";
+            rank="SERGEANT";
+            position[]={2,-10,0};
+         };
+        class Unit2 {
+            side=1;
+            vehicle="ADFRC_MD_MC_SASR_CFA";
+            rank="PRIVATE";
+            position[]={4,-15,0};
+         };
+		class Unit3 {
+            side=1;
+            vehicle="ADFRC_MD_MC_SASR_F";
+            rank="PRIVATE";
+            position[]={-2,-10,0};
+         }; 
+		class Unit4 {
+            side=1;
+            vehicle="ADFRC_MD_MC_SASR_F";
+            rank="PRIVATE";
+            position[]={-4,-15,0};
+         };
+    };
+  };
+  class Support {
+	  name = "Support";
+	  
+	  ///Specialist Teams
+        class ADFRC_G_MD_SASR_Team_Engineer
+        {
+          name="Team (Engineer)";
+          faction="ADFRC_F_MD";
+          side=1;
+		  icon = "\A3\ui_f\data\map\markers\nato\b_maint.paa";
+          class Unit0
+          {
+            side=1;
+            vehicle="ADFRC_MD_MC_SASR_PatrolCom";
+            rank="SERGEANT";
+            position[]={0,-0,0};
+          };
+          class Unit1
+          {
+            side=1;
+            vehicle="ADFRC_MD_MC_SASR_EOD";
+            rank="CORPORAL";
+            position[]={0,-5,0};
+          };
+          class Unit2
+          {
+            side=1;
+            vehicle="ADFRC_MD_MC_SASR_EOD";
+            rank="CORPORAL";
+            position[]={0,-10,0};
+          };
+		  class Unit3
+          {
+            side=1;
+            vehicle="ADFRC_MD_MC_SASR_Breacher";
+            rank="PRIVATE";
+            position[]={0,-15,0};
+          }; 
+        };	
 
-
-};
+        class ADFRC_G_MD_SASR_Team_MMG
+        {
+          name="MMG Team";
+          faction="ADFRC_F_MD";
+          side=1;
+		  icon = "\A3\ui_f\data\map\markers\nato\b_support.paa";
+          class Unit0
+          {
+            side=1;
+            vehicle="ADFRC_MD_MC_SASR_TL";
+            rank="SERGEANT";
+            position[]={0,-0,0};
+          };
+          class Unit1
+          {
+            side=1;
+            vehicle="ADFRC_MD_MC_SASR_F";
+            rank="CORPORAL";
+            position[]={0,-5,0};
+          };
+          class Unit2
+          {
+            side=1;
+            vehicle="ADFRC_MD_MC_SASR_MMG";
+            rank="CORPORAL";
+            position[]={0,-10,0};
+          };
+		  class Unit3
+          {
+            side=1;
+            vehicle="ADFRC_MD_MC_SASR_MMG";
+            rank="PRIVATE";
+            position[]={0,-15,0};
+          }; 
+        };
+	};
 };
