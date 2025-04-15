@@ -71,7 +71,7 @@
 		modes[] = {"Single","FullAuto"};
 	
 		   class WeaponSlotsInfo {
-			mass = 105;
+			mass = 75;
 			allowedSlots[] = {901};
             class MuzzleSlot : asdg_MuzzleSlot_556
             {};
