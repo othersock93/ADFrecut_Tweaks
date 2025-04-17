@@ -401,6 +401,7 @@ class ADFRC_EF88GL_Base: Rifle_Base_F
 				OP_eye_400
 			};
 			discreteDistanceInitIndex = 1;
+			magazines[] = {"1Rnd_HE_Grenade_shell"};
 			reloadAction = GestureReloadKatibaUGL;
 			reloadMagazineSound[] = {"\ADF_Weapons\adfrc_ef88\Data\Sounds\AUG_UGL_reload",db-2,1,10};
 		};
