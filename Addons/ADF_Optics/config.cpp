@@ -71,7 +71,7 @@ class cfgWeapons
 					useModelOptics=0;
 					opticsPPEffects[]=
 					{
-						"OpticsBlur1"
+						""
 					};
 					opticsZoomMin=0.375;
 					opticsZoomMax=2;
