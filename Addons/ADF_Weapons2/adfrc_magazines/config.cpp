@@ -62,7 +62,7 @@ class CfgMagazines
 		scope=2;
 		displayName="7.62mm 20Rnd HK417 F4 Ball Magazine";
 		author="$STR_ADFRC_AUTHOR";
-		picture="\ADF_Weapons\adfrc_magazines\UI\adfrc_pmag_ca.paa";
+		picture="\ADF_Weapons2\adfrc_magazines\UI\ADFRC_HK417_Mag_UI_CA.paa";
 		modelSpecial = "ADF_Weapons2\adfrc_magazines\417\417.p3d";
 		modelSpecialIsProxy = 1;
 		ammo="ADFRC_762x51_F4";
