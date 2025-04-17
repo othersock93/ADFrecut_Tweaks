@@ -104,7 +104,7 @@ class CfgWeapons
 		model="\ADF_Weapons\ADFRC_minimi\ADFRC_F89_Minimi.p3d";
 		displayName="5.56mm F89 Base Class";
 		nameSound="Mgun";
-		picture="\ADF_Weapons\ADFRC_minimi\UI\gear_f89_x_ca.paa";
+		picture="\ADF_Weapons\ADFRC_minimi\UI\adfrc_Minimi_CA.paa";
 		UiPicture="\A3\weapons_f\data\UI\icon_mg_CA.paa";
 		magazines[]=
 		{
@@ -356,7 +356,7 @@ class CfgWeapons
 		model="\ADF_Weapons\adfrc_minimi\ADFRC_F89_Minimi.p3d";
 		displayName="F89 Minimi";
 		author="Brucey";
-		picture="\ADF_Weapons\adfrc_minimi\UI\gear_f89_x_ca.paa";
+		picture="\ADF_Weapons\adfrc_minimi\UI\adfrc_Minimi_CA.paa";
 		ace_overheating_mrbs = 2500; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
         ace_overheating_slowdownFactor = 1; //Slowdown Factor, reduces the velocity of the projectile (this will be scaled based on the barrel temp)
         ace_overheating_allowSwapBarrel = 1; // 1 to enable barrel swap. 0 to disable. Meant for machine guns where you can easily swap the barrel without dismantling the whole weapon.
@@ -552,7 +552,7 @@ class CfgWeapons
 		model="\ADF_Weapons\adfrc_minimi\ADFRC_F89_Minimi_Classic.p3d";
 		displayName="F89 Minimi (Classic)";
 		author="Brucey";
-		picture="\ADF_Weapons\adfrc_minimi\UI\gear_f89_x_ca.paa";
+		picture="\ADF_Weapons\adfrc_minimi\UI\adfrc_Minimi_Classic_CA.paa";
 		
 		class WeaponSlotsInfo {
 			mass = 155;
@@ -570,7 +570,7 @@ class CfgWeapons
 		model="\ADF_Weapons\adfrc_minimi\ADFRC_F89_Minimi_Mod.p3d";
 		displayName="F89 Minimi Modernised";
 		author="Brucey";
-		picture="\ADF_Weapons\adfrc_maximi\UI\gear_f89_max_x_ca.paa";
+		picture="\ADF_Weapons\adfrc_minimi\UI\adfrc_Minimi_Mod_CA.paa";
 	};
 	class ADFRC_F89_Minimi_Para: ADFRC_F89_Minimi
 	{
@@ -578,7 +578,7 @@ class CfgWeapons
 		model="\ADF_Weapons\adfrc_minimi\ADFRC_F89_Minimi_Para.p3d";
 		displayName="F89 Minimi Para";
 		author="Brucey";
-		picture="\ADF_Weapons\adfrc_minimi\UI\gear_f89para_x_ca.paa";
+		picture="\ADF_Weapons\adfrc_minimi\UI\adfrc_Minimi_Para_CA.paa";
 	};
 	
 	class ADFRC_F89_Minimi_Mod_S: ADFRC_F89_Minimi
@@ -587,7 +587,7 @@ class CfgWeapons
 		model="\ADF_Weapons\adfrc_minimi\ADFRC_F89_Minimi_Mod_S.p3d";
 		displayName="F89 Minimi Modernised (Short)";
 		author="Brucey";
-		picture="\ADF_Weapons\adfrc_maximi\UI\gear_f89_max_x_ca.paa";
+		picture="\ADF_Weapons\adfrc_minimi\UI\adfrc_Minimi_Mod_S_CA.paa";
 	
 		ACE_barrelLength = 349;
 		class WeaponSlotsInfo {
@@ -608,7 +608,7 @@ class CfgWeapons
 		model="\ADF_Weapons\adfrc_minimi\ADFRC_F89_Minimi_Para_S.p3d";
 		displayName="F89 Minimi Para (Short)";
 		author="Brucey";
-		picture="\ADF_Weapons\adfrc_minimi\UI\gear_f89para_x_ca.paa";
+		picture="\ADF_Weapons\adfrc_minimi\UI\adfrc_Minimi_Para_S_CA.paa";
 	
 		ACE_barrelLength = 349;
 		class WeaponSlotsInfo {
