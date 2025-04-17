@@ -323,7 +323,7 @@ class ADFRC_M4A5_Combo_556_10_FDE: ADFRC_M4A5_Combo_556_10_BLK
 		picture = "\ADF_Weapons\adfrc_m4a5\UI\adfrc_M4A1-AU_C115_FDE_UI_ca.paa";
 		UiPicture = "\ADF_Weapons\adfrc_m4a5\UI\adfrc_M4A1-AU_C115_FDE_UI_ca.paa";
 		model = "adf_weapons\adfrc_m4a5\adfrc_m4A5_c_105";
-		hiddenSelections[] = { "CamoTroy" };
+		hiddenSelections[] = { "camotroy" };
 		hiddenSelectionsTextures[] = { 
 		"ADF_Weapons\ADFRC_M4A5\Textures\Handguard\adfrc_troy_fde_Co.paa"
 		};
@@ -532,6 +532,7 @@ class ADFRC_M4A5_556_GLBase: Rifle_Base_F
 				OP_eye_250
 			};
 			discreteDistanceInitIndex = 1;
+			magazines[] = {"1Rnd_HE_Grenade_shell"};
 			reloadAction = GestureReloadKatibaUGL;
 			reloadMagazineSound[] = {"\ADF_Weapons\adfrc_ef88\Data\Sounds\AUG_UGL_reload",db-2,1,10};
 		};
