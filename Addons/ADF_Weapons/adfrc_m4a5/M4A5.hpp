@@ -484,7 +484,7 @@ class ADFRC_M4A5_556_GLBase: Rifle_Base_F
 		selectionFireAnim = "zasleh";
 		inertia = 0.3;
         swayDecaySpeed = 1.25;
-		handAnim[] = {"OFP2_ManSkeleton","A3\Weapons_F_Exp\Rifles\SPAR_01\Data\Anim\SPAR_01.rtm"};
+		handAnim[] = {"OFP2_ManSkeleton","ADF_Weapons\adfrc_m4a5\Anim\M4A5_GL.rtm"};
 		drySound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_dry",0.562341,1,10};
 		ace_overheating_mrbs = 3000; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
         ace_overheating_slowdownFactor = 1; //Slowdown Factor, reduces the velocity of the projectile (this will be scaled based on the barrel temp)
