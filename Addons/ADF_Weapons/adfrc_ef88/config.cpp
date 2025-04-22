@@ -60,20 +60,20 @@ class cfgweapons{
 		scopeCurator = protected;
 		
 	};
-	//	OLD TAN -> NEW CAMO
-	class arifle_AUG_F: ADFRC_EF88_Camo{
+	//	OLD TAN -> NEW BLACK
+	class arifle_AUG_F: ADFRC_EF88_Black{
 		scope = protected;
 		scopeArsenal = protected;
 		scopeCurator = protected;
 		
 	};
-	class arifle_AUG_GL_F: ADFRC_EF88_SL40_Camo{
+	class arifle_AUG_GL_F: ADFRC_EF88_SL40_Black{
 		scope = protected;
 		scopeArsenal = protected;
 		scopeCurator = protected;
 		
 	};
-	class arifle_AUG_C_F: ADFRC_EF88C_Camo{
+	class arifle_AUG_C_F: ADFRC_EF88C_Black{
 		scope = protected;
 		scopeArsenal = protected;
 		scopeCurator = protected;
