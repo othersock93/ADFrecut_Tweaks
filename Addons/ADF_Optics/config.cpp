@@ -47,6 +47,7 @@ class cfgWeapons
 	#include "Romeo2\Romeo2.hpp"
 	#include "Spectr\Spectr.hpp"
 	#include "TA31\TA31.hpp"
+	#include "TA648\TA648.hpp"
 	class ADFRC_swarovski_optic: ItemCore
 	{
 		scope=2;
@@ -114,124 +115,47 @@ class cfgWeapons
 		displayName="Elcan C79";
 		author="$STR_ADF_AUTHOR";
 		picture="\ADF_Optics\ui\optic_elcan_ca.paa";
-		model="\ADF_Optics\optic_elcan_c79.p3d";
+		model="\ADF_Optics\C79\ADFRC_C79.p3d";
 		descriptionShort="3.4x Battle Sight &lt;br/&gt; SpecterOS3.4x";
-		weaponInfoType="RscWeaponZeroing";
-		class ItemInfo: InventoryOpticsItem_Base_F
-		{
-			mass=4;
-			RMBhint="Adjustable Optics";
-			opticType=1;
-			optics=1;
-			modelOptics="\A3\Weapons_f_beta\acc\reticle_MRCO_F";
-			memoryPointCamera="eyeAim";
-			class OpticsModes
-			{
-				class Elcan3x
-				{
-					opticsID=1;
-					useModelOptics=0;
-					opticsPPEffects[]=
-					{
-						"OpticsCHAbera5",
-						"OpticsBlur5"
-					};
-					opticsFlare=1;
-					opticsDisablePeripherialVision=1;
-					opticsZoomMin=0.22;
-					opticsZoomMax=0.215;
-					opticsZoomInit=0.25;
-					memoryPointCamera="opticView";
-					discretedistance[]={100,200,300,400,500,600,700,800};
-					discreteDistanceInitIndex=2;
-					visionMode[]={};
-					distanceZoomMin=300;
-					distanceZoomMax=300;
+		
+		
+		class CBA_ScriptedOptic {
+            reticleTexture = "\ADF_Optics\C79\Textures\ADRC_C79_Ret_CA.paa";
+            reticleTextureSize = 1;
+
+            bodyTexture = "\ADF_Optics\C79\Textures\ScopeBody_D_ca.paa";
+            bodyTextureNight = "\ADF_Optics\C79\Textures\ScopeBody_N_ca.paa";
+			bodyTextureSize = 1.15;
+        };
+        weaponInfoType = "CBA_ScriptedOptic";
+		
+		class ItemInfo : InventoryOpticsItem_Base_F {
+			opticType = 2;
+			mass = 15;
+			RMBhint = "3.4x Battle Sight";
+			optics = true;
+			modelOptics = "\x\cba\addons\optics\cba_optic_small_pip.p3d";
+
+			class OpticsModes {
+				class Snip {
+					opticsID = 1;
+					opticsDisplayName = WFOV;
+					useModelOptics = 1;
+					opticsPPEffects[] = {"OpticsCHAbera1", "OpticsBlur1"};
+					opticsZoomMin = "3.4 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
+					opticsZoomMax = "3.4 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
+					opticsZoomInit = "3.4 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
+					discreteDistance[] = {100};
+					discreteDistanceInitIndex = "1 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelperZeroing')";
+					distanceZoomMin = 100;
+					distanceZoomMax = 100;
+					memoryPointCamera = "opticView";
+					visionMode[] = {"Normal"};
+					opticsFlare = true;
+					opticsDisablePeripherialVision = true;
+					cameraDir = "";
 				};
-				class IronSight
-				{
-					opticsID=2;
-					useModelOptics=0;
-					opticsPPEffects[]=
-					{
-						""
-					};
-					opticsFlare=0;
-					opticsDisablePeripherialVision=0;
-					opticsZoomMin=0.375;
-					opticsZoomMax=1;
-					opticsZoomInit=0.75;
-					memoryPointCamera="eyeAim";
-					visionMode[]={};
-					distanceZoomMin=300;
-					distanceZoomMax=300;
-				};
-			};
-		};
-	};
-	class ADFRC_acog_ta648: ItemCore
-	{
-		scope=1;
-		displayName="ACOG TA648 (Black)";
-		author="$STR_ADF_AUTHOR";
-		picture="\ADF_Optics\ui\optic_ta648_ca.paa";
-		model="\ADF_Optics\optic_acog_ta648.p3d";
-		descriptionShort="6x Marksman Optic &lt;br /&gt; Trijicon Advanced Combat Optical Gunsight";
-		weaponInfoType="RscWeaponZeroing";
-		class ItemInfo: InventoryOpticsItem_Base_F
-		{
-			mass=4;
-			RMBhint="Designated Marksman Optics";
-			opticType=1;
-			optics=1;
-			modelOptics="\A3\Weapons_f_beta\acc\reticle_MRCO_F";
-			memoryPointCamera="opticView";
-			class OpticsModes
-			{
-				class ACOG6x
-				{
-					opticsID=1;
-					useModelOptics=0;
-					opticsPPEffects[]=
-					{
-						"OpticsCHAbera5",
-						"OpticsBlur5"
-					};
-					opticsFlare=1;
-					opticsDisablePeripherialVision=1;
-					opticsZoomMin=0.115;
-					opticsZoomMax=0.11;
-					opticsZoomInit=0.115;
-					memoryPointCamera="opticView";
-					discretedistance[]={100,200,300,400,500,600,700,800,900,1000};
-					discreteDistanceInitIndex=2;
-					visionMode[]={};
-					distanceZoomMin=300;
-					distanceZoomMax=300;
-				};
-			};
-		};
-	};
-	class ADFRC_acog_ta648_rds: ItemCore
-	{
-		scope=2;
-		displayName="ACOG TA648 + RDS (Black)";
-		author="$STR_ADF_AUTHOR";
-		picture="\ADF_Optics\ui\optic_ta648_rds_ca.paa";
-		model="\ADF_Optics\optic_acog_ta648_rds.p3d";
-		descriptionShort="6x Marksman Optic + Red Dot Sight &lt;br /&gt; Trijicon Advanced Combat Optical Gunsight";
-		weaponInfoType="RscWeaponZeroing";
-		class ItemInfo: InventoryOpticsItem_Base_F
-		{
-			mass=4;
-			RMBhint="Designated Marksman Optics";
-			opticType=1;
-			optics=1;
-			modelOptics="\A3\Weapons_f_beta\acc\reticle_MRCO_F";
-			memoryPointCamera="opticView";
-			class OpticsModes
-			{
-				class RDS1x
+				class Irons
 				{
 					opticsID=1;
 					useModelOptics=0;
@@ -242,7 +166,7 @@ class cfgWeapons
 					opticsZoomMin=0.375;
 					opticsZoomMax=1.1;
 					opticsZoomInit=0.75;
-					memoryPointCamera="eye";
+					memoryPointCamera="eye2";
 					visionMode[]={};
 					opticsFlare=0;
 					opticsDisablePeripherialVision=0;
@@ -250,45 +174,9 @@ class cfgWeapons
 					distanceZoomMax=300;
 					cameraDir="";
 				};
-				class ACOG6x
-				{
-					opticsID=2;
-					useModelOptics=0;
-					opticsPPEffects[]=
-					{
-						"OpticsCHAbera5",
-						"OpticsBlur5"
-					};
-					opticsFlare=1;
-					opticsDisablePeripherialVision=1;
-					opticsZoomMin=0.115;
-					opticsZoomMax=0.11;
-					opticsZoomInit=0.115;
-					memoryPointCamera="opticView";
-					discretedistance[]={100,200,300,400,500,600,700,800,900,1000};
-					discreteDistanceInitIndex=2;
-					visionMode[]={};
-					distanceZoomMin=300;
-					distanceZoomMax=300;
-				};
 			};
+
 		};
-	};
-	class ADFRC_acog_ta648_t: ADFRC_acog_ta648
-	{
-		scope=2;
-		displayName="ACOG TA648 (Tan)";
-		author="$STR_ADF_AUTHOR";
-		picture="\ADF_Optics\ui\optic_ta648_tan_ca.paa";
-		model="\ADF_Optics\optic_acog_ta648_tan.p3d";
-	};
-	class ADFRC_acog_ta648_rds_t: ADFRC_acog_ta648_rds
-	{
-		scope=2;
-		displayName="ACOG TA648 + RDS (Tan)";
-		author="$STR_ADF_AUTHOR";
-		picture="\ADF_Optics\ui\optic_ta648_rds_tan_ca.paa";
-		model="\ADF_Optics\optic_acog_ta648_rds_tan.p3d";
 	};
 	/// Original ACOGs
 	class ADFRC_acog_ta31 : ADFRC_TA31_BLK
@@ -311,35 +199,32 @@ class cfgWeapons
 		displayName="EOTech 552";
 		author="$STR_ADF_AUTHOR";
 		picture="\ADF_Optics\ui\optic_eotech552_ca.paa";
-		model="\ADF_Optics\optic_eotech_552.p3d";
+		model="\ADF_Optics\552\ADFRC_552.p3d";
 		descriptionShort="Holographic Weapon Sight &lt;br/&gt; No Magnification CQB Optic";
 		class ItemInfo: InventoryOpticsItem_Base_F
 		{
-			mass=4;
-			RMBhint="Adjustable Range Optics";
-			opticType=1;
-			optics=1;
-			modelOptics="\A3\Weapons_f_beta\acc\reticle_MRCO_F";
-			memoryPointCamera="eye";
+			mass = 1;
+			modelOptics = "\A3\Weapons_F\empty";
+			optics = 1;
 			class OpticsModes
 			{
-				class IronSight
+				class Aco
 				{
-					opticsID=1;
-					useModelOptics=0;
-					opticsPPEffects[]=
-					{
-						""
-					};
-					opticsFlare=0;
-					opticsDisablePeripherialVision=0;
-					opticsZoomMin=0.375;
-					opticsZoomMax=1;
-					opticsZoomInit=0.75;
-					memoryPointCamera="iron_eye";
-					visionMode[]={};
-					distanceZoomMin=100;
-					distanceZoomMax=100;
+					opticsID = 1;
+					useModelOptics = 0;
+					opticsZoomMin = 0.25;
+					opticsZoomMax = 1.25;
+					opticsZoomInit = 0.75;
+					memoryPointCamera = "eye";
+					opticsFlare = 0;
+					opticsDisablePeripherialVision = 1;
+					discreteDistance[] = {25,50,100,200,300,400};
+					discreteDistanceInitIndex = 2;
+					distanceZoomMin = 50;
+					distanceZoomMax = 50;
+					cameraDir = "";
+					visionMode[] = {};
+					opticsPPEffects[] = {"Default"};
 				};
 			};
 		};
@@ -350,7 +235,7 @@ class cfgWeapons
 		displayName="EOTech 552 + 3x Magnifier";
 		author="$STR_ADF_AUTHOR";
 		picture="\ADF_Optics\ui\optic_eotech552_3x_ca.paa";
-		model="\ADF_Optics\optic_eotech_552_3XDown.p3d";
+		model="\ADF_Optics\552\ADFRC_552_Mag_Down.p3d";
 		descriptionShort="Holographic Weapon Sight &lt;br /&gt; Flip Down Magnifier";
 		
         MRT_SwitchItemNextClass = "ADFRC_eotech552_3XUP";
@@ -358,31 +243,28 @@ class cfgWeapons
 		
 		class ItemInfo: InventoryOpticsItem_Base_F
 		{
-			mass=4;
-			RMBhint="Adjustable Range Optics";
-			opticType=1;
-			optics=1;
-			modelOptics="\A3\Weapons_f_beta\acc\reticle_MRCO_F";
-			memoryPointCamera="eye";
+			mass = 1;
+			modelOptics = "\A3\Weapons_F\empty";
+			optics = 1;
 			class OpticsModes
 			{
-				class IronSight
+				class Aco
 				{
-					opticsID=1;
-					useModelOptics=0;
-					opticsPPEffects[]=
-					{
-						""
-					};
-					opticsFlare=0;
-					opticsDisablePeripherialVision=0;
-					opticsZoomMin=0.375;
-					opticsZoomMax=1;
-					opticsZoomInit=0.75;
-					memoryPointCamera="iron_eye";
-					visionMode[]={};
-					distanceZoomMin=100;
-					distanceZoomMax=100;
+					opticsID = 1;
+					useModelOptics = 0;
+					opticsZoomMin = 0.25;
+					opticsZoomMax = 1.25;
+					opticsZoomInit = 0.75;
+					memoryPointCamera = "eye";
+					opticsFlare = 0;
+					opticsDisablePeripherialVision = 1;
+					discreteDistance[] = {25,50,100,200,300,400};
+					discreteDistanceInitIndex = 2;
+					distanceZoomMin = 50;
+					distanceZoomMax = 50;
+					cameraDir = "";
+					visionMode[] = {};
+					opticsPPEffects[] = {"Default"};
 				};
 			};
 		};
@@ -392,7 +274,7 @@ class cfgWeapons
 		scope=2;
 		displayName="EOTech 552 + 3x Magnifier";
 		author="$STR_ADF_AUTHOR";
-		model="\ADF_Optics\optic_eotech_552_3XUp.p3d";
+		model="\ADF_Optics\552\ADFRC_552_Mag_Up.p3d";
 		descriptionShort="Holographic Weapon Sight &lt;br /&gt; Flip Down Magnifier";
 		
         MRT_SwitchItemNextClass = "ADFRC_eotech552_3XDOWN";
@@ -400,36 +282,35 @@ class cfgWeapons
 		
 		class ItemInfo: InventoryOpticsItem_Base_F
 		{
-			mass=4;
-			RMBhint="Adjustable Range Optics";
-			opticType=1;
-			optics=1;
-			modelOptics="\A3\Weapons_f_beta\acc\reticle_MRCO_F";
-			memoryPointCamera="eye";
+			mass = 1;
+			modelOptics = "\A3\Weapons_F\empty";
+			optics = 1;
 			class OpticsModes
 			{
 				class Magnified
 				{
-					opticsID=1;
-					useModelOptics=0;
+					opticsID = 1;
+					useModelOptics = 0;
+					opticsZoomMin = "0.25/3";
+					opticsZoomMax = "0.25/3";
+					opticsZoomInit = "0.25/3";
+					memoryPointCamera = "eye";
+					opticsFlare = 0;
+					opticsDisablePeripherialVision = 1;
+					discreteDistance[] = {25,50,100,200,300,400};
+					discreteDistanceInitIndex = 2;
+					distanceZoomMin = 50;
+					distanceZoomMax = 50;
+					cameraDir = "";
+					visionMode[] = {};
 					opticsPPEffects[]=
 					{
 						"OpticsCHAbera5",
 						"OpticsBlur5"
 					};
-					opticsFlare=1;
-					opticsDisablePeripherialVision=1;
-					opticsZoomMin=0.25749999;
-					opticsZoomMax=0.175;
-					opticsZoomInit=0.25749999;
-					memoryPointCamera="eye";
-					discretedistance[]={100,200,300};
-					discreteDistanceInitIndex=2;
-					visionMode[]={};
-					distanceZoomMin=100;
-					distanceZoomMax=100;
 				};
 			};
 		};
+		
 	};
 };
