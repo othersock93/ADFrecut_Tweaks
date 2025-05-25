@@ -108,12 +108,7 @@ class CfgWeapons
 		UiPicture="\A3\weapons_f\data\UI\icon_mg_CA.paa";
 		magazines[]=
 		{
-			"ADFRC_100Rnd_556_Belt",
-			"ADFRC_100Rnd_556_Belt_TR",
-			"ADFRC_100Rnd_556_Belt_TR5",
-			"ADFRC_200Rnd_556_Belt",
-			"ADFRC_200Rnd_556_Belt_TR",
-			"ADFRC_200Rnd_556_Belt_TR5"
+			"ADFRC_200Rnd_556_Minimi_TR5"
 		};
 		hasBipod=1;
 		class Library
@@ -374,7 +369,7 @@ class CfgWeapons
 		magazineWell[] = {"STANAG_556x45", "CBA_556x45_STANAG", "CBA_556x45_STANAG_L", "CBA_556x45_STANAG_XL", "M249_556x45", "CBA_556x45_MINIMI"};
 		magazines[]=
 		{
-			"ADFRC_30Rnd_PMAG"
+			"ADFRC_200Rnd_556_Minimi_TR5"
 		};
 		soundBipodDeploy[]=
 		{

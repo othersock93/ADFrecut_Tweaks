@@ -59,7 +59,7 @@ class CfgWeapons
 			"OFP2_ManSkeleton",
 			"\ADF_Weapons\adfrc_maximi\anim\f89_max.rtm"
 		};
-		magazineWell[] = {"CBA_762x51_MINIMI"};
+		magazineWell[] = {"CBA_762x51_MINIMI","CBA_762x51_LINKS"};
 		magazines[]=
 		{
 			"ADFRC_100Rnd_762_Maximi_TR5"

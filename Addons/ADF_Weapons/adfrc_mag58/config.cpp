@@ -68,19 +68,13 @@ class CfgWeapons
 			"far_optic1",
 			"far_optic2"
 		};
-		magazines[]=
-		{
-			"150Rnd_762x51_Box",
-			"ADFRC_50Rnd_762_Belt",
-			"ADFRC_50Rnd_762_Belt_TR",
-			"ADFRC_50Rnd_762_Belt_TR5",
-			"ADFRC_100Rnd_762_Belt",
-			"ADFRC_100Rnd_762_Belt_TR",
-			"ADFRC_100_Rnd_762_Belt_TR5",
-			"ADFRC_150Rnd_762_Belt",
-			"ADFRC_150Rnd_762_Belt_TR",
-			"ADFRC_150Rnd_762_Belt_TR5"
+		
+		
+		
+		magazines[] = {
+			"ADFRC_50Rnd_762_Mag58_TR5"
 		};
+		magazineWell[] = {"M240_762x51","CBA_762x51_LINKS","CBA_762x51_1rnd"};
 		handAnim[]=
 		{
 			"OFP2_ManSkeleton",

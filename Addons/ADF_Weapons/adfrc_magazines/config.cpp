@@ -506,6 +506,37 @@ class CfgMagazines
 		tracersEvery=5;
 	};
 	
+	class ADFRC_100Rnd_556_Minimi: CA_Magazine
+	{
+		scope=2;
+		displayName="100 Round 5.56 Minimi";
+		author="$STR_ADFRC_AUTHOR";
+		picture="\ADF_Weapons\adfrc_magazines\UI\gear_556x200_ca.paa";
+		modelSpecial = "ADF_Weapons\adfrc_minimi\Magazine\100RD.p3d";
+		modelSpecialIsProxy = 1;
+		count=100;
+		ammo="B_556x45_F1_Ball";
+		mass=23;
+		initSpeed=820;
+		descriptionShort="Calibre: 5.56x45 mm NATO<br/>Rounds: 100<br/>Cartridge: Thales F1A1 Ball";
+	};
+	class ADFRC_100Rnd_556_Minimi_TR: ADFRC_100Rnd_556_Minimi
+	{
+		scope=2;
+		displayName="100 Round 5.56 Tracer (Red) Minimi";
+		author="$STR_ADFRC_AUTHOR";
+		ammo="B_556x45_F1_Ball_TracerR";
+		tracersEvery=1;
+	};
+	class ADFRC_100Rnd_556_Minimi_TR5: ADFRC_100Rnd_556_Minimi
+	{
+		scope=2;
+		displayName="100 Round 5.56 Tracer 1:5 (Red) Minimi";
+		author="$STR_ADFRC_AUTHOR";
+		ammo="B_556x45_F1_Ball_TracerR";
+		tracersEvery=5;
+	};
+	
 	class ADFRC_200Rnd_556_Minimi: CA_Magazine
 	{
 		scope=2;
@@ -529,6 +560,37 @@ class CfgMagazines
 		tracersEvery=1;
 	};
 	class ADFRC_200Rnd_556_Minimi_TR5: ADFRC_200Rnd_556_Minimi
+	{
+		scope=2;
+		displayName="200 Round 5.56 Tracer 1:5 (Red) Minimi";
+		author="$STR_ADFRC_AUTHOR";
+		ammo="B_556x45_F1_Ball_TracerR";
+		tracersEvery=5;
+	};
+	
+	class ADFRC_250Rnd_556_Minimi: CA_Magazine
+	{
+		scope=2;
+		displayName="250 Round 5.56 Minimi";
+		author="$STR_ADFRC_AUTHOR";
+		picture="\ADF_Weapons\adfrc_magazines\UI\gear_556x200_ca.paa";
+		modelSpecial = "ADF_Weapons\adfrc_minimi\Magazine\250RD.p3d";
+		modelSpecialIsProxy = 1;
+		count=250;
+		ammo="B_556x45_F1_Ball";
+		mass=55;
+		initSpeed=820;
+		descriptionShort="Calibre: 5.56x45 mm NATO<br/>Rounds: 250<br/>Cartridge: Thales F1A1 Ball";
+	};
+	class ADFRC_250Rnd_556_Minimi_TR: ADFRC_250Rnd_556_Minimi
+	{
+		scope=2;
+		displayName="250 Round 5.56 Tracer (Red) Minimi";
+		author="$STR_ADFRC_AUTHOR";
+		ammo="B_556x45_F1_Ball_TracerR";
+		tracersEvery=1;
+	};
+	class ADFRC_250Rnd_556_Minimi_TR5: ADFRC_250Rnd_556_Minimi
 	{
 		scope=2;
 		displayName="200 Round 5.56 Tracer 1:5 (Red) Minimi";
@@ -584,14 +646,14 @@ class CfgMagazines
 		ammo="B_762x51_Tracer_Red";
 		tracersEvery=1;
 	};
-	class ADFRC_100_Rnd_762_Belt_TR5: ADFRC_100Rnd_762_Belt_TR
+	class ADFRC_100_Rnd_762_Belt_TR5: ADFRC_100Rnd_762_Belt
 	{
 		scope=2;
 		displayName="100Round 7.62mm Tracer 1:5 Red";
 		author="$STR_ADFRC_AUTHOR";
 		tracersEvery=5;
 	};
-	class ADFRC_150Rnd_762_Belt: ADFRC_100Rnd_762_Belt
+	class ADFRC_150Rnd_762_Belt: ADFRC_100Rnd762_Belt
 	{
 		scope=2;
 		displayName="150Round 7.62mm Box";
@@ -617,6 +679,8 @@ class CfgMagazines
 		author="$STR_ADFRC_AUTHOR";
 		tracersEvery=5;
 	};
+	
+	
 	class ADFRC_10Rnd_9x19_Mag: 16Rnd_9x21_Mag  ////REDACTED
 	{
 		scope= 1;
@@ -659,6 +723,68 @@ class CfgMagazines
 	{
 		scope=2;
 		displayName="100Round 7.62mm Maximi BoxTracer 1:5 Red";
+		author="Brucey";
+		tracersEvery=5;
+	};
+	
+	
+	
+	class ADFRC_50Rnd_762_Mag58: ADFRC_50Rnd_762_Belt
+	{
+		scope=2;
+		displayName="50Round 7.62mm Mag58 Box";
+		picture="\ADF_Weapons\adfrc_magazines\UI\gear_762x100_ca.paa";
+		author="Brucey";
+		count=200;
+		mass=131;
+		initSpeed=910;
+		modelSpecial = "ADF_Weapons\adfrc_mag58\magazine\50rd.p3d";
+		modelSpecialIsProxy = 1;
+		descriptionShort="Calibre: 7.62x51 mm NATO<br/>Rounds: 50<br/>Cartridge: Thales F4 Ball";
+	};
+	class ADFRC_50Rnd_762_Mag58_TR: ADFRC_50Rnd_762_Mag58
+	{
+		scope=2;
+		displayName="50Round 7.62mm Mag58 Box Tracer Red";
+		author="Brucey";
+		ammo="B_762x51_Tracer_Red";
+		tracersEvery=1;
+	};
+	class ADFRC_50Rnd_762_Mag58_TR5: ADFRC_50Rnd_762_Mag58
+	{
+		scope=2;
+		displayName="50Round 7.62mm Mag58 BoxTracer 1:5 Red";
+		author="Brucey";
+		tracersEvery=5;
+	};
+	
+	
+	
+	class ADFRC_200Rnd_762_Mag58: ADFRC_50Rnd_762_Belt
+	{
+		scope=2;
+		displayName="200Round 7.62mm Mag58 Box";
+		picture="\ADF_Weapons\adfrc_magazines\UI\gear_762x100_ca.paa";
+		author="Brucey";
+		count=200;
+		mass=131;
+		initSpeed=910;
+		modelSpecial = "ADF_Weapons\adfrc_mag58\magazine\200rd.p3d";
+		modelSpecialIsProxy = 1;
+		descriptionShort="Calibre: 7.62x51 mm NATO<br/>Rounds: 200<br/>Cartridge: Thales F4 Ball";
+	};
+	class ADFRC_200Rnd_762_Mag58_TR: ADFRC_200Rnd_762_Mag58
+	{
+		scope=2;
+		displayName="200Round 7.62mm Mag58 Box Tracer Red";
+		author="Brucey";
+		ammo="B_762x51_Tracer_Red";
+		tracersEvery=1;
+	};
+	class ADFRC_200Rnd_762_Mag58_TR5: ADFRC_200Rnd_762_Mag58
+	{
+		scope=2;
+		displayName="200Round 7.62mm Mag58 BoxTracer 1:5 Red";
 		author="Brucey";
 		tracersEvery=5;
 	};
@@ -765,6 +891,39 @@ class CfgMagazineWells
 			"ADFRC_100Rnd_762_Maximi_TR",
 			"ADFRC_100Rnd_762_Maximi_TR5"
 		};
+	};	
+	
+	class M240_762x51
+	{
+		// Magazines listed by mod
+		// It is possible to add new arrays to class but for now inheritance (i.e. STANAG_556x45_New: STANAG_556x45 {};) is not supported 
+		ADFRC_Magazines[] =
+		{
+		"ADFRC_50Rnd_762_Mag58",
+		"ADFRC_50Rnd_762_Mag58_TR",
+		"ADFRC_50Rnd_762_Mag58_TR5",
+		"ADFRC_200Rnd_762_Mag58",
+		"ADFRC_200Rnd_762_Mag58_TR",
+		"ADFRC_200Rnd_762_Mag58_TR5"
+		};
+	};
+	
+	class CBA_762x51_LINKS
+	{
+		// Magazines listed by mod
+		// It is possible to add new arrays to class but for now inheritance (i.e. STANAG_556x45_New: STANAG_556x45 {};) is not supported 
+		ADFRC_Magazines[] =
+		{
+		"ADFRC_50Rnd_762_Belt",
+		"ADFRC_50Rnd_762_Belt_TR",
+		"ADFRC_50Rnd_762_Belt_TR5",
+		"ADFRC_100Rnd_762_Belt",
+		"ADFRC_100Rnd_762_Belt_TR",
+		"ADFRC_100Rnd_762_Belt_TR5",
+		"ADFRC_150Rnd_762_Belt",
+		"ADFRC_150Rnd_762_Belt_TR",
+		"ADFRC_150Rnd_762_Belt_TR5"
+		};
 	};
 	
 	class CBA_556x45_MINIMI
@@ -778,7 +937,16 @@ class CfgMagazineWells
 			"ADFRC_100Rnd_556_Belt_TR5",
 			"ADFRC_200Rnd_556_Belt",
 			"ADFRC_200Rnd_556_Belt_TR",
-			"ADFRC_200Rnd_556_Belt_TR5"
+			"ADFRC_200Rnd_556_Belt_TR5",
+			"ADFRC_100Rnd_556_Minimi",
+			"ADFRC_100Rnd_556_Minimi_TR",
+			"ADFRC_100Rnd_556_Minimi_TR5",
+			"ADFRC_200Rnd_556_Minimi",
+			"ADFRC_200Rnd_556_Minimi_TR",
+			"ADFRC_200Rnd_556_Minimi_TR5",
+			"ADFRC_250Rnd_556_Minimi",
+			"ADFRC_250Rnd_556_Minimi_TR",
+			"ADFRC_250Rnd_556_Minimi_TR5"
 		};
 	};
 };
