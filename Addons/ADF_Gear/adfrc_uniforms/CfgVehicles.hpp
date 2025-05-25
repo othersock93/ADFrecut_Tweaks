@@ -297,14 +297,29 @@ class CfgVehicles{
 		editorSubcategory= "ADFRC_MD_Infantry_RAR_AMCU";
 		modelSides[] = {3,2,1,0};
 		nakedUniform="ADFRC_BasicBody_RAR";
-		uniformClass="ADFRC_Uniform_AMCU";
-		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
-		hiddenSelections[]={
-			"Camo",
-			"insignia"
+		model                      = "\adf_gear\adfrc_uniforms\crye_g3.p3d";
+		uniformClass               = "ADFRC_Uniform_G3_AMCU";
+
+		hiddenSelections[] = {
+			"Gloves_1",
+			"Pants_1",
+			"Skin_1",
+			"Shoes_1",
+			"Shirt_1",
+			"Shirt_2",
+			"Shirt_3",
+			"Shirt_4"
 		};
-		hiddenSelectionsTextures[]={
-			"\ADF_Gear\adfrc_uniforms\data\uniform_amcu_co.paa"
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Gloves_Grey_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_AMC_co.paa",
+			"",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
+			"",
+            "",
+			"",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_AMC_co.paa"
 		};
 	};
 	class ADFRC_MD_AMCU_Soldier_Rolled_Base: ADFRC_Soldier_Base_F{
@@ -316,14 +331,27 @@ class CfgVehicles{
 		editorSubcategory= "ADFRC_MD_Infantry_RAR_AMCU";
 		modelSides[] = {3,2,1,0};
 		nakedUniform="ADFRC_BasicBody_RAR";
-		uniformClass="ADFRC_Uniform_AMCU_Rolled";
-		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
-		hiddenSelections[]={
-			"Camo",
-			"insignia"
+		model                      = "\adf_gear\adfrc_uniforms\crye_g3.p3d";
+		uniformClass               = "ADFRC_Uniform_G3_AMCU_Rolled";
+
+		hiddenSelections[] = {
+			"Gloves_1",
+			"Pants_1",
+			"Shoes_1",
+			"Shirt_1",
+			"Shirt_2",
+			"Shirt_3",
+			"Shirt_4"
 		};
-		hiddenSelectionsTextures[]={
-			"\ADF_Gear\adfrc_uniforms\data\uniform_amcu_co.paa"
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Gloves_Grey_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_AMC_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
+			"",
+            "",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_AMC_co.paa",
+			""
 		};
 	};
 	class ADFRC_MD_AMCU_Soldier_Tee_Base: ADFRC_Soldier_Base_F{
@@ -372,14 +400,29 @@ class CfgVehicles{
 		threat[]={0.80000001,0.20000001,0.20000001};
 		modelSides[] = {3,2,1,0};
 		nakedUniform="ADFRC_BasicBody_Tan";
-		uniformClass="ADFRC_Uniform_AMCU_Flagless";
-		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
-		hiddenSelections[]={
-			"Camo",
-			"insignia"
+		model                      = "\adf_gear\adfrc_uniforms\crye_g3.p3d";
+		uniformClass               = "ADFRC_Uniform_G3_AMCU";
+
+		hiddenSelections[] = {
+			"Gloves_1",
+			"Pants_1",
+			"Skin_1",
+			"Shoes_1",
+			"Shirt_1",
+			"Shirt_2",
+			"Shirt_3",
+			"Shirt_4"
 		};
-		hiddenSelectionsTextures[]={
-			"\ADF_Gear\adfrc_uniforms\data\uniform_amcu_flagless_co.paa"
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Gloves_Grey_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_AMC_co.paa",
+			"",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
+			"",
+            "",
+			"",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_AMC_co.paa"
 		};
 	};
 	class ADFRC_MD_AMCU_Recon_Rolled_Base: ADFRC_Soldier_Base_F{
@@ -407,14 +450,27 @@ class CfgVehicles{
 		threat[]={0.80000001,0.20000001,0.20000001};
 		modelSides[] = {3,2,1,0};
 		nakedUniform="ADFRC_BasicBody_Tan";
-		uniformClass="ADFRC_Uniform_AMCU_Flagless_Rolled";
-		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
-		hiddenSelections[]={
-			"Camo",
-			"insignia"
+		model                      = "\adf_gear\adfrc_uniforms\crye_g3.p3d";
+		uniformClass               = "ADFRC_Uniform_G3_AMCU_Rolled";
+
+		hiddenSelections[] = {
+			"Gloves_1",
+			"Pants_1",
+			"Shoes_1",
+			"Shirt_1",
+			"Shirt_2",
+			"Shirt_3",
+			"Shirt_4"
 		};
-		hiddenSelectionsTextures[]={
-			"\ADF_Gear\adfrc_uniforms\data\uniform_amcu_flagless_co.paa"
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Gloves_Grey_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_AMC_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
+			"",
+            "",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_AMC_co.paa",
+			""
 		};
 	};
 	class ADFRC_MD_AMCU_Sniper_Temperate_Base: ADFRC_Soldier_Base_F{
@@ -519,17 +575,8 @@ class CfgVehicles{
 		editorSubcategory="ADFRC_MD_Infantry_RAR_AMCU";
 		modelSides[] = {3,2,1,0};
 		nakedUniform="ADFRC_BasicBody_RAR";
-		uniformClass = "ADFRC_Uniform_Field_AMCU";
-		model="\A3\Characters_F_Beta\indep\ia_officer.p3d";
-		hiddenSelections[] = {
-			"Camo1",
-			"Camo2",
-			"insignia"
-		};
-		hiddenSelectionsTextures[] = {
-			"\ADF_Gear\adfrc_uniforms\data\uniform_field_amcu_co.paa",
-			"\ADF_Gear\adfrc_uniforms\data\uniform_field2_amcu_co.paa"
-		};
+		model                      = "\adf_gear\adfrc_uniforms\adfrc_field_dress.p3d";
+		uniformClass               = "ADFRC_Uniform_Field_AMCU";
 	};
 
 	class ADFRC_Uniform_Field_AMCU : ADFRC_MD_AMCU_Officer_Base {
@@ -945,10 +992,34 @@ class CfgVehicles{
 		detectSkill=18;
 		modelSides[] = {3,2,1,0};
 		nakedUniform="ADFRC_BasicBody_Tan";
-		uniformClass="ADFRC_Uniform_AMCU_Flagless";
-		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		vehicleClass="MenRecon";
 		canHideBodies = true;
+		
+		
+		model                      = "\adf_gear\adfrc_uniforms\crye_g3.p3d";
+		uniformClass               = "ADFRC_Uniform_G3_AMCU";
+
+		hiddenSelections[] = {
+			"Gloves_1",
+			"Pants_1",
+			"Skin_1",
+			"Shoes_1",
+			"Shirt_1",
+			"Shirt_2",
+			"Shirt_3",
+			"Shirt_4"
+		};
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Gloves_Grey_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_AMC_co.paa",
+			"",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
+			"",
+            "",
+			"",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_AMC_co.paa"
+		};
 	};
 	class ADFRC_MD_AMCU_CDO_Rolled_Base: ADFRC_Soldier_Base_F{
 		displayName="AMCU Commando Rolled Base";
@@ -976,10 +1047,32 @@ class CfgVehicles{
 		detectSkill=18;
 		modelSides[] = {3,2,1,0};
 		nakedUniform="ADFRC_BasicBody_Tan";
-		uniformClass="ADFRC_Uniform_AMCU_Flagless_Rolled";
-		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		vehicleClass="MenRecon";
 		canHideBodies = true;
+		
+		
+		model                      = "\adf_gear\adfrc_uniforms\crye_g3.p3d";
+		uniformClass               = "ADFRC_Uniform_G3_AMCU_Rolled";
+
+		hiddenSelections[] = {
+			"Gloves_1",
+			"Pants_1",
+			"Shoes_1",
+			"Shirt_1",
+			"Shirt_2",
+			"Shirt_3",
+			"Shirt_4"
+		};
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Gloves_Grey_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_AMC_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
+			"",
+            "",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_AMC_co.paa",
+			""
+		};
 	};
 	class ADFRC_MD_AMCU_CDO_Tee_Base: ADFRC_Soldier_Base_F{
 		displayName="AMCU Commando Tee Base";
@@ -1189,16 +1282,35 @@ class CfgVehicles{
 		detectSkill=18;
 		modelSides[] = {3,2,1,0};
 		nakedUniform="ADFRC_BasicBody_Tan";
-		uniformClass="ADFRC_Uniform_MC";
-		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		vehicleClass="MenRecon";
 		canHideBodies = true;
-		hiddenSelections[]={
-			"Camo",
-			"insignia"
+		
+		
+		
+		
+		model                      = "\adf_gear\adfrc_uniforms\crye_g3.p3d";
+		uniformClass               = "ADFRC_Uniform_G3_Multicam";
+
+		hiddenSelections[] = {
+			"Gloves_1",
+			"Pants_1",
+			"Skin_1",
+			"Shoes_1",
+			"Shirt_1",
+			"Shirt_2",
+			"Shirt_3",
+			"Shirt_4"
 		};
-		hiddenSelectionsTextures[]={
-			"\ADF_Gear\adfrc_uniforms\data\uniform_mc_flagless_co.paa"
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Gloves_Grey_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_Multicam_co.paa",
+			"",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
+			"",
+            "",
+			"",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_Multicam_co.paa"
 		};
 	};
 	class ADFRC_MD_MC_SASR_Rolled_Base: ADFRC_Soldier_Base_F{
@@ -1214,16 +1326,33 @@ class CfgVehicles{
 		detectSkill=18;
 		modelSides[] = {3,2,1,0};
 		nakedUniform="ADFRC_BasicBody_Tan";
-		uniformClass="ADFRC_Uniform_MC_Rolled";
-		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		vehicleClass="MenRecon";
 		canHideBodies = true;
-		hiddenSelections[]={
-			"Camo",
-			"insignia"
+		
+		
+		
+		model                      = "\adf_gear\adfrc_uniforms\crye_g3.p3d";
+		uniformClass               = "ADFRC_Uniform_G3_Multicam_Rolled";
+
+		hiddenSelections[] = {
+			"Gloves_1",
+			"Pants_1",
+			"Skin_1",
+			"Shoes_1",
+			"Shirt_1",
+			"Shirt_2",
+			"Shirt_3",
+			"Shirt_4"
 		};
-		hiddenSelectionsTextures[]={
-			"\ADF_Gear\adfrc_uniforms\data\uniform_mc_flagless_co.paa"
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Gloves_Grey_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_Multicam_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
+			"",
+            "",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_Multicam_co.paa",
+			""
 		};
 	};
 	class ADFRC_MD_MC_SASR_Tee_Base: ADFRC_Soldier_Base_F{
