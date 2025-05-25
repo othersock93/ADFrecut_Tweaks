@@ -7,7 +7,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"ADF_Core","ADF_Weapons","ADF_Weapons2","ADF_Weapons3"};
+		requiredAddons[] = {"ADF_Core","ADF_Weapons","ADF_Weapons2"};
 		fileName = "ADF_Weapons4.pbo";
 	};
 };

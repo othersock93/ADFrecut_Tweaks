@@ -133,9 +133,9 @@
 		model = "ADF_Weapons4\ADF_M107A1\ADFRC_M107A1";
 		descriptionShort = "Barrett M107A1 <br/>FDE<br/>Caliber: 50BMG";
 		inertia = 0.95;
-		scope=2;
-		scopeWeapon=2;
-		scopeArsenal = 2;
+		scope=1;
+		scopeWeapon=1;
+		scopeArsenal = 1;
 		//picture = "\mss\MSS_LRAP\AX_Mk3\data\ui\Gear_MSS_AXSR_27_BLK";
 		//UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
 		displayName = "Barrett M107A1 50BMG";
