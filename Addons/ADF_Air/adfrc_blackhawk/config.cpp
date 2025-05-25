@@ -139,6 +139,8 @@ class CfgVehicles
 		picture="\A3\air_f_beta\Heli_Transport_01\Data\UI\Heli_Transport_01_base_CA.paa";
 		icon="\A3\air_f_beta\Heli_Transport_01\Data\UI\Map_Heli_Transport_01_base_CA.paa";
 		accuracy=0.5;
+		ace_fastroping_enabled = 1;
+		ace_fastroping_ropeOrigins[] = {"ropeoriginleft","ropeoriginright"};
 		RAV_Enable=1;
 		RAV_center[]={0,-0.89999998,0.5};
 		RAV_datCam[]=

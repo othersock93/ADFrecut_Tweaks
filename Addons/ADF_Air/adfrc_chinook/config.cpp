@@ -403,7 +403,7 @@ class CfgVehicles
 		};
 		cargoAction[]=
 		{
-			"CH47_Cargo_EP1",
+			"CH47_Cargo01_EP1",
 			"CH47_Cargo01_EP1",
 			"CH47_Cargo01_EP1",
 			"CH47_Cargo02_EP1",
@@ -5605,13 +5605,16 @@ class CfgVehicles
 				stabilizedInAxes="StabilizedInAxesNone";
 				gunBeg="muzzle_1";
 				gunEnd="chamber_1";
+				selectionFireAnim="zasleh";
 				weapons[]=
 				{
 					"ADFRC_chinook_M134"
 				};
 				magazines[]=
 				{
-					"ADFRC_chinook_2000Rnd_762x51"
+					"ADFRC_chinook_2000Rnd_762x51",
+					"ADFRC_chinook_2000Rnd_762x51",
+					"ADFRC_chinook_2000Rnd_762x51",
 				};
 				gunnerName="Left Gunner";
 				gunnerOpticsModel="\a3\weapons_f\Reticle\optics_empty";
@@ -5877,8 +5880,8 @@ class Mode_FullAuto;
 class Burst;
 class CfgWeapons
 {
-	class LMG_Minigun_Transport;
-	class ADFRC_chinook_M134: LMG_Minigun_Transport
+	class LMG_Minigun_heli;
+	class ADFRC_chinook_M134: LMG_Minigun_heli
 	{
 		author="$STR_ADF_AUTHOR";
 		scope=2;
@@ -5888,9 +5891,39 @@ class CfgWeapons
 			"ADFRC_chinook_2000Rnd_762x51",
 			"ADFRC_chinook_4000Rnd_762x51"
 		};
+		class GunParticles 
+		{
+			class effect1 
+			{
+				directionName = "machinegun_eject_dir";
+				effectName = "MachineGunCartridgeShort1";
+				positionName = "machinegun_eject_pos";
+			}
+				class effect2 
+				{
+				directionName = "muzzle_1";
+				effectName = "MachineGun1";
+				positionName = "muzzle_1";
+			}
+		}
 	};
 	class ADFRC_chinook_M134_2: ADFRC_chinook_M134
 	{
+		class GunParticles 
+		{
+			class effect1 
+			{
+				directionName = "machinegun_eject2_dir";
+				effectName = "MachineGunCartridgeShort1";
+				positionName = "machinegun_eject2_pos";
+			}
+				class effect2 
+				{
+				directionName = "muzzle_2";
+				effectName = "MachineGun1";
+				positionName = "muzzle_2";
+			}
+		}
 	};
 	class CMFlareLauncher;
 	class ADFRC_PHOENIX_CMFlareLauncher: CMFlareLauncher
