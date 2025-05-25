@@ -1240,7 +1240,7 @@ class cfgWeapons
 	class V_RebreatherB;
 	class ADFRC_uniform_dpcu: U_B_CombatUniform_mcam
 	{
-		scope=2;
+		scope=1;
 		author="$STR_ADF_AUTHOR";
 		displayName="Disruptive Pattern Combat Uniform (Long Sleeve)";
 		picture="";
@@ -1254,7 +1254,7 @@ class cfgWeapons
 	};
 	class ADFRC_uniform_dpcu_new: U_B_CombatUniform_mcam
 	{
-		scope=2;
+		scope=1;
 		author="$STR_ADF_AUTHOR";
 		displayName="Disruptive Pattern Combat Uniform (Test)";
 		picture="";
@@ -1268,7 +1268,7 @@ class cfgWeapons
 	};
 	class ADFRC_uniform_dpcu_recon: U_B_CombatUniform_mcam_vest
 	{
-		scope=2;
+		scope=1;
 		author="$STR_ADF_AUTHOR";
 		displayName="Disruptive Pattern Combat Uniform (Short Sleeve)";
 		picture="";
@@ -1282,7 +1282,7 @@ class cfgWeapons
 	};
 	class ADFRC_uniform_dpcu_medic: ADFRC_uniform_dpcu
 	{
-		scope=2;
+		scope=1;
 		author="$STR_ADF_AUTHOR";
 		displayName="Disruptive Pattern Combat Uniform (Medic)";
 		class ItemInfo: UniformItem
@@ -1295,7 +1295,7 @@ class cfgWeapons
 	};
 	class ADFRC_uniform_dpcu_tee: ADFRC_uniform_dpcu
 	{
-		scope=2;
+		scope=1;
 		author="$STR_ADF_AUTHOR";
 		displayName="Disruptive Pattern Combat Uniform (Tee)";
 		picture="";
@@ -1323,7 +1323,7 @@ class cfgWeapons
 		};
 	};
 };
-class CfgGroups
+/*class CfgGroups
 {
 	class West
 	{
@@ -1754,4 +1754,4 @@ class CfgGroups
 			};
 		};
 	};
-};
+};*/
