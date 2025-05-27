@@ -359,7 +359,7 @@ class CfgWeapons{
 
     class ADFRC_Uniform_G3_Multicam: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
-		displayName = "Crye G3 Combat Dress (AMP)";
+		displayName = "Crye G3 Combat Dress (Multicam)";
 		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_Multicam.paa";
 
 		class ItemInfo: ItemInfo {
@@ -469,7 +469,7 @@ class CfgWeapons{
 
     class ADFRC_Uniform_G3_Multicam_Rolled: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
-		displayName = "Crye G3 Combat Dress (AMP, Rolled Sleeves)";
+		displayName = "Crye G3 Combat Dress (Multicam, Rolled Sleeves)";
 		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_Multicam_Rolled.paa";
 
 		class ItemInfo: ItemInfo {
