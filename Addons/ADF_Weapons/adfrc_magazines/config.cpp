@@ -653,7 +653,7 @@ class CfgMagazines
 		author="$STR_ADFRC_AUTHOR";
 		tracersEvery=5;
 	};
-	class ADFRC_150Rnd_762_Belt: ADFRC_100Rnd762_Belt
+	class ADFRC_150Rnd_762_Belt: ADFRC_100Rnd_762_Belt
 	{
 		scope=2;
 		displayName="150Round 7.62mm Box";
