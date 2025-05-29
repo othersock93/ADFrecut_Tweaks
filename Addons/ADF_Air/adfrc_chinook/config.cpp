@@ -5898,14 +5898,14 @@ class CfgWeapons
 				directionName = "machinegun_eject_dir";
 				effectName = "MachineGunCartridgeShort1";
 				positionName = "machinegun_eject_pos";
-			}
+			};
 				class effect2 
 				{
 				directionName = "muzzle_1";
 				effectName = "MachineGun1";
 				positionName = "muzzle_1";
-			}
-		}
+			};
+		};
 	};
 	class ADFRC_chinook_M134_2: ADFRC_chinook_M134
 	{
@@ -5916,14 +5916,14 @@ class CfgWeapons
 				directionName = "machinegun_eject2_dir";
 				effectName = "MachineGunCartridgeShort1";
 				positionName = "machinegun_eject2_pos";
-			}
+			};
 				class effect2 
 				{
 				directionName = "muzzle_2";
 				effectName = "MachineGun1";
 				positionName = "muzzle_2";
-			}
-		}
+			};
+		};
 	};
 	class CMFlareLauncher;
 	class ADFRC_PHOENIX_CMFlareLauncher: CMFlareLauncher
