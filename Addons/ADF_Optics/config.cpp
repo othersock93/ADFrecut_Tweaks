@@ -30,6 +30,10 @@ class CfgPatches
 
 #include "Optics_JR.hpp"
 
+class CBA_PIPItems
+{
+	ADFRC_Specter_RAR = "ADFRC_Specter_RAR_pip";
+};
 class cfgWeapons
 {
 	class SlotInfo;
