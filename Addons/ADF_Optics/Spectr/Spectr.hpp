@@ -18,6 +18,7 @@ class ADFRC_Specter_RAR : ItemCore
 			bodyTextureSize = 1.15;
         };
         weaponInfoType = "CBA_ScriptedOptic";
+		modelOptics = "\x\cba\addons\optics\cba_optic_small_pip.p3d";
 		
 		class ItemInfo : InventoryOpticsItem_Base_F {
 			opticType = 2;
@@ -90,7 +91,14 @@ class ADFRC_Specter_RAR : ItemCore
 		inertia = 0.1;
 	};
 	
-	
+class ADFRC_Specter_RAR_pip: ADFRC_Specter_RAR
+	{
+		class ItemInfo: ItemInfo
+		{
+			modelOptics = "\x\cba\addons\optics\cba_optic_small_pip.p3d";
+		};
+	};
+		
 class ADFRC_Specter_RAR_KF : ADFRC_Specter_RAR
 	{
 		displayName="Elcan SpecterDR 1x/4x (RAR - KF)";
