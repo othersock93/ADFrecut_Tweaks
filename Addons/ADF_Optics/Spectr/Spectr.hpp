@@ -37,8 +37,8 @@ class ADFRC_Specter_RAR : ItemCore
 					opticsZoomMin = "4 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
 					opticsZoomMax = "4 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
 					opticsZoomInit = "4 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
-					discreteDistance[] = {100};
-					discreteDistanceInitIndex = "1 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelperZeroing')";
+					discreteDistance[]={25,50,100,200,300,400};
+					discreteDistanceInitIndex=0;
 					distanceZoomMin = 100;
 					distanceZoomMax = 100;
 					memoryPointCamera = "opticView";
@@ -62,6 +62,8 @@ class ADFRC_Specter_RAR : ItemCore
 					visionMode[]={};
 					opticsFlare=0;
 					opticsDisablePeripherialVision=0;
+					discreteDistance[]={25,50,100,200,300,400};
+					discreteDistanceInitIndex=0;
 					distanceZoomMin=300;
 					distanceZoomMax=300;
 					cameraDir="";
@@ -78,6 +80,8 @@ class ADFRC_Specter_RAR : ItemCore
 					opticsZoomMax=1.1;
 					opticsZoomInit=0.75;
 					memoryPointCamera="eye2";
+					discreteDistance[]={25};
+					discreteDistanceInitIndex=0;
 					visionMode[]={};
 					opticsFlare=0;
 					opticsDisablePeripherialVision=0;
@@ -134,6 +138,7 @@ class ADFRC_Specter_CDO_KF : ADFRC_Specter_CDO
 		uipicture="\ADF_Optics\Spectr\UI\Spectr_CDO_KF_ca.paa";
 		model = "ADF_Optics\Spectr\ADFRC_Spectr_CDO_KF.p3d";
 	};
+	
 	
 class ADFRC_Specter_CDO_DPP : ADFRC_Specter_RAR
 	{
@@ -285,4 +290,3 @@ class ADFRC_Specter_CDO_C_KF_DPP : ADFRC_Specter_CDO
 			bodyTextureSize = 1.15;
         };
 	};
-	
