@@ -140,11 +140,11 @@ minRange = 2;
 minRangeProbab = 0.9;
 reloadTime = 0.1;
 class SilencedSound: BaseSoundModeType {
-SoundSetShot[] = {"SPAR01_silencerShot_SoundSet","SPAR01_silencerTail_SoundSet","SPAR01_silencerInteriorTail_SoundSet"};
-};
+			SoundSetShot[] = {"SPAR_17_silencerShot_SoundSet","SPAR_17_silencerTail_SoundSet","SPAR_17_silencerInteriorTail_SoundSet"};
+			};
 class StandardSound: BaseSoundModeType {
-soundSetShot[] = {"SPAR01_Shot_SoundSet","SPAR01_Tail_SoundSet","SPAR01_InteriorTail_SoundSet"};
-};
+			soundSetShot[] = {"SPAR_17_Shot_SoundSet","SPAR_17_Tail_SoundSet","SPAR_17_interiorTail_SoundSet"};
+			};
 };
 };
 
