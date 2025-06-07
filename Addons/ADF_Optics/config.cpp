@@ -78,11 +78,11 @@ class cfgWeapons
 					{
 						""
 					};
-					opticsZoomMin=0.375;
-					opticsZoomMax=2;
-					opticsZoomInit=1.5;
-					discreteDistance[]={300};
-					discreteDistanceInitIndex=0;
+					opticsZoomMin = "1.5 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
+					opticsZoomMax = "1.5 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
+					opticsZoomInit = "1.5 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
+					discreteDistance[]={25,50,100,200,300,400,500};
+					discreteDistanceInitIndex=3;
 					distanceZoomMin=300;
 					distanceZoomMax=300;
 					discreteInitIndex=0;
@@ -149,8 +149,8 @@ class cfgWeapons
 					opticsZoomMin = "3.4 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
 					opticsZoomMax = "3.4 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
 					opticsZoomInit = "3.4 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
-					discreteDistance[] = {100};
-					discreteDistanceInitIndex = "1 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelperZeroing')";
+					discreteDistance[]={50,100,200,300,400,500};
+					discreteDistanceInitIndex=2;
 					distanceZoomMin = 100;
 					distanceZoomMax = 100;
 					memoryPointCamera = "opticView";
@@ -222,7 +222,7 @@ class cfgWeapons
 					memoryPointCamera = "eye";
 					opticsFlare = 0;
 					opticsDisablePeripherialVision = 1;
-					discreteDistance[] = {25,50,100,200,300,400};
+					discreteDistance[] = {25,50,100,200,300};
 					discreteDistanceInitIndex = 2;
 					distanceZoomMin = 50;
 					distanceZoomMax = 50;
@@ -262,7 +262,7 @@ class cfgWeapons
 					memoryPointCamera = "eye";
 					opticsFlare = 0;
 					opticsDisablePeripherialVision = 1;
-					discreteDistance[] = {25,50,100,200,300,400};
+					discreteDistance[] = {25,50,100,200,300};
 					discreteDistanceInitIndex = 2;
 					distanceZoomMin = 50;
 					distanceZoomMax = 50;
@@ -301,7 +301,7 @@ class cfgWeapons
 					memoryPointCamera = "eye";
 					opticsFlare = 0;
 					opticsDisablePeripherialVision = 1;
-					discreteDistance[] = {25,50,100,200,300,400};
+					discreteDistance[] = {25,50,100,200,300};
 					discreteDistanceInitIndex = 2;
 					distanceZoomMin = 50;
 					distanceZoomMax = 50;
