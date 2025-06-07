@@ -24,6 +24,8 @@ class ADFRC_F9_Romeo2 : ItemCore
 					memoryPointCamera = "eye";
 					opticsFlare = 0;
 					opticsDisablePeripherialVision = 0;
+					discreteDistance[]={25};
+					discreteDistanceInitIndex=0;
 					distanceZoomMin = 25;
 					distanceZoomMax = 25;
 					cameraDir = "";
@@ -40,6 +42,8 @@ class ADFRC_F9_Romeo2 : ItemCore
 					memoryPointCamera = "eye2";
 					opticsFlare = 0;
 					opticsDisablePeripherialVision = 0;
+					discreteDistance[]={25};
+					discreteDistanceInitIndex=0;
 					distanceZoomMin = 25;
 					distanceZoomMax = 25;
 					cameraDir = "";

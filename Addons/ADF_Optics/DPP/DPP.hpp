@@ -25,7 +25,8 @@ class ADFRC_DPP : ItemCore
 					opticsFlare = 0;
 					opticsDisablePeripherialVision = 0;
 					distanceZoomMin = 25;
-					
+					discreteDistance[]={25};
+					discreteDistanceInitIndex=0;
 					distanceZoomMax = 25;
 					cameraDir = "";
 					visionMode[] = {};
