@@ -122,7 +122,7 @@
                 weaponSoundEffect  = "DefaultRifle";
             };
 			class SilencedSound: BaseSoundModeType {
-			SoundSetShot[] = 	{ "AUG_Shot_SoundSet","AUG_Tail_SoundSet","AUG_InteriorTail_SoundSet"};
+			SoundSetShot[] = 	{ "AUG_silencerShot_SoundSet","AUG_silencerTail_SoundSet","AUG_silencerInteriorTail_SoundSet"};
 			};
 			class StandardSound: BaseSoundModeType {
 			soundSetShot[] = {"AUG_Shot_SoundSet","AUG_Tail_SoundSet","AUG_InteriorTail_SoundSet"};
@@ -151,7 +151,7 @@ minRange = 2;
 minRangeProbab = 0.9;
 reloadTime = 0.088;
 class SilencedSound: BaseSoundModeType {
-			SoundSetShot[] = 	{ "AUG_Shot_SoundSet","AUG_Tail_SoundSet","AUG_InteriorTail_SoundSet"};
+			SoundSetShot[] = 	{ "AUG_silencerShot_SoundSet","AUG_silencerTail_SoundSet","AUG_silencerInteriorTail_SoundSet"};
 			};
 			class StandardSound: BaseSoundModeType {
 			soundSetShot[] = {"AUG_Shot_SoundSet","AUG_Tail_SoundSet","AUG_InteriorTail_SoundSet"};
@@ -494,7 +494,7 @@ class WeaponSlotsInfo {
                 weaponSoundEffect  = "DefaultRifle";
             };
 			class SilencedSound: BaseSoundModeType {
-			SoundSetShot[] = 	{ "AUG_Shot_SoundSet","AUG_Tail_SoundSet","AUG_InteriorTail_SoundSet"};
+			SoundSetShot[] = 	{ "AUG_silencerShot_SoundSet","AUG_silencerTail_SoundSet","AUG_silencerInteriorTail_SoundSet"};
 			};
 			class StandardSound: BaseSoundModeType {
 			soundSetShot[] = {"AUG_Shot_SoundSet","AUG_Tail_SoundSet","AUG_InteriorTail_SoundSet"};
@@ -523,7 +523,7 @@ minRange = 2;
 minRangeProbab = 0.9;
 reloadTime = 0.088;
 class SilencedSound: BaseSoundModeType {
-			SoundSetShot[] = 	{ "AUG_Shot_SoundSet","AUG_Tail_SoundSet","AUG_InteriorTail_SoundSet"};
+			SoundSetShot[] = 	{ "AUG_silencerShot_SoundSet","AUG_silencerTail_SoundSet","AUG_silencerInteriorTail_SoundSet"};
 			};
 			class StandardSound: BaseSoundModeType {
 			soundSetShot[] = {"AUG_Shot_SoundSet","AUG_Tail_SoundSet","AUG_InteriorTail_SoundSet"};
