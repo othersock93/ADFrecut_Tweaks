@@ -359,13 +359,13 @@ class ADFRC_MD_AMCU_CDO_Light_Tee: ADFRC_MD_AMCU_CDO_Tee_Base{
 		"UGL_FlareRed_F",
 		"1rnd_SmokeRed_Grenade_Shell",
 		"1rnd_SmokeRed_Grenade_Shell",
-		"1rnd_SmokeWhite_Grenade_Shell",
+		"1Rnd_Smoke_Grenade_shell",
 		"SmokeShell",
 		"ADFRC_F1_GRENADE",
 		"ADFRC_F1_GRENADE"
 		};
 		respawnMagazines[]={
-			"ADFRC_15rnd_9MM_BALL_USP", 
+		"ADFRC_15rnd_9MM_BALL_USP", 
 		"ADFRC_15rnd_9MM_BALL_USP", 
 		"ADFRC_F1_Grenade", 
 		"ADFRC_30Rnd_PMAG", 
@@ -386,7 +386,7 @@ class ADFRC_MD_AMCU_CDO_Light_Tee: ADFRC_MD_AMCU_CDO_Tee_Base{
 		"UGL_FlareRed_F",
 		"1rnd_SmokeRed_Grenade_Shell",
 		"1rnd_SmokeRed_Grenade_Shell",
-		"1rnd_SmokeWhite_Grenade_Shell",
+		"1Rnd_Smoke_Grenade_shell",
 		"SmokeShell",
 		"ADFRC_F1_GRENADE",
 		"ADFRC_F1_GRENADE"

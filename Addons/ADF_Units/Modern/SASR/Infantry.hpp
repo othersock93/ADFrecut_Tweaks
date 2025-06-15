@@ -510,7 +510,7 @@ class ADFRC_MD_MC_SASR_Scout: ADFRC_MD_MC_SASR_Base{
 		"UGL_FlareRed_F",
 		"1rnd_SmokeRed_Grenade_Shell",
 		"1rnd_SmokeRed_Grenade_Shell",
-		"1rnd_SmokeWhite_Grenade_Shell",
+		"1Rnd_Smoke_Grenade_shell",
 		"SmokeShell",
 		"ADFRC_F1_GRENADE",
 		"ADFRC_F1_GRENADE"
@@ -537,7 +537,7 @@ class ADFRC_MD_MC_SASR_Scout: ADFRC_MD_MC_SASR_Base{
 		"UGL_FlareRed_F",
 		"1rnd_SmokeRed_Grenade_Shell",
 		"1rnd_SmokeRed_Grenade_Shell",
-		"1rnd_SmokeWhite_Grenade_Shell",
+		"1Rnd_Smoke_Grenade_shell",
 		"SmokeShell",
 		"ADFRC_F1_GRENADE",
 		"ADFRC_F1_GRENADE"
