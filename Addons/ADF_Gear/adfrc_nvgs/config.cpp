@@ -34,7 +34,7 @@ class adfrc_l3h_psq36: NVGoggles
 		eden = 2;
 		displayName = "L3Harris PSQ36";
 		model = "ADF_Gear\adfrc_nvgs\psq36_up.p3d";
-		picture = "ADF_Gear\adfrc_nvgs\nodprev.paa";
+		picture = "\ADF_Gear\adfrc_nvgs\nodprev.paa";
 		ace_nightvision_generation = 4;
 		ace_nightvision_bluRadius = 0.35000002;
 		modelOptics = "ADF_Gear\adfrc_nvgs\optic\pvs_optic.p3d";
@@ -60,7 +60,7 @@ class adfrc_l3h_psq36: NVGoggles
 	{
 		displayName = "L3Harris PSQ36 (No Mount)";
 		model = "";
-		picture = "ADF_Gear\adfrc_nvgs\nodprev.paa";
+		picture = "\ADF_Gear\adfrc_nvgs\nodprev.paa";
 		ace_nightvision_generation = 4;
 		ace_nightvision_bluRadius = 0.35000002;
 		modelOptics = "ADF_Gear\adfrc_nvgs\optic\pvs_optic.p3d";
