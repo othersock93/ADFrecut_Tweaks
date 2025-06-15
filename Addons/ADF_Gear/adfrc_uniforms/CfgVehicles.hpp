@@ -296,7 +296,7 @@ class CfgVehicles{
 		faction="ADFRC_F_MD";
 		editorSubcategory= "ADFRC_MD_Infantry_RAR_AMCU";
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_RAR";
+		nakedUniform="U_BasicBody";
 		model                      = "\adf_gear\adfrc_uniforms\crye_g3.p3d";
 		uniformClass               = "ADFRC_Uniform_G3_AMCU";
 
@@ -330,7 +330,7 @@ class CfgVehicles{
 		faction="ADFRC_F_MD";
 		editorSubcategory= "ADFRC_MD_Infantry_RAR_AMCU";
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_RAR";
+		nakedUniform="U_BasicBody";
 		model                      = "\adf_gear\adfrc_uniforms\crye_g3.p3d";
 		uniformClass               = "ADFRC_Uniform_G3_AMCU_Rolled";
 
@@ -362,7 +362,7 @@ class CfgVehicles{
 		faction="ADFRC_F_MD";
 		editorSubcategory= "ADFRC_MD_Infantry_RAR_AMCU";
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_RAR";
+		nakedUniform="U_BasicBody";
 		uniformClass="ADFRC_Uniform_AMCU_RAR_Tee";
 		model="\A3\characters_F\BLUFOR\b_soldier_02.p3d";
 		hiddenSelections[]={
@@ -399,7 +399,7 @@ class CfgVehicles{
 		detectSkill=18;
 		threat[]={0.80000001,0.20000001,0.20000001};
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_Tan";
+		nakedUniform="U_BasicBody";
 		model                      = "\adf_gear\adfrc_uniforms\crye_g3.p3d";
 		uniformClass               = "ADFRC_Uniform_G3_AMCU";
 
@@ -449,7 +449,7 @@ class CfgVehicles{
 		detectSkill=18;
 		threat[]={0.80000001,0.20000001,0.20000001};
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_Tan";
+		nakedUniform="U_BasicBody";
 		model                      = "\adf_gear\adfrc_uniforms\crye_g3.p3d";
 		uniformClass               = "ADFRC_Uniform_G3_AMCU_Rolled";
 
@@ -486,7 +486,7 @@ class CfgVehicles{
 		camouflage=0.40000002;
 		tLightInfluence=0.015;
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_Tan";
+		nakedUniform="U_BasicBody";
 		uniformClass="ADFRC_Uniform_Ghillie_AMCU_Temperate";
 		model="A3\Characters_F\BLUFOR\b_sniper.p3d";
 		primaryAmmoCoef=0.2;
@@ -517,7 +517,7 @@ class CfgVehicles{
 		camouflage=0.40000002;
 		tLightInfluence=0.015;
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_Tan";
+		nakedUniform="U_BasicBody";
 		uniformClass="ADFRC_Uniform_Ghillie_AMCU_Tropical";
 		model="A3\Characters_F\BLUFOR\b_sniper.p3d";
 		primaryAmmoCoef=0.2;
@@ -548,7 +548,7 @@ class CfgVehicles{
 		camouflage=0.40000002;
 		tLightInfluence=0.015;
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_Tan";
+		nakedUniform="U_BasicBody";
 		uniformClass="ADFRC_Uniform_Ghillie_AMCU_Arid";
 		model="A3\Characters_F\BLUFOR\b_sniper.p3d";
 		primaryAmmoCoef=0.2;
@@ -574,7 +574,7 @@ class CfgVehicles{
 		faction="ADFRC_F_MD";
 		editorSubcategory="ADFRC_MD_Infantry_RAR_AMCU";
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_RAR";
+		nakedUniform="U_BasicBody";
 		model                      = "\adf_gear\adfrc_uniforms\adfrc_field_dress.p3d";
 		uniformClass               = "ADFRC_Uniform_Field_AMCU";
 	};
@@ -1116,12 +1116,12 @@ class CfgVehicles{
 		camouflage=1;
 		detectSkill=18;
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_Tan";
+		nakedUniform="U_BasicBody";
 		vehicleClass="MenRecon";
 		canHideBodies = true;
 		
 		
-		model                      = "\adf_gear\adfrc_uniforms\crye_g3.p3d";
+		//model                      = "\adf_gear\adfrc_uniforms\crye_g3.p3d";
 		uniformClass               = "ADFRC_Uniform_G3_AMCU";
 
 		hiddenSelections[] = {
@@ -1171,7 +1171,7 @@ class CfgVehicles{
 		camouflage=1;
 		detectSkill=18;
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_Tan";
+		nakedUniform="U_BasicBody";
 		vehicleClass="MenRecon";
 		canHideBodies = true;
 		
@@ -1224,7 +1224,7 @@ class CfgVehicles{
 		camouflage=1;
 		detectSkill=18;
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_CDO";
+		nakedUniform="U_BasicBody";
 		uniformClass="ADFRC_Uniform_AMCU_CDO_Tee";
 		model="\A3\characters_F\BLUFOR\b_soldier_02.p3d";
 		vehicleClass="MenRecon";
@@ -1252,7 +1252,7 @@ class CfgVehicles{
 		camouflage=1;
 		detectSkill=18;
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_Blue";
+		nakedUniform="U_BasicBody";
 		uniformClass="ADFRC_Uniform_MTS";
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		vehicleClass="MenRecon";
@@ -1277,7 +1277,7 @@ class CfgVehicles{
 		camouflage=1;
 		detectSkill=18;
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_Blue";
+		nakedUniform="U_BasicBody";
 		uniformClass="ADFRC_Uniform_MTS_Rolled";
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		vehicleClass="MenRecon";
@@ -1302,7 +1302,7 @@ class CfgVehicles{
 		camouflage=1;
 		detectSkill=18;
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_CDT";
+		nakedUniform="U_BasicBody";
 		uniformClass="ADFRC_Uniform_MTS_CDT_Tee";
 		model="\A3\characters_F\BLUFOR\b_soldier_02.p3d";
 		vehicleClass="MenRecon";
@@ -1329,7 +1329,7 @@ class CfgVehicles{
 		camouflage=1;
 		detectSkill=18;
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_Blue";
+		nakedUniform="U_BasicBody";
 		uniformClass="ADFRC_Wetsuit_MTS";
 		model="\A3\characters_F\Common\diver_slotable";
 		vehicleClass="MenRecon";
@@ -1357,7 +1357,7 @@ class CfgVehicles{
 		camouflage=1;
 		detectSkill=18;
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_Tan";
+		nakedUniform="U_BasicBody";
 		uniformClass="ADFRC_Uniform_Green";
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		hiddenSelections[]={
@@ -1381,7 +1381,7 @@ class CfgVehicles{
 		camouflage=1;
 		detectSkill=18;
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_Tan";
+		nakedUniform="U_BasicBody";
 		uniformClass="ADFRC_Uniform_Green_Rolled";
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		hiddenSelections[]={
@@ -1406,7 +1406,7 @@ class CfgVehicles{
 		camouflage=1;
 		detectSkill=18;
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_Tan";
+		nakedUniform="U_BasicBody";
 		vehicleClass="MenRecon";
 		canHideBodies = true;
 		
@@ -1450,7 +1450,7 @@ class CfgVehicles{
 		camouflage=1;
 		detectSkill=18;
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_Tan";
+		nakedUniform="U_BasicBody";
 		vehicleClass="MenRecon";
 		canHideBodies = true;
 		
@@ -1492,7 +1492,7 @@ class CfgVehicles{
 		camouflage=1;
 		detectSkill=18;
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_SASR";
+		nakedUniform="U_BasicBody";
 		uniformClass="ADFRC_Uniform_MC_SASR_Tee";
 		model="\A3\characters_F\BLUFOR\b_soldier_02.p3d";
 		vehicleClass="MenRecon";
@@ -1519,7 +1519,7 @@ class CfgVehicles{
 		detectSkill=18;
 		camouflage=0.40000002;
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_Tan";
+		nakedUniform="U_BasicBody";
 		uniformClass="ADFRC_Uniform_Ghillie_MC_Temperate";
 		model="A3\Characters_F\BLUFOR\b_sniper.p3d";
 		primaryAmmoCoef=0.2;
@@ -1549,7 +1549,7 @@ class CfgVehicles{
 		detectSkill=18;
 		camouflage=0.40000002;
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_Tan";
+		nakedUniform="U_BasicBody";
 		uniformClass="ADFRC_Uniform_Ghillie_MC_Tropical";
 		model="A3\Characters_F\BLUFOR\b_sniper.p3d";
 		primaryAmmoCoef=0.2;
@@ -1579,7 +1579,7 @@ class CfgVehicles{
 		detectSkill=18;
 		camouflage=0.40000002;
 		modelSides[] = {3,2,1,0};
-		nakedUniform="ADFRC_BasicBody_Tan";
+		nakedUniform="U_BasicBody";
 		uniformClass="ADFRC_Uniform_Ghillie_MC_Arid";
 		model="A3\Characters_F\BLUFOR\b_sniper.p3d";
 		primaryAmmoCoef=0.2;
