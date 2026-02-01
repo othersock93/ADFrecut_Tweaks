@@ -1432,10 +1432,10 @@ class CfgVehicles{
 			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_Multicam_co.paa",
 			"",
 			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
-			"",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_Multicam_co.paa",
             "",
 			"",
-			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_Multicam_co.paa"
+			""
 		};
 	};
 	class ADFRC_MD_MC_SASR_Rolled_Base: ADFRC_Soldier_Base_F{
