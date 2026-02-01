@@ -1438,7 +1438,7 @@ class CfgVehicles{
 			""
 		};
 	};
-class ADFRC_MD_MC_SASR_Rolled_Base: ADFRC_Soldier_Base_F{
+	class ADFRC_MD_MC_SASR_Rolled_Base: ADFRC_Soldier_Base_F{
 		displayName="MC Operator Rolled Base";
 		author="$STR_ADFRC_AUTHOR";
 		scope=1;
