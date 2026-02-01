@@ -1473,10 +1473,10 @@ class CfgVehicles{
 			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Gloves_Grey_co.paa",
 			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_Multicam_co.paa",
 			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
-			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_Multicam_co.paa",
-			"",
-			"",
-			""
+			"", //Sleeves down, untucked
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_Multicam_co.paa", //Sleeves rolled, untucked
+			"", //Sleeves rolled, tucked
+			"" //Sleeves down, tucked
 		};
 	};
 	class ADFRC_MD_MC_SASR_Tee_Base: ADFRC_Soldier_Base_F{
