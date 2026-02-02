@@ -2,22 +2,13 @@
 
 name: Bug Report
 description: Report a bug or issue with ADF Re-Cut
-title: "[BUG] "
+title: "[BUG] Brief, specific description of the issue"
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to report a bug. Please provide as much detail as possible to help us track it down.
-  
-  - type: input
-    id: title
-    attributes:
-      label: Bug Title
-      description: Brief, specific description of the issue
-      placeholder: "e.g ASLAV model clipping through terrain"
-    validations:
-      required: true
   
   - type: textarea
     id: description
@@ -36,7 +27,7 @@ body:
       description: How can we recreate this issue?
       placeholder: |
         1. Spawn a Bushmaster
-        2. Enter from cargo slot
+        2. Add cargo via Zeus
         3. Observe textures disappearing
     validations:
       required: true
@@ -48,20 +39,11 @@ body:
       description: Where did this occur?
       options:
         - Single Player
-        - Multiplayer (Listen Server)
+        - Multiplayer (Local-host)
         - Multiplayer (Dedicated Server)
         - Editor
         - Zeus
         - Other
-    validations:
-      required: true
-  
-  - type: input
-    id: version
-    attributes:
-      label: Mod Version
-      description: What version of ADF Re-Cut are you running?
-      placeholder: "Check Steam Workshop or @adf folder (e.g., 2.1.0)"
     validations:
       required: true
   
@@ -97,4 +79,4 @@ body:
     attributes:
       label: Additional Context
       description: Any other information that might be relevant
-      placeholder: "e.g., This started happening after the last patch, only occurs at night, etc."
+      placeholder: "e.g This started happening after the last patch, only occurs at night, etc."
