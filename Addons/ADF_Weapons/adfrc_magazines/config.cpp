@@ -646,7 +646,7 @@ class CfgMagazines
 		ammo="B_762x51_Tracer_Red";
 		tracersEvery=1;
 	};
-	class ADFRC_100_Rnd_762_Belt_TR5: ADFRC_100Rnd_762_Belt
+	class ADFRC_100Rnd_762_Belt_TR5: ADFRC_100Rnd_762_Belt
 	{
 		scope=2;
 		displayName="100Round 7.62mm Tracer 1:5 Red";
