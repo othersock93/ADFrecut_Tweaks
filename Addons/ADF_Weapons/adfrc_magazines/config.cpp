@@ -34,7 +34,7 @@ class CfgPatches
 			"ADFRC_50Rnd_762_Belt_TR5",
 			"ADFRC_100Rnd_762_Belt",
 			"ADFRC_100Rnd_762_Belt_TR",
-			"ADFRC_100_Rnd_762_Belt_TR5",
+			"ADFRC_100Rnd_762_Belt_TR5",
 			"ADFRC_150Rnd_762_Belt",
 			"ADFRC_150Rnd_762_Belt_TR",
 			"ADFRC_150Rnd_762_Belt_TR5",
