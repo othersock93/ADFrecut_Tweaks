@@ -1474,8 +1474,8 @@ class CfgVehicles{
 			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_Multicam_co.paa",
 			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
 			"", //Sleeves down, untucked
-			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_Multicam_co.paa", //Sleeves rolled, untucked
-			"", //Sleeves rolled, tucked
+			"", //Sleeves rolled, untucked
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_Multicam_co.paa", //Sleeves rolled, tucked
 			"" //Sleeves down, tucked
 		};
 	};
