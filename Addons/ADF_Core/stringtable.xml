@@ -3,20 +3,24 @@
 	<Package name="ADF_faction">
 		<Container name="General">
 			<Key ID="STR_ADF_AUTHOR">
-					<Original>ADF Re-Cut</Original>
-					<English>ADF Re-Cut</English>
+					<Original>ADFRC Team</Original>
+					<English>ADFRC Team</English>
+			</Key>
+			<Key ID="STR_ADFRC_AUTHOR">
+					<Original>ADFRC Team</Original>
+					<English>ADFRC Team</English>
 			</Key>
 			<Key ID="STR_ADF_TITLE">
-					<Original>Australian Defence Force Re-Cut</Original>
-					<English>Australian Defence Force Re-Cut</English>
+					<Original>ADF Re-Cut</Original>
+					<English>ADF Re-Cut</English>
 			</Key>
 			<Key ID="STR_ADF_faction_NAME">
 					<Original>Australian Defence Force</Original>
 					<English>Australian Defence Force</English>
 			</Key>
 			<Key ID="STR_ADF_OPFOR_FACTION_NAME">
-					<Original>ADF Opfor</Original>
-					<English>ADF Opfor</English>
+					<Original>ADF OPFOR</Original>
+					<English>ADF OPFOR</English>
 			</Key>
 		</Container>
 		<Container name="Vehicle_Classes">
