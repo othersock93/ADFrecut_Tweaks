@@ -15,6 +15,9 @@
    ![GitHub commits since latest release](https://img.shields.io/github/commits-since/IsoBones/ADFRecut/latest?sort=semver&style=for-the-badge&color=%23676252)
    ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/IsoBones/ADFRecut?style=for-the-badge&label=ALL%20TIME%20COMMITS&color=%23676252)
 
+   ![GitHub Issues or Pull Requests by label](https://img.shields.io/github/issues/IsoBones/ADFrecut/help%20wanted?style=for-the-badge&color=23676252)
+
+
    ## About
    
    A continuation of the *Australian Defence Force Uncut* mod from years ago, **ADF Re-Cut** aims to create an authentic and polished Arma 3 mod representing the Australian Defence Force.
