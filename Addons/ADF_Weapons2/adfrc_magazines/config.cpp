@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class adfrc_magazines
+	class adfrc_magazines_2
 	{
 		units[]={};
 		magazines[]=
