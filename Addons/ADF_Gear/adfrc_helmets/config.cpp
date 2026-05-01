@@ -18,7 +18,6 @@ class CfgPatches
 class CfgWeapons
 {
 	class ItemCore;
-	class ItemInfo;
 	class UniformItem;
 	class Uniform_Base;
 	class VestItem;
@@ -1380,7 +1379,7 @@ class CfgWeapons
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Desert_M_co.paa"};
 		model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
-		class ItemInfo: ItemInfo
+		class ItemInfo: HeadgearItem
 		{
 			mass = 30;
 			uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_plain";
@@ -1634,7 +1633,7 @@ class CfgWeapons
 			""
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
 				"",
@@ -1656,7 +1655,7 @@ class CfgWeapons
 			""
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
 				"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
@@ -1678,7 +1677,7 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
 				"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
@@ -1700,7 +1699,7 @@ class CfgWeapons
 			""
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
 				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
@@ -1722,7 +1721,7 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
 				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
@@ -1744,7 +1743,7 @@ class CfgWeapons
 			""
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
 				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
@@ -1766,7 +1765,7 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
 				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
@@ -1788,7 +1787,7 @@ class CfgWeapons
 			""
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
 				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
@@ -1810,7 +1809,7 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
 				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
@@ -1832,7 +1831,7 @@ class CfgWeapons
 			""
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
 				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
@@ -1854,7 +1853,7 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
 				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
@@ -1876,7 +1875,7 @@ class CfgWeapons
 			""
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
 				"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
@@ -1898,7 +1897,7 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
 				"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
@@ -1920,7 +1919,7 @@ class CfgWeapons
 			""
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
 				"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
@@ -1942,7 +1941,7 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
 				"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
@@ -1964,7 +1963,7 @@ class CfgWeapons
 			""
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
 				"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
@@ -1986,7 +1985,7 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
 				"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
@@ -2131,7 +2130,7 @@ class CfgWeapons
 			""  //? Scrim
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"", //? Cover
@@ -2179,7 +2178,7 @@ class CfgWeapons
 			""  //? Scrim
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"", //? Cover
@@ -2227,7 +2226,7 @@ class CfgWeapons
 			""  //? Scrim
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -2275,7 +2274,7 @@ class CfgWeapons
 			""  //? Scrim
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"", //? Cover
@@ -2325,7 +2324,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"", //? Cover
@@ -2374,7 +2373,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -2423,7 +2422,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -2471,7 +2470,7 @@ class CfgWeapons
 			""  //? Scrim
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -2520,7 +2519,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"", //? Cover
@@ -2569,7 +2568,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"", //? Cover
@@ -2618,7 +2617,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -2667,7 +2666,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -2715,7 +2714,7 @@ class CfgWeapons
 			""  //? Scrim
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"", //? Cover
@@ -2763,7 +2762,7 @@ class CfgWeapons
 			""  //? Scrim
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -2812,7 +2811,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"", //? Cover
@@ -2861,7 +2860,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"", //? Cover
@@ -2910,7 +2909,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -2959,7 +2958,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -3007,7 +3006,7 @@ class CfgWeapons
 			""  //? Scrim
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -3056,7 +3055,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"", //? Cover
@@ -3105,7 +3104,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"", //? Cover
@@ -3154,7 +3153,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -3203,7 +3202,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -3251,7 +3250,7 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -3300,7 +3299,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -3349,7 +3348,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -3397,7 +3396,7 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -3446,7 +3445,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -3495,7 +3494,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -3543,7 +3542,7 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -3592,7 +3591,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -3641,7 +3640,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -3689,7 +3688,7 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
 		};
 
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -3738,7 +3737,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -3787,7 +3786,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
@@ -3862,13 +3861,13 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\gentex_cvc_tan_co.paa"
 			};
 
-			class HitpointsProtectionInfo : HitpointsProtectionInfo {
-				class Head : Head {
+			class HitpointsProtectionInfo{
+				class Head{
 					armor        = 4;
 					passThrough  = 0.6;
 				};
@@ -3886,13 +3885,13 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\gentex_cvc_tan_co.paa"
 			};
 
-			class HitpointsProtectionInfo : HitpointsProtectionInfo {
-				class Head : Head {
+			class HitpointsProtectionInfo {
+				class Head {
 					armor        = 6;
 					passThrough  = 0.4;
 				};
@@ -3910,13 +3909,15 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\gentex_cvc_olive_co.paa"
 			};
 
-			class HitpointsProtectionInfo : HitpointsProtectionInfo {
-				class Head : Head {
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
 					armor        = 2;
 					passThrough  = 0.85;
 				};
@@ -3934,13 +3935,13 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\gentex_cvc_olive_co.paa"
 			};
 
-			class HitpointsProtectionInfo : HitpointsProtectionInfo {
-				class Head : Head {
+			class HitpointsProtectionInfo{
+				class Head{
 					armor        = 4;
 					passThrough  = 0.6;
 				};
@@ -3958,13 +3959,13 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
+		class ItemInfo: HeadgearItem {
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\gentex_cvc_olive_co.paa"
 			};
 
-			class HitpointsProtectionInfo : HitpointsProtectionInfo {
-				class Head : Head {
+			class HitpointsProtectionInfo{
+				class Head{
 					armor        = 6;
 					passThrough  = 0.4;
 				};
