@@ -1375,20 +1375,12 @@ class CfgWeapons
 	};
 
 	// ENHANCED COMBAT HELMETS MEDIC
-	class adfrc_ECH_MEDIC_Desert: adfrc_ECH_Desert
+	class adfrc_ECH_MEDIC_Desert: H_HelmetB
 	{
 		scope = 2;
 		displayName = "ECH Medic [Desert]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Desert_M_co.paa"};
-		model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
-		class ItemInfo: HeadgearItem
-		{
-			mass = 30;
-			uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_plain";
-			armor = 3;
-			passThrough = 0.5;
-		};
 	};
 	class adfrc_ECH_MEDIC_Grass: adfrc_ECH_MEDIC_Desert
 	{
