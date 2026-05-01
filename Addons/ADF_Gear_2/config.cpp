@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class ADF_Gear
+	class ADF_Gear_2
 	{
 		name="ADF_Gear_2";
 		author=$STR_ADF_AUTHOR;
